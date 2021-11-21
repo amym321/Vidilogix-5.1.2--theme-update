@@ -70,6 +70,8 @@
     "share_facebook": true,
     "share_twitter": true,
     "share_pinterest": true,
+    "favicon": "shopify:\/\/shop_images\/favicon_ca88a8c8-b6fe-4fea-940d-00188f7102d0.png",
+    "predictive_search_show_price": true,
     "checkout_logo_position": "left",
     "checkout_logo_size": "small",
     "checkout_body_background_color": "#ffffff",
