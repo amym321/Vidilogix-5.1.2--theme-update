@@ -7,17 +7,18 @@
           "type": "image",
           "settings": {
             "top_subheading": "",
-            "title": "Two line\ntitle slide.",
-            "title_size": 80,
-            "subheading": "And optional subtext",
-            "link": "shopify:\/\/collections\/all",
-            "link_text": "Shop this",
+            "title": "New Ring Gear",
+            "title_size": 42,
+            "subheading": "Free 2-day shipping",
+            "link": "https:\/\/www.vidlogix.com\/collections\/vendors?q=Ring",
+            "link_text": "Shop Now",
             "link_2": "shopify:\/\/collections\/all",
             "link_text_2": "Shop all",
-            "color_accent": "#000000",
-            "text_align": "vertical-center horizontal-center",
-            "overlay_opacity": 0,
-            "focal_point": "top center"
+            "color_accent": "#f6c12f",
+            "text_align": "vertical-center horizontal-left",
+            "image": "shopify:\/\/shop_images\/Ring_Alarm_Gen2_59094fe8-744c-47c7-a6a3-d29799f5ed3e.jpg",
+            "overlay_opacity": 4,
+            "focal_point": "80% 100%"
           }
         },
         "slideshow-1": {
