@@ -106,9 +106,9 @@
           "1524770296206": {
             "type": "announcement",
             "settings": {
-              "text": "Hassle-free returns",
-              "link_text": "30-day postage paid returns",
-              "link": ""
+              "text": "Free shipping on all U.S. orders $49+",
+              "link_text": "",
+              "link": "shopify:\/\/pages\/shipping"
             }
           }
         },
