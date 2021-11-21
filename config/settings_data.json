@@ -155,6 +155,23 @@
               "container_width": 40
             }
           },
+          "1494301487049": {
+            "type": "menu",
+            "settings": {
+              "show_footer_title": true,
+              "menu": "footer",
+              "container_width": 20
+            }
+          },
+          "77630127-f486-4b32-bbbe-fb406acf3a57": {
+            "type": "custom",
+            "settings": {
+              "show_footer_title": true,
+              "title": "Custom text",
+              "text": "<p>Add your own custom text here.<\/p>",
+              "container_width": 25
+            }
+          },
           "1494292487693": {
             "type": "newsletter",
             "settings": {
@@ -171,20 +188,31 @@
               "container_width": 95
             }
           },
-          "1494301487049": {
+          "13e6becc-b2e9-43d2-b6c6-60d7d8707474": {
             "type": "menu",
             "settings": {
               "show_footer_title": true,
+              "menu": "help",
+              "container_width": 21
+            }
+          },
+          "c119d9a1-482a-4625-b330-e2b6a7bcbc17": {
+            "type": "menu",
+            "settings": {
+              "show_footer_title": false,
               "menu": "footer",
-              "container_width": 20
+              "container_width": 25
             }
           }
         },
         "block_order": [
           "14b0c785-9327-4129-8594-732c106867bf",
+          "1494301487049",
+          "77630127-f486-4b32-bbbe-fb406acf3a57",
           "1494292487693",
           "1494301487048",
-          "1494301487049"
+          "13e6becc-b2e9-43d2-b6c6-60d7d8707474",
+          "c119d9a1-482a-4625-b330-e2b6a7bcbc17"
         ],
         "settings": {
           "show_locale_selector": false,
