@@ -29,13 +29,14 @@
             "title_size": 42,
             "subheading": "The easy to set up, whole‑home Wi‑Fi.",
             "link": "shopify:\/\/products\/google-nest-wifi-snow",
-            "link_text": "Shop all",
-            "link_2": "shopify:\/\/collections\/all",
-            "link_text_2": "Shop all",
-            "color_accent": "#000000",
-            "text_align": "vertical-bottom horizontal-left",
+            "link_text": "Shop Now",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#f6c12f",
+            "text_align": "vertical-center horizontal-left",
+            "image": "shopify:\/\/shop_images\/Google-Nest-Wifi.jpg",
             "overlay_opacity": 0,
-            "focal_point": "top center"
+            "focal_point": "bottom center"
           }
         }
       },
