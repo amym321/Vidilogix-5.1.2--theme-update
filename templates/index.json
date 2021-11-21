@@ -111,9 +111,10 @@
           "type": "testimonial",
           "settings": {
             "icon": "5-stars",
-            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
-            "author": "Author's name",
-            "author_info": "Los Angeles, CA"
+            "testimonial": "<p>The reason I look to you for electronic equipment is customer service, period. Your sales people know their equipment.<\/p>",
+            "image": "shopify:\/\/shop_images\/UGC-4.png",
+            "author": "Karen F.",
+            "author_info": ""
           }
         },
         "163746679909a0cbe2-2": {
