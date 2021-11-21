@@ -120,10 +120,11 @@
         "163746679909a0cbe2-2": {
           "type": "testimonial",
           "settings": {
-            "icon": "5-stars",
-            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
-            "author": "Author's name",
-            "author_info": "Los Angeles, CA"
+            "icon": "quote",
+            "testimonial": "<p>Vidlogix has helped give me peace of mind that my home and family are safe, even when I’m away on business.<\/p>",
+            "image": "shopify:\/\/shop_images\/UGC-2.png",
+            "author": "Sam T.",
+            "author_info": ""
           }
         },
         "163746679909a0cbe2-3": {
