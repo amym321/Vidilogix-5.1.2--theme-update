@@ -67,6 +67,21 @@
         "height": 550
       }
     },
+    "blog-posts": {
+      "type": "blog-posts",
+      "settings": {
+        "title": "From the journal",
+        "blog": "news",
+        "post_limit": 3,
+        "blog_show_tags": false,
+        "blog_show_date": true,
+        "blog_show_comments": false,
+        "blog_show_author": false,
+        "view_all": true,
+        "blog_image_size": "wide",
+        "divider": false
+      }
+    },
     "rich-text": {
       "type": "rich-text",
       "blocks": {
@@ -280,21 +295,6 @@
         "parallax": true
       }
     },
-    "blog-posts": {
-      "type": "blog-posts",
-      "settings": {
-        "title": "From the journal",
-        "blog": "news",
-        "post_limit": 3,
-        "blog_show_tags": false,
-        "blog_show_date": true,
-        "blog_show_comments": false,
-        "blog_show_author": false,
-        "view_all": true,
-        "blog_image_size": "wide",
-        "divider": false
-      }
-    },
     "map": {
       "type": "map",
       "settings": {
@@ -322,12 +322,12 @@
   "order": [
     "slideshow",
     "16374663436f00eb2c",
+    "blog-posts",
     "rich-text",
     "promo-grid",
     "featured-collections",
     "promo-grid2",
     "background-image-text",
-    "blog-posts",
     "map",
     "16374606876c4b0894"
   ]
