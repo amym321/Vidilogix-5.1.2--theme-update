@@ -251,6 +251,7 @@
   {%- endif -%}
 
   {%- if settings.enable_product_reviews -%}
-    <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
+    {%- liquid render 'junip-product-summary', product: product -%}
+    <!-- <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span> -->
   {%- endif -%}
 </div>
