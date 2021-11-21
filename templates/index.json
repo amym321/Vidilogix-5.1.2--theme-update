@@ -136,28 +136,49 @@
             "author": "Diane K.",
             "author_info": ""
           }
-        },
-        "163746679909a0cbe2-4": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "5-stars",
-            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
-            "author": "Author's name",
-            "author_info": "Los Angeles, CA"
-          }
         }
       },
       "block_order": [
         "163746679909a0cbe2-0",
         "163746679909a0cbe2-1",
         "163746679909a0cbe2-2",
-        "163746679909a0cbe2-3",
-        "163746679909a0cbe2-4"
+        "163746679909a0cbe2-3"
       ],
       "settings": {
         "title": "Happy Customers",
         "align_text": "center",
         "round_images": true,
+        "color_background": "#f9f9f9",
+        "color_text": "#1c1d1d"
+      }
+    },
+    "16374675471ddb7cfa": {
+      "type": "newsletter",
+      "blocks": {
+        "163746754725d46185-0": {
+          "type": "title",
+          "settings": {
+            "title": "Never miss an offer"
+          }
+        },
+        "163746754725d46185-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Join the list to receive exclusive offers and updates. <br\/>Plus, enter to win a coveted Sonos Arc Soundbar.<\/p>"
+          }
+        },
+        "163746754725d46185-2": {
+          "type": "form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "163746754725d46185-0",
+        "163746754725d46185-1",
+        "163746754725d46185-2"
+      ],
+      "settings": {
         "color_background": "#f9f9f9",
         "color_text": "#1c1d1d"
       }
@@ -168,6 +189,7 @@
     "16374663436f00eb2c",
     "blog-posts",
     "16374606876c4b0894",
-    "163746679950095452"
+    "163746679950095452",
+    "16374675471ddb7cfa"
   ]
 }
