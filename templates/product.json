@@ -17,7 +17,7 @@
           "type": "variant_picker",
           "settings": {
             "variant_labels": true,
-            "picker_type": "button",
+            "picker_type": "dropdown",
             "color_swatches": false
           }
         },
@@ -82,7 +82,7 @@
         "share"
       ],
       "settings": {
-        "sku_enable": false,
+        "sku_enable": true,
         "image_position": "left",
         "image_size": "medium",
         "product_zoom_enable": true,
