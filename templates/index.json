@@ -249,18 +249,6 @@
         "space_below": false
       }
     },
-    "featured-collection": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Best Sellers",
-        "home_featured_products": "best-sellers",
-        "per_row": 4,
-        "rows": 1,
-        "mobile_scrollable": true,
-        "view_all": true,
-        "divider": false
-      }
-    },
     "background-image-text": {
       "type": "background-image-text",
       "settings": {
@@ -309,7 +297,6 @@
     "promo-grid",
     "featured-collections",
     "promo-grid2",
-    "featured-collection",
     "background-image-text",
     "blog-posts",
     "map"
