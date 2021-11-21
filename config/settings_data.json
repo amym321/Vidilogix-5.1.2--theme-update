@@ -163,31 +163,6 @@
               "container_width": 20
             }
           },
-          "77630127-f486-4b32-bbbe-fb406acf3a57": {
-            "type": "custom",
-            "settings": {
-              "show_footer_title": true,
-              "title": "Custom text",
-              "text": "<p>Add your own custom text here.<\/p>",
-              "container_width": 25
-            }
-          },
-          "1494292487693": {
-            "type": "newsletter",
-            "settings": {
-              "show_footer_title": true,
-              "title": "Sign up and save",
-              "text": "<p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.<\/p>",
-              "container_width": 33
-            }
-          },
-          "1494301487048": {
-            "type": "logo_social",
-            "settings": {
-              "desktop_logo_height": 50,
-              "container_width": 95
-            }
-          },
           "13e6becc-b2e9-43d2-b6c6-60d7d8707474": {
             "type": "menu",
             "settings": {
@@ -196,23 +171,20 @@
               "container_width": 21
             }
           },
-          "c119d9a1-482a-4625-b330-e2b6a7bcbc17": {
+          "e7893142-776a-4fd1-84e3-f24ce50ecd33": {
             "type": "menu",
             "settings": {
-              "show_footer_title": false,
-              "menu": "footer",
-              "container_width": 25
+              "show_footer_title": true,
+              "menu": "company",
+              "container_width": 20
             }
           }
         },
         "block_order": [
           "14b0c785-9327-4129-8594-732c106867bf",
           "1494301487049",
-          "77630127-f486-4b32-bbbe-fb406acf3a57",
-          "1494292487693",
-          "1494301487048",
           "13e6becc-b2e9-43d2-b6c6-60d7d8707474",
-          "c119d9a1-482a-4625-b330-e2b6a7bcbc17"
+          "e7893142-776a-4fd1-84e3-f24ce50ecd33"
         ],
         "settings": {
           "show_locale_selector": false,
