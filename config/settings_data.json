@@ -168,12 +168,23 @@
               "desktop_logo_height": 50,
               "container_width": 95
             }
+          },
+          "14b0c785-9327-4129-8594-732c106867bf": {
+            "type": "custom",
+            "settings": {
+              "show_footer_title": false,
+              "title": "Vidlogix",
+              "image": "shopify:\/\/shop_images\/Vidlogix_Dark_9f6d039f-4109-421f-84c4-b5d3d0f38e74.png",
+              "text": "<p>Welcome to Vidlogix. Your one-stop shop for smart home security.<\/p>",
+              "container_width": 40
+            }
           }
         },
         "block_order": [
           "1494301487049",
           "1494292487693",
-          "1494301487048"
+          "1494301487048",
+          "14b0c785-9327-4129-8594-732c106867bf"
         ],
         "settings": {
           "show_locale_selector": false,
@@ -209,6 +220,21 @@
       },
       "footer-promotions": {
         "type": "footer-promotions",
+        "blocks": {
+          "723abcd3-f6b1-40f0-b362-0400908299da": {
+            "type": "promotion",
+            "settings": {
+              "enable_image": true,
+              "title": "Site-wide promotion",
+              "text": "<p>Use this section to promote content throughout every page of your site. Add images for further impact.<\/p>",
+              "button_label": "Optional button",
+              "button_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "723abcd3-f6b1-40f0-b362-0400908299da"
+        ],
         "settings": {
           "hide_homepage": false,
           "image_size": "wide"
