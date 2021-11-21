@@ -110,12 +110,21 @@
               "link_text": "",
               "link": "shopify:\/\/pages\/shipping"
             }
+          },
+          "f1e24d76-2f27-4282-a406-a30a0e3d8935": {
+            "type": "announcement",
+            "settings": {
+              "text": "Hassle-free 30-day return policy",
+              "link_text": "",
+              "link": "shopify:\/\/pages\/returns"
+            }
           }
         },
         "block_order": [
           "1524770014057",
           "1524770292306",
-          "1524770296206"
+          "1524770296206",
+          "f1e24d76-2f27-4282-a406-a30a0e3d8935"
         ],
         "settings": {
           "main_menu_link_list": "main-menu",
