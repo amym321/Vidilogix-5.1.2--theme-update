@@ -145,12 +145,14 @@
       "footer": {
         "type": "footer",
         "blocks": {
-          "1494301487049": {
-            "type": "menu",
+          "14b0c785-9327-4129-8594-732c106867bf": {
+            "type": "custom",
             "settings": {
               "show_footer_title": false,
-              "menu": "footer",
-              "container_width": 25
+              "title": "Vidlogix",
+              "image": "shopify:\/\/shop_images\/Vidlogix_Dark_9f6d039f-4109-421f-84c4-b5d3d0f38e74.png",
+              "text": "<p>Welcome to Vidlogix. Your one-stop shop for smart home security.<\/p>",
+              "container_width": 40
             }
           },
           "1494292487693": {
@@ -169,22 +171,20 @@
               "container_width": 95
             }
           },
-          "14b0c785-9327-4129-8594-732c106867bf": {
-            "type": "custom",
+          "1494301487049": {
+            "type": "menu",
             "settings": {
-              "show_footer_title": false,
-              "title": "Vidlogix",
-              "image": "shopify:\/\/shop_images\/Vidlogix_Dark_9f6d039f-4109-421f-84c4-b5d3d0f38e74.png",
-              "text": "<p>Welcome to Vidlogix. Your one-stop shop for smart home security.<\/p>",
-              "container_width": 40
+              "show_footer_title": true,
+              "menu": "footer",
+              "container_width": 20
             }
           }
         },
         "block_order": [
-          "1494301487049",
+          "14b0c785-9327-4129-8594-732c106867bf",
           "1494292487693",
           "1494301487048",
-          "14b0c785-9327-4129-8594-732c106867bf"
+          "1494301487049"
         ],
         "settings": {
           "show_locale_selector": false,
