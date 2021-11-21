@@ -252,7 +252,7 @@
     "featured-collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Featured collection",
+        "title": "Best Sellers",
         "home_featured_products": "best-sellers",
         "per_row": 4,
         "rows": 1,
