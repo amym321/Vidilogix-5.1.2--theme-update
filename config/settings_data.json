@@ -98,9 +98,9 @@
           "1524770292306": {
             "type": "announcement",
             "settings": {
-              "text": "Free shipping",
-              "link_text": "On all orders over $100",
-              "link": ""
+              "text": "Free lifetime technical support",
+              "link_text": "",
+              "link": "shopify:\/\/pages\/tech-support"
             }
           },
           "1524770296206": {
