@@ -11484,13 +11484,19 @@ html[dir=rtl] .product-single__meta .rte{
     width:100%;
   }
 
+/*  code change per 4.1.1 customization */
 .product__main-photos{
   position:relative;
-  flex:1 1 auto
+  flex:1 1 auto;
+
+  border: 1px solid var(--colorBorder);
 }
 
+/*  code change per 4.1.1 customization */
 .product__main-photos img{
     display:none;
+
+    padding: 30px;
   }
 
 .product__main-photos .flickity-page-dots{
@@ -11598,9 +11604,10 @@ html[dir=rtl] .product-single__meta .rte{
     overflow-y:scroll
 }
 
-.product__thumb-item{
+/*  code change per 4.1.1 customization */
+/* .product__thumb-item{
   border:2px solid transparent
-}
+} */
 
 .product__thumb-item a.is-active,.product__thumb-item a:focus{
     outline:none
@@ -11638,11 +11645,13 @@ html[dir=rtl] .product-single__meta .rte{
       margin-bottom:0;
     }
 
+/*  code change per 4.1.1 customization */
 .product__thumbs--below .product__thumb-item{
     display:inline-block;
     vertical-align:middle;
     margin-right:8.5px;
-    max-width:80px
+
+    width: 150px;
 }
 
 @media only screen and (min-width:769px){
@@ -11656,11 +11665,14 @@ html[dir=rtl] .product-single__meta .rte{
       margin-right:0;
     }
 
+/*  code change per 4.1.1 customization */
 .product__price{
   color:{{ settings.color_price | default: "#1c1d1d" }};
-  color:var(--colorPrice);
+  /* color:var(--colorPrice); */
+  color:var(--colorTextBody);
   margin-right:5px;
-  font-size:calc(var(--typeBaseSize) + 2px)
+  /* font-size:calc(var(--typeBaseSize) + 2px) */
+  font-size:30px;
 }
 
 .product__price.on-sale{
@@ -11676,21 +11688,38 @@ html[dir=rtl] .product-single__meta .rte{
   margin-top:10px;
 }
 
+/*  code change per 4.1.1 customization */
 .product__price--compare{
+  color: var(--colorPrice);
+
   padding-right:5px;
   display:inline-block;
   text-decoration:line-through;
+
+  font-size: 24px;
 }
 
+/*  code change per 4.1.1 customization */
 .product__price-savings{
   color:{{ settings.color_savings_text | default: "#1c1d1d" }};
   color:var(--colorTextSavings);
   white-space:nowrap;
+
+  font-size: 24px;
 }
 
+/*  code change per 4.1.1 customization */
+.payPal {
+  margin-top: 10px;
+  height: 25px;
+}
+
+/*  code change per 4.1.1 customization */
 .product__quantity label{
     display:block;
     margin-bottom:10px;
+
+    text-align: left;
   }
 
 .product-form-holder--loaded{
@@ -12351,5 +12380,200 @@ html[dir=rtl] .product-single__meta .rte{
 
   .template-giftcard .logo{
     color:#58686f;
+  }
+}
+
+
+
+/*  code change per 4.1.1 customization */
+
+/* ========= Foundry 503 Custom CSS ========= */
+
+/* ========= Product Pages ========= */
+
+#prod-recommended .recommendations-wrapper a.grid-product__link, #prod-recommended .recommendations-wrapper a.grid-product__link:after {
+  border-bottom: none;
+}
+
+@media only screen and (min-width: 769px) {
+  #prod-recommended .recommendations-wrapper {
+    padding: 0px;
+  }
+}
+
+.pp__form-holder {
+  position: fixed;
+  width: 60%;
+  background: var(--colorBody);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+  box-shadow:0 0 150px rgba(0, 0, 0, 0.1);
+  padding: 60px 40px;
+}
+
+.pp__form-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+
+.backorder-notification, .backorder-message, .variant-message {
+  font-size: 14px;
+}
+
+.variant-message {
+  margin-top: 10px;
+}
+
+.backorder-notification {
+  /*margin-top: 20px;*/
+  margin-bottom: 0px;
+  position: relative;
+}
+
+.backorder-notification .backorder-date {
+  font-weight: bold;
+}
+
+.tooltip-image {
+  width: 20px;
+  top: -2px;
+  height: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+[class*=tts] {
+  position: static;
+}
+
+.tts-wrap:before {
+  width: calc(100% - 40px);
+  color: #1A1A1A;
+  border: 1px solid rgb(209,209,209);
+}
+
+@media only screen and (min-width: 769px) {
+  .backorder-notification {
+  	margin-top: 30px;
+  }
+}
+
+/*================== Secondary Page Tabs ==================*/
+
+.secondary-tabs {
+  background: var(--colorFooter);
+}
+
+.secondary-tabs ul {
+  display: flex;
+  list-style: none;
+  margin: 0px;
+  height: 50px;
+  align-items: center;
+}
+
+.secondary-tabs ul li {
+  margin-bottom: 0px;
+  padding-right: 26px;
+}
+
+.secondary-tabs ul li a {
+  transition: border 250ms;
+  border-bottom: 1px solid var(--colorFooter);
+  color: var(--colorFooterText);
+  font-weight: bold;
+}
+
+.secondary-tabs .secondary-tabs__active a, .secondary-tabs ul li a:hover {
+  border-bottom: 2px solid var(--colorBtnPrimary);
+  color: var(--colorBtnPrimaryText);
+}
+
+@media screen and (max-width: 767px) {
+  .secondary-tabs .page-width {
+    padding: 0px;
+  }
+  .secondary-tabs ul {
+    margin: 0px;
+    overflow-x: scroll;
+  }
+  .secondary-tabs ul li {
+    padding: 20px 30px;
+  }
+}
+
+/*================== Custom About / Charity / Careers Templates ==================*/
+
+.custom-acc-template .section-header {
+  margin-bottom: 0px;
+}
+
+.custom-acc-template .feature-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.custom-acc-template .feature-column .feature-row__item, .custom-acc-template .feature-column .feature-row__item--holder, .custom-acc-template .page-width--narrow {
+  max-width: 775px !important;
+}
+
+.custom-acc-template .feature-column .feature-row__item--holder {
+  margin-bottom: 15px !important;
+}
+
+@media screen and (min-width: 768px) {
+
+  #shopify-section-page-about-template .rich-text-block:not(.index-section--flush) {
+    margin: 130px 0;
+  }
+  #shopify-section-page-careers-template .feature-column .feature-row__text {
+    display: flex;
+  }
+
+  #shopify-section-page-careers-template .feature-column .feature-row__text p.h3 {
+    width: 30%;
+  }
+
+  #shopify-section-page-careers-template .feature-column .feature-row__text .featured-row__subtext {
+    width: 70%;
+  }
+}
+
+.unsubscribe-link {
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+.rp-micro-app-dummy-icon-container, #richpanel_messenger_iframe {
+  z-index: 10 !important;
+}
+
+#rp-home {
+  cursor: pointer;
+}
+
+.junip-powered-by-footer {
+  display: none !important;
+}
+
+.default-page h2:not(.section-header__title) {
+  font-size: 20px;
+  line-height: 30px;
+  text-align: left;
+  padding-bottom: 16px;
+  border-bottom: 2px solid var(--colorBorder);
+}
+
+@media screen and (max-width: 768px) {
+  .grid-overflow-wrapper .product-recommendations .grid {
+    flex-wrap: nowrap;
   }
 }
