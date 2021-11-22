@@ -5,6 +5,7 @@
   http://archetypethemes.co
 */
 
+/*  code change per 4.1.1 customization.  added --colorTextSecondary */
 :root{
   --colorBtnPrimary:{{ settings.color_button | default: "#000" }};
   --colorBtnPrimaryLight:{{ settings.color_button | default: "#000" | color_lighten: 10 }};
@@ -15,6 +16,7 @@
   --colorLink:{{ settings.color_body_text | default: "#1c1d1d" }};
 
   --colorTextBody:{{ settings.color_body_text | default: "#1c1d1d" }};
+  --colorTextSecondary:{{ settings.color_body_secondary_text | default: "#1c1d1d" }};
   --colorPrice:{{ settings.color_price | default: "#1c1d1d" }};
   --colorTextSavings:{{ settings.color_savings_text | default: "#1c1d1d" }};
   --colorSaleTag:{{ settings.color_sale_tag | default: "#1c1d1d" }};
@@ -102,13 +104,16 @@
   }
 }
 
+/*  code change per 4.1.1 customization */
 @keyframes overlay-on{
   0%{ opacity:0; }
-  to{ opacity:0.6; }
+  /* to{ opacity:0.6; } */
+  to{ opacity:0.4; }
 }
 
 @keyframes overlay-off{
-  0%{ opacity:0.6; }
+  /* 0%{ opacity:0.6; } */
+  0%{ opacity:0.4; }
   to{ opacity:0; }
 }
 
@@ -253,6 +258,13 @@
     background-color:{{ settings.color_body_bg | default: "#fff" }};
     background-color:var(--colorBody);
     box-shadow:0 5px 5px rgba(0, 0, 0, 0.1)
+}
+
+/*  code change per 4.1.1 customization */
+.cart-bar .flickity-button, .upsell-wrapper .flickity-button {
+  color:{{ settings.color_body_text | default: "#1c1d1d" }};
+  color:var(--colorTextBody);
+  background: none;
 }
 
 .flickity-button:hover{
@@ -990,12 +1002,18 @@ html[dir=rtl] .grid--center .grid__item{
   flex:1 1 100%
 }
 
+/*  code change per 4.1.1 customization */
 [data-center-text=true] .flex-grid{
-    justify-content:center
+    /* justify-content:center */
 }
 
 .flex-grid--center{
   align-items:center;
+}
+
+/*  code change per 4.1.1 customization */
+.flex-grid--start {
+  jutify-content: flex-start;
 }
 
 .flex-grid--gutters{
@@ -1192,12 +1210,15 @@ body,html{
     min-height:0
 }
 
+/*  code change per 4.1.1 customization */
 .hr--large,.hr--medium,.hr--small,hr{
   height:1px;
   border:0;
   border-top:1px solid;
   border-top-color:{{ settings.color_borders | default: "#1c1d1d" }};
   border-top-color:var(--colorBorder);
+
+  width: 100%;
 }
 
 .hr--small{
@@ -1377,9 +1398,11 @@ pre{
   margin:0 0 30px;
 }
 
+/*  code change per 4.1.1 customization */
 .label,label:not(.variant__button-label):not(.text-label){
   text-transform:uppercase;
-  letter-spacing:0.3em;
+  /* letter-spacing:0.3em; */
+  letter-spacing:0.1em;
   font-size:0.8em;
 }
 
@@ -1447,15 +1470,19 @@ label{
   }
 }
 
+/*  code change per 4.1.1 customization */
 .h4,h4{
   text-transform:uppercase;
-  letter-spacing:0.3em;
+  /* letter-spacing:0.3em; */
+  letter-spacing:0.1em;
   font-size:0.8em;
 }
 
+/*  code change per 4.1.1 customization */
 .h5,.h6,h5,h6{
   text-transform:uppercase;
-  letter-spacing:0.3em;
+  /* letter-spacing:0.3em; */
+  letter-spacing:0.1em;
   font-size:0.8em;
   margin-bottom:10px
 }
@@ -1504,10 +1531,12 @@ label{
 }
   }
 
+/*  code change per 4.1.1 customization */
 .ajaxcart__subtotal{
-  text-transform:uppercase;
-  letter-spacing:0.3em;
-  font-size:0.8em;
+  /* text-transform:uppercase; */
+  /* letter-spacing:0.3em; */
+  letter-spacing:0.1em;
+  /* font-size:0.8em; */
 }
 
 .rte .enlarge-text{
@@ -1634,9 +1663,11 @@ th{
   background:transparent
 }
 
+/*  code change per 4.1.1 customization. add color hover */
 .text-link:hover,a:hover{
     color:{{ settings.color_body_text | default: "#1c1d1d" }};
     color:var(--colorTextBody);
+    color: {{ settings.color_body_text_hover }};
   }
 
 .text-link{
@@ -1661,20 +1692,25 @@ button[disabled],html input[disabled]{
   cursor:default;
 }
 
+/*  code change per 4.1.1 customization */
 .btn,.product-reviews .spr-button,.product-reviews .spr-summary-actions a,.rte .btn,.shopify-payment-button .shopify-payment-button__button--unbranded{
   line-height:1.42;
   text-decoration:none;
   text-align:center;
   white-space:normal;
 
-  font-size:calc(var(--typeBaseSize) - 4px);
-  font-size:max(calc(var(--typeBaseSize) - 4px), 13px);
+  /* font-size:calc(var(--typeBaseSize) - 4px);
+  font-size:max(calc(var(--typeBaseSize) - 4px), 13px); */
+  font-size: 16px;
+
   font-weight:700;
   text-transform:uppercase;
-  letter-spacing:0.3em;
+  /* letter-spacing:0.3em; */
+  letter-spacing:0.1em;
 
   display:inline-block;
-  padding:11px 20px;
+  /* padding:11px 20px; */
+  padding:10px 30px;
   margin:0;
   width:auto;
   min-width:90px;
@@ -1689,7 +1725,7 @@ button[disabled],html input[disabled]{
   color:{{ settings.color_button_text | default: "#fff" }};
   color:var(--colorBtnPrimaryText);
   background:{{ settings.color_button | default: "#000" }};
-  background:var(--colorBtnPrimary)
+  background:var(--colorBtnPrimary);
 }
 
 @media only screen and (max-width:768px){
@@ -1805,13 +1841,17 @@ button[disabled],html input[disabled]{
   color:inherit;
 }
 
+/*  code change per 4.1.1 customization */
 .btn--secondary,.rte .btn--secondary{
   color:{{ settings.color_body_text | default: "#1c1d1d" }};
   color:var(--colorTextBody);
   border:1px solid;
   border-color:{{ settings.color_borders | default: "#1c1d1d" }};
-  border-color:var(--colorBorder);
-  background-color:transparent
+  /* border-color:var(--colorBorder); */
+  border-color:var(--colorBtnPrimary);
+  background-color:transparent;
+
+  transition: all ease-in-out 200ms;
 }
 
 [data-button_style=angled] .btn--secondary,[data-button_style=angled] .rte .btn--secondary{
@@ -1849,13 +1889,17 @@ button[disabled],html input[disabled]{
       border-right-color:var(--colorBorder);
     }
 
+/*  code change per 4.1.1 customization */
 .btn--secondary:hover,.rte .btn--secondary:hover{
     color:{{ settings.color_body_text | default: "#1c1d1d" }};
-    color:var(--colorTextBody);
+    /* color:var(--colorTextBody); */
+    color:var(--colorBtnPrimaryText);
     border-color:{{ settings.color_body_text | default: "#1c1d1d" }};
     border-color:var(--colorTextBody);
-    background-color:transparent;
-    transition:border 0.3s ease
+    /* background-color:transparent;
+    transition:border 0.3s ease */
+    border-color:var(--colorBtnPrimary);
+    background-color:var(--colorBtnPrimary);
   }
 
 .btn--secondary:hover:before,.rte .btn--secondary:hover:before{
