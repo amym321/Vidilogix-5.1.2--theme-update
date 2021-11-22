@@ -4851,14 +4851,14 @@ form+.footer__social{
 }
 
 @media only screen and (min-width:769px){
-
+/*  code change per 4.1.1 customization */
 .section-header{
-    margin-bottom:50px
+    margin-bottom:50px;
 }
   }
-
+/*  code change per 4.1.1 customization */
 [data-type_headers_align_text=true] .section-header{
-    text-align:center
+    text-align:center;
 }
 
 .section-header select{
@@ -4870,9 +4870,12 @@ form+.footer__social{
   margin-bottom:0;
 }
 
+/*  code change per 4.1.1 customization */
 .section-header--with-link{
   display:flex;
-  align-items:center
+  align-items:center;
+
+  justify-content: space-between;
 }
 
 .section-header--with-link select{
@@ -4915,12 +4918,26 @@ form+.footer__social{
     position:relative;
   }
 
-.section-header__title{
+/*  code change per 4.1.1 customization */
+/* .section-header__title{ */
+h2.section-header__title{
   margin-bottom:0
 }
 
-.section-header--with-link .section-header__title{
+/*  code change per 4.1.1 customization */
+/* .section-header--with-link .section-header__title{
     flex:1 1 auto
+} */
+
+/*  code change per 4.1.1 customization */
+h2.section-header__title, .h5.section-header__title {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  padding-bottom: 6px;
+  border-bottom: 5px solid var(--colorBtnPrimary);
 }
 
 @media only screen and (min-width:769px){
@@ -5063,9 +5080,10 @@ form+.footer__social{
     border-bottom-color:#fff
 }
 
+/*  code change per 4.1.1 customization */
 .site-nav--has-dropdown .site-nav__link--underline:after{
     border-bottom-color:{{ settings.color_body_text | default: "#1c1d1d" }};
-    border-bottom-color:var(--colorTextBody)
+    border-bottom-color:var(--colorTextBody);
 }
 
 .site-nav__item:hover .site-nav__link--underline:after{
@@ -5080,9 +5098,12 @@ form+.footer__social{
     z-index:7;
   }
 
+  /*  code change per 4.1.1 customization */
 .site-nav--has-dropdown.is-focused>a,.site-nav--has-dropdown:hover>a{
-  color:{{ settings.color_body_text | default: "#1c1d1d" }} !important;
-  color:var(--colorTextBody) !important;
+  //color:{{ settings.color_body_text | default: "#1c1d1d" }} !important;
+  //color:var(--colorTextBody) !important;
+  color: {{ settings.color_body_text_hover }};
+  
   background-color:{{ settings.color_body_bg | default: "#fff" }};
   background-color:var(--colorBody);
   opacity:1;
@@ -5488,9 +5509,10 @@ form+.footer__social{
 }
 
 @media only screen and (min-width:769px){
-
+/*  code change per 4.1.1 customization */
 .template-product .breadcrumb{
-      text-align:left
+      text-align:left;
+      margin-bottom: 20px;
 }
     }
 
@@ -5501,8 +5523,19 @@ form+.footer__social{
 }
   }
 
-.breadcrumb__divider{
+  /*  code change per 4.1.1 customization */
+/* .breadcrumb__divider{
   color:currentColor;
+} */
+
+/*  code change per 4.1.1 customization */
+.breadcrumb a {
+  font-weight: bold;
+}
+
+/*  code change per 4.1.1 customization */
+.breadcrumb__current, .breadcrumb__divider {
+  color: var(--colorTextSecondary);
 }
 
 .megamenu{
@@ -5842,6 +5875,16 @@ form+.footer__social{
   fill:var(--colorTextBody)
 }
 
+/*  code change per 4.1.1 customization */
+@media only screen and (max-width: 1000px) {
+  .js-qty__wrapper {
+    max-width: 100%;
+  }
+  .js-qty__adjust {
+    padding: 0px 10px;
+  }
+}
+
 .js-qty__adjust .icon{
     display:block;
     font-size:8px;
@@ -5979,13 +6022,17 @@ form+.footer__social{
   }
     }
 
+/*  code change per 4.1.1 customization */
 .collapsible-trigger--inline{
-  padding:11px 0 11px 40px
+  padding:11px 0 11px 40px;
 }
 
+/*  code change per 4.1.1 customization */
 .collapsible-trigger--inline .collapsible-trigger__icon{
-    right:auto;
-    left:0;
+    /* right:auto;
+    left:0; */
+    right:0;
+    left:auto;
   }
 
 .collapsible-trigger__icon--circle{
@@ -6059,8 +6106,26 @@ form+.footer__social{
     transition:transform 0.5s cubic-bezier(.25,.46,.45,.94)
 }
 
+/*  code change per 4.1.1 customization */
 .rte.collapsible-content__inner--faq{
   padding-bottom:30px;
+
+  padding-top: 20px;
+}
+
+/*  code change per 4.1.1 customization */
+.faq-section {
+  border-bottom: 1px solid var(--colorBorder);
+}
+
+/*  code change per 4.1.1 customization */
+.faq-section button.collapsible-trigger span {
+  font-weight: bold;
+}
+
+/*  code change per 4.1.1 customization */
+.faq-section button.collapsible-trigger {
+  width: 100%;
 }
 
 .collapsible-trigger[aria-expanded=true] .collapsible-label__closed{
@@ -6267,6 +6332,17 @@ form+.footer__social{
   transform:translateY(150%);
   transition:transform 0.25s;
 }
+
+/*  code change per 4.1.1 customization */
+/* Attempt at IOS Safari 15 fix for Photoswipe */
+.pswp-open-in-ios > * {
+  display: none;
+}
+.pswp-open-in-ios  .pswp.pswp--open {
+  display: block;
+}
+
+
 
 .disclosure{
   position:relative;
@@ -6555,16 +6631,54 @@ input[type=image]{
     text-align:center
 }
 
+/*  code change per 4.1.1 customization */
+#shopify-section-article-template .social-sharing {
+  background: var(--colorFooter);
+  padding: 30px 0;
+  color: var(--colorFooterText);
+  margin-bottom: 60px;
+}
+
+/*  code change per 4.1.1 customization */
+.social-sharing .page-width {
+  align-items: center;
+  display: flex;
+}
+
+/*  code change per 4.1.1 customization */
+.social-sharing .social-sharing__title {
+  text-transform: uppercase:
+  margin-right: 10px;
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+
+/*  code change per 4.1.1 customization */
 .social-sharing .icon{
     height:18px;
     width:18px;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
   }
 
+/*  code change per 4.1.1 customization */
 .social-sharing__link{
   display:inline-block;
-  color:{{ settings.color_body_text | default: "#1c1d1d" }};
+
+  /* color:{{ settings.color_body_text | default: "#1c1d1d" }};
   color:var(--colorTextBody);
-  border-radius:2px;
+  border-radius:2px; */
+  position: relative;
+  color: #fff;
+  border-radius:50%;
+  height: 20px;
+  width: 20px;
+  padding: 20px;
+  background: var(--colorBtnPrimary);
+
   margin:0 18px 0 0;
   text-decoration:none;
   font-weight:400
