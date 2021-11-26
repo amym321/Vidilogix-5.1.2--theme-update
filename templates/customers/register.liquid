@@ -1,3 +1,5 @@
+
+{% comment %} code change per 4.1.1 customization.  modified code {% endcomment %}
 <div class="page-width page-width--tiny page-content">
   <header class="section-header">
     <h1 class="section-header__title">{{ 'customer.register.title' | t }}</h1>
@@ -20,9 +22,8 @@
       <label for="CreatePassword">{{ 'customer.register.password' | t }}</label>
       <input type="password" name="customer[password]" id="CreatePassword" class="input-full{% if form.errors contains 'password' %} error{% endif %}">
 
-      <p>
-        <input type="submit" value="{{ 'customer.register.submit' | t }}" class="btn btn--full">
-      </p>
+      <button type="submit" class="btn btn--full">{{ 'customer.register.submit' | t }}</button>
+
 
     {%- endform -%}
   </div>
