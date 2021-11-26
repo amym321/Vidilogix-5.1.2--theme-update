@@ -53,6 +53,61 @@
         "autoplay_speed": 7
       }
     },
+    "1637960314fb05cbb5": {
+      "type": "collection-brands",
+      "blocks": {
+        "1637960314a0c7a2fe-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "arlo"
+          }
+        },
+        "1637960314a0c7a2fe-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "google"
+          }
+        },
+        "1637960314a0c7a2fe-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "august"
+          }
+        },
+        "4547c7cc-117b-4333-bff8-b00736142791": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "eufy"
+          }
+        },
+        "874cb8c7-f49d-469d-a8ec-225a6d3253ee": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "invid"
+          }
+        },
+        "ef1a8645-c7d8-491f-9e33-472bcccd2f95": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "ring"
+          }
+        }
+      },
+      "block_order": [
+        "1637960314a0c7a2fe-0",
+        "1637960314a0c7a2fe-1",
+        "1637960314a0c7a2fe-2",
+        "4547c7cc-117b-4333-bff8-b00736142791",
+        "874cb8c7-f49d-469d-a8ec-225a6d3253ee",
+        "ef1a8645-c7d8-491f-9e33-472bcccd2f95"
+      ],
+      "settings": {
+        "title": "Featured Brands",
+        "textbit": "All your favorite brands. Smart on their own. Smarter together.",
+        "grid": 3,
+        "more_link": "shopify:\/\/pages\/store-brands"
+      }
+    },
     "16374663436f00eb2c": {
       "type": "background-video-text",
       "settings": {
@@ -186,6 +241,7 @@
   },
   "order": [
     "slideshow",
+    "1637960314fb05cbb5",
     "16374663436f00eb2c",
     "blog-posts",
     "16374606876c4b0894",
