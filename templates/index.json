@@ -53,6 +53,40 @@
         "autoplay_speed": 7
       }
     },
+    "1637960314fb05cbb5": {
+      "type": "collection-brands",
+      "blocks": {
+        "1637960314a0c7a2fe-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "1637960314a0c7a2fe-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "1637960314a0c7a2fe-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "1637960314a0c7a2fe-0",
+        "1637960314a0c7a2fe-1",
+        "1637960314a0c7a2fe-2"
+      ],
+      "settings": {
+        "title": "Featured Brands",
+        "textbit": "All your favorite brands. Smart on their own. Smarter together.",
+        "grid": 3,
+        "more_link": "shopify:\/\/pages\/store-brands"
+      }
+    },
     "16374663436f00eb2c": {
       "type": "background-video-text",
       "settings": {
@@ -186,6 +220,7 @@
   },
   "order": [
     "slideshow",
+    "1637960314fb05cbb5",
     "16374663436f00eb2c",
     "blog-posts",
     "16374606876c4b0894",
