@@ -239,7 +239,67 @@
         "settings": {
           "hide_homepage": false,
           "image_size": "wide"
+        },
+
+        
+        "1617224449f05c2d20": {
+          "type": "collection-brands",
+          "blocks": {
+            "1617224449f05c2d20-0": {
+              "type": "featured_collection",
+              "settings": {
+                "collection": "arlo"
+              }
+            },
+            "1617224449f05c2d20-1": {
+              "type": "featured_collection",
+              "settings": {
+                "collection": "google"
+              }
+            },
+            "1617224449f05c2d20-2": {
+              "type": "featured_collection",
+              "settings": {
+                "collection": "august"
+              }
+            },
+            "f0c80836-b3c7-453c-bd82-c1f3f9810982": {
+              "type": "featured_collection",
+              "settings": {
+                "collection": "eufy"
+              }
+            },
+            "130169e1-39dc-4323-a7c8-0fc74bef07d8": {
+              "type": "featured_collection",
+              "settings": {
+                "collection": "invid"
+              }
+            },
+            "516c112c-d9a3-436f-80cc-5856d09f527d": {
+              "type": "featured_collection",
+              "settings": {
+                "collection": "ring"
+              }
+            }
+          },
+          "block_order": [
+            "1617224449f05c2d20-0",
+            "1617224449f05c2d20-1",
+            "1617224449f05c2d20-2",
+            "f0c80836-b3c7-453c-bd82-c1f3f9810982",
+            "130169e1-39dc-4323-a7c8-0fc74bef07d8",
+            "516c112c-d9a3-436f-80cc-5856d09f527d"
+          ],
+          "settings": {
+            "title": "Featured Brands",
+            "textbit": "All your favorite brands. Smart on their own. Smarter together.",
+            "grid": 3,
+            "more_link": "shopify:\/\/pages\/store-brands"
+          }
         }
+
+
+
       }
     },
     "content_for_index": [
