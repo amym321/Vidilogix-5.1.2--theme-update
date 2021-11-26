@@ -1,3 +1,4 @@
+{% comment %} code change per 4.1.1 customization. added and modified code {% endcomment %}
 {%- assign fixed_aspect_ratio = false -%}
 {% unless image_size == 'natural' %}
   {%- assign fixed_aspect_ratio = true -%}
@@ -81,12 +82,15 @@
         {%- if section.settings.blog_show_excerpt -%}
           <div class="rte article__excerpt">
             {%- if article.excerpt.size > 0 -%}
-              {{ article.excerpt }}
+              {{ article.excerpt | truncatewords: 20 }}
             {%- else -%}
-              {{ article.content | strip_html | truncatewords: 40 }}
+              {{ article.content | strip_html | truncatewords: 20 }}
             {%- endif -%}
           </div>
         {%- endif -%}
+
+        <a href="{{ article.url }}" class="article__link" aria-label="{{ article.title | escape }}">Read More</a>
+
       </div>
     </div>
   </div>
