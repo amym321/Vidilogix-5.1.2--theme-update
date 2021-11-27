@@ -3650,12 +3650,15 @@ svg.icon:not(.icon--full-color) circle,svg.icon:not(.icon--full-color) ellipse,s
 }
 
 @media only screen and (min-width:769px){
-
-.site-footer{
-    padding-top:60px;
-    padding-bottom:20px;
-}
+  .site-footer{
+      padding-top:60px;
+      padding-bottom:20px;
+      background-color:{{ settings.color_footer | default: "#111" }};
+      background-color:var(--colorFooter);
+      color:{{ settings.color_footer_text | default: "#fff" }};
+      color:var(--colorFooterText);
   }
+}
 
 .site-footer .footer__collapsible{
     font-size:calc(var(--typeBaseSize)*0.85);
@@ -3992,7 +3995,7 @@ form+.footer__social{
       width:100%;
     }
 
-.site-footer select{
+.site-footer .faux-select,.site-footer select{
     background-image:url({{ "ico-select-footer.svg" | asset_url | split: '?' | first }});
   }
 
