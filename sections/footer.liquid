@@ -1,3 +1,4 @@
+{% comment %} code change per 4.1.1 customization. added code {% endcomment %}
 {%- liquid
   assign show_selectors = false
   assign currency_selector = false
@@ -89,6 +90,18 @@
       </div>
     {%- endif -%}
 
+    {% comment %} code change per 4.1.1 customization. added code {% endcomment %}
+    {%- if section.settings.show_copyright -%}
+      <p class="footer__small-text">
+        &copy; {{ 'now' | date: '%Y' }} {{ shop.name }}
+        {%- if section.settings.copyright_text != blank -%}
+          {{ section.settings.copyright_text }}
+        {%- endif -%}
+      </p>
+    {%- endif -%}
+
+  </div>
+
     {%- if section.settings.show_payment_icons -%}
       {%- unless shop.enabled_payment_types == empty -%}
         <ul class="inline-list payment-icons footer__section">
@@ -101,6 +114,7 @@
       {%- endunless -%}
     {%- endif -%}
 
+    {% comment %} 
     {%- if section.settings.show_copyright -%}
       <p class="footer__small-text">
         &copy; {{ 'now' | date: '%Y' }} {{ shop.name }}
@@ -111,7 +125,8 @@
     {%- endif -%}
     <p class="footer__small-text">{{ powered_by_link }}</p>
 
-  </div>
+  </div> 
+  {% endcomment %}
 </footer>
 
 {% schema %}
@@ -292,6 +307,62 @@
             "label": "Text",
             "default": "<p>Add your own custom text here.</p>"
           },
+
+          {
+            "type": "checkbox",
+            "id": "show_copyright",
+            "label": "Show copyright",
+            "default": false
+          },
+          {
+            "type": "checkbox",
+            "id": "show_instagram",
+            "label": "Show Instagram",
+            "default": false
+          },
+          {
+            "type": "text",
+            "id": "instagram_text",
+            "label": "Instagram text",
+            "default": "#securitymadesimple"
+          },
+          {
+            "type": "checkbox",
+            "id": "show_facebook",
+            "label": "Show Facebook",
+            "default": false
+          },
+          {
+            "type": "text",
+            "id": "facebook_text",
+            "label": "Facebook text",
+            "default": "@vidlogixhq"
+          },
+          {
+            "type": "checkbox",
+            "id": "show_email",
+            "label": "Show email",
+            "default": false
+          },
+          {
+            "type": "text",
+            "id": "email_text",
+            "label": "Email text",
+            "default": "hello@vidlogix.com"
+          },
+          {
+            "type": "checkbox",
+            "id": "show_phone",
+            "label": "Show phone",
+            "default": false
+          },
+          {
+            "type": "text",
+            "id": "phone_text",
+            "label": "Phone text",
+            "default": "212-431-5086"
+          },
+
           {
             "type": "range",
             "id": "container_width",
