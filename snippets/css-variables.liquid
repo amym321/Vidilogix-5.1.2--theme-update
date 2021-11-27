@@ -1,13 +1,53 @@
+    {% comment %} code change per 4.1.1 customization. added and modified code  {% endcomment %}
+
 {%- style -%}
+
+@font-face {
+  font-family: 'Sofia Pro Italic';
+  src: url("https://cdn.shopify.com/s/files/1/0056/9632/3651/files/sofia_pro_light_italic-webfont.woff2?6513840986351432305") format("woff2"), url("https://cdn.shopify.com/s/files/1/0056/9632/3651/files/sofia_pro_light_italic-webfont.woff?6513840986351432305") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+  @font-face {
+    font-family: 'Sofia Pro';
+    src: url("https://cdn.shopify.com/s/files/1/0056/9632/3651/files/sofia_pro_light-webfont.woff2?6513840986351432305") format("woff2"), url("https://cdn.shopify.com/s/files/1/0056/9632/3651/files/sofia_pro_light-webfont.woff?6513840986351432305") format("woff");
+    font-weight: normal;
+    font-style: normal; }
+  @font-face {
+    font-family: 'Sofia Pro Reg Italic';
+    src: url("https://cdn.shopify.com/s/files/1/0056/9632/3651/files/sofia_pro_medium_italic-webfont.woff2?1289030811618143343") format("woff2"), url("https://cdn.shopify.com/s/files/1/0056/9632/3651/files/sofia_pro_medium_italic-webfont.woff?10503797364640283480") format("woff");
+    font-weight: normal;
+    font-style: normal; }
+  @font-face {
+    font-family: 'Sofia Pro Reg';
+    src: url("https://cdn.shopify.com/s/files/1/0056/9632/3651/files/sofia_pro_medium-webfont.woff2?10503797364640283480") format("woff2"), url("https://cdn.shopify.com/s/files/1/0056/9632/3651/files/sofia_pro_medium-webfont.woff?10503797364640283480") format("woff");
+    font-weight: normal;
+    font-style: normal; }
+  @font-face {
+    font-family: 'Sofia Pro Reg Italic';
+    src: url("https://cdn.shopify.com/s/files/1/0056/9632/3651/files/sofia_pro_semi_bold_italic-webfont.woff2?6513840986351432305") format("woff2"), url("https://cdn.shopify.com/s/files/1/0056/9632/3651/files/sofia_pro_semi_bold_italic-webfont.woff?6513840986351432305") format("woff");
+    font-weight: normal;
+    font-style: normal; }
+  @font-face {
+    font-family: 'Sofia Pro Reg';
+    src: url("https://cdn.shopify.com/s/files/1/0056/9632/3651/files/sofia_pro_semi_bold-webfont.woff2?6513840986351432305") format("woff2"), url("https://cdn.shopify.com/s/files/1/0056/9632/3651/files/sofia_pro_semi_bold-webfont.woff?6513840986351432305") format("woff");
+    font-weight: normal;
+    font-style: normal; }
+
   :root {
-    --typeHeaderPrimary: {{ settings.type_header_font_family.family }};
+    {% comment %}--typeHeaderPrimary: {{ settings.type_header_font_family.family }};{% endcomment %}
+    --typeHeaderPrimary: "Sofia Pro Reg";
+
     --typeHeaderFallback: {{ settings.type_header_font_family.fallback_families }};
     --typeHeaderSize: {{ settings.type_header_base_size | default: '32' | append: 'px' }};
-    --typeHeaderWeight: {{ settings.type_header_font_family.weight }};
+   {% comment %} --typeHeaderWeight: {{ settings.type_header_font_family.weight }}; {% endcomment %}
+    --typeHeaderWeight: normal;
+
     --typeHeaderLineHeight: {{ settings.type_header_line_height | default: 1.4 }};
     --typeHeaderSpacing: {{ settings.type_header_spacing | default: '25' | divided_by: 1000.00 | append: 'em' }};
 
-    --typeBasePrimary:{{ settings.type_base_font_family.family }};
+    {% comment %}--typeBasePrimary:{{ settings.type_base_font_family.family }};{% endcomment %}
+    --typeBasePrimary: "Sofia Pro";
+    
     --typeBaseFallback:{{ settings.type_base_font_family.fallback_families }};
     --typeBaseSize: {{ settings.type_base_size | default: 16 | append: 'px' }};
     --typeBaseWeight: {{ settings.type_base_font_family.weight }};
