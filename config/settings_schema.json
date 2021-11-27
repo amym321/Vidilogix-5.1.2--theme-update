@@ -212,6 +212,18 @@
       }
     ]
   },
+  
+  {
+  "name": "Page Header",
+  "settings": [
+      { "type": "image_picker", "id": "help_image", "label": "Image" },
+      { "type": "text", "id": "help_text_bold", "label": "Bold text", "default": "Need help?" },
+      { "type": "text", "id": "help_text", "label": "Secondary text", "default": "Contact us", "info": "Will not show on mobile devices" },
+      { "type": "checkbox", "id": "button_chat", "label": "Open chat widget", "default": true },
+      { "type": "url", "id": "help_link", "label": "Link to page" }
+    ]
+  },
+
   {
     "name": "Typography",
     "settings": [
