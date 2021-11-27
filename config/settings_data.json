@@ -163,6 +163,15 @@
               "title": "Vidlogix",
               "image": "shopify:\/\/shop_images\/Vidlogix_Dark_9f6d039f-4109-421f-84c4-b5d3d0f38e74.png",
               "text": "<p>Welcome to Vidlogix. Your one-stop shop for smart home security.<\/p>",
+              "show_copyright": false,
+              "show_instagram": false,
+              "instagram_text": "#securitymadesimple",
+              "show_facebook": false,
+              "facebook_text": "@vidlogixhq",
+              "show_email": true,
+              "email_text": "hello@vidlogix.com",
+              "show_phone": true,
+              "phone_text": "(212) 431-5086",
               "container_width": 40
             }
           },
@@ -189,13 +198,33 @@
               "menu": "company",
               "container_width": 20
             }
+          },
+          "b7aab9ae-cc9a-4895-a3a3-8df9003a75a7": {
+            "type": "custom",
+            "disabled": true,
+            "settings": {
+              "show_footer_title": true,
+              "title": "Connect",
+              "text": "",
+              "show_copyright": false,
+              "show_instagram": true,
+              "instagram_text": "#securitymadesimple",
+              "show_facebook": true,
+              "facebook_text": "@vidlogixhq",
+              "show_email": true,
+              "email_text": "hello@vidlogix.com",
+              "show_phone": true,
+              "phone_text": "(212) 431-5086",
+              "container_width": 25
+            }
           }
         },
         "block_order": [
           "14b0c785-9327-4129-8594-732c106867bf",
           "1494301487049",
           "13e6becc-b2e9-43d2-b6c6-60d7d8707474",
-          "e7893142-776a-4fd1-84e3-f24ce50ecd33"
+          "e7893142-776a-4fd1-84e3-f24ce50ecd33",
+          "b7aab9ae-cc9a-4895-a3a3-8df9003a75a7"
         ],
         "settings": {
           "show_locale_selector": false,
