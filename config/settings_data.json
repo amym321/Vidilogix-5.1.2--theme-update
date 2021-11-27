@@ -2,6 +2,10 @@
   "current": {
     "color_body_bg": "#ffffff",
     "color_body_text": "#000000",
+
+    "color_body_text_hover": "#46454d",
+    "color_body_secondary_text": "#838383",
+
     "color_price": "#f6c12f",
     "color_savings_text": "#f6c12f",
     "color_borders": "#f2f2f2",
@@ -52,6 +56,9 @@
     "button_style": "square",
     "icon_weight": "4px",
     "icon_linecaps": "round",
+
+    "protection_product": "vidlogix-product-protection-plans",
+
     "product_save_amount": false,
     "vendor_enable": false,
     "quick_shop_enable": true,
@@ -67,8 +74,15 @@
     "collection_grid_opacity": 10,
     "collection_grid_gutter": false,
     "cart_type": "page",
+
+    "cart_icon": "bag-minimal",
+    "cart_additional_buttons": false,
+
     "cart_notes_enable": false,
     "cart_terms_conditions_enable": false,
+
+    "free_ship_amount": "49.00",
+
     "social_facebook_link": "https:\/\/www.facebook.com\/vidlogixhq\/",
     "social_instagram_link": "https:\/\/www.instagram.com\/vidlogix\/",
     "share_facebook": true,
@@ -86,6 +100,9 @@
     "checkout_accent_color": "#1a1a1a",
     "checkout_button_color": "#1a1a1a",
     "checkout_error_color": "#ff6d6d",
+
+    "cart_bar_compact": false,
+    
     "breadcrumb": false,
     "sections": {
       "header": {
