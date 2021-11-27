@@ -26,6 +26,20 @@
         "label": "Text",
         "default": "#1c1d1d"
       },
+      
+      {
+        "type": "color",
+        "id": "color_body_text_hover",
+        "label": "Hover Text",
+        "default": "#1c1d1d"
+      },
+      {
+        "type": "color",
+        "id": "color_body_secondary_text",
+        "label": "Secondary Text",
+        "default": "#1c1d1d"
+      },
+
       {
         "type": "color",
         "id": "color_price",
@@ -593,7 +607,7 @@
       },
       {
         "type": "checkbox",
-        "id": "vendor_enable",
+        "id": "vendor_grid_enable",
         "label": "Show vendor"
       }
     ]
@@ -882,7 +896,20 @@
         "type": "url",
         "id": "cart_terms_conditions_link",
         "label": "Terms and conditions page"
+      },
+
+      {
+        "type": "header",
+        "content": "Shipping"
+      },
+      {
+        "type": "text",
+        "id": "free_ship_amount",
+        "label": "Free shipping dollar amount",
+        "default": "50.00",
+        "info": "Include the decimal place"
       }
+
     ]
   },
   {
@@ -896,61 +923,61 @@
         "type": "text",
         "id": "social_facebook_link",
         "label": "Facebook",
-        "info": "https://www.facebook.com/shopify"
+        "info": "https:\/\/www.facebook.com\/shopify"
       },
       {
         "type": "text",
         "id": "social_twitter_link",
         "label": "Twitter",
-        "info": "https://twitter.com/shopify"
+        "info": "https:\/\/twitter.com\/shopify"
       },
       {
         "type": "text",
         "id": "social_pinterest_link",
         "label": "Pinterest",
-        "info": "https://www.pinterest.com/shopify"
+        "info": "https:\/\/www.pinterest.com\/shopify"
       },
       {
         "type": "text",
         "id": "social_instagram_link",
         "label": "Instagram",
-        "info": "https://instagram.com/shopify"
+        "info": "https:\/\/instagram.com\/shopify"
       },
       {
         "type": "text",
         "id": "social_snapchat_link",
         "label": "Snapchat",
-        "info": "https://www.snapchat.com/add/shopify"
+        "info": "https:\/\/www.snapchat.com\/add\/shopify"
       },
       {
         "type": "text",
         "id": "social_tiktok_link",
         "label": "TikTok",
-        "info": "https://www.tiktok.com/@shopify"
+        "info": "https:\/\/www.tiktok.com\/@shopify"
       },
       {
         "type": "text",
         "id": "social_tumblr_link",
         "label": "Tumblr",
-        "info": "http://shopify.tumblr.com"
+        "info": "http:\/\/shopify.tumblr.com"
       },
       {
         "type": "text",
         "id": "social_linkedin_link",
         "label": "LinkedIn",
-        "info": "https://www.linkedin.com/in/shopify"
+        "info": "https:\/\/www.linkedin.com\/in\/shopify"
       },
       {
         "type": "text",
         "id": "social_youtube_link",
         "label": "YouTube",
-        "info": "https://www.youtube.com/user/shopify"
+        "info": "https:\/\/www.youtube.com\/user\/shopify"
       },
       {
         "type": "text",
         "id": "social_vimeo_link",
         "label": "Vimeo",
-        "info": "https://vimeo.com/shopify"
+        "info": "https:\/\/vimeo.com\/shopify"
       },
       {
         "type": "header",
@@ -1033,7 +1060,7 @@
         "id": "predictive_search_enabled",
         "label": "Enable predictive search",
         "default": true,
-        "info": "Live search results. Not available in all languages. [Learn more](https://help.shopify.com/en/themes/development/search/predictive-search#general-requirements-and-limitations)"
+        "info": "Live search results. Not available in all languages. [Learn more](https:\/\/help.shopify.com\/en\/themes\/development\/search\/predictive-search#general-requirements-and-limitations)"
       },
       {
         "type": "checkbox",
