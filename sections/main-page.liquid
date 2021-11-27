@@ -1,8 +1,10 @@
+{% comment %} code change per 4.1.1 customization. added/modified {% endcomment %}
+{% render 'page-block-smart-header' %}
 <div class="page-width page-width--narrow page-content">
   {%- render 'breadcrumbs' -%}
-  <header class="section-header">
+  {% comment %}<header class="section-header">
     <h1 class="section-header__title">{{ page.title }}</h1>
-  </header>
+  </header>{% endcomment %}
 
   <div class="rte rte--nomargin">
     {{ page.content }}
