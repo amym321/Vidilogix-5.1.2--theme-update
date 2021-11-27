@@ -4,8 +4,8 @@
     "theme_name": "Impulse",
     "theme_author": "Archetype Themes",
     "theme_version": "5.1.2",
-    "theme_documentation_url": "https://archetypethemes.co/blogs/impulse",
-    "theme_support_url": "https://archetypethemes.co/pages/support#impulse"
+    "theme_documentation_url": "https:\/\/archetypethemes.co\/blogs\/impulse",
+    "theme_support_url": "https:\/\/archetypethemes.co\/pages\/support#impulse"
   },
   {
     "name": "Colors",
@@ -26,7 +26,6 @@
         "label": "Text",
         "default": "#1c1d1d"
       },
-      
       {
         "type": "color",
         "id": "color_body_text_hover",
@@ -39,7 +38,6 @@
         "label": "Secondary Text",
         "default": "#1c1d1d"
       },
-
       {
         "type": "color",
         "id": "color_price",
@@ -226,18 +224,40 @@
       }
     ]
   },
-  
   {
-  "name": "Page Header",
-  "settings": [
-      { "type": "image_picker", "id": "help_image", "label": "Image" },
-      { "type": "text", "id": "help_text_bold", "label": "Bold text", "default": "Need help?" },
-      { "type": "text", "id": "help_text", "label": "Secondary text", "default": "Contact us", "info": "Will not show on mobile devices" },
-      { "type": "checkbox", "id": "button_chat", "label": "Open chat widget", "default": true },
-      { "type": "url", "id": "help_link", "label": "Link to page" }
+    "name": "Page Header",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "help_image",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "help_text_bold",
+        "label": "Bold text",
+        "default": "Need help?"
+      },
+      {
+        "type": "text",
+        "id": "help_text",
+        "label": "Secondary text",
+        "default": "Contact us",
+        "info": "Will not show on mobile devices"
+      },
+      {
+        "type": "checkbox",
+        "id": "button_chat",
+        "label": "Open chat widget",
+        "default": true
+      },
+      {
+        "type": "url",
+        "id": "help_link",
+        "label": "Link to page"
+      }
     ]
   },
-
   {
     "name": "Typography",
     "settings": [
@@ -693,7 +713,7 @@
       },
       {
         "type": "paragraph",
-        "content": "Add reviews by enabling the setting below and installing the [Shopify Product Reviews app](https://apps.shopify.com/product-reviews) and following our [setup guide](https://archetypethemes.co/blogs/support/installing-shopifys-product-reviews-app)"
+        "content": "Add reviews by enabling the setting below and installing the [Shopify Product Reviews app](https:\/\/apps.shopify.com\/product-reviews) and following our [setup guide](https:\/\/archetypethemes.co\/blogs\/support\/installing-shopifys-product-reviews-app)"
       },
       {
         "type": "checkbox",
@@ -897,7 +917,6 @@
         "id": "cart_terms_conditions_link",
         "label": "Terms and conditions page"
       },
-
       {
         "type": "header",
         "content": "Shipping"
@@ -909,7 +928,6 @@
         "default": "50.00",
         "info": "Include the decimal place"
       }
-
     ]
   },
   {
