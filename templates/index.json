@@ -235,8 +235,11 @@
         "163746754725d46185-2"
       ],
       "settings": {
-        "color_background": "#ea1313",
-        "color_text": "#1c1d1d"
+        "color_background": "#ffffff",
+        "color_text": "#1c1d1d",
+        "unsubscribe_text": "Contest Rules",
+        "unsubscribe_url": "shopify:\/\/pages\/contest",
+        "show_divider": false
       }
     }
   },
