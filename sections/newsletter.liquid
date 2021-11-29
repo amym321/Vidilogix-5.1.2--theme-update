@@ -1,3 +1,4 @@
+{% comment %} code change per 4.1.1 customization. added and modified code {% endcomment %}
 {%- style -%}
   .newsletter-{{ section.id }} {
     background-color: {{ section.settings.color_background }};
@@ -9,8 +10,8 @@
   .newsletter-{{ section.id }} .newsletter__input::-ms-input-placeholder { color: {{ section.settings.color_text }}; }
 {%- endstyle -%}
 
-<div class="newsletter-section newsletter-{{ section.id }}{% if section.settings.color_background == settings.color_body_bg %} newsletter-section--with-divider{% endif %}">
-  <div class="page-width text-center">
+<div class="newsletter-section newsletter-{{ section.id }}{% if show_divider %} newsletter-section--with-divider{% endif %}">
+  <div class="page-width page-width--narrow text-center">
     {%- for block in section.blocks -%}
       <div class="theme-block" {{ block.shopify_attributes }}>
         {%- case block.type -%}
@@ -26,6 +27,9 @@
             {%- endif -%}
           {%- when 'form' -%}
             {%- render 'newsletter-form', section_id: section.id, snippet_context: 'section' -%}
+            {%- if section.settings.unsubscribe_url != blank -%}
+              <div class="unsubscribe-link rte"><a href="{{ section.settings.unsubscribe_url }}" target="_blank">{{ section.settings.unsubscribe_text }}</a></div>
+            {%- endif -%}
           {%- when 'share_buttons' -%}
             {%- render 'social-sharing' -%}
         {%- endcase -%}
@@ -37,6 +41,7 @@
 {% schema %}
   {
     "name": "Email signup",
+    "class": "index-section",
     "max_blocks": 6,
     "blocks": [
       {
@@ -93,6 +98,23 @@
         "id": "color_text",
         "label": "Text",
         "default": "#1c1d1d"
+      },
+      {
+        "type": "text",
+        "id": "unsubscribe_text",
+        "label": "Unsubscribe text",
+        "default": "Unsubscribe"
+      },
+      {
+        "type": "url",
+        "id": "unsubscribe_url",
+        "label": "Unsubscribe URL"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_divider",
+        "label": "Show divider",
+        "default": false
       }
     ],
     "presets": [
