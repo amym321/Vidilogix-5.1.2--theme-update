@@ -1,5 +1,31 @@
 {
   "sections": {
+    "1638402140320849a6": {
+      "type": "promo-grid",
+      "blocks": {
+        "9a9f3525-d3f4-4e3e-b463-cd49f39d935f": {
+          "type": "banner",
+          "settings": {
+            "heading": "Banner promotion",
+            "text": "Add the details of your promotion in smaller text",
+            "link": "",
+            "label": "Shop now",
+            "color_tint": "#000000",
+            "color_tint_opacity": 8,
+            "framed": false
+          }
+        }
+      },
+      "block_order": [
+        "9a9f3525-d3f4-4e3e-b463-cd49f39d935f"
+      ],
+      "settings": {
+        "full_width": false,
+        "gutter_size": 20,
+        "space_above": true,
+        "space_below": true
+      }
+    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -246,6 +272,7 @@
     }
   },
   "order": [
+    "1638402140320849a6",
     "main",
     "sub",
     "background-image-text",
