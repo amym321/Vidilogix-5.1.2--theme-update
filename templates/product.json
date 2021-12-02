@@ -6,12 +6,12 @@
         "9a9f3525-d3f4-4e3e-b463-cd49f39d935f": {
           "type": "banner",
           "settings": {
-            "heading": "Banner promotion",
-            "text": "Add the details of your promotion in smaller text",
+            "heading": "",
+            "text": "Free shipping on US orders over $99",
             "link": "",
-            "label": "Shop now",
-            "color_tint": "#000000",
-            "color_tint_opacity": 8,
+            "label": "",
+            "color_tint": "#f6c12f",
+            "color_tint_opacity": 20,
             "framed": false
           }
         }
@@ -20,10 +20,10 @@
         "9a9f3525-d3f4-4e3e-b463-cd49f39d935f"
       ],
       "settings": {
-        "full_width": false,
-        "gutter_size": 20,
-        "space_above": true,
-        "space_below": true
+        "full_width": true,
+        "gutter_size": 0,
+        "space_above": false,
+        "space_below": false
       }
     },
     "main": {
@@ -49,6 +49,7 @@
         },
         "sales_point": {
           "type": "sales_point",
+          "disabled": true,
           "settings": {
             "icon": "globe",
             "text": "Free worldwide shipping"
@@ -58,7 +59,7 @@
           "type": "inventory_status",
           "settings": {
             "inventory_threshold": 10,
-            "inventory_transfers_enable": true
+            "inventory_transfers_enable": false
           }
         },
         "buy_buttons": {
