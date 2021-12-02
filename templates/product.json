@@ -143,22 +143,6 @@
         "parallax": false
       }
     },
-    "text-and-image": {
-      "type": "text-and-image",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/support_tile.jpg",
-        "image_width": 500,
-        "subtitle": "Support",
-        "title": "Support from real (nice) people",
-        "text": "<p>Vidlogix’s customer support team is all around the globe, so we’re always available to point you in the right direction and answer questions.<\/p>",
-        "button_label": "Get Help",
-        "button_link": "",
-        "button_style": "primary",
-        "align_text": "left",
-        "layout": "right",
-        "divider": false
-      }
-    },
     "text-and-image2": {
       "type": "text-and-image",
       "disabled": true,
@@ -274,6 +258,22 @@
         "full_width": false,
         "space_around": true
       }
+    },
+    "text-and-image": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/support_tile.jpg",
+        "image_width": 500,
+        "subtitle": "Support",
+        "title": "Support from real (nice) people",
+        "text": "<p>Vidlogix’s customer support team is all around the globe, so we’re always available to point you in the right direction and answer questions.<\/p>",
+        "button_label": "Get Help",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false
+      }
     }
   },
   "order": [
@@ -281,12 +281,12 @@
     "main",
     "sub",
     "background-image-text",
-    "text-and-image",
     "text-and-image2",
     "testimonials",
     "product-recommendations",
     "recently-viewed",
     "collection-return",
-    "1637459177d4db9b86"
+    "1637459177d4db9b86",
+    "text-and-image"
   ]
 }
