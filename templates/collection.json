@@ -62,6 +62,7 @@
       "blocks": {
         "collection_description": {
           "type": "collection_description",
+          "disabled": true,
           "settings": {
           }
         },
