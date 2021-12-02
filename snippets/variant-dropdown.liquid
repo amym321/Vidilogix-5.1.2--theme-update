@@ -25,7 +25,8 @@
           name="{{ option.name }}"
           class="variant-input"
           data-index="option{{ forloop.index }}">
-          {{ value }}
+          {% if value == 'Black' or value == 'White'%}color:  {% endif %}
+          <b>{{ value }}</b>
         </option>
       {%- endfor -%}
     </select>
