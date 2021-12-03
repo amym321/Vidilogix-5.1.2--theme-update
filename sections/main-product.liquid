@@ -22,6 +22,8 @@
   video_style: section.settings.product_video_style
 -%}
 
+{% include 'graphpath-bundle' %}
+
 {% schema %}
   {
     "name": "Product",
@@ -31,6 +33,30 @@
         "id": "sku_enable",
         "label": "Show SKU"
       },
+
+{
+  "type": "checkbox",
+  "id": "show_policies",
+  "label": "Show policies under cart button",
+  "default": true
+},
+{
+  "type": "header",
+  "content": "Value added service"
+},
+{
+  "type": "text",
+  "id": "value_one",
+  "label": "Value one",
+  "default": "Free shipping on orders of $49"
+},
+{
+  "type": "text",
+  "id": "value_two",
+  "label": "Value two",
+  "default": "Return shipping on us with PayPal"
+},
+
       {
         "type": "header",
         "content": "Media"
