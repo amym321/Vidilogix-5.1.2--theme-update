@@ -62,6 +62,11 @@
             "inventory_transfers_enable": false
           }
         },
+        "a1448bda-730b-4507-8fd1-2b0660b10919": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -102,6 +107,7 @@
         "variant_picker",
         "sales_point",
         "inventory_status",
+        "a1448bda-730b-4507-8fd1-2b0660b10919",
         "buy_buttons",
         "description",
         "tab",
@@ -110,6 +116,9 @@
       ],
       "settings": {
         "sku_enable": true,
+        "show_policies": true,
+        "value_one": "Free shipping on orders of $49",
+        "value_two": "Return shipping on us with PayPal",
         "image_position": "left",
         "image_size": "medium",
         "product_zoom_enable": true,
