@@ -23,7 +23,18 @@
       assign product_image_size = '740x'
   endcase
 
+  if isModal
+    assign product_image_width = 'medium-up--two-fifths'
+    assign product_description_width = 'medium-up--three-fifths'
+    assign product_image_size = '480x'
+  endif
+
   assign product_img_structure = product.featured_media | img_url: '1x1' | replace: '_1x1.', '_{width}x.'
+
+  assign description_base = product.description | split: '<h5>' | first
+  assign description_tabs = product.description | replace_first: description_base, ''
+  assign protection_product = settings.protection_product
+
 -%}
 
 <div id="ProductSection-{{ section_id }}-{{ product.id }}"
@@ -45,6 +56,10 @@
 
   <div class="page-content page-content--product">
     <div class="page-width">
+
+      {%- if settings.show_breadcrumbs and isModal != true -%}
+        {%- render 'breadcrumbs' -%}
+      {%- endif -%}
 
       <div class="grid{% unless image_position == 'left' %} grid--product-images-right{% endunless %}{% if mobile_layout == 'partial' %} grid--product-images--partial{% endif %}">
         {%- if image_position == 'left' -%}
@@ -69,28 +84,14 @@
 
           <div class="product-single__meta">
             <div class="product-block product-block--header">
-              {%- if settings.show_breadcrumbs and isModal != true -%}
-                {%- render 'breadcrumbs' -%}
-              {%- endif -%}
-
-              {%- if settings.vendor_enable -%}
-                <div class="product-single__vendor">
-                  {%- assign vendor_handle = product.vendor | handleize -%}
-                  {%- if collections[vendor_handle] != empty -%}
-                    <a href="{{ routes.collections_url }}/{{ collections[vendor_handle].handle }}">
-                      {{ collections[vendor_handle].title }}
-                    </a>
-                  {%- else -%}
-                    {{ product.vendor | link_to_vendor }}
-                  {%- endif -%}
-                </div>
-              {%- endif -%}
 
               {%- if isModal -%}
-                <p class="h2 product-single__title">
-                  {{ product.title }}
-                </p>
+                <a class="h2 product-single__title" href="{{ product.url }}">{{ product.title }}</a>
               {%- else -%}
+                <div class="product-single__values">
+                  <span>{{ section.settings.value_one }}</span>
+                  <span>{{ section.settings.value_two }}</span>
+                </div>
                 <h1 class="h2 product-single__title">
                   {%- unless product.empty? -%}
                     {{ product.title }}
@@ -209,14 +210,66 @@
                         <span data-unit-price>{{ current_variant.unit_price | money }}</span>/{{ unit_price_base_unit }}
                       </div>
 
-                      {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
-                        <div class="product__policies rte small--text-center">
-                          {%- if shop.taxes_included -%}
-                            {{ 'products.product.include_taxes' | t }}
+
+                                  <!-- PayPal Pay Later Code -->
+                      {% unless isModal %}
+                      <div
+                          class="payPal"
+                          data-pp-message
+                          data-pp-style-layout="text"
+                          data-pp-style-logo-type="inline"
+                          data-pp-style-text-color="black"
+                          data-pp-amount="{{ current_variant.price | money_without_currency }}">
+                      </div>
+                    {% endunless %}
+
+                    {%- if settings.vendor_enable or settings.sku_enable or settings.enable_product_reviews -%}
+
+                    {%- if settings.vendor_enable or settings.sku_enable -%}
+                      <div class="product-single__vendor-sku-reviews">
+                        <div class="product-single__vendor-sku">
+
+                          {%- if settings.vendor_enable -%}
+                            <div class="product-single__vendor">
+                              {%- assign vendor_handle = product.vendor | handleize -%}
+                              {%- if collections[vendor_handle] != empty -%}
+                                <a href="{{ routes.collections_url }}/{{ collections[vendor_handle].handle }}">
+                                  {{ collections[vendor_handle].title }}
+                                </a>
+                              {%- else -%}
+                                {{ product.vendor | link_to_vendor }}
+                              {%- endif -%}
+                            </div>
                           {%- endif -%}
-                          {%- if shop.shipping_policy.body != blank -%}
-                            {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
+
+                          {%- if settings.vendor_enable and settings.sku_enable -%}<span class="divider">|</span>{%- endif -%}
+
+                          {%- if settings.sku_enable -%}
+                            <p id="Sku-{{ section_id }}" class="product-single__sku">
+                              {%- if current_variant.sku -%}
+                                {{ current_variant.sku }}
+                              {%- endif -%}
+                            </p>
+
                           {%- endif -%}
+                          
+                        </div>
+                        {% endif %}
+        
+        
+                        {%- if settings.enable_product_reviews -%}
+        
+                          {% if isModal %}
+                            <div class="product-single__review-link">
+                              {%- liquid render 'junip-product-summary', product: product -%}
+                            </div>
+                          {% else %}
+                            <div class="product-single__review-link animate-scroll">
+                              {%- liquid render 'junip-product-summary', product: product -%}
+                            </div>
+                          {% endif %}                          
+                          
+                            {%- endif -%}
                         </div>
                       {%- endif -%}
                     </div>
@@ -370,6 +423,264 @@
           </div>
         {%- endunless -%}
       </div>
+
+      <!-- ACCORDION STYLES -->
+      {% unless isModal %}
+        <div class="page-width accordion-section">
+
+          <!-- TABBED ACCORDION -->
+
+          {% unless product.metafields.tabbed.hide_tabbed_accordion_section %}
+
+            <div class="accordion opened opened-default" id="tabbed-accordion"><span class="accordion-title">{% if product.metafields.tabbed.accordion_title %}{{ product.metafields.tabbed.accordion_title }}{% else %}Features & Tech Specs{% endif %}</span><span class="icon"></span></div>
+
+            <div class="container">
+              <div class="content">
+                <div>
+                  {% if product.metafields.tabbed.tab_title %}
+                    <ul class="tabs">
+                      {% for value in product.metafields.tabbed.tab_title %}
+                        <li><a class="tab {{ forloop.index0 | plus: 1 }}" href="#{{ product.metafields.tabbed.tab_title[forloop.index0] | handleize }}">{{ product.metafields.tabbed.tab_title[forloop.index0] }}</a></li>
+                      {% endfor %}
+                    </ul>
+                    {% for value in product.metafields.tabbed.tab_title %}
+                      {% if product.metafields.tabbed.tab_column_three[forloop.index0] != blank %}
+                        {% assign column_count = 'col-3' %}
+                      {% elsif product.metafields.tabbed.tab_column_two[forloop.index0] !=blank %}
+                    	  {% assign column_count = 'col-2' %}
+                      {% else %}
+                        {% assign column_count = 'col-1' %}
+                      {% endif %}
+                      <div class="content rte tab tab-{{ forloop.index0 | plus: 1 }} {{ column_count }}" id="{{ product.metafields.tabbed.tab_title[forloop.index0] | handleize }}">
+                          {% if product.metafields.tabbed.tab_column_one[forloop.index0] !=blank %}
+                        	  <div class="column">
+                              {{ product.metafields.tabbed.tab_column_one[forloop.index0] }}
+                            </div>
+                        	{% endif %}
+                          {% if product.metafields.tabbed.tab_column_two[forloop.index0] !=blank %}
+                        	  <div class="column">
+                              {{ product.metafields.tabbed.tab_column_two[forloop.index0] }}
+                            </div>
+                        	{% endif %}
+                          {% if product.metafields.tabbed.tab_column_three[forloop.index0] != blank %}
+                        	  <div class="column">
+                              {{ product.metafields.tabbed.tab_column_three[forloop.index0] }}
+                            </div>
+                        	{% endif %}
+                      </div>
+                  {% endfor %}
+                {% else %}
+                  <div class="product-single__description rte">
+                    {{ description_tabs }}
+                  </div>
+                {% endif %}
+                </div>
+
+              </div>
+            </div>
+            {% endunless %}
+
+          <!-- REPEATABLE BASIC ACCORDION -->
+          {% if product.metafields.basic.accordion_title %}
+            {% for value in product.metafields.basic.accordion_title %}
+              <div class="accordion closed {{ forloop.index0 | plus: 1 }}" id="{{ product.metafields.basic.accordion_title[forloop.index0] | handleize }}"><span class="accordion-title">{{ product.metafields.basic.accordion_title[forloop.index0] }}</span><span class="icon"></span></div>
+              <div class="container">
+                <div class="content accordion__basic rte">
+                  {{ product.metafields.basic.accordion_body[forloop.index0] }}
+                </div>
+              </div>
+            {% endfor %}
+          {% endif %}
+
+          {% assign accessories_exist = false %}
+          {% for tag in product.tags %}
+            {% if tag contains 'v-accessory-'%}
+              {% assign accessories_exist = true %}
+            {% endif %}
+          {% endfor %}
+
+           <!-- ACCESSORIES ACCORDION -->
+          {% if product.metafields.accessories.show_accessories_section and accessories_exist %}
+            <div class="accordion closed accessories" id="accessories"><span class="accordion-title">Accessories</span> <span class="icon"></span></div>
+            <div class="container" id="prod-accessories">
+              <div class="content grid">
+
+                  {% for tag in product.tags %}
+                    {% if tag contains 'v-accessory-'%}
+                      {% assign product_handle = tag | remove: 'v-accessory-' | handle | strip %}
+                      {% assign this_product = all_products[product_handle] %}
+                      {% render 'product-grid-item', product: this_product, grid_item_width: 'small--one-half medium-up--one-quarter' %}
+
+                      {%- if settings.quick_shop_enable -%}
+                        {%- if product.handle != current_product.handle or product.handle != prod.handle -%}
+                          {%- render 'quick-shop-modal', product: this_product -%}
+                        {%- endif -%}
+                      {%- endif -%}
+                    {% endif %}
+                  {% endfor %}
+              </div>
+            </div>
+          {% endif %}
+
+          <!-- VIDLOGIX PROTECTION PLAN ACCORDION -->
+          {% unless product.metafields.protection.hide_protection_plan_section %}
+            <div class="accordion closed protection-plan" id="protection-plan"><span class="accordion-title">{{ shop.metafields.accentuate.protection_plan_title }}</span> <span class="additional-text">{{ shop.metafields.accentuate.protection_plan_subtitle }}</span><span class="icon"></span></div>
+            <div class="container protection-plan">
+
+              {% assign pp_image = shop.metafields.accentuate.protection_plan_image | first %}
+              <img class="protection-plan__image" src="{{ pp_image.cloudinary_src | append: 'w_1240,h_600,c_fill' }}" alt="{{ pp_image.alt }}"/>
+              <div class="content rte">
+                {%- assign prod = all_products[protection_product] -%}
+                {%- assign prod_id = all_products[protection_product].id -%}
+                <div id="ProtectionPlan-4389426856003" data-section-id="4389426856003" data-enable="true" data-product-id="{{ prod.id }}" data-product-handle="{{ prod.handle }}" class="grid-product">
+                  <div data-section-id="4389426856003" data-subsection data-section-type="collection-template">
+                  {{ shop.metafields.accentuate.protection_plan_message }}
+                  <span class="btn protection-plan__btn quick-product__btn js-modal-open-quick-modal-{{ prod.id }}">Add Plan</span>
+                  <a target="_blank" href="/pages/protection-plans" class="more-link">Learn More</a>
+
+                  {%- if prod.options.size > 0 -%}
+                    {%- render 'quick-shop-modal', product: prod -%}
+                  {%- endif -%}
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          {% endunless %}
+
+          <!-- REVIEWS ACCORDION -->
+          {% if settings.enable_product_reviews %}
+            <div class="accordion closed" id="reviews"><span class="accordion-title">Reviews</span>
+              <div class="accordion-review-stars">{%- liquid render 'junip-product-summary', product: product -%}</div>
+              <span class="icon"></span></div>
+            <div class="container">
+              <div class="content">
+                {% liquid render 'junip-product-review', product: product %}
+              </div>
+            </div>
+          {% endif %}
+
+           <!-- RECOMMENDED PRODUCTS ACCORDION -->
+          <div class="accordion opened opened-default recommended-products" id="recommended"><span class="accordion-title">Recommended</span> <span class="icon"></span></div>
+          <div class="container" id="prod-recommended">
+            <div class="content rte">
+              {%- liquid
+                assign recommend_products = true
+
+                if recommendations.products and recommendations.products_count > 0
+                  assign related_collection = recommendations
+                endif
+
+                for tag in product.tags
+                  if tag contains '_related'
+                    assign include_collection_handle = tag | split: '_' | last
+                    assign include_collection = collections[include_collection_handle]
+                    if include_collection != empty and include_collection.products_count > 0
+                      assign related_collection = include_collection
+                      assign recommend_products = false
+                      break
+                    endif
+                  endif
+                endfor
+
+                assign number_of_products = section.settings.related_count
+                assign per_row = number_of_products
+                assign number_of_products_to_fetch = number_of_products | plus: 1
+                case per_row
+                  when 1
+                    assign grid_item_width = ''
+                  when 2
+                    assign grid_item_width = 'medium-up--one-half'
+                  when 3
+                    assign grid_item_width = 'small--one-half medium-up--one-third'
+                  when 4
+                    assign grid_item_width = 'small--one-half medium-up--one-quarter'
+                  when 5
+                    assign grid_item_width = 'small--one-half medium-up--one-fifth'
+                  when 6
+                    assign grid_item_width = 'small--one-half medium-up--one-sixth'
+                endcase
+              -%}
+
+              {%- if section.settings.show_product_recommendations -%}
+                <div
+                  id="Recommendations-{{ product.id }}"
+                  data-section-id="{{ product.id }}"
+                  data-section-type="product-recommendations"
+                  data-enable="{{ recommend_products }}"
+                  data-product-id="{{ product.id }}"
+                  data-url="{{ routes.product_recommendations_url }}"
+                  data-limit="{{ number_of_products_to_fetch }}">
+
+                  <div
+                    data-section-id="{{ product.id }}"
+                    data-subsection
+                    data-section-type="collection-template">
+
+                    <div class="recommendations-wrapper page-width page-width--flush-small">
+
+                      <div class="grid-overflow-wrapper">
+                        {%- if recommend_products -%}
+                          <div class="product-recommendations-placeholder">
+                            {% comment %}
+                              This content is visually hidden and replaced when recommended
+                              products show up
+                            {% endcomment %}
+                            <div class="grid grid--uniform visually-invisible" aria-hidden="true">
+                              {%- render 'product-grid-item', product: product, grid_item_width: grid_item_width -%}
+                            </div>
+                          </div>
+                        {%- endif -%}
+                        {%- if related_collection.products_count > 1 -%}
+                          <div class="product-recommendations">
+
+                            <div class="grid grid--uniform" data-aos="overflow__animation">
+                              {%- liquid
+                                assign current_product = product
+                                assign current_product_found = false
+                                assign related_count = 0
+                              -%}
+
+                              {%- for product in related_collection.products limit: number_of_products_to_fetch -%}
+
+
+                                {%- if product.handle == current_product.handle or product.handle == prod.handle -%}
+                                  {%- assign current_product_found = true -%}
+                                {%- else -%}
+                                  {%- assign related_count = related_count | plus: 1 -%}
+                                  {%- unless related_count > number_of_products -%}
+                                    {%- if forloop.last and current_product_found -%}
+                                      {%- render 'product-grid-item', product: product, grid_item_width: grid_item_width -%}
+                                    {%- else -%}
+                                      {%- render 'product-grid-item', product: product, grid_item_width: grid_item_width -%}
+                                    {%- endif -%}
+                                  {%- endunless -%}
+                                {%- endif -%}
+                              {%- endfor -%}
+                            </div>
+
+                            {%- if settings.quick_shop_enable -%}
+                              {%- for product in related_collection.products limit: number_of_products_to_fetch -%}
+                                {%- if product.handle != current_product.handle or product.handle != prod.handle -%}
+                                  {%- render 'quick-shop-modal', product: product -%}
+                                {%- endif -%}
+                              {%- endfor -%}
+                            {%- endif -%}
+                          </div>
+                        {%- endif -%}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              {%- endif -%}
+
+            </div>
+          </div>
+
+        </div>
+      {% endunless %}
+
     </div>
   </div>
 </div>
