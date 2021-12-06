@@ -101,14 +101,9 @@
                 </h1>
               {%- endif -%}
 
-              {%- if sku_enable -%}
-                <p data-sku class="product-single__sku">
-                  {%- if current_variant.sku -%}
-                    {{ current_variant.sku }}
-                  {%- endif -%}
-                </p>
-              {%- endif -%}
+
             </div>
+            
 
             <div data-product-blocks>
               {%- capture form_id -%}AddToCartForm-{{ section_id }}-{{ product.id }}{%- endcapture -%}
@@ -211,7 +206,7 @@
                       </div>
 
 
-                                  <!-- PayPal Pay Later Code -->
+                      <!-- PayPal Pay Later Code -->
                       {% unless isModal %}
                       <div
                           class="payPal"
@@ -223,9 +218,9 @@
                       </div>
                     {% endunless %}
 
-                    {%- if settings.vendor_enable or settings.sku_enable or settings.enable_product_reviews -%}
+                    {%- if settings.vendor_enable or sku_enable or settings.enable_product_reviews -%}
 
-                    {%- if settings.vendor_enable or settings.sku_enable -%}
+                    {%- if settings.vendor_enable or sku_enable -%}
                       <div class="product-single__vendor-sku-reviews">
                         <div class="product-single__vendor-sku">
 
@@ -242,9 +237,9 @@
                             </div>
                           {%- endif -%}
 
-                          {%- if settings.vendor_enable and settings.sku_enable -%}<span class="divider">|</span>{%- endif -%}
+                          {%- if settings.vendor_enable and sku_enable -%}<span class="divider">|</span>{%- endif -%}
 
-                          {%- if settings.sku_enable -%}
+                          {%- if sku_enable -%}
                             <p id="Sku-{{ section_id }}" class="product-single__sku">
                               {%- if current_variant.sku -%}
                                 {{ current_variant.sku }}
@@ -269,7 +264,7 @@
                             </div>
                           {% endif %}                          
                           
-                            {%- endif -%}
+                          {%- endif -%}
                         </div>
                       {%- endif -%}
                     </div>

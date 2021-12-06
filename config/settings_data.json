@@ -91,7 +91,7 @@
     "checkout_button_color": "#1a1a1a",
     "checkout_error_color": "#ff6d6d",
     "protection_product": "vidlogix-product-protection-plans",
-    "vendor_enable": false,
+    "vendor_enable": true,
     "cart_bar_compact": false,
     "breadcrumb": false,
     "sections": {
