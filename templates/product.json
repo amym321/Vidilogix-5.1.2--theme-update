@@ -115,7 +115,7 @@
         "share"
       ],
       "settings": {
-        "sku_enable": false,
+        "sku_enable": true,
         "show_policies": true,
         "value_one": "Free shipping on orders of $49",
         "value_two": "Return shipping on us with PayPal",
