@@ -26,6 +26,7 @@
           class="variant-input"
           data-index="option{{ forloop.index }}">
           {% if option.name == 'Color' or option.name == 'color' or option.name == 'COLOR'%}Color:  {% endif %}
+          {% if option.name == 'Finish' or option.name == 'finish' or option.name == 'FINISH'%}Finish:  {% endif %}
           {{ value }}
         </option>        
       {%- endfor -%}
