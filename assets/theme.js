@@ -895,6 +895,12 @@ lazySizesConfig.expFactor = 4;
         this._updatePrice(variant);
         this._updateUnitPrice(variant);
         this._updateSKU(variant);
+        // begin code change per 4.1.1 customization
+        this._updatePayPalPrice(variant);
+        this._updateBackstockMessage(variant);
+        this._updateVariantMessage(variant);
+        this._updateVariantDescription(variant);
+        // end code change per 4.1.1 customization
         this.currentVariant = variant;
   
         if (this.enableHistoryState) {
@@ -953,6 +959,71 @@ lazySizesConfig.expFactor = 4;
         }));
       },
   
+      // begin code change per 4.1.1 customization
+      _updatePayPalPrice: function(variant) {
+
+        if (variant.price === this.currentVariant.price && variant.compare_at_price === this.currentVariant.compare_at_price) {
+          return;
+        }
+
+        this.container.dispatchEvent(new CustomEvent('variantPayPalPriceChange', {
+          detail: {
+            variant: variant
+          }
+        }));
+
+      },
+
+      _updateBackstockMessage: function(variant) {
+
+        var backStockDate = $('#bs-' + variant.id);
+        var backStockMessage = $('#bm-' + variant.id);
+
+        if (backStockDate != null) {
+          $('.backorder-notification .backorder-wrapper').hide();
+          $('#bs-' + variant.id).show();
+        } else {
+          $('.backorder-notification .backorder-wrapper').fadeOut();
+        }
+
+        if (backStockMessage != null) {
+          $('.backorder-message .backorder-mes').hide();
+          $('#bm-' + variant.id).show();
+        } else {
+          $('.backorder-message .backorder-mes').fadeOut();
+        }
+
+      },
+
+      _updateVariantMessage: function(variant) {
+
+        var variantMessage = $('#vm-' + variant.id);
+
+        if (variantMessage != null) {
+          $('.variant-message .variant-mes').hide();
+          $('#vm-' + variant.id).show();
+        } else {
+          $('.variant-message .variant-mes').fadeOut();
+        }
+
+      },
+
+      _updateVariantDescription: function(variant) {
+
+        var variantShortDescription = $('#vsd-' + variant.id);
+
+        if (variantShortDescription.length > 0) {
+          $('.variant__desc').hide();
+          $('#vsd-' + variant.id).show();
+          $('.gen__desc').hide();
+        } else {
+          $('.variant__desc').hide();
+          $('.gen__desc').show();
+        }
+
+      },
+      // end code change per 4.1.1 customization
+
       _updateHistoryState: function(variant) {
         if (!history.replaceState || !variant) {
           return;
@@ -1543,6 +1614,10 @@ lazySizesConfig.expFactor = 4;
       qtySelector: '.js-qty__wrapper',
       discounts: '[data-discounts]',
       savings: '[data-savings]',
+      // begin code change per 4.1.1 customization
+      discountTotal: '[data-total-discount]',
+      shipping: '[data-shipping]',
+      // end code change per 4.1.1 customization
       subTotal: '[data-subtotal]',
   
       cartBubble: '.cart-link__bubble',
@@ -1573,6 +1648,9 @@ lazySizesConfig.expFactor = 4;
   
       this.discounts = form.querySelector(selectors.discounts);
       this.savings = form.querySelector(selectors.savings);
+      // begin code change per 4.1.1 customization
+      this.discountTotal = form.querySelector(selectors.discountTotal);
+      // end code change per 4.1.1 customization
       this.subtotal = form.querySelector(selectors.subTotal);
       this.termsCheckbox = form.querySelector(selectors.termsCheckbox);
       this.noteInput = form.querySelector(selectors.cartNote);
@@ -1638,6 +1716,10 @@ lazySizesConfig.expFactor = 4;
   
       buildCart: function() {
         theme.cart.getCartProductMarkup().then(this.cartMarkup.bind(this));
+        // begin code change per 4.1.1 customization
+        theme.cartBar.init();
+        theme.cartUpsell.init();
+        // end code change per 4.1.1 customization
       },
   
       cartMarkup: function(html) {
@@ -1646,9 +1728,16 @@ lazySizesConfig.expFactor = 4;
         var count = parseInt(items.dataset.count);
         var subtotal = items.dataset.cartSubtotal;
         var savings = items.dataset.cartSavings;
-  
-        this.updateCartDiscounts(markup.discounts);
-        this.updateSavings(savings);
+        // begin code change per 4.1.1 customization
+        var discount = items.dataset.cartDiscounts;
+        const freeShippingAmount = items.dataset.freeShipAmount;
+        var priceToFreeShip = items.dataset.priceToFreeShip;
+
+        //this.updateCartDiscounts(markup.discounts);
+        //this.updateSavings(savings);
+        this.updateDiscounts(discount);
+        this.updateShipping(freeShippingAmount, priceToFreeShip);
+        // end code change per 4.1.1 customization
   
         if (count > 0) {
           this.wrapper.classList.remove('is-empty');
@@ -1665,6 +1754,9 @@ lazySizesConfig.expFactor = 4;
         // Update subtotal
         this.subtotal.innerHTML = theme.Currency.formatMoney(subtotal, theme.settings.moneyFormat);
   
+        // begin code change per 4.1.1 customization
+        theme.cartUpsell.init();
+        // end code change per 4.1.1 customization
         this.reInit();
   
         if (window.AOS) { AOS.refreshHard() }
@@ -1681,6 +1773,31 @@ lazySizesConfig.expFactor = 4;
         this.discounts.innerHTML = '';
         this.discounts.append(markup);
       },
+
+      // begin code change per 4.1.1 customization
+      updateShipping: function(price, amount) {
+        var moneyAmount = theme.Currency.formatMoney(amount, theme.settings.moneyFormat);
+        var progressWidth = (price - amount)/price * 100;
+
+        if (amount < 1) {
+          $(".rewards__message").text('Score. Your order qualifies for free US shipping.');
+          $(".rewards-progress-bar").addClass('hide');
+        } else {
+          $(".rewards__message").text('You are '+ moneyAmount +' away from free shipping in the U.S.');
+          $(".rewards-progress-bar").removeClass('hide');
+          $(".rewards-progress").css('width', progressWidth+"%");
+        }
+      },
+
+      updateDiscounts: function(markup) {
+        if (markup === '$0.00') {
+          $('.cart__item-dis').addClass('hide');
+        } else {
+          $('.cart__item-dis').removeClass('hide');
+        }
+        $('.ajaxcart__total-discount').html(markup);
+      },
+      // end code change per 4.1.1 customization
   
       /*============================================================================
         Quantity handling
@@ -1734,6 +1851,37 @@ lazySizesConfig.expFactor = 4;
         this.form.querySelector(selectors.subTotal).innerHTML = theme.Currency.formatMoney(subtotal, theme.settings.moneyFormat);
       },
   
+      // begin code change per 4.1.1 customization
+      updateDiscount(discount) {
+
+        if (discount > 0) {
+          var amount = theme.Currency.formatMoney(discount, theme.settings.moneyFormat);
+          $('.cart__item-dis').removeClass('hide');
+          $('.ajaxcart__total-discount').text(amount);
+        } else if (discount < 1){
+          $('.cart__item-dis').addClass('hide');
+        }
+
+      },
+
+      updateShippingPrice: function(cartTotal) {
+        var shippingPrice = this.form.querySelector(selectors.shipping).dataset.shipping;
+        var amount = shippingPrice - cartTotal;
+        var moneyAmount = theme.Currency.formatMoney(amount, theme.settings.moneyFormat);
+        var progressWidth = (shippingPrice - amount)/shippingPrice * 100;
+
+        if (amount < 0) {
+          $(".rewards__message").text('Score. Your order qualifies for free US shipping.');
+          $(".rewards-progress-bar").addClass('hide');
+        } else {
+          $(".rewards__message").text('You are '+ moneyAmount +' away from free shipping in the U.S.');
+          $(".rewards-progress").css('width', progressWidth+"%");
+          $(".rewards-progress-bar").removeClass('hide');
+        }
+      },
+      // end code change per 4.1.1 customization
+
+      
       updateSavings: function(savings) {
         if (!this.savings) {
           return;
@@ -1750,12 +1898,21 @@ lazySizesConfig.expFactor = 4;
   
       updateCount: function(count) {
         var countEls = document.querySelectorAll('.cart-link__bubble-num');
+        // begin code change per 4.1.1 customization
+        var countNum = document.querySelector('#CartDrawer .drawer__count-');
+        // end code change per 4.1.1 customization
   
         if (countEls.length) {
           countEls.forEach(el => {
             el.innerText = count;
           });
         }
+
+        // begin code change per 4.1.1 customization
+        if (countNum) {
+          countNum.innerText = count;
+        }
+        // end code change per 4.1.1 customization
   
         // show/hide bubble(s)
         var bubbles = document.querySelectorAll(selectors.cartBubble);
@@ -2543,6 +2700,73 @@ lazySizesConfig.expFactor = 4;
   
     return parallax;
   })();
+
+  // begin code change per 4.1.1 customization
+  // Foundry Upsell Cart Function
+  //
+  $('.upsell__add button.upsell__complex').click(function(evt){
+    evt.preventDefault();
+    var id = $(this).data('product-id');
+    var el = $("#prod-" + id);
+    el.remove();
+    $('#CartDrawer').append(el);
+    $(el).css('bottom', '0');
+    var form = $("#prod-" + id + " form");
+    form.formSetup();
+
+  });
+
+  $('.upsell__add button.upsell__simple').click(function(evt){
+    evt.preventDefault();
+
+    var loading;
+
+    if (loading) {
+      return;
+    }
+
+    // Loading indicator on add to cart button
+    $(this).addClass('btn--loading');
+
+    var loading = true;
+    var id = $(this).data('variant-id');
+    var data = "Data: form_type=product&utf8=%E2%9C%93&id=" + id + "&quantity=1";
+
+    fetch(theme.routes.cartAdd, {
+      method: 'POST',
+      body: data,
+      credentials: 'same-origin',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+        'X-Requested-With': 'XMLHttpRequest'
+      }
+    })
+    .then(response => response.json())
+    .then(function(data) {
+      if (data.status === 422) {
+        this.error(data);
+      } else {
+        var product = data;
+        SuccessUpsell(product);
+      }
+
+      loading = false;
+      $(this).removeClass('btn--loading');
+    }.bind(this));
+
+    function SuccessUpsell(product) {
+
+      document.dispatchEvent(new CustomEvent('ajaxProduct:added', {
+        detail: {
+          product: product,
+          //addToCartBtn: this.addToCart
+        }
+      }));
+    }
+
+  });
+  // end code change per 4.1.1 customization
+
   
   if (typeof window.noUiSlider === 'undefined') {
     throw new Error('theme.PriceRange is missing vendor noUiSlider: // =require vendor/nouislider.js');
@@ -2961,6 +3185,10 @@ lazySizesConfig.expFactor = 4;
   theme.initQuickShop = function() {
     var ids = [];
     var products = document.querySelectorAll('.grid-product');
+    // begin code change per 4.1.1 customization
+    //Functionality to show Protection Plan popup on mobile
+    var protectionProduct = document.querySelectorAll('.protection-plan .grid-product');
+    // end code change per 4.1.1 customization
   
     if (!products.length || !theme.settings.quickView) {
       return;
@@ -2969,6 +3197,19 @@ lazySizesConfig.expFactor = 4;
     products.forEach(product => {
       product.addEventListener('mouseover', productMouseover);
     });
+
+    // begin code change per 4.1.1 customization
+    //Added functionality to show Protection Plan popup on mobile
+    if (theme.config.bpSmall) {
+      protectionProduct.forEach(product => {
+        var el = product;
+        var productId = el.dataset.productId;
+        var handle = el.dataset.productHandle;
+        var btn = el.querySelector('.quick-product__btn');
+        theme.preloadProductModal(handle, productId, btn);
+      });
+    }
+    // end code change per 4.1.1 customization
   
     function productMouseover(evt) {
       var el = evt.currentTarget;
@@ -3469,18 +3710,28 @@ lazySizesConfig.expFactor = 4;
   //     - see media.liquid for example of this
   theme.videoModal = function() {
     var youtubePlayer;
-  
+    // begin code change per 4.1.1 customization
+    var vimeoPlayer
+    // end code change per 4.1.1 customization
+
     var videoHolderId = 'VideoHolder';
     var selectors = {
       youtube: 'a[href*="youtube.com/watch"], a[href*="youtu.be/"]',
+      // begin code change per 4.1.1 customization
+      vimeo: 'a[href*="player.vimeo.com/video"]',
+      // end code change per 4.1.1 customization
       mp4Trigger: '.product-video-trigger--mp4',
       mp4Player: '.product-video-mp4-sound'
     };
   
     var youtubeTriggers = document.querySelectorAll(selectors.youtube);
+    // begin code change per 4.1.1 customization
+    var vimeoTriggers = document.querySelectorAll(selectors.vimeo);
+    // end code change per 4.1.1 customization
     var mp4Triggers = document.querySelectorAll(selectors.mp4Trigger);
   
-    if (!youtubeTriggers.length && !mp4Triggers.length) {
+    // begin code change per 4.1.1 customization - add vimeo
+    if (!youtubeTriggers.length && !mp4Triggers.length && !vimeoTriggers.length) {
       return;
     }
   
@@ -3489,7 +3740,13 @@ lazySizesConfig.expFactor = 4;
     if (youtubeTriggers.length) {
       theme.LibraryLoader.load('youtubeSdk');
     }
-  
+    
+    // begin code change per 4.1.1 customization
+    if (vimeoTriggers.length) {
+      theme.LibraryLoader.load('vimeo', window.vimeoApiReady);
+    }
+    // end code change per 4.1.1 customization
+
     var modal = new theme.Modals('VideoModal', 'video-modal', {
       closeOffContentClick: true,
       bodyOpenClass: ['modal-open', 'video-modal-open'],
@@ -3499,6 +3756,12 @@ lazySizesConfig.expFactor = 4;
     youtubeTriggers.forEach(btn => {
       btn.addEventListener('click', triggerYouTubeModal);
     });
+
+    // begin code change per 4.1.1 customization
+    vimeoTriggers.forEach(btn => {
+      btn.addEventListener('click', triggerVimeoModal);
+    });
+    // end code change per 4.1.1 customization
   
     mp4Triggers.forEach(btn => {
       btn.addEventListener('click', triggerMp4Modal);
@@ -3547,6 +3810,24 @@ lazySizesConfig.expFactor = 4;
       videoHolderDiv.querySelector('video').play();
     }
   
+    // begin code change per 4.1.1 customization
+    function triggerVimeoModal(evt) {
+      evt.preventDefault();
+      emptyVideoHolder();
+
+      var videoUrl = evt.currentTarget.getAttribute('href');
+      var regExVimId = videoUrl.match(/(?:www\.|player\.)?vimeo.com\/(?:channels\/(?:\w+\/)?|groups\/(?:[^\/]*)\/videos\/|album\/(?:\d+)\/video\/|video\/|)(\d+)(?:[a-zA-Z0-9_\-]+)?/i);
+
+      var videoId = regExVimId[1];
+      var vimeoFrame = '<iframe src="https://player.vimeo.com/video/'+videoId+'?autoplay=1" frameborder="0" width="100%" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>';
+
+      $(videoHolderDiv).html(vimeoFrame);
+
+      modal.open(evt);
+
+    }
+    // end code change per 4.1.1 customization
+
     function onYoutubeReady(evt) {
       evt.target.unMute();
       evt.target.playVideo();
@@ -3565,6 +3846,9 @@ lazySizesConfig.expFactor = 4;
     function closeVideoModal() {
       if (youtubePlayer && typeof youtubePlayer.destroy === 'function') {
         youtubePlayer.destroy();
+        // begin code change per 4.1.1 customization
+        youtubePlayer = null; // Otherwise other players won't be destroyed if the youtubePlayer is opened first because the variable exhists
+        // end code change per 4.1.1 customization
       } else {
         emptyVideoHolder();
       }
@@ -3574,13 +3858,14 @@ lazySizesConfig.expFactor = 4;
   
 
   theme.announcementBar = (function() {
+    var bar;
+    var flickity;
+    var speed;
     var args = {
       autoPlay: 5000,
       avoidReflow: true,
       cellAlign: theme.config.rtl ? 'right' : 'left'
     };
-    var bar;
-    var flickity;
   
     function init() {
       bar = document.getElementById('AnnouncementSlider');
@@ -3593,6 +3878,14 @@ lazySizesConfig.expFactor = 4;
       if (bar.dataset.blockCount === 1) {
         return;
       }
+
+      // begin code change per 4.1.1 customization
+      speed = parseInt(bar.dataset.speed);
+
+      if (speed > 0) {
+        args.autoPlay = speed;
+      }
+      // begin code change per 4.1.1 customization
   
       if (theme.config.bpSmall || bar.dataset.compact === 'true') {
         initSlider();
@@ -3645,6 +3938,127 @@ lazySizesConfig.expFactor = 4;
       unload: unload
     };
   })();
+
+  // begin code change per 4.1.1 customization
+  theme.cartBar = (function() {
+    var args = {
+      autoPlay: 5000,
+      prevNextButtons: true
+    };
+    var bar;
+    var flickity;
+
+    function init() {
+      bar = document.getElementById('CartSlider');
+      if (!bar) {
+        return;
+      }
+
+      unload();
+
+      if (bar.dataset.blockCount === 1) {
+        return;
+      } else {
+        initSlider();
+      }
+
+
+    }
+
+    function initSlider() {
+      flickity = new theme.Slideshow(bar, args);
+    }
+
+    // Go to slide if selected in the editor
+    function onBlockSelect(id) {
+      var slide = bar.querySelector('#CartSlide-' + id);
+      var index = parseInt(slide.dataset.index);
+
+      if (flickity && typeof flickity.pause === 'function') {
+        flickity.goToSlide(index);
+        flickity.pause();
+      }
+    }
+
+    function onBlockDeselect() {
+      if (flickity && typeof flickity.play === 'function') {
+        flickity.play();
+      }
+    }
+
+    function unload() {
+      if (flickity && typeof flickity.destroy === 'function') {
+        flickity.destroy();
+      }
+    }
+
+    return {
+      init: init,
+      onBlockSelect: onBlockSelect,
+      onBlockDeselect: onBlockDeselect,
+      unload: unload
+    };
+  })();
+
+  theme.cartUpsell = (function() {
+    var args = {
+      prevNextButtons: true
+    };
+    var bar;
+    var flickity;
+
+    function init() {
+      bar = document.getElementById('UpsellSlider');
+      if (!bar) {
+        return;
+      }
+
+      unload();
+
+      if (bar.dataset.blockCount === 1) {
+        return;
+      } else {
+        initSlider();
+      }
+
+
+    }
+
+    function initSlider() {
+      flickity = new theme.Slideshow(bar, args);
+    }
+
+    // Go to slide if selected in the editor
+    function onBlockSelect(id) {
+      var slide = bar.querySelector('#UpsellSlide-' + id);
+      var index = parseInt(slide.dataset.index);
+
+      if (flickity && typeof flickity.pause === 'function') {
+        flickity.goToSlide(index);
+        flickity.pause();
+      }
+    }
+
+    function onBlockDeselect() {
+      if (flickity && typeof flickity.play === 'function') {
+        flickity.play();
+      }
+    }
+
+    function unload() {
+      if (flickity && typeof flickity.destroy === 'function') {
+        flickity.destroy();
+      }
+    }
+
+    return {
+      init: init,
+      onBlockSelect: onBlockSelect,
+      onBlockDeselect: onBlockDeselect,
+      unload: unload
+    };
+  })();
+  // end code change per 4.1.1 customization
   
   theme.customerTemplates = function() {
     checkUrlHash();
@@ -3823,6 +4237,9 @@ lazySizesConfig.expFactor = 4;
       stickyClass: 'site-header--stuck',
       stickyHeaderWrapper: 'StickyHeaderWrap',
       openTransitionClass: 'site-header--opening',
+      // begin code change per 4.1.1 customization
+      closeTransitionClass: 'site-header--closing',
+      // end code change per 4.1.1 customization
       lastScroll: 0
     };
   
@@ -3936,38 +4353,92 @@ lazySizesConfig.expFactor = 4;
       config.lastScroll = window.scrollY;
     }
   
+    // begin code change per 4.1.1 customization
+    var lastScrollTop = 0,
+    delta = 5;
+    // end code change per 4.1.1 customization
+
+
+    // begin code change per 4.1.1 customization - f() modified
     function scrollHandler() {
-      if (window.scrollY > 250) {
+      var tallHeaderHeight = $('#SiteHeader').outerHeight(),
+      headerPadding = parseInt($('.site-header').css('padding-top')) * 2,
+      shortHeaderHeight = $('#SiteHeader .header-item--icons').outerHeight() + headerPadding,
+      quickNavHeight = $('.accordion-quicknav').height(),
+      comboHeight = tallHeaderHeight + quickNavHeight,
+      st = config.lastScroll;
+
+      if ((st < lastScrollTop) && (st >= 300)) {
+        // Scrolling up
         if (config.stickyActive) {
-          return;
+
+        } else {
+
+          config.stickyActive = true;
+
+          siteHeader.classList.remove(config.closeTransitionClass);
+          siteHeader.classList.add(config.stickyClass);
+          if (config.wrapperOverlayed) {
+            wrapper.classList.remove(config.overlayedClass);
+          }
+          // Add open transition class after element is set to fixed
+          // so CSS animation is applied correctly
+          setTimeout(function() {
+            $(".accordion-quicknav").css('top', shortHeaderHeight+'px');
+            siteHeader.classList.add(config.openTransitionClass);
+          }, 50);
         }
-  
-        config.stickyActive = true;
-  
-        siteHeader.classList.add(config.stickyClass);
-        if (config.wrapperOverlayed) {
-          wrapper.classList.remove(config.overlayedClass);
-        }
-  
-        // Add open transition class after element is set to fixed
-        // so CSS animation is applied correctly
-        setTimeout(function() {
-          siteHeader.classList.add(config.openTransitionClass);
-        }, 100);
-      } else {
+      } else if ( st < 300 ) {
+        // Top of page
         if (!config.stickyActive) {
-          return;
+
+        } else {
+          config.stickyActive = false;
+
+          siteHeader.classList.add(config.closeTransitionClass);
+          $(".accordion-quicknav").css('top','-'+ comboHeight + 'px');
+
+          // Remove close transition class after element has animated
+          // so CSS animation is applied correctly
+          setTimeout(function() {
+            siteHeader.classList.remove(config.stickyClass);
+            siteHeader.classList.remove(config.closeTransitionClass);
+            siteHeader.classList.remove(config.openTransitionClass);
+            if (config.wrapperOverlayed) {
+              wrapper.classList.add(config.overlayedClass);
+            }
+          }, 20);
         }
-  
-        config.stickyActive = false;
-  
-        siteHeader.classList.remove(config.openTransitionClass);
-        siteHeader.classList.remove(config.stickyClass);
-        if (config.wrapperOverlayed) {
-          wrapper.classList.add(config.overlayedClass);
+
+      } else {
+
+        // Scroll down
+        $(".accordion-quicknav").css('top','0px');
+
+        if (!config.stickyActive) {
+        } else {
+
+          config.stickyActive = false;
+          siteHeader.classList.add(config.closeTransitionClass);
+
+          // Remove close transition class after element has animated
+          // so CSS animation is applied correctly
+          setTimeout(function() {
+            siteHeader.classList.remove(config.openTransitionClass);
+            siteHeader.classList.remove(config.stickyClass);
+            if (config.wrapperOverlayed) {
+              wrapper.classList.add(config.overlayedClass);
+            }
+          }, 400);
+
         }
+
       }
+
+      lastScrollTop = st;
+
     }
+    // end code change per 4.1.1 customization
   
     function accessibleDropdowns() {
       var hasActiveDropdown = false;
@@ -4908,7 +5379,9 @@ lazySizesConfig.expFactor = 4;
   
       // Open modal if errors or success message exist
       if (container.querySelector('.errors') || container.querySelector('.note--success')) {
-        this.modal.open();
+        // begin code change per 4.1.1 customization - removed
+        //this.modal.open();
+        // end code change per 4.1.1 customization
       }
   
       // Set cookie as opened if success message
@@ -5077,9 +5550,12 @@ lazySizesConfig.expFactor = 4;
           counterEl: false,
           history: false,
           index: index - 1,
-          pinchToClose: false,
+          // begin code change per 4.1.1 customization
+          pinchToClose: true,
+          closeOnVerticalDrag: false,
+          //scaleMode: 'zoom', causing issues on Mobile phones
+          // end code change per 4.1.1 customization
           preloaderEl: false,
-          scaleMode: 'zoom',
           shareEl: false,
           tapToToggleControls: false,
           getThumbBoundsFn: function(index) {
@@ -5092,6 +5568,31 @@ lazySizesConfig.expFactor = 4;
   
         this.gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
   
+        // begin code change per 4.1.1 customization
+        const isIOS = /iPhone|iPad|iPod/i.test(window.navigator.userAgent);
+        if (isIOS) {
+          let initialScrollPos;
+          const themeColorMetaEl = document.querySelector('meta[name=theme-color]');
+          const initialThemeColor = themeColorMetaEl.getAttribute('content');
+
+          this.gallery.listen('afterInit', () => {
+            // Store scroll position to restore it later
+            initialScrollPos = window.scrollY;
+            document.body.classList.add('pswp-open-in-ios');
+            // Add class to body when PhotoSwipe opens
+            // Optionally adjust meta theme-color tag,
+            // it seems bottom bar background is based on it
+            themeColorMetaEl.setAttribute('content', '#fff');
+          });
+
+          this.gallery.listen('destroy', () => {
+            document.body.classList.remove('pswp-open-in-ios');
+            themeColorMetaEl.setAttribute('content', initialThemeColor);
+            //window.scrollTo(0, initialScrollPos);
+          });
+        }
+        // end code change per 4.1.1 customization
+
         this.gallery.init();
         this.gallery.listen('afterChange', this.afterChange.bind(this));
       },
@@ -5109,6 +5610,17 @@ lazySizesConfig.expFactor = 4;
     return Photoswipe;
   })();
   
+  // begin code change per 4.1.1 customization
+  // DAVID FOUNDRY
+  theme.ProtectionPlan = (function() {
+
+    function ProtectionPlan(container) {
+      this.container = container;
+      this.sectionId = container.getAttribute('data-section-id');
+    }
+    return ProtectionPlan;
+  })();
+  // end code change per 4.1.1 customization
   
   theme.Recommendations = (function() {
     var selectors = {
@@ -5969,13 +6481,17 @@ lazySizesConfig.expFactor = 4;
       },
   
       setFilterStickyPosition: function() {
-        var headerHeight = document.querySelector('.site-header').offsetHeight;
-        document.querySelector(selectors.filters).style.top = headerHeight + 10 + 'px';
+        // begin code change per 4.1.1 customization - modified
+        var headerHeight = document.querySelector('#SiteHeader .header-item--links').offsetHeight;
+        document.querySelector(selectors.filters).style.top = headerHeight + 30 + 'px';
+        // end code change per 4.1.1 customization
   
         // Also update top position of sticky sidebar
         var stickySidebar = document.querySelector('.grid__item--sidebar');
         if (stickySidebar) {
-          stickySidebar.style.top = headerHeight + 10 + 'px';
+          // begin code change per 4.1.1 customization - modified
+          stickySidebar.style.top = headerHeight + 30 + 'px';
+          // end code change per 4.1.1 customization
         }
       },
   
@@ -6378,6 +6894,9 @@ lazySizesConfig.expFactor = 4;
         this.container.on('variantChange' + this.settings.namespace, this.updateCartButton.bind(this));
         this.container.on('variantImageChange' + this.settings.namespace, this.updateVariantImage.bind(this));
         this.container.on('variantPriceChange' + this.settings.namespace, this.updatePrice.bind(this));
+        // begin code change per 4.1.1 customization
+        this.container.on('variantPayPalPriceChange' + this.settings.namespace, this.updatePayPalPrice.bind(this));
+        // end code change per 4.1.1 customization
         this.container.on('variantUnitPriceChange' + this.settings.namespace, this.updateUnitPrice.bind(this));
   
         if (this.container.querySelector(this.selectors.sku)) {
@@ -6520,6 +7039,21 @@ lazySizesConfig.expFactor = 4;
           this.container.querySelector(this.selectors.unitWrapper).classList.add(classes.hidden);
         }
       },
+
+      // begin code change per 4.1.1 customization
+      updatePayPalPrice: function(evt) {
+        var variant = evt.detail.variant;
+
+        var updatedPrice = theme.Currency.formatMoney(
+          variant.price,
+          theme.moneyFormat
+        );
+
+        updatedPrice = updatedPrice.replace(/\$/g,'');
+        $('div.payPal').attr('data-pp-amount', updatedPrice);
+
+      },
+      // end code change per 4.1.1 customization
   
       imageSetArguments: function(variant) {
         var variant = variant ? variant : (this.variants ? this.variants.currentVariant : null);
@@ -7566,11 +8100,19 @@ lazySizesConfig.expFactor = 4;
     theme.sections.register('recently-viewed', theme.RecentlyViewed);
     theme.sections.register('newsletter-popup', theme.NewsletterPopup);
     theme.sections.register('collection-header', theme.CollectionHeader);
-    theme.sections.register('collection-template', theme.Collection);
+    // begin code change per 4.1.1 customization
+    theme.sections.register('protection-plan', theme.ProtectionPlan);
+    // end code change per 4.1.1 customization
 
     theme.initGlobals();
-    theme.initQuickShop();
     theme.rteInit();
+
+    // begin code change per 4.1.1 customization
+    // Do not init QuickShop on Product pages so as to avoid duplicate protection plan products from loading in the quick view modal, which happens because the recommendations re-init the QuickShop function. NOTE: If product recommendations are disabled, the protection plan modal will not work!
+    if (!document.body.classList.contains('template-product')) {
+      theme.initQuickShop();
+    }
+    // end code change per 4.1.1 customization
 
     if (document.body.classList.contains('template-cart')) {
       var cartPageForm = document.getElementById('CartPageForm');
