@@ -53,14 +53,6 @@
             "color_swatches": false
           }
         },
-        "sales_point": {
-          "type": "sales_point",
-          "disabled": true,
-          "settings": {
-            "icon": "globe",
-            "text": "Free worldwide shipping"
-          }
-        },
         "inventory_status": {
           "type": "inventory_status",
           "settings": {
@@ -79,29 +71,6 @@
             "show_dynamic_checkout": false,
             "surface_pickup_enable": false
           }
-        },
-        "tab": {
-          "type": "tab",
-          "disabled": true,
-          "settings": {
-            "title": "Shipping information",
-            "content": "<p>Use collapsible tabs for more detailed information that will help customers make a purchasing decision.<\/p><p>Ex: Shipping and return policies, size guides, and other common questions.<\/p>",
-            "page": ""
-          }
-        },
-        "contact": {
-          "type": "contact",
-          "disabled": true,
-          "settings": {
-            "title": "Ask a question",
-            "phone": false
-          }
-        },
-        "share": {
-          "type": "share",
-          "disabled": true,
-          "settings": {
-          }
         }
       },
       "block_order": [
@@ -109,13 +78,9 @@
         "separator",
         "description",
         "variant_picker",
-        "sales_point",
         "inventory_status",
         "a1448bda-730b-4507-8fd1-2b0660b10919",
-        "buy_buttons",
-        "tab",
-        "contact",
-        "share"
+        "buy_buttons"
       ],
       "settings": {
         "sku_enable": true,
