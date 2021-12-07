@@ -120,7 +120,7 @@
       "settings": {
         "sku_enable": true,
         "show_policies": true,
-        "value_one": "Free shipping on orders of $49",
+        "value_one": "Free shipping on orders over $49",
         "value_two": "Return shipping on us with PayPal",
         "image_position": "left",
         "image_size": "medium",
