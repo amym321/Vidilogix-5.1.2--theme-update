@@ -13,6 +13,21 @@
   <link rel="dns-prefetch" href="https://maps.googleapis.com">
   <link rel="dns-prefetch" href="https://maps.gstatic.com">
 
+  <!-- begin code change per 4.1.1 customization -->
+
+  <!-- Disable slide cart app -->
+  <script>window.SLIDECART_DISABLE = true</script>
+
+
+  <!--   Start PayPal Pay Later Script Code -->
+  <script
+    src="https://www.paypal.com/sdk/js?client-id=AUTQyv-Fd2NbgmsX3w5sSfgnw2p6pv7tJkXLNaXeV-OVwp-qwLDz1lrb4-2IHLBPfqs9f11XgRChbln6&components=messages"
+    data-namespace="PayPalSDK">
+  </script>
+  <!--   End PayPal Pay Later Script Code -->  
+
+  <!-- end code change per 4.1.1 customization -->
+
   {%- if settings.favicon != blank -%}
     <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png" />
   {%- endif -%}
@@ -26,7 +41,13 @@
   {%- render 'social-meta-tags' -%}
 
   {%- render 'font-face' -%}
+  <!-- begin code change per 4.1.1 customization -->
+  {{ 'tooltip-min.css' | asset_url | stylesheet_tag }}
+  <!-- end code change per 4.1.1 customization -->
   {{ 'theme.css' | asset_url | stylesheet_tag }}
+  <!-- begin code change per 4.1.1 customization -->
+  {{ 'accordion-products.css' | asset_url | stylesheet_tag }}
+  <!-- end code change per 4.1.1 customization -->
   {%- render 'css-variables' -%}
 
   <script>
@@ -71,6 +92,18 @@
     };
   </script>
 
+  <!-- begin code change per 4.1.1 customization -->
+
+  <!-- starapps_scripts_start -->
+  <!-- This code is automatically managed by StarApps Studio -->
+  <!-- Please contact support@starapps.studio for any help -->
+  {% render "starapps-product-json", product: product, starapps_app: "VIA", starapps_attribute: "sa-product-json" %}
+  <script type="text/javascript" src="https://bcdn.starapps.studio/apps/via/vidilogix/script-1608031801.js?shop={{shop.permanent_domain}}" async></script><script type="text/javascript" src="https://bcdn.starapps.studio/apps/vdk/vidilogix/script-1632955730.js?shop={{shop.permanent_domain}}" async></script>
+
+  <script type="text/javascript" src="https://bcdn.starapps.studio/apps/vtk/vidilogix/script-1632955757.js?shop={{shop.permanent_domain}}" async></script>
+  <!-- starapps_scripts_end -->
+  <!-- end code change per 4.1.1 customization -->
+
   {{ content_for_header }}
 
   <script src="{{ 'vendor-scripts-v10.js' | asset_url | split: '?' | first }}" defer="defer"></script>
@@ -80,7 +113,11 @@
     <link rel="stylesheet" href="{{ 'currency-flags.css' | asset_url | split: '?' | first }}">
   {%- endif -%}
 
-  <script src="{{ 'theme.min.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
+  <!-- begin code change per 4.1.1 customization -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="{{ 'accordion-products.js' | asset_url }}" defer="defer"></script>
+  <!-- end code change per 4.1.1 customization -->
 
   {%- if request.page_type contains 'customers/' -%}
     <script src="{{ 'shopify_common.js' | shopify_asset_url }}" defer="defer"></script>
@@ -108,9 +145,11 @@
 
   {%- section 'newsletter-popup' -%}
 
+  <!-- code change per 4.1.1 customization - Add  'junip-store-key' -->
   {%- liquid
     render 'video-modal'
     render 'photoswipe-template'
+    render 'junip-store-key'
   -%}
 
   {% render 'junip-store-key' %}
