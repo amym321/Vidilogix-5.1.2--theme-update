@@ -237,7 +237,6 @@
     },
     "1637459177d4db9b86": {
       "type": "apps",
-      "disabled": true,
       "blocks": {
         "1e4f3eac-b324-47e9-bef3-5c3f54aac34e": {
           "type": "shopify:\/\/apps\/junip-product-reviews-ugc\/blocks\/junip-product-review\/dc14f5a8-ed15-41b1-ad08-cfba23f9789b",
