@@ -34,7 +34,6 @@
   assign description_base = product.description | split: '<h5>' | first
   assign description_tabs = product.description | replace_first: description_base, ''
   assign protection_product = settings.protection_product
-
 -%}
 
 <div id="ProductSection-{{ section_id }}-{{ product.id }}"
@@ -57,9 +56,11 @@
   <div class="page-content page-content--product">
     <div class="page-width">
 
+      {% comment %} begin code change per 4.1.1 customization {% endcomment %}
       {%- if settings.show_breadcrumbs and isModal != true -%}
         {%- render 'breadcrumbs' -%}
       {%- endif -%}
+      {% comment %} end code change per 4.1.1 customization {% endcomment %}
 
       <div class="grid{% unless image_position == 'left' %} grid--product-images-right{% endunless %}{% if mobile_layout == 'partial' %} grid--product-images--partial{% endif %}">
         {%- if image_position == 'left' -%}
@@ -83,15 +84,20 @@
         <div class="grid__item {{ product_description_width }}">
 
           <div class="product-single__meta">
+            {% comment %} removed 'vendor_handle' code per 4.1.1 customization {% endcomment %}
             <div class="product-block product-block--header">
 
               {%- if isModal -%}
+              {% comment %} begin modified code change per 4.1.1 customization {% endcomment %}
                 <a class="h2 product-single__title" href="{{ product.url }}">{{ product.title }}</a>
+                {% comment %} end code change per 4.1.1 customization {% endcomment %}
               {%- else -%}
+               {% comment %} begin code change per 4.1.1 customization {% endcomment %}
                 <div class="product-single__values">
                   <span>{{ section.settings.value_one }}</span>
                   <span>{{ section.settings.value_two }}</span>
                 </div>
+                 {% comment %} end code change per 4.1.1 customization {% endcomment %}
                 <h1 class="h2 product-single__title">
                   {%- unless product.empty? -%}
                     {{ product.title }}
@@ -112,13 +118,25 @@
                   {%- when '@app' -%}
                     {% render block %}
                   {%- when 'reviews' -%}
-                    <div class="product-block product-block--small">
-                      <a href="#shopify-product-reviews-{{ product.id }}">
-                        <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
-                      </a>
-                    </div>
+
+
+                    {% comment %} removed and added code change per 4.1.1 customization {% endcomment %}
+
+                    {% if isModal %}
+                      <div class="product-single__review-link">
+                        {%- liquid render 'junip-product-summary', product: product -%}
+                      </div>
+                    {% else %}
+                      <div class="product-single__review-link animate-scroll">
+                        {%- liquid render 'junip-product-summary', product: product -%}
+                      </div>
+                    {% endif %}   
+
+             
+                  {% comment %} end code change per 4.1.1 customization {% endcomment %}
+
                   {%- when 'separator' -%}
-                    <div class="product-block"><hr></div>
+                    <div class="product-block"><hr class="hr--small product-single"></div>
                   {%- when 'text' -%}
                     <div class="product-block" {{ block.shopify_attributes }}>
                       {{ block.settings.text }}
@@ -136,18 +154,29 @@
                     <div class="product-block product-block--tab" {{ block.shopify_attributes }}>
                       {%- render 'tab-contact', block: block -%}
                     </div>
+
                   {%- when 'description' -%}
-                    <div class="product-block{% if block.settings.is_tab %} product-block--tab{% endif %}" {{ block.shopify_attributes }}>
-                      {%- assign id = block.id | append: product.id -%}
-                      {%- render 'product-description', id: id, product: product, is_tab: block.settings.is_tab -%}
+                  {% comment %}  removed render 'product-description' per 4.1.1 customization per 4.1.1 {% endcomment %}
+
+                    {% comment %} begin code change per 4.1.1 customization {% endcomment %}
+                    <div class="product-single__description rte">
+                      {% for variant in product.variants %}
+                        {% if variant.metafields.description.variant_description %}
+                          <span class="variant__desc" id=vsd-{{ variant.id }} {% if variant != current_variant %}style="display: none;"{% endif %}>{{ variant.metafields.description.variant_description }}</span>
+                        {% endif %}
+                      {% endfor %}
+                      <span class="gen__desc" {% if current_variant.metafields.description.variant_description %}style="display: none;"{% endif %}>
+                        {{ description_base }}
+                      </span>
                     </div>
+                    {% comment %} end code change per 4.1.1 customization {% endcomment %}
+
                   {%- when 'price' -%}
                     <div class="product-block product-block--price" {{ block.shopify_attributes }}>
                       {%- assign hide_sale_price = true -%}
 
 
 
-                      
                       {%- if product.compare_at_price_max > product.price -%}
                         {%- if current_variant.compare_at_price > current_variant.price -%}
                           {%- assign hide_sale_price = false -%}
@@ -209,7 +238,7 @@
                         <span data-unit-price>{{ current_variant.unit_price | money }}</span>/{{ unit_price_base_unit }}
                       </div>
 
-
+                      {% comment %} begin code change per 4.1.1 customization {% endcomment %}
                       <!-- PayPal Pay Later Code -->
                       {% unless isModal %}
                       <div
@@ -251,24 +280,12 @@
                             </p>
 
                           {%- endif -%}
-                          
+
                         </div>
                         {% endif %}
-        
-        
-                        {%- if settings.enable_product_reviews -%}
-        
-                          {% if isModal %}
-                            <div class="product-single__review-link">
-                              {%- liquid render 'junip-product-summary', product: product -%}
-                            </div>
-                          {% else %}
-                            <div class="product-single__review-link animate-scroll">
-                              {%- liquid render 'junip-product-summary', product: product -%}
-                            </div>
-                          {% endif %}                          
-                          
-                          {%- endif -%}
+
+                          {% comment %} end code change per 4.1.1 customization {% endcomment %}                       
+
                         </div>
                       {%- endif -%}
                     </div>
@@ -343,6 +360,27 @@
                           ></div>
                       {%- endif -%}
                     </div>
+
+                    {% comment %} begin code change per 4.1.1 customization {% endcomment %}
+                    {% unless isModal %}
+                    {%- if section.settings.show_policies -%}
+                      {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
+                        <div class="product__policies rte small--text-center">
+                          <small>
+                            {%- if shop.taxes_included -%}
+                              {{ 'products.product.include_taxes' | t }}
+                            {%- endif -%}
+                            {%- if shop.shipping_policy.body != blank -%}
+                              {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
+                            {%- endif -%}
+                          </small>
+                        </div>
+                      {%- endif -%}
+                    {%- endif -%}
+                  {% endunless %}      
+                  {% comment %} end code change per 4.1.1 customization {% endcomment %}
+
+
                   {%- when 'sales_point' -%}
                     {%- unless block.settings.text == blank -%}
                       <div class="product-block product-block--sales-point" {{ block.shopify_attributes }}>
@@ -400,6 +438,11 @@
                   <div class="placeholder-content" style="min-height: 86px;"></div>
                 </div>
               {%- endfor -%}
+
+              {% comment %} begin code change per 4.1.1 customization {% endcomment %}
+              {%- render 'variant-messaging', product: product, current_variant: current_variant -%}
+              {% comment %} end code change per 4.1.1 customization {% endcomment %}
+
             </div>
           </div>
         </div>
@@ -422,6 +465,8 @@
           </div>
         {%- endunless -%}
       </div>
+
+      {% comment %} begin code change per 4.1.1 customization {% endcomment %}
 
       <!-- ACCORDION STYLES -->
       {% unless isModal %}
@@ -676,6 +721,7 @@
 
             </div>
           </div>
+          {% comment %} end code change per 4.1.1 customization {% endcomment %}
 
         </div>
       {% endunless %}
