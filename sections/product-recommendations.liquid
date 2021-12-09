@@ -1,8 +1,14 @@
+{% comment %}THIS IS THE FILE THAT CONTROLS PROD RECOMMENDATIONS ON THE PDPS{% endcomment %}
+{% comment %} code changes per 4.1.1 customization {% endcomment %}
+
 {%- liquid
   assign recommend_products = true
+  assign recommend_fallback = collections['shop-all']
 
-  if recommendations.products and recommendations.products_count > 0
+  if recommendations.products and recommendations.products_count > 1
     assign related_collection = recommendations
+  else
+    assign related_collection = recommend_fallback
   endif
 
   for tag in product.tags
@@ -33,8 +39,7 @@
     <div
       data-section-id="{{ product.id }}"
       data-subsection
-      data-section-type="collection-template"
-      class="index-section">
+      data-section-type="collection-template">
       <div class="page-width">
         <header class="section-header">
           <h3 class="section-header__title">
@@ -43,7 +48,7 @@
         </header>
       </div>
 
-      <div class="page-width page-width--flush-small">
+      <div class="recommendations-wrapper page-width page-width--flush-small">
         <div class="grid-overflow-wrapper">
           {%- if recommend_products -%}
             <div class="product-recommendations-placeholder">
@@ -73,7 +78,7 @@
               endcase
             -%}
             <div class="product-recommendations">
-              <div class="grid grid--uniform" data-aos="overflow__animation">
+              <div class="grid flex-grid grid--uniform" data-aos="overflow__animation">
                 {%- for product in related_collection.products limit: number_of_products -%}
                   {%- render 'product-grid-item', product: product, grid_item_width: grid_item_width -%}
                 {%- endfor -%}

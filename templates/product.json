@@ -86,6 +86,9 @@
       "settings": {
         "sku_enable": true,
         "show_policies": false,
+        "show_product_recommendations": true,
+        "product_recommendations_heading": "",
+        "related_count": 4,
         "value_one": "Free shipping on orders over $49",
         "value_two": "Return shipping on us with PayPal",
         "image_position": "left",
