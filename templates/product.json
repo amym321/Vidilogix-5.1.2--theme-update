@@ -172,9 +172,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/support_tile.jpg",
         "image_width": 500,
-
-        "full_width": true,
-
+        "full_width": false,
         "subtitle": "Support",
         "title": "Support from real (nice) people",
         "text": "<p>Vidlogix’s customer support team is all around the globe, so we’re always available to point you in the right direction and answer questions.<\/p>",
@@ -182,11 +180,9 @@
         "button_link": "",
         "button_style": "primary",
         "align_text": "left",
-
         "button_chat": true,
         "background_color": "#57545d",
         "text_color": "#ffffff",
-
         "layout": "right",
         "divider": false
       }
