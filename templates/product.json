@@ -172,6 +172,9 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/support_tile.jpg",
         "image_width": 500,
+
+        "full_width": true,
+
         "subtitle": "Support",
         "title": "Support from real (nice) people",
         "text": "<p>Vidlogix’s customer support team is all around the globe, so we’re always available to point you in the right direction and answer questions.<\/p>",
