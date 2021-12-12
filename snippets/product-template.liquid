@@ -286,14 +286,39 @@
                         </div>
                       {%- endif -%}
                     </div>
+
                   {%- when 'quantity_selector' -%}
-                    <div class="product-block" {{ block.shopify_attributes }}>
-                      <div class="product__quantity">
-                        {% assign qty_id = section_id | append: product.id %}
-                        <label for="Quantity-{{ qty_id }}">{{ 'products.product.quantity' | t }}</label>
-                        {%- render 'quantity-input', form_id: form_id, id: qty_id, qty: 1, min: 1 -%}
+                    <div class="product__quantity-cart">
+                      <div class="product-block product__quantity--dropdown" {{ block.shopify_attributes }}>
+                        <div class="product__quantity">
+                          {% assign qty_id = section_id | append: product.id %}
+                          <label for="Quantity-{{ qty_id }}">{{ 'products.product.quantity' | t }}</label>
+                          {%- render 'quantity-input', form_id: form_id, id: qty_id, qty: 1, min: 1 -%}
+                        </div>
+                      </div>
+
+                    {%- when 'buy_buttons' -%}
+                      <div class="product-block buy-width" {{ block.shopify_attributes }}>
+                        {%- unless product.empty? -%}
+                            <div class="product-block ">
+                              {%- render 'product-form',
+                                form_id: form_id,
+                                product: product,
+                                show_dynamic_checkout: block.settings.show_dynamic_checkout,
+                                current_variant: current_variant
+                              -%}
+                            </div>
+                        {%- endunless -%}
+
+                        {%- if block.settings.surface_pickup_enable -%}
+                          <div data-store-availability-holder
+                            data-product-name="{{ product.title | escape }}"
+                            data-base-url="{{ shop.url }}{{ routes.root_url }}"
+                            ></div>
+                        {%- endif -%}
                       </div>
                     </div>
+                    
                   {%- when 'variant_picker' -%}
                     <div class="product-block" {{ block.shopify_attributes }}>
                       {%- unless product.has_only_default_variant -%}
@@ -337,26 +362,7 @@
                         {%- endfor -%}
                       {%- endunless -%}
                     </div>
-                  {%- when 'buy_buttons' -%}
-                    <div class="product-block" {{ block.shopify_attributes }}>
-                      {%- unless product.empty? -%}
-                        <div class="product-block">
-                          {%- render 'product-form',
-                            form_id: form_id,
-                            product: product,
-                            show_dynamic_checkout: block.settings.show_dynamic_checkout,
-                            current_variant: current_variant
-                          -%}
-                        </div>
-                      {%- endunless -%}
 
-                      {%- if block.settings.surface_pickup_enable -%}
-                        <div data-store-availability-holder
-                          data-product-name="{{ product.title | escape }}"
-                          data-base-url="{{ shop.url }}{{ routes.root_url }}"
-                          ></div>
-                      {%- endif -%}
-                    </div>
 
                     {% comment %} begin code change per 4.1.1 customization {% endcomment %}
                     {% unless isModal %}

@@ -12579,6 +12579,41 @@ html[dir=rtl] .product-single__meta .rte{
 /***** code added - am ******/
 /****************************/
 
-.product-block {
+
+/* PDP title margin */
+.product-block--header {
   margin-bottom: 0px;
+}
+
+/* PDP qty & buy button display */
+.product__quantity {
+  width: 120px
+}
+
+.product__quantity--dropdown{
+  display:inline-block;
+}
+
+.display-flex {
+  display:flex;
+}
+
+.buy-width {
+  width: calc(100% - 120px);
+  justify-content:flex-end;
+  margin-bottom:0px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .product__quantity {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  .buy-width {
+    width: 100%;
+  }
+  .product__quantity--dropdown {
+    width: 100%;
+  }  
 }
