@@ -281,6 +281,21 @@
                         </div>
                         {% endif %}
 
+
+                        {%- if settings.enable_product_reviews -%}
+
+                          {% if isModal %}
+                            <div class="product-single__review-link">
+                              {%- liquid render 'junip-product-summary', product: product -%}
+                            </div>
+                          {% else %}
+                            <div class="product-single__review-link animate-scroll">
+                              {%- liquid render 'junip-product-summary', product: product -%}
+                            </div>
+                          {% endif %}
+        
+                        {%- endif -%}
+
                           {% comment %} end code change per 4.1.1 customization {% endcomment %}                       
 
                         </div>
