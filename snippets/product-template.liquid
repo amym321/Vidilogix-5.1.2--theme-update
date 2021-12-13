@@ -136,7 +136,7 @@
                   {% comment %} end code change per 4.1.1 customization {% endcomment %}
 
                   {%- when 'separator' -%}
-                    <div class="product-block"><hr class="hr--small product-single"></div>
+                    <div class="product-block block-no-margin"><hr class="hr--small product-single"></div>
                   {%- when 'text' -%}
                     <div class="product-block" {{ block.shopify_attributes }}>
                       {{ block.settings.text }}
@@ -172,7 +172,7 @@
                     {% comment %} end code change per 4.1.1 customization {% endcomment %}
 
                   {%- when 'price' -%}
-                    <div class="product-block product-block--price" {{ block.shopify_attributes }}>
+                    <div class="product-block product-block--price block-no-margin" {{ block.shopify_attributes }}>
                       {%- assign hide_sale_price = true -%}
                       <span data-product-price
                         class="product__price{% if current_variant.compare_at_price > current_variant.price %} on-sale{% endif %}">
@@ -318,7 +318,7 @@
                         {%- endif -%}
                       </div>
                     </div>
-                    
+
                   {%- when 'variant_picker' -%}
                     <div class="product-block" {{ block.shopify_attributes }}>
                       {%- unless product.has_only_default_variant -%}
