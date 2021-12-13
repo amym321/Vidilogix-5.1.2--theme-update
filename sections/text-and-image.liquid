@@ -8,25 +8,24 @@
   endif
 -%}
 
-<div class="{% if section.settings.spacing %}index-section {% endif %}block-{{ block.id }}">
+<div class="{% if section.settings.spacing %}index-section {% endif %} section-{{ section.id }}">
 
   <div class="page-width feature-row-wrapper">
     {%- capture image_layout -%}
       <div class="feature-row__item{% if overlap_images %} feature-row__item--overlap-images{% endif %}" style="max-width: {{ section.settings.image_width }}px" data-aos>
+        <div class="feature-row__item--holder" {% if section.settings.image_bottom_margin %}style="margin-bottom: {{ section.settings.title_bottom_margin }}px !important;"{% endif %}>
           {%- if section.settings.image != blank -%}
-            <div>
-              {%- if section.settings.button_label != blank and section.settings.button_link != blank -%}<a href="{{ section.settings.button_link }}">{%- endif -%}
-                <div class="image-wrap{% if section.settings.layout == 'top' %} image--top{% elsif section.settings.layout == 'bottom' %} image--bottom{% else %} image--side{% endif %}">
-                  {%- assign img_url = section.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-                  <img class="feature-row__image lazyload"
-                    data-src="{{ img_url }}"
-                    data-widths="[180, 360, 540, 750, 900, 1080]"
-                    data-aspectratio="{{ section.settings.image.aspect_ratio }}"
-                    data-sizes="auto"
-                    alt="{{ section.settings.image.alt }}">
-                </div>
-              {%- if section.settings.button_label != blank and section.settings.button_link != blank -%}</a>{%- endif -%}
-            </div>
+            {%- if section.settings.button_label != blank and section.settings.button_link != blank -%}<a href="{{ section.settings.button_link }}">{%- endif -%}
+              <div class="image-wrap{% if section.settings.layout == 'top' %} image--top{% elsif section.settings.layout == 'bottom' %} image--bottom{% else %} image--side{% endif %}">
+                {%- assign img_url = section.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                <img class="feature-row__image lazyload"
+                  data-src="{{ img_url }}"
+                  data-widths="[180, 360, 540, 750, 900, 1080]"
+                  data-aspectratio="{{ section.settings.image.aspect_ratio }}"
+                  data-sizes="auto"
+                  alt="{{ section.settings.image.alt }}">
+              </div>
+            {%- if section.settings.button_label != blank and section.settings.button_link != blank -%}</a>{%- endif -%}
           {%- endif -%}
           {%- if section.settings.image2 != blank -%}
             <div>
@@ -55,6 +54,7 @@
               </div>
             </div>
           {%- endif -%}
+        </div>
       </div>
     {%- endcapture -%}
 
@@ -63,7 +63,7 @@
         {{ image_layout }}
       {%- endif -%}
 
-      <div class="feature-row__item feature-row__text feature-row__text--{{ section.settings.layout }} text-{{ section.settings.align_text }}" data-aos>
+      <div class="feature-row__item feature-row__text feature-row__text--{{ section.settings.layout }}" data-aos>
         {%- if section.settings.subtitle != blank -%}
           <div class="subheading appear-delay{% cycle '','-1','-2','-3','-4' %} h5 section-header__title{% if section.settings.center_title %} text-center{% endif %}">{{ section.settings.subtitle }}</div>
         {%- endif -%}
@@ -112,7 +112,7 @@
 
 {% style %}
   {% if section.settings.background_color %}
-    .block-{{ block.id }} {
+    .section-{{ section.id }} {
       background-color: {{ section.settings.background_color }};
       margin-bottom: 0px;
       {% if section.settings.natural_image_height %}
@@ -125,21 +125,21 @@
   {% endif %}
 
   {% if section.settings.background_color and section.settings.layout == 'bottom' %}
-    .custom-acc-template .block-{{ block.id }} {
+    .custom-acc-template .section-{{ section.id }} {
       padding: 130px 0 140px;
     }
   {% endif %}
 
   {% if section.settings.full_width %}
     @media screen and (min-width: 768px) {
-      .block-{{ block.id }} {
+      .section-{{ section.id }} {
         position: relative;
         overflow: hidden;
       }
-      .block-{{ block.id }} .feature-row {
+      .section-{{ section.id }} .feature-row {
         min-height: 400px;
       }
-      .block-{{ block.id }} .feature-row__item .feature-row__item--holder {
+      .section-{{ section.id }} .feature-row__item .feature-row__item--holder {
         width: 50%;
         height: 100%;
         position: absolute;
@@ -151,37 +151,37 @@
           right: 0;
         {% endif %}
       }
-      .block-{{ block.id }} .feature-row__item .feature-row__item--holder .image-wrap {
+      .section-{{ section.id }} .feature-row__item .feature-row__item--holder .image-wrap {
         height: 100%;
       }
-      .block-{{ block.id }} .feature-row__item .feature-row__item--holder .feature-row__image {
+      .section-{{ section.id }} .feature-row__item .feature-row__item--holder .feature-row__image {
         height: 100%;
         object-fit: cover;
       }
     }
   {% else %}
-    .block-{{ block.id }} .feature-row__item .feature-row__item--holder .image-wrap {
+    .section-{{ section.id }} .feature-row__item .feature-row__item--holder .image-wrap {
       height: 0;
-      padding-bottom: {{ 100 | divided_by section.settings.image.aspect_ratio }}%;
+      padding-bottom: {{ 100 | divided_by: section.settings.image.aspect_ratio }}%;
     }
-    .block-{{ block.id }} .feature-row__item .feature-row__item--holder {
+    .section-{{ section.id }} .feature-row__item .feature-row__item--holder {
       margin: 0 auto;
       max-width: {{ section.settings.image_width }}px;
     }
   {% endif %}
 
   {% if section.settings.layout == 'bottom' %}
-    .block-{{ block.id }} .feature-row__item .feature-row__item--holder {
+    .section-{{ section.id }} .feature-row__item .feature-row__item--holder {
       margin-top: 25px;
     }
   {% endif %}
 
-  .block-{{ block.id }} {
+  .section-{{ section.id }} {
     color: {{ section.settings.text_color }};
   }
 
   @media screen and (max-width: 767px) {
-    .block-{{ block.id }} {
+    .section-{{ section.id }} {
       padding: 50px 0;
     }
 
