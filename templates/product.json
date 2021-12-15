@@ -113,7 +113,7 @@
       "settings": {
         "show_product_recommendations": true,
         "product_recommendations_heading": "reco heading",
-        "related_count": 2
+        "related_count": 4
       }
     },
     "recently-viewed": {
