@@ -112,7 +112,7 @@
       "type": "product-recommendations",
       "settings": {
         "show_product_recommendations": true,
-        "product_recommendations_heading": "reco heading",
+        "product_recommendations_heading": "",
         "related_count": 4
       }
     },
