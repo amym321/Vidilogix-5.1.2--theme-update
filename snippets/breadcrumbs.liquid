@@ -19,6 +19,8 @@
         {% endif %}
       {% endif %}
       <span class="breadcrumb__divider" aria-hidden="true">/</span>
+      {% comment %} code change per 4.1.1 customization. add line {% endcomment %}
+      <span class="breadcrumb__current">{{ product.title }}</span>
 
     {% elsif template.name == 'collection' and collection.handle %}
       {% if settings.show_breadcrumbs_collection_link %}
@@ -27,6 +29,8 @@
       {% endif %}
 
       <span class="breadcrumb__divider" aria-hidden="true">/</span>
+      {% comment %} code change per 4.1.1 customization. add line {% endcomment %}
+      <span class="breadcrumb__current">{{ collection.title }}</span>
 
       {% if current_tags %}
 
@@ -67,7 +71,8 @@
     {% elsif template.name == 'page' %}
 
       <span class="breadcrumb__divider" aria-hidden="true">/</span>
-      <span>{{ page.title }}</span>
+      {% comment %} code change per 4.1.1 customization. add line {% endcomment %}
+      <span class="breadcrumb__current">{{ page.title }}</span>
 
     {% elsif template.name == 'search' %}
 
@@ -77,7 +82,8 @@
     {% else %}
 
       <span class="breadcrumb__divider" aria-hidden="true">/</span>
-      <span>{{ page_title }}</span>
+      {% comment %} code change per 4.1.1 customization. add line {% endcomment %}
+      <span class="breadcrumb__current">{{ page_title }}</span>
 
     {% endif %}
   </nav>

@@ -333,12 +333,14 @@
                         {%- endif -%}
                       </div>
 
-                      {% comment %} display values after Buy button & other blocks on mobile. 4.1.1 mod {% endcomment %}
-                      <div class="product-single__values desktop-hidden">
-                        <span>{{ section.settings.value_one }}</span>
-                        <span>{{ section.settings.value_two }}</span>
-                      </div>
-
+                      {% comment %} display values after Buy button & other blocks on mobile but not quickview. 4.1.1 mod {% endcomment %}
+                      {% if isModal %}
+                        <div class="product-single__values desktop-hidden">
+                          <span>{{ section.settings.value_one }}</span>
+                          <span>{{ section.settings.value_two }}</span>
+                        </div>
+                      {% endif %}
+                      
                     </div>
 
                   {%- when 'variant_picker' -%}
