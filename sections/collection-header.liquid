@@ -1,7 +1,8 @@
+{% comment %} code changes per 4.1.1 customization {% endcomment %}
 {%- assign disable_sticky_header = false -%}
 
 {%- if section.settings.enable -%}
-  {%- if section.settings.collection_image_enable and collection.image -%}
+  {%- if section.settings.header_type == 'image' and collection.image -%}
     <div
       id="CollectionHeaderSection"
       data-section-id="{{ section.id }}"
@@ -45,11 +46,22 @@
                   {{ collection.title }}
                 </h1>
               </div>
+
+              {%- if collection.description != blank -%}
+                <div class="rte">
+                  {{ collection.description }}
+                </div>
+              {%- endif -%}
+
             </header>
           </div>
         </div>
       </div>
     </div>
+
+  {%- elsif section.settings.header_type == 'bar' -%}
+    {% render 'smart-header' %}
+
   {%- else -%}
     {%- assign disable_sticky_header = true -%}
     <div class="page-width page-content page-content--top">
@@ -58,6 +70,13 @@
         <h1 class="section-header__title">
           {{ collection.title }}
         </h1>
+
+        {%- if collection.description != blank -%}
+          <div class="rte">
+            {{ collection.description }}
+          </div>
+        {%- endif -%}
+
       </header>
     </div>
   {%- endif -%}
@@ -86,12 +105,29 @@
         "label": "Enable header",
         "default": true
       },
+
       {
-        "type": "checkbox",
-        "id": "collection_image_enable",
-        "label": "Show collection image",
-        "default": true
+        "type": "select",
+        "id": "header_type",
+        "label": "Header type",
+        "default": "bar",
+        "info": "Image type only works if a collection image is present.",
+        "options": [
+          {
+            "value": "bar",
+            "label": "Bar"
+          },
+          {
+            "value": "standard",
+            "label": "Standard"
+          },
+          {
+            "value": "image",
+            "label": "Image"
+          }
+        ]
       },
+      
       {
         "type": "checkbox",
         "id": "parallax",

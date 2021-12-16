@@ -1,7 +1,8 @@
+{% comment %} minor code change per 4.1.1 customization {% endcomment %}
 {%- style -%}
   @media screen and (max-width: 768px) {
     .background-media-text--{{ section.id }} {
-      background: {{ section.settings.color_border }};
+      background: {{ section.settings.color_body_bg }};
     }
   }
 {%- endstyle -%}
@@ -38,6 +39,12 @@
                   {%- assign link_href = section.settings.video_url -%}
                 {%- endif -%}
 
+                {% if section.settings.button_chat == true %}
+                  <a id="rp-home" class="btn">
+                    {{ section.settings.button_label }}
+                  </a>
+                {% else %}
+
                 <a href="{{ link_href }}" class="btn">
                   {%- if link_href contains 'youtube.com/watch' or link_href contains 'youtu.be/' -%}
                     <span style="padding-right: 5px;">
@@ -46,6 +53,7 @@
                   {%- endif -%}
                   {{ section.settings.button_label }}
                 </a>
+                {% endif %}
               {%- endif -%}
             </div>
           </div>
@@ -90,6 +98,12 @@
         "id": "button_link",
         "label": "Button link",
         "info": "Links to YouTube videos will be opened in a video player"
+      },
+      {
+        "type": "checkbox",
+        "id": "button_chat",
+        "label": "Button opens chat widget",
+        "default": false
       },
       {
         "type": "text",
