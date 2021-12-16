@@ -1,6 +1,7 @@
+{% comment %} code change per 4.1.1 customization {% endcomment %}
 {%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
 
-<div class="page-width page-width--narrow">
+  <div class="page-width page-width--narrow faq-section">
 
   {%- if section.settings.title != blank -%}
     <header class="section-header">
@@ -87,6 +88,25 @@
             "label": "Text",
             "default": "<p>Use this section for any descriptive text you need to fill out your pages or to add introductory headings between other blocks.</p>"
           },
+          
+          {
+            "type": "url",
+            "id": "button_link",
+            "label": "Button link"
+          },
+          {
+            "type": "text",
+            "id": "button_text",
+            "label": "Button text",
+            "default": "Button Text"
+          },
+          {
+            "type": "checkbox",
+            "id": "button_chat",
+            "label": "Button launches chat widget",
+            "default": false
+          },
+
           {
             "type": "select",
             "id": "align_text",

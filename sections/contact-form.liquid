@@ -37,7 +37,8 @@
 
         {%- if section.settings.show_phone -%}
           <label for="ContactFormPhone-{{ section.id }}">{{ 'contact.form.phone' | t }}</label>
-          <input type="tel" id="ContactFormPhone-{{ section.id }}" class="input-full" name="contact[phone]" pattern="[0-9\-]*" value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}">
+          {% comment %} minor change per 4.1.1 customization {% endcomment %}
+          <input type="text" id="ContactFormPhone-{{ section.id }}" class="input-full" name="contact[phone]" pattern="[0-9\-]*" value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}">
         {%- endif -%}
 
         <label for="ContactFormMessage-{{ section.id }}">{{ 'contact.form.message' | t }}</label>
