@@ -1,3 +1,4 @@
+{% comment %} minor code change per 4.1.1 customization. added anouncement speed {% endcomment %}
 {%- assign show_announcement = false -%}
 {%- assign announcement_block_count = 0 -%}
 {%- for block in section.blocks -%}
@@ -26,6 +27,8 @@
           id="AnnouncementSlider"
           class="announcement-slider"
           data-compact="{{ section.settings.announcement_compact }}"
+          data-speed="{{ section.settings.announcement_speed | times: 1000 }}"
+
           data-block-count="{{ announcement_block_count }}">
           {%- assign slide_index = 0 -%}
           {%- for block in section.blocks -%}

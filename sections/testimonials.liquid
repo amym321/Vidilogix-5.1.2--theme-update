@@ -1,3 +1,4 @@
+{% comment %} code change per 4.1.1 customization {% endcomment %}
 {%- style -%}
   .testimonials-{{ section.id }} {
     background-color: {{ section.settings.color_background }};
@@ -14,7 +15,7 @@
   {%- if section.settings.title != blank -%}
     <div class="page-width">
       <div class="section-header">
-        <h2>{{ section.settings.title | escape }}</h2>
+        <h2 class="section-header__title">{{ section.settings.title | escape }}</h2>
       </div>
     </div>
   {%- endif -%}
@@ -79,6 +80,13 @@
         {%- endfor -%}
       </div>
     </div>
+
+    {% if section.settings.more_link != blank %}
+      <div class="bottom-link">
+        <a href="{{ section.settings.more_link }}" class="btn hero__btn">{{ section.settings.link_text }}</a>
+      </div>
+    {% endif %}
+
   {%- endif -%}
 </div>
 
@@ -114,6 +122,19 @@
           }
         ]
       },
+
+      {
+        "type": "url",
+        "id": "more_link",
+        "label": "Button Link"
+      },
+      {
+        "type": "text",
+        "id": "link_text",
+        "label": "Button Text",
+        "default": "Read All Reviews"
+      },
+      
       {
         "type": "checkbox",
         "id": "round_images",
