@@ -6,6 +6,8 @@
   - featured_media: {Object} Media Liquid object (required) - featured media of a given product or variant
 {% endcomment %}
 
+{% comment %} code change per 4.1.1 customization {% endcomment %}
+
 {%- liquid
   assign is_featured = false
   if featured_media == media
@@ -120,6 +122,13 @@
             <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-play" viewBox="18.24 17.35 24.52 28.3"><path fill="#323232" d="M22.1 19.151v25.5l20.4-13.489-20.4-12.011z"/></svg>
           </a>
         {%- endif -%}
+
+        {%- if video_type == 'vimeo' -%}
+          <a href="https://player.vimeo.com/video/{{ media.external_id }}" class="btn btn--circle btn--large btn--static product-video-trigger">
+            <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-play" viewBox="18.24 17.35 24.52 28.3"><path fill="#323232" d="M22.1 19.151v25.5l20.4-13.489-20.4-12.011z"/></svg>
+          </a>
+        {%- endif -%}
+
         {%- if video_type == 'mp4' -%}
           <button type="button" class="btn btn--circle btn--large btn--static product-video-trigger product-video-trigger--mp4">
             <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-play" viewBox="18.24 17.35 24.52 28.3"><path fill="#323232" d="M22.1 19.151v25.5l20.4-13.489-20.4-12.011z"/></svg>
@@ -161,6 +170,18 @@
                 data-youtube-id="{{ video_id }}">
               </div>
             {%- endif -%}
+
+            {%- if video_type == 'vimeo' -%}
+            <div id="ProductVideo-{{ section_id }}-{{ loopIndex }}"
+              class="product__video"
+              data-image-count="{{ product.media.size }}"
+              data-video-type="{{ video_type }}"
+              data-video-style="{{ video_style }}"
+              data-video-loop="{{ video_looping }}">
+              <iframe src="https://player.vimeo.com/video/{{ media.external_id }}" frameborder="0" width="100%" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            {%- endif -%}
+            
             {%- if video_type == 'mp4' -%}
               <video
                 playsinline
