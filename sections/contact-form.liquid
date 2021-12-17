@@ -1,3 +1,4 @@
+{% comment %} code change per 4.1.1 customization {% endcomment %}
 <div class="index-section">
   <div class="page-width{% if section.settings.narrow_column %} page-width--narrow{% endif %}">
     {%- if section.settings.title != blank -%}
@@ -5,6 +6,9 @@
         <h2 class="section-header__title">
           {{ section.settings.title }}
         </h2>
+
+        <p>{{ section.settings.additional_message }}</p>
+
         {%- if section.settings.text != blank -%}
           <div class="rte section-header__rte">{{ section.settings.text }}</div>
         {%- endif -%}
@@ -81,6 +85,13 @@
         "id": "text",
         "label": "Text"
       },
+
+      {
+        "type": "textarea",
+        "id": "additional_message",
+        "label": "Additional message"
+      },
+      
       {
         "type": "checkbox",
         "id": "show_phone",
