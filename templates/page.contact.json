@@ -35,8 +35,8 @@
     "form": {
       "type": "contact-form",
       "settings": {
-        "title": "Contact us",
-        "text": "",
+        "title": "Contact Us",
+        "text": "<p>Fill out the form below and we'll be in touch within 24 hours, usually sooner.<\/p>",
         "show_phone": true,
         "narrow_column": true
       }
