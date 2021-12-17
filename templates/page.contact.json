@@ -16,6 +16,7 @@
             "title": "Got a question or just \nwant to say hello?",
             "title_size": 42,
             "subheading": "",
+            "chat_widget": true,
             "link": "",
             "link_text": "Chat with Us",
             "link_2": "",

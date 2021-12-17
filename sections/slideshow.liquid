@@ -205,7 +205,9 @@
               </div>
 
               {%- if link_slide -%}
-                <a href="{{ block.settings.link }}" class="hero__slide-link" aria-hidden="true"></a>
+                {%- unless block.settings.chat_widget == true -%}
+                  <a href="{{ block.settings.link }}" class="hero__slide-link" aria-hidden="true"></a>
+                {% endunless %}
               {%- endif -%}
 
               {%- if hero_text -%}
@@ -235,9 +237,17 @@
                               </div></div>
                             </div>
                           {%- endunless -%}
-                          {%- if block.settings.link_text != blank or block.settings.link_text_2 != blank -%}
-                            <div class="hero__link">
-                              {%- if block.settings.link_text != blank -%}
+
+                          {% comment %} chat_widget added. Formerly on 4.1.1 snippet/page-block-image-hero {% endcomment %}
+                          {%- if block.settings.link_text != blank or block.settings.link_text_2 != blank or block.settings.chat_widget == true -%}
+                          <div class="hero__link">
+                            {%- if block.settings.chat_widget == true -%}
+                              <a id="rp-home" class="btn{% if block.settings.color_accent contains 'rgba(0,0,0,0)' %} btn--inverse{% endif %}" aria-describedby="a11y-external-message">
+                                {{ block.settings.link_text }}
+                              </a>
+                            {%- elsif block.settings.link_text != blank -%}
+
+
                                 <a href="{{ block.settings.link }}" class="btn{% if block.settings.color_accent contains 'rgba(0,0,0,0)' %} btn--inverse{% endif %}">
                                   {{ block.settings.link_text }}
                                 </a>
@@ -417,6 +427,15 @@
             "label": "Text",
             "default": "And optional subtext"
           },
+
+          {
+            "type": "checkbox",
+            "id": "chat_widget",
+            "label": "First button opens the chat widget",
+            "default": false,
+            "info": "Leave link url below blank if you'd like to open the chat widget."
+          },
+
           {
             "type": "url",
             "id": "link",
