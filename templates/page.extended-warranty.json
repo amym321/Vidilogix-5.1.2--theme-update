@@ -1,1 +1,154 @@
-{"sections":{"main":{"type":"main-page","settings":{}}},"order":["main"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "1639795656825a86f8": {
+      "type": "slideshow",
+      "blocks": {
+        "16397956566e48331f-0": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "Free 1-Year Warranty",
+            "title_size": 40,
+            "subheading": "Replace, repair, or trade in",
+            "chat_widget": true,
+            "link": "",
+            "link_text": "Contact Us",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#f6c12f",
+            "text_align": "vertical-center horizontal-left",
+            "image": "shopify:\/\/shop_images\/exwar-hero_8e8bba13-69eb-47b1-a3d8-b2d1331a5b8d.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "bottom center"
+          }
+        }
+      },
+      "block_order": [
+        "16397956566e48331f-0"
+      ],
+      "settings": {
+        "section_height": "650px",
+        "mobile_height": "auto",
+        "parallax": false,
+        "style": "bars",
+        "autoplay": true,
+        "autoplay_speed": 5
+      }
+    },
+    "16397956147cbbb3dc": {
+      "type": "rich-text",
+      "blocks": {
+        "1639795614282f3a93-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Rich text"
+          }
+        },
+        "1639795614282f3a93-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1639795614282f3a93-0",
+        "1639795614282f3a93-1"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "163979563775df30d2": {
+      "type": "text-columns",
+      "blocks": {
+        "16397956377f00eef1-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image_width": 650,
+            "title": "Example title",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
+            "button_label": "Optional button",
+            "button_link": ""
+          }
+        },
+        "16397956377f00eef1-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image_width": 650,
+            "title": "Example title",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
+            "button_label": "Optional button",
+            "button_link": ""
+          }
+        },
+        "16397956377f00eef1-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image_width": 650,
+            "title": "Example title",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
+            "button_label": "Optional button",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16397956377f00eef1-0",
+        "16397956377f00eef1-1",
+        "16397956377f00eef1-2"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "divider": false
+      }
+    },
+    "1639795652309938d5": {
+      "type": "rich-text",
+      "blocks": {
+        "163979565256cea94b-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Rich text"
+          }
+        },
+        "163979565256cea94b-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "163979565256cea94b-0",
+        "163979565256cea94b-1"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1639795656825a86f8",
+    "16397956147cbbb3dc",
+    "163979563775df30d2",
+    "1639795652309938d5"
+  ]
+}
