@@ -75,10 +75,11 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image_width": 650,
-            "title": "Example title",
-            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
-            "button_label": "Optional button",
+            "image": "shopify:\/\/shop_images\/exwar-Icon-1_small_346d22e5-e8a8-45e1-9893-5eae94d0ae02.png",
+            "image_width": 60,
+            "title": "Replace",
+            "text": "<p>Vidlogix will replace your item subject to product availability.<\/p>",
+            "button_label": "",
             "button_link": ""
           }
         },
