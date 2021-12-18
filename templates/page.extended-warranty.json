@@ -47,14 +47,14 @@
         "1639795614282f3a93-0": {
           "type": "heading",
           "settings": {
-            "title": "Rich text"
+            "title": "How it Works"
           }
         },
         "1639795614282f3a93-1": {
           "type": "text",
           "settings": {
-            "enlarge_text": true,
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+            "enlarge_text": false,
+            "text": "<p>If we can’t replace or repair your item, we’ll buy it back at market value. No fuss. No muss.<\/p>"
           }
         }
       },
