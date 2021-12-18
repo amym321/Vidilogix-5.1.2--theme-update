@@ -157,6 +157,41 @@
             "text": "<p>We issue payment after the item inspection process, which can take up to two weeks. Checks will be mailed via USPS within fourteen business days of the device being inspection complete. Please note if you trade multiple devices in the same trade order, payment will be issued once the last device has been inspected.<\/p>"
           }
         },
+        "6a95202a-ccfd-4238-91f3-d03a924bda5a": {
+          "type": "question",
+          "settings": {
+            "title": "What happens to personal data?",
+            "text": "<p>All electronics are wiped clean of all personal information. We will do a factory reset of devices which removes all personal information. Memory cards and hard drives are formatted, following Department of Defense guidelines. It is your responsibility to back-up all personal data from any device you send to us, before you send it to us!<\/p>"
+          }
+        },
+        "8cea7bd7-2717-463d-964d-a5e9bdae59ac": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "570f08aa-9a21-4598-9f1b-df6e7f4b14c1": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "2f5648c2-92d9-41a3-bd13-894bdf1a7288": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "1d51e6ef-37f6-4512-97fe-319a801ff2f6": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
         "818d5403-b924-4881-87a2-35c64a5acfa6": {
           "type": "rich-text",
           "settings": {
@@ -175,6 +210,11 @@
         "fb01a988-b18f-4892-b112-0337f26e3e08",
         "72dc388e-d7a2-4b20-ab57-728ec942769f",
         "f4691490-36ae-4bb3-9f64-4bbf476816ae",
+        "6a95202a-ccfd-4238-91f3-d03a924bda5a",
+        "8cea7bd7-2717-463d-964d-a5e9bdae59ac",
+        "570f08aa-9a21-4598-9f1b-df6e7f4b14c1",
+        "2f5648c2-92d9-41a3-bd13-894bdf1a7288",
+        "1d51e6ef-37f6-4512-97fe-319a801ff2f6",
         "818d5403-b924-4881-87a2-35c64a5acfa6"
       ],
       "settings": {
