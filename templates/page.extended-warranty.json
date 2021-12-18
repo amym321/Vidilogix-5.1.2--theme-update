@@ -135,11 +135,47 @@
             "title": "Frequently asked question",
             "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
           }
+        },
+        "fb01a988-b18f-4892-b112-0337f26e3e08": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "72dc388e-d7a2-4b20-ab57-728ec942769f": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "f4691490-36ae-4bb3-9f64-4bbf476816ae": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "818d5403-b924-4881-87a2-35c64a5acfa6": {
+          "type": "rich-text",
+          "settings": {
+            "title": "We've got your back",
+            "text": "<p>Have additional questions? Need warranty assistance? We're here to help!<\/p>",
+            "button_link": "",
+            "button_text": "Contact Us",
+            "button_chat": true,
+            "align_text": "center"
+          }
         }
       },
       "block_order": [
         "163979604052a083bb-0",
-        "163979604052a083bb-1"
+        "163979604052a083bb-1",
+        "fb01a988-b18f-4892-b112-0337f26e3e08",
+        "72dc388e-d7a2-4b20-ab57-728ec942769f",
+        "f4691490-36ae-4bb3-9f64-4bbf476816ae",
+        "818d5403-b924-4881-87a2-35c64a5acfa6"
       ],
       "settings": {
         "title": "FAQs"
