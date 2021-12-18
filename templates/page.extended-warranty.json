@@ -125,22 +125,22 @@
         "163979604052a083bb-0": {
           "type": "question",
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+            "title": "How long is the warranty?",
+            "text": "<p>Vidlogix is pleased to offer a free extended warranty identical to the provisions and limitations of the manufacturer's warranty for such items, with the exception of the term, which is equal to one (1) year.<\/p>"
           }
         },
         "163979604052a083bb-1": {
           "type": "question",
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+            "title": "Who repairs the item?",
+            "text": "<p>Vidlogix repairs certain items – hard drives, etc. – whenever possible. Technical repairs are performed by licensed electronics repair facilities.<\/p>"
           }
         },
         "fb01a988-b18f-4892-b112-0337f26e3e08": {
           "type": "question",
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+            "title": "When will I get my item?",
+            "text": "<p>Repairs take anywhere from 10-14 days from when they are received depending on the nature of the repair and the repair queue.<\/p>"
           }
         },
         "72dc388e-d7a2-4b20-ab57-728ec942769f": {
