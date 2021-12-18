@@ -146,8 +146,8 @@
         "72dc388e-d7a2-4b20-ab57-728ec942769f": {
           "type": "question",
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+            "title": "How are quotes determined?",
+            "text": "<p>Our real-time quote engine considers a number of factors such as the condition of the item, its configuration, and its projected value in the secondary market to arrive at a fair price. Quotes from Vidlogix are good for 15 days. Your package must be scanned by UPS within 15 days of the day your Quote was generated. If your quote expires and you still want to sell your item simply return to Vidlogix.com and start again to get a new quote.<\/p>"
           }
         },
         "f4691490-36ae-4bb3-9f64-4bbf476816ae": {
