@@ -119,26 +119,60 @@
         "divider": false
       }
     },
+    "1639796040918685da": {
+      "type": "faq",
+      "blocks": {
+        "163979604052a083bb-0": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "163979604052a083bb-1": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "163979604052a083bb-0",
+        "163979604052a083bb-1"
+      ],
+      "settings": {
+        "title": "FAQs"
+      }
+    },
     "1639795652309938d5": {
       "type": "rich-text",
       "blocks": {
         "163979565256cea94b-0": {
           "type": "heading",
           "settings": {
-            "title": "Rich text"
+            "title": "We've got your back"
           }
         },
         "163979565256cea94b-1": {
           "type": "text",
           "settings": {
-            "enlarge_text": true,
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+            "enlarge_text": false,
+            "text": "<p>Have additional questions? Need warranty assistance? We're here to help!<\/p>"
+          }
+        },
+        "1b87ee88-2b2d-4d4b-97da-a78d8afee44e": {
+          "type": "button",
+          "settings": {
+            "link": "",
+            "link_text": "Contact Us"
           }
         }
       },
       "block_order": [
         "163979565256cea94b-0",
-        "163979565256cea94b-1"
+        "163979565256cea94b-1",
+        "1b87ee88-2b2d-4d4b-97da-a78d8afee44e"
       ],
       "settings": {
         "align_text": "center",
@@ -152,6 +186,7 @@
     "1639795656825a86f8",
     "16397956147cbbb3dc",
     "163979563775df30d2",
+    "1639796040918685da",
     "1639795652309938d5"
   ]
 }
