@@ -37,7 +37,7 @@
         "mobile_height": "250px",
         "parallax": false,
         "style": "bars",
-        "autoplay": true,
+        "autoplay": false,
         "autoplay_speed": 5
       }
     },
