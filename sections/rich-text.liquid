@@ -5,7 +5,11 @@
     <div class="theme-block" {{ block.shopify_attributes }}>
       {%- case block.type -%}
         {%- when 'heading' -%}
-          <h2 class="section-header__title">{{ block.settings.title | escape }}</h2>
+           {%- if block.settings.title == 'Returns' or block.settings.title == 'returns'  -%}
+            <h1 class="">{{ block.settings.title }}</h1>
+          {%- else -%}
+            <h2 class="section-header__title">{{ block.settings.title }}</h2>
+          {%- endif -%}
         {%- when 'page' -%}
           <div class="rte">
             {%- if block.settings.page_text != blank -%}
