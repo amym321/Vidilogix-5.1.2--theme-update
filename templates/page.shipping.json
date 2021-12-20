@@ -14,8 +14,21 @@
           "settings": {
             "title": "Shipping"
           }
-        },
-        "16400413440adaf63b-1": {
+        }
+      },
+      "block_order": [
+        "16400413440adaf63b-0"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "164004230690a0c083": {
+      "type": "rich-text",
+      "blocks": {
+        "16400423069a560b32-1": {
           "type": "text",
           "settings": {
             "enlarge_text": false,
@@ -24,11 +37,10 @@
         }
       },
       "block_order": [
-        "16400413440adaf63b-0",
-        "16400413440adaf63b-1"
+        "16400423069a560b32-1"
       ],
       "settings": {
-        "align_text": "center",
+        "align_text": "left",
         "narrow_column": true,
         "divider": false
       }
@@ -63,6 +75,7 @@
   "order": [
     "main",
     "1640041344e995db21",
+    "164004230690a0c083",
     "1640041293a13b372e"
   ]
 }
