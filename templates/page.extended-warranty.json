@@ -114,9 +114,9 @@
         "16397956377f00eef1-2"
       ],
       "settings": {
-        "title": "",
+        "title": "warranty heading",
         "align_text": "center",
-        "divider": false
+        "divider": true
       }
     },
     "1639796040918685da": {
