@@ -12,10 +12,10 @@
         "1640043266935f9f46-0": {
           "type": "image",
           "settings": {
-            "top_subheading": "We're making it easy to protect your purchase!",
+            "top_subheading": "",
             "title": "Doing more than just protecting your home.",
             "title_size": 50,
-            "subheading": "",
+            "subheading": "We're making it easy to protect your purchase!",
             "chat_widget": false,
             "link": "shopify:\/\/products\/vidlogix-product-protection-plans",
             "link_text": "Add Protection",
