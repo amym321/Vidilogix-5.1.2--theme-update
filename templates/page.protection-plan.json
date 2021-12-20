@@ -75,10 +75,11 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image_width": 650,
-            "title": "Example title",
-            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
-            "button_label": "Optional button",
+            "image": "shopify:\/\/shop_images\/block1icon.png",
+            "image_width": 60,
+            "title": "Pick a plan",
+            "text": "<p>Add a protection plan to your purchase with a single click.<\/p>",
+            "button_label": "",
             "button_link": ""
           }
         },
@@ -86,10 +87,11 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image_width": 650,
-            "title": "Example title",
-            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
-            "button_label": "Optional button",
+            "image": "shopify:\/\/shop_images\/block2icon.png",
+            "image_width": 60,
+            "title": "Review your order",
+            "text": "<p>Review your order, which will be emailed to you after you complete your purchase.<\/p>",
+            "button_label": "",
             "button_link": ""
           }
         },
@@ -114,7 +116,7 @@
         "title": "",
         "align_text": "center",
         "divider": false,
-        "box_shadow": false
+        "box_shadow": true
       }
     },
     "1640043355eb06aff5": {
