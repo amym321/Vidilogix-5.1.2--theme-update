@@ -138,6 +138,68 @@
         "layout": "right",
         "divider": false
       }
+    },
+    "164004335896c64efa": {
+      "type": "faq",
+      "blocks": {
+        "16400433586900d119-0": {
+          "type": "question",
+          "settings": {
+            "title": "What is Product Protection?",
+            "text": "<p>Product Protection allows you to purchase product coverage directly from our site. Vidlogix handles all processing, claims, and follow up incase something happens to your product.<\/p>"
+          }
+        },
+        "16400433586900d119-1": {
+          "type": "question",
+          "settings": {
+            "title": "What happens next?",
+            "text": "<p>When you purchase a protection plan with us you’ll checkout exactly how you normally would. You’ll receive a confirmation email from us on your purchase with information about your protection plan.<\/p>"
+          }
+        },
+        "650f4369-62d7-454c-9306-ea0f99fe531f": {
+          "type": "question",
+          "settings": {
+            "title": "How do I file a claim?",
+            "text": "<p>You can file a claim directly through Vidlogix at <a href=\"\/pages\/contact\" title=\"Contact Us\">vidlogix.com<\/a>. This link can be found in the email sent to you after you purchase coverage. If you ever lose this email, you can reach out to us and we’ll resend it.<\/p>"
+          }
+        },
+        "b99c2b97-deb3-4878-af06-977906ef9070": {
+          "type": "question",
+          "settings": {
+            "title": "Is this backed by an insurance company?",
+            "text": "<p>Every Vidlogix contract is backed by a regulated insurer. Those insurers are backed by reinsurers. Vidlogix and their partners are 100% compliant and contracts will be honored for the entirety of their term.<\/p>"
+          }
+        },
+        "1632ca5d-43db-4728-b7f4-f7b18bc6cfe8": {
+          "type": "question",
+          "settings": {
+            "title": "What if I return my product?",
+            "text": "<p>Your contract will also be returned and refunded, but at a prorated amount depending on how long the contract has been in effect. You’ll get a full refund within 30 days.<\/p>"
+          }
+        },
+        "250e832d-ee99-4004-951f-a024eeaebe37": {
+          "type": "rich-text",
+          "settings": {
+            "title": "",
+            "text": "<p>If you love small print or you're an aspiring lawyer, you can read more details about terms & conditions by clicking <a href=\"\/pages\/terms\" title=\"Terms & Conditions\">here<\/a>.<\/p>",
+            "button_link": "",
+            "button_text": "Button Text",
+            "button_chat": false,
+            "align_text": "center"
+          }
+        }
+      },
+      "block_order": [
+        "16400433586900d119-0",
+        "16400433586900d119-1",
+        "650f4369-62d7-454c-9306-ea0f99fe531f",
+        "b99c2b97-deb3-4878-af06-977906ef9070",
+        "1632ca5d-43db-4728-b7f4-f7b18bc6cfe8",
+        "250e832d-ee99-4004-951f-a024eeaebe37"
+      ],
+      "settings": {
+        "title": "FAQs"
+      }
     }
   },
   "order": [
@@ -145,6 +207,7 @@
     "164004326658e2ffa5",
     "1640043295c83a6b76",
     "1640043302a64473ce",
-    "1640043355eb06aff5"
+    "1640043355eb06aff5",
+    "164004335896c64efa"
   ]
 }
