@@ -99,10 +99,11 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image_width": 650,
-            "title": "Example title",
-            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
-            "button_label": "Optional button",
+            "image": "shopify:\/\/shop_images\/block3icon.png",
+            "image_width": 80,
+            "title": "Enjoy your purchase",
+            "text": "<p>Enjoy your purchase without worrying about an accident setting you back.<\/p>",
+            "button_label": "",
             "button_link": ""
           }
         }
