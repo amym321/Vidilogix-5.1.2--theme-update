@@ -123,18 +123,19 @@
     "1640043355eb06aff5": {
       "type": "text-and-image",
       "settings": {
-        "image_width": 700,
-        "full_width": false,
-        "subtitle": "",
-        "title": "Image with text",
-        "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.<\/p>",
-        "button_label": "",
+        "image": "shopify:\/\/shop_images\/needhelp.jpg",
+        "image_width": 500,
+        "full_width": true,
+        "subtitle": "Need Help?",
+        "title": "Sit back and relax.",
+        "text": "<p>Let us know what’s on your mind or if you have a question.<\/p>",
+        "button_label": "Get in touch",
         "button_link": "",
         "button_style": "primary",
         "align_text": "left",
-        "button_chat": false,
-        "background_color": "",
-        "text_color": "",
+        "button_chat": true,
+        "background_color": "#46454d",
+        "text_color": "#ffffff",
         "layout": "right",
         "divider": false
       }
