@@ -21,10 +21,10 @@
             "link_text": "Add Protection",
             "link_2": "",
             "link_text_2": "",
-            "color_accent": "rgba(0,0,0,0)",
-            "text_align": "vertical-center horizontal-center",
+            "color_accent": "#f6c12f",
+            "text_align": "vertical-center horizontal-left",
             "overlay_opacity": 0,
-            "focal_point": "center center"
+            "focal_point": "80% 100%"
           }
         }
       },
