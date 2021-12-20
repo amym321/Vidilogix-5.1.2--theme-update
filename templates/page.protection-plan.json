@@ -12,31 +12,13 @@
         "1640043266935f9f46-0": {
           "type": "image",
           "settings": {
-            "top_subheading": "",
-            "title": "Endless\npossibilities.",
-            "title_size": 80,
-            "subheading": "Bring your brand to life",
+            "top_subheading": "We're making it easy to protect your purchase!",
+            "title": "Doing more than just protecting your home.",
+            "title_size": 50,
+            "subheading": "",
             "chat_widget": false,
-            "link": "",
-            "link_text": "Optional button",
-            "link_2": "",
-            "link_text_2": "",
-            "color_accent": "rgba(0,0,0,0)",
-            "text_align": "vertical-center horizontal-center",
-            "overlay_opacity": 0,
-            "focal_point": "center center"
-          }
-        },
-        "1640043266935f9f46-1": {
-          "type": "image",
-          "settings": {
-            "top_subheading": "",
-            "title": "Two line\ntitle slide.",
-            "title_size": 80,
-            "subheading": "And big, beautiful imagery",
-            "chat_widget": false,
-            "link": "",
-            "link_text": "Optional button",
+            "link": "shopify:\/\/products\/vidlogix-product-protection-plans",
+            "link_text": "Add Protection",
             "link_2": "",
             "link_text_2": "",
             "color_accent": "rgba(0,0,0,0)",
@@ -47,8 +29,7 @@
         }
       },
       "block_order": [
-        "1640043266935f9f46-0",
-        "1640043266935f9f46-1"
+        "1640043266935f9f46-0"
       ],
       "settings": {
         "section_height": "650px",
