@@ -65,7 +65,8 @@
       "settings": {
         "align_text": "center",
         "narrow_column": true,
-        "divider": false
+        "divider": false,
+        "box_shadow": true
       }
     },
     "163979563775df30d2": {
@@ -116,8 +117,7 @@
       "settings": {
         "title": "warranty heading",
         "align_text": "center",
-        "divider": true,
-        "box_shadow": true
+        "divider": true
       }
     },
     "1639796040918685da": {
@@ -255,7 +255,8 @@
       "settings": {
         "align_text": "center",
         "narrow_column": true,
-        "divider": false
+        "divider": false,
+        "box_shadow": false
       }
     }
   },
