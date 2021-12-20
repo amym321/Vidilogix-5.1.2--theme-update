@@ -51,11 +51,18 @@
         "1640041293a5780292-0": {
           "type": "question",
           "settings": {
+            "title": "Delivery times",
+            "text": "<p>Some items on our website are not regularly stocked. Availability on these items may show as Special Order.<\/p><p>In some cases, the manufacturer will ship select items to you directly. You may generally expect these items to arrive at U.S. destinations in 7-10 days, unless specified otherwise. <\/p><p>If one of the items in your order qualifies as a stock exception, we will ask you whether you'd like us to ship your full order when all items are in stock, or if you'd like to split a shipment (at no extra cost). The estimated delivery shown reflects the shipping time once your item reaches our warehouse.<\/p><p><strong>Lead Time<\/strong>: Order will be placed with the vendor once we receive an order.<\/p><p><strong>ETA<\/strong>: An order has been placed with the vendor. Date advised is the time required for the order to be delivered to our warehouse.<\/p><p>If we email you a tracking number during the day, the information may not post to the carrier's website until that evening. <\/p><p>Business days are defined as Monday to Friday, excluding holidays.<\/p>"
+          }
+        },
+        "1640041293a5780292-1": {
+          "type": "question",
+          "settings": {
             "title": "Frequently asked question",
             "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
           }
         },
-        "1640041293a5780292-1": {
+        "6055492a-dfb9-4b9f-b67a-7a3686be4d9d": {
           "type": "question",
           "settings": {
             "title": "Frequently asked question",
@@ -65,7 +72,8 @@
       },
       "block_order": [
         "1640041293a5780292-0",
-        "1640041293a5780292-1"
+        "1640041293a5780292-1",
+        "6055492a-dfb9-4b9f-b67a-7a3686be4d9d"
       ],
       "settings": {
         "title": "FAQs"
