@@ -116,7 +116,8 @@
       "settings": {
         "title": "warranty heading",
         "align_text": "center",
-        "divider": true
+        "divider": true,
+        "box_shadow": true
       }
     },
     "1639796040918685da": {

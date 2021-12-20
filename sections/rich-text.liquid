@@ -5,7 +5,7 @@
     <div class="theme-block" {{ block.shopify_attributes }}>
       {%- case block.type -%}
         {%- when 'heading' -%}
-          <h2>{{ block.settings.title | escape }}</h2>
+          <h2 class="section-header__title">{{ block.settings.title | escape }}</h2>
         {%- when 'page' -%}
           <div class="rte">
             {%- if block.settings.page_text != blank -%}
@@ -73,6 +73,11 @@
         "id": "divider",
         "label": "Show section divider",
         "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "box_shadow",
+        "label": "Add box shadow to each block"
       }
     ],
     "blocks" : [
