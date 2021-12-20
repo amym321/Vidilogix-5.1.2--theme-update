@@ -58,8 +58,8 @@
         "1640041293a5780292-1": {
           "type": "question",
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+            "title": "Signature request",
+            "text": "<p>Vidlogix chooses which carrier will deliver your shipment, and some of our shipments require a signature. Your shipping confirmation email will tell you whether a signature is required. The carrier may also require a signature at their discretion. The carrier may make subsequent delivery attempts before returning the shipment to Vidlogix. We are unable to change the shipping address once your order has been placed.<\/p>"
           }
         },
         "6055492a-dfb9-4b9f-b67a-7a3686be4d9d": {
