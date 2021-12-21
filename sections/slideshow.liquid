@@ -95,6 +95,9 @@
               data-id="{{ block.id }}">
 
               {%- style -%}
+                .slideshow__slide--{{ block.id }} .slideshow-text-color {
+                  color: {{ block.settings.text_color }} !important;
+                }
                 .slideshow__slide--{{ block.id }} .hero__title {
                   font-size: {{ block.settings.title_size | times: 0.5 }}px;
                 }
@@ -211,7 +214,7 @@
               {%- endif -%}
 
               {%- if hero_text -%}
-                <div class="hero__text-wrap">
+                <div class="hero__text-wrap slideshow-text-color">
                   <div class="page-width">
                     <div class="hero__text-content {{ block.settings.text_align }}">
                       <div class="hero__text-shadow">
@@ -462,6 +465,12 @@
             "id": "color_accent",
             "label": "Buttons",
             "default": "rgba(0,0,0,0)"
+          },          
+          {
+            "type": "color",
+            "id": "text_color",
+            "label": "Text color",
+            "default": "#000000"
           },
           {
             "type": "select",
