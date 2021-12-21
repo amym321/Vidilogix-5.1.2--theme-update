@@ -94,85 +94,43 @@
         "divider": false
       }
     },
-    "text-columns": {
-      "type": "text-columns",
+    "1640124077a8d2421e": {
+      "type": "rich-text",
       "blocks": {
-        "column1": {
-          "type": "text_block",
+        "16401240777f6b1423-0": {
+          "type": "heading",
           "settings": {
-            "enable_image": true,
-            "image_width": 650,
-            "title": "Example title",
-            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
-            "button_label": "Optional button",
-            "button_link": ""
-          }
-        },
-        "column2": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "image_width": 650,
-            "title": "Example title",
-            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
-            "button_label": "Optional button",
-            "button_link": ""
-          }
-        },
-        "column3": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "image_width": 650,
-            "title": "Example title",
-            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
-            "button_label": "Optional button",
-            "button_link": ""
+            "title": "CONTACT US"
           }
         }
       },
       "block_order": [
-        "column1",
-        "column2",
-        "column3"
+        "16401240777f6b1423-0"
       ],
       "settings": {
-        "title": "",
         "align_text": "center",
-        "divider": false,
-        "box_shadow": false
-      }
-    },
-    "map": {
-      "type": "map",
-      "settings": {
-        "map_title": "Our retail store",
-        "address": "<p>301 Front St W<br>Toronto, Canada<\/p><p>Mon - Fri, 8:30am - 10:30pm<br>Saturday, 8:30am - 10:30pm<br>Sunday, 8:30am - 10:30pm<\/p>",
-        "map_address": "301 Front St W, Toronto, ON M5V 2T6",
-        "api_key": "",
-        "show_button": true,
-        "background_image_position": "center center"
-      }
-    },
-    "featured-collection": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Featured collection",
-        "home_featured_products": "",
-        "per_row": 4,
-        "rows": 1,
-        "mobile_scrollable": true,
-        "view_all": true,
+        "narrow_column": true,
         "divider": false
       }
     },
-    "form": {
-      "type": "contact-form",
+    "16401241093b41c04d": {
+      "type": "rich-text",
+      "blocks": {
+        "1640124109868776b7-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p>Vidlogix Inc.<br\/>445 Furrows Rd #1019<br\/>Holbrook, NY 11741<\/p><p>For general inquiries, please contact us at:<br\/><a href=\"mailto:hello@vidlogix.com\" title=\"mailto:hello@vidlogix.com\"><strong>hello@vidlogix.com<\/strong><\/a><\/p><p>For press inquiries, please contact us at:<br\/><a href=\"mailto:press@vidlogix.com\" title=\"mailto:press@vidlogix.com\"><strong>press@vidlogix.com<\/strong><\/a><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1640124109868776b7-1"
+      ],
       "settings": {
-        "title": "Contact us",
-        "text": "",
-        "show_phone": false,
-        "narrow_column": true
+        "align_text": "left",
+        "narrow_column": true,
+        "divider": false
       }
     }
   },
@@ -181,9 +139,7 @@
     "slideshow",
     "1640050141300482f2",
     "rich-text",
-    "text-columns",
-    "map",
-    "featured-collection",
-    "form"
+    "1640124077a8d2421e",
+    "16401241093b41c04d"
   ]
 }
