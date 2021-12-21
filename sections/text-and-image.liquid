@@ -1,4 +1,7 @@
 {% comment %} modifications made here that were previously added to page-block-text-and-image in 4.1.1 {% endcomment %}
+
+{%- if template =='page.about' %}<div class="custom-acc-template">{% endif %}
+
 {%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
 
 {%- liquid
@@ -68,8 +71,8 @@
           <div class="subheading appear-delay{% cycle '','-1','-2','-3','-4' %} h5 section-header__title{% if section.settings.center_title %} text-center{% endif %}">{{ section.settings.subtitle }}</div>
         {%- endif -%}
         {%- if section.settings.title != blank -%}
-          <div class="h1 appear-delay{% cycle '','-1','-2','-3','-4' %} h3{% if section.settings.center_title %} text-center{% endif %}">{{ section.settings.title | escape }}</div>
-        {%- endif -%}
+          <div class="h1 appear-delay{% cycle '','-1','-2','-3','-4' %} h3{% if section.settings.center_title %} text-center{% endif %}"  {% if section.settings.title_bottom_margin %}style="margin-bottom: {{ section.settings.title_bottom_margin }}px !important;"{% endif %} >{{ section.settings.title | escape }}</div>
+          {%- endif -%}
         {% if section.settings.text_below and section.settings.layout == 'bottom' %}
           {%- if section.settings.layout == 'right' or section.settings.layout == 'bottom' -%}
             {{ image_layout }}
@@ -109,6 +112,8 @@
 </div>
 
 {%- if section.settings.divider -%}</div>{%- endif -%}
+
+{%- if template =='page.about' %}</div>div">{% endif %}
 
 {% style %}
   {% if section.settings.background_color %}
@@ -232,6 +237,21 @@
         "label": "Heading",
         "default": "Image with text"
       },
+
+      {
+        "type": "checkbox",
+        "id": "center_title",
+        "label": "Center title and/or subtitle only",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "text_below",
+        "label": "Show text below the image",
+        "info": "Only applies when layout is set to 'Image on Bottom'",
+        "default": false
+      },
+
       {
         "type": "richtext",
         "id": "text",
@@ -318,9 +338,27 @@
           {
             "value": "right",
             "label": "Image on right"
+          },
+          {
+            "value": "top",
+            "label": "Image on top"
+          },
+          {
+            "value": "bottom",
+            "label": "Image on bottom"
           }
         ]
       },
+      {
+        "type": "number",
+        "id": "title_bottom_margin",
+        "label": "Bottom margin for the title"
+      },
+      {
+        "type": "number",
+        "id": "image_bottom_margin",
+        "label": "Bottom margin for the image"
+      },      
       {
         "type": "checkbox",
         "id": "divider",
