@@ -48,10 +48,11 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image_width": 650,
-            "title": "Example title",
-            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
-            "button_label": "Optional button",
+            "image": "shopify:\/\/shop_images\/exwar-Icon-3_small_10763450-ba69-4a7d-87c1-3d914fa7799f.png",
+            "image_width": 80,
+            "title": "Choose Paypal",
+            "text": "<p>Choose PayPal at checkout and select 'Pay Later' – you’ll see 'Pay in 4' as a way to pay.<\/p>",
+            "button_label": "",
             "button_link": ""
           }
         },
@@ -59,10 +60,11 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image_width": 650,
-            "title": "Example title",
-            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
-            "button_label": "Optional button",
+            "image": "shopify:\/\/shop_images\/shopping-cart.png",
+            "image_width": 80,
+            "title": "Complete Purchase",
+            "text": "<p>Complete your purchase and make the down payment today. It’s interest free.<\/p>",
+            "button_label": "",
             "button_link": ""
           }
         },
@@ -70,10 +72,11 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image_width": 650,
-            "title": "Example title",
-            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
-            "button_label": "Optional button",
+            "image": "shopify:\/\/shop_images\/make-payments.png",
+            "image_width": 80,
+            "title": "Make Payments",
+            "text": "<p>Pay 3 interest-free payments - one every two weeks. It’s backed by PayPal.<\/p>",
+            "button_label": "",
             "button_link": ""
           }
         }
@@ -87,7 +90,7 @@
         "title": "Pay in 4",
         "align_text": "center",
         "divider": false,
-        "box_shadow": false
+        "box_shadow": true
       }
     },
     "164004510682ac0e2f": {
