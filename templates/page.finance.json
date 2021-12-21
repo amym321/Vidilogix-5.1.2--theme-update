@@ -13,18 +13,19 @@
           "type": "image",
           "settings": {
             "top_subheading": "",
-            "title": "Endless\npossibilities.",
-            "title_size": 80,
-            "subheading": "Bring your brand to life",
+            "title": "Buy now, pay later",
+            "title_size": 42,
+            "subheading": "Pay in 4 from PayPal: Easy as 1-2-3. Simple, short-term installments. Just choose Pay in 4 at checkout and split your payments in 4 - one every two weeks. It's interest-free and is backed by PayPal.",
             "chat_widget": false,
-            "link": "",
-            "link_text": "",
+            "link": "shopify:\/\/collections\/sale",
+            "link_text": "Shop Now",
             "link_2": "",
             "link_text_2": "",
-            "color_accent": "rgba(0,0,0,0)",
-            "text_align": "vertical-center horizontal-center",
+            "color_accent": "#f6c12f",
+            "text_align": "vertical-center horizontal-left",
+            "image": "shopify:\/\/shop_images\/finance_hero_900x_65d2be34-c71c-402c-8d1c-300a85aa2b8d.jpg",
             "overlay_opacity": 0,
-            "focal_point": "center center"
+            "focal_point": "20% 50%"
           }
         }
       },
@@ -92,7 +93,8 @@
     "164004510682ac0e2f": {
       "type": "text-and-image",
       "settings": {
-        "image_width": 700,
+        "image": "shopify:\/\/shop_images\/needhelp.jpg",
+        "image_width": 500,
         "full_width": false,
         "subtitle": "",
         "title": "Image with text",
@@ -124,11 +126,59 @@
             "title": "Frequently asked question",
             "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
           }
+        },
+        "f01bd8c0-677b-4a86-bc02-7301be4b26db": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "3813e24a-ff27-410b-8060-21bf2c790a56": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "f58715c7-53c9-4fbf-a605-eeb8bcc58dd9": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "a84e1a1f-679c-47f6-81f5-e1b140e391fe": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "03db0e99-4dc4-43d0-a267-e61f4e31715f": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "adc3a797-f7c8-4a21-a663-26d96ae90f34": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
         }
       },
       "block_order": [
         "164004510925ecbd80-0",
-        "164004510925ecbd80-1"
+        "164004510925ecbd80-1",
+        "f01bd8c0-677b-4a86-bc02-7301be4b26db",
+        "3813e24a-ff27-410b-8060-21bf2c790a56",
+        "f58715c7-53c9-4fbf-a605-eeb8bcc58dd9",
+        "a84e1a1f-679c-47f6-81f5-e1b140e391fe",
+        "03db0e99-4dc4-43d0-a267-e61f4e31715f",
+        "adc3a797-f7c8-4a21-a663-26d96ae90f34"
       ],
       "settings": {
         "title": "FAQs"
