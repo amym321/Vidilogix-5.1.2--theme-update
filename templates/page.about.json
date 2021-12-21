@@ -42,8 +42,29 @@
         "autoplay_speed": 5
       }
     },
+    "1640050141300482f2": {
+      "type": "text-and-image",
+      "settings": {
+        "image_width": 700,
+        "full_width": false,
+        "subtitle": "",
+        "title": "Image with text",
+        "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "button_chat": false,
+        "disclaimer": "",
+        "background_color": "",
+        "text_color": "",
+        "layout": "right",
+        "divider": false
+      }
+    },
     "rich-text": {
       "type": "rich-text",
+      "disabled": true,
       "blocks": {
         "heading": {
           "type": "heading",
@@ -154,6 +175,7 @@
   "order": [
     "main",
     "slideshow",
+    "1640050141300482f2",
     "rich-text",
     "text-columns",
     "map",
