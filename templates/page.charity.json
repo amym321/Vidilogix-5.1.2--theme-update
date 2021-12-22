@@ -1,12 +1,54 @@
 {
   "sections": {
+    "164021208894912036": {
+      "type": "company-tabs",
+      "settings": {
+        "sub_menu_link_list": "company-sub-menu"
+      }
+    },
     "main": {
       "type": "main-page",
       "settings": {
       }
+    },
+    "1640212092c73c43b4": {
+      "type": "faq",
+      "blocks": {
+        "16402120925f0bab41-0": {
+          "type": "question",
+          "settings": {
+            "title": "Is my donation secure?",
+            "text": "<p>Yes, we use industry-standard SSL technology to keep your information secure. We partner with Stripe, the industry's established payment provider trusted by some of the world's largest companies. Your sensitive financial information never touches our servers. We send all data directly to Stripe's PCI-compliant servers through SSL.<\/p>"
+          }
+        },
+        "16402120925f0bab41-1": {
+          "type": "question",
+          "settings": {
+            "title": "Can I cancel my donation?",
+            "text": "<p>Of course. You can cancel it any time by replying to your order confirmation e-mail.<\/p>"
+          }
+        },
+        "11870153-374e-4942-8504-a8f41b4b0db7": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16402120925f0bab41-0",
+        "16402120925f0bab41-1",
+        "11870153-374e-4942-8504-a8f41b4b0db7"
+      ],
+      "settings": {
+        "title": "DONATION FAQS"
+      }
     }
   },
   "order": [
-    "main"
+    "164021208894912036",
+    "main",
+    "1640212092c73c43b4"
   ]
 }
