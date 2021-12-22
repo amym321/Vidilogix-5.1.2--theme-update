@@ -62,7 +62,7 @@
         "button_label": "",
         "button_link": "",
         "button_style": "primary",
-        "align_text": "center",
+        "align_text": "left",
         "button_chat": false,
         "disclaimer": "",
         "background_color": "#f2f2f2",
