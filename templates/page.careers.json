@@ -52,7 +52,7 @@
       "type": "text-and-image",
       "settings": {
         "image": "shopify:\/\/shop_images\/4_db467896-5124-4e6f-8ee7-9e9357bfe696.jpg",
-        "image_width": 700,
+        "image_width": 500,
         "full_width": false,
         "subtitle": "",
         "title": "Life at Vidlogix",
