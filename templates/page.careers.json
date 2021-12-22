@@ -72,12 +72,63 @@
         "image_bottom_margin": 0,
         "divider": false
       }
+    },
+    "16402101439139a340": {
+      "type": "rich-text",
+      "blocks": {
+        "16402101435681c49d-0": {
+          "type": "heading",
+          "settings": {
+            "title": "JOIN OUR TEAM"
+          }
+        },
+        "16402101435681c49d-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p>Vidlogix is more than a workplace. It is a training ground, a creative launch pad and a place to meet, socialize and learn alongside amateurs and experts who have one thing in common: passion for craft.<\/p><p><strong>No positions are currently available. <\/strong><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16402101435681c49d-0",
+        "16402101435681c49d-1"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "16402101296c2c5e60": {
+      "type": "text-and-image",
+      "settings": {
+        "image_width": 700,
+        "full_width": false,
+        "subtitle": "",
+        "title": "Image with text",
+        "center_title": false,
+        "text_below": false,
+        "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "button_chat": false,
+        "disclaimer": "",
+        "background_color": "",
+        "text_color": "",
+        "layout": "right",
+        "divider": false
+      }
     }
   },
   "order": [
     "main",
     "16402064701740d3d4",
     "16402063353569de6e",
-    "1640206350fe5689d0"
+    "1640206350fe5689d0",
+    "16402101439139a340",
+    "16402101296c2c5e60"
   ]
 }
