@@ -103,22 +103,23 @@
     "16402101296c2c5e60": {
       "type": "text-and-image",
       "settings": {
-        "image_width": 700,
-        "full_width": false,
+        "image": "shopify:\/\/shop_images\/support_banner_e0e9c3d4-0225-4d71-a620-bb289f7c435f.jpg",
+        "image_width": 500,
+        "full_width": true,
         "subtitle": "",
-        "title": "Image with text",
+        "title": "Vidlogix HQ",
         "center_title": false,
         "text_below": false,
-        "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.<\/p>",
-        "button_label": "",
+        "text": "<p>Located in downtown Manhattan, our open and expanding HQ is energetic and naturally collaborative.<\/p>",
+        "button_label": "get in touch",
         "button_link": "",
         "button_style": "primary",
         "align_text": "left",
-        "button_chat": false,
+        "button_chat": true,
         "disclaimer": "",
-        "background_color": "",
+        "background_color": "#f4f4f4",
         "text_color": "",
-        "layout": "right",
+        "layout": "left",
         "divider": false
       }
     }
