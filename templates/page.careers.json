@@ -51,13 +51,13 @@
     "1640206350fe5689d0": {
       "type": "text-and-image",
       "settings": {
-        "image": "shopify:\/\/shop_images\/4_db467896-5124-4e6f-8ee7-9e9357bfe696.jpg",
+        "image": "shopify:\/\/shop_images\/who_img_948da193-f703-4390-95ec-b8bb3d505d44.png",
         "image_width": 700,
         "full_width": false,
         "subtitle": "",
         "title": "Life at Vidlogix",
         "center_title": true,
-        "text_below": false,
+        "text_below": true,
         "text": "<p>Every day is a blank slate at Vidlogix HQ. An opportunity to approach problems directly and honestly. To find simple, pure solutions that make each day easier. We always start at the beginning. We ask questions. We hold ideas in our hands, examining them from every angle. Only then do we start to design. And at every step in the process, we work together. Because our team is what makes our products elegant and practical—and what makes us Vidlogix.<\/p>",
         "button_label": "",
         "button_link": "",
@@ -68,6 +68,8 @@
         "background_color": "#f2f2f2",
         "text_color": "",
         "layout": "bottom",
+        "title_bottom_margin": 0,
+        "image_bottom_margin": 0,
         "divider": false
       }
     }
