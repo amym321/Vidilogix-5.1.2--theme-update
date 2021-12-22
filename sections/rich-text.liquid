@@ -1,5 +1,7 @@
 {%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
 
+{%- if template =='page.about' or template =='page.careers' %}<div class="custom-acc-template">{% endif %}
+
 <div class="text-{{ section.settings.align_text }} page-width{% if section.settings.narrow_column %} page-width--narrow{% endif %}">
   {%- for block in section.blocks -%}
     <div class="theme-block" {{ block.shopify_attributes }}>
@@ -38,6 +40,8 @@
     </div>
   {%- endfor -%}
 </div>
+
+{%- if template =='page.about' or template =='page.careers' %}</div>{% endif %}
 
 {%- if section.settings.divider -%}</div>{%- endif -%}
 
