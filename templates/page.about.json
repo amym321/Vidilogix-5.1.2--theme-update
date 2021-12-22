@@ -94,6 +94,20 @@
         "divider": false
       }
     },
+    "1640205186fd41e98e": {
+      "type": "grid-of-images",
+      "settings": {
+        "image_1": "shopify:\/\/shop_images\/Team_1.jpg",
+        "image_1_link": "",
+        "image_2_link": "",
+        "image_3_link": "",
+        "image_4_link": "",
+        "image_5_link": "",
+        "image_6_link": "",
+        "image_7_link": "",
+        "image_8_link": ""
+      }
+    },
     "1640124077a8d2421e": {
       "type": "rich-text",
       "blocks": {
@@ -139,6 +153,7 @@
     "slideshow",
     "1640050141300482f2",
     "rich-text",
+    "1640205186fd41e98e",
     "1640124077a8d2421e",
     "16401241093b41c04d"
   ]
