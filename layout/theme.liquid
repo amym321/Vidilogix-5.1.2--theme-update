@@ -15,10 +15,6 @@
 
   <!-- begin code change per 4.1.1 customization -->
 
-  <!-- Disable slide cart app when needed -->
-  <!-- <script>window.SLIDECART_DISABLE = true</script> -->
-
-
   <!--   Start PayPal Pay Later Script Code -->
   <script
     src="https://www.paypal.com/sdk/js?client-id=AUTQyv-Fd2NbgmsX3w5sSfgnw2p6pv7tJkXLNaXeV-OVwp-qwLDz1lrb4-2IHLBPfqs9f11XgRChbln6&components=messages"
@@ -52,7 +48,6 @@
 
   <script>
     document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
-
     window.theme = window.theme || {};
     theme.routes = {
       home: "{{ routes.root_url }}",
