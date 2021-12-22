@@ -11,7 +11,7 @@
   endif
 -%}
 
-<div class="{% if section.settings.spacing %}index-section {% endif %} section-{{ section.id }}">
+<div class="{% if section.settings.spacing %}index-section {% endif %} section-{{ section.id }} {%- if template =='page.careers' %} career-display {% endif %}">
 
   <div class="page-width feature-row-wrapper">
     {%- capture image_layout -%}
@@ -79,7 +79,7 @@
           {%- endif -%}
         {% endif %}
         {%- if section.settings.text != blank -%}
-          <div class="rte appear-delay{% cycle '','-1','-2','-3','-4' %}">{{ section.settings.text }}</div>
+          <div class="rte featured-row__subtext appear-delay{% cycle '','-1','-2','-3','-4' %}">{{ section.settings.text }}</div>
         {%- endif -%}
 
 
