@@ -43,7 +43,13 @@
             {% endif %}
           </div>
 
-          <div class="cart__item-sub cart__item-row">
+          {% comment %} code change per 4.1.1 customization  {% endcomment %}
+          <div class="cart__item-dis cart__item-row{% if cart.total_discount < 1 %} hide{% endif %}">
+            <div class="ajaxcart__discount">{{ 'cart.general.discounts' | t }}</div>
+            <div data-total-discount class="ajaxcart__total-discount">{{ cart.total_discount | money }}</div>
+          </div>
+          <div class="cart__item-subtotal cart__item-row">
+
             <div>{{ 'cart.general.subtotal' | t }}</div>
             <div data-subtotal>{{ cart.total_price | money }}</div>
           </div>
