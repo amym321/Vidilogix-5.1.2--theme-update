@@ -2,11 +2,107 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
+      }
+    },
+    "16402064701740d3d4": {
+      "type": "company-tabs",
+      "settings": {
+        "sub_menu_link_list": "company-sub-menu"
+      }
+    },
+    "16402063353569de6e": {
+      "type": "slideshow",
+      "blocks": {
+        "16402063358fed5bb7-0": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "Careers",
+            "title_size": 57,
+            "subheading": "",
+            "chat_widget": false,
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_color": "#ffffff",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/2.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "16402063358fed5bb7-0"
+      ],
+      "settings": {
+        "section_height": "750px",
+        "mobile_height": "auto",
+        "parallax": false,
+        "style": "bars",
+        "autoplay": false,
+        "autoplay_speed": 5
+      }
+    },
+    "1640206342bfcd2312": {
+      "type": "rich-text",
+      "blocks": {
+        "1640206342e82d92fc-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Rich text"
+          }
+        },
+        "1640206342e82d92fc-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1640206342e82d92fc-0",
+        "1640206342e82d92fc-1"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "1640206350fe5689d0": {
+      "type": "text-and-image",
+      "settings": {
+        "image_width": 700,
+        "full_width": false,
+        "subtitle": "",
+        "title": "Image with text",
+        "center_title": false,
+        "text_below": false,
+        "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "button_chat": false,
+        "disclaimer": "",
+        "background_color": "",
+        "text_color": "",
+        "layout": "right",
+        "divider": false
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "16402064701740d3d4",
+    "16402063353569de6e",
+    "1640206342bfcd2312",
+    "1640206350fe5689d0"
   ]
 }
