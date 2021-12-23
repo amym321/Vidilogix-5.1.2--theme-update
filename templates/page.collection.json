@@ -12,10 +12,160 @@
         "page_title": "Our Collections",
         "page_description": "Browse our core collections to find the right solution for you"
       }
+    },
+    "164029588720b325da": {
+      "type": "text-and-image",
+      "settings": {
+        "image_width": 700,
+        "full_width": false,
+        "subtitle": "",
+        "title": "Image with text",
+        "center_title": false,
+        "text_below": false,
+        "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "button_chat": false,
+        "disclaimer": "",
+        "background_color": "",
+        "text_color": "",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "164029591078d8973b": {
+      "type": "text-and-image",
+      "settings": {
+        "image_width": 700,
+        "full_width": false,
+        "subtitle": "",
+        "title": "Image with text",
+        "center_title": false,
+        "text_below": false,
+        "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "button_chat": false,
+        "disclaimer": "",
+        "background_color": "",
+        "text_color": "",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "1640295917745d439c": {
+      "type": "text-and-image",
+      "settings": {
+        "image_width": 700,
+        "full_width": false,
+        "subtitle": "",
+        "title": "Image with text",
+        "center_title": false,
+        "text_below": false,
+        "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "button_chat": false,
+        "disclaimer": "",
+        "background_color": "",
+        "text_color": "",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "16402959226a0a589e": {
+      "type": "text-and-image",
+      "settings": {
+        "image_width": 700,
+        "full_width": false,
+        "subtitle": "",
+        "title": "Image with text",
+        "center_title": false,
+        "text_below": false,
+        "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "button_chat": false,
+        "disclaimer": "",
+        "background_color": "",
+        "text_color": "",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "164029592740a713b8": {
+      "type": "text-and-image",
+      "settings": {
+        "image_width": 700,
+        "full_width": false,
+        "subtitle": "",
+        "title": "Image with text",
+        "center_title": false,
+        "text_below": false,
+        "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "button_chat": false,
+        "disclaimer": "",
+        "background_color": "",
+        "text_color": "",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "16402959424367e847": {
+      "type": "newsletter",
+      "blocks": {
+        "1640295942d7478950-0": {
+          "type": "title",
+          "settings": {
+            "title": "Sign up and save"
+          }
+        },
+        "1640295942d7478950-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.<\/p>"
+          }
+        },
+        "1640295942d7478950-2": {
+          "type": "form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "1640295942d7478950-0",
+        "1640295942d7478950-1",
+        "1640295942d7478950-2"
+      ],
+      "settings": {
+        "color_background": "#f9f9f9",
+        "color_text": "#1c1d1d",
+        "unsubscribe_text": "Terms & Conditions",
+        "unsubscribe_url": "shopify:\/\/pages\/contest",
+        "show_divider": false
+      }
     }
   },
   "order": [
     "main",
-    "164029444029673141"
+    "164029444029673141",
+    "164029588720b325da",
+    "164029591078d8973b",
+    "1640295917745d439c",
+    "16402959226a0a589e",
+    "164029592740a713b8",
+    "16402959424367e847"
   ]
 }
