@@ -4,7 +4,12 @@
       <header class="grid flex-grid flex-grid--start">
         <div class="smart-header__text grid__item small--one-half medium-up--two-thirds">
           {% comment %} page collection has specific text {% endcomment %}
-          {%- if section.settings.page_title != blank -%}
+
+          {%- if template == 'collection' -%}
+            <h1 class="section-header__title collection">
+              {{ collection.title }}
+            </h1>
+          {%- elsif section.settings.page_title != blank -%}
             <h1 class="section-header__title collection">
               {{ section.settings.page_title }}
             </h1>
@@ -13,11 +18,19 @@
               {{ page.title }}
             </h1>
           {%- endif -%}
-          {%- if section.settings.page_description != blank -%}
+
+          {%- if template == 'collection' -%}
+            {%- if collection.description != blank -%}
+              <div class="smart-header__description">
+                {{ collection.description }}
+              </div>
+            {%- endif -%}
+          {%- elsif section.settings.page_description != blank -%}
             <div class="smart-header__description">
               {{ section.settings.page_description }}
             </div>
           {%- endif -%}
+          
         </div>
         <div class="smart-header__contact grid__item small--one-half medium-up--one-third">
           {% if settings.button_chat == true %}
