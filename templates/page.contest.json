@@ -21,11 +21,83 @@
             "title": "Frequently asked question",
             "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
           }
+        },
+        "b0e56bb5-e62e-4e74-ba97-fcf142160476": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "768be0e6-28a4-4869-b125-875cdd872a4e": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "416b74b1-7496-4963-bc59-6c1494b3f23e": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "912e9a10-f951-492c-8415-6b00caa7f11f": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "3fb5ce44-45ee-4c6f-b595-075f17c13a78": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "289e9602-1e84-4dbb-9b80-8889fd7c5352": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "2eb975ee-9947-4695-90cc-852af3bfbfce": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "b194f4bf-59eb-429a-95f4-1b00be5f6179": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "119a2b93-409f-4604-bb0e-19a7ece32162": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
         }
       },
       "block_order": [
         "1640288786088ae6b7-0",
-        "1640288786088ae6b7-1"
+        "1640288786088ae6b7-1",
+        "b0e56bb5-e62e-4e74-ba97-fcf142160476",
+        "768be0e6-28a4-4869-b125-875cdd872a4e",
+        "416b74b1-7496-4963-bc59-6c1494b3f23e",
+        "912e9a10-f951-492c-8415-6b00caa7f11f",
+        "3fb5ce44-45ee-4c6f-b595-075f17c13a78",
+        "289e9602-1e84-4dbb-9b80-8889fd7c5352",
+        "2eb975ee-9947-4695-90cc-852af3bfbfce",
+        "b194f4bf-59eb-429a-95f4-1b00be5f6179",
+        "119a2b93-409f-4604-bb0e-19a7ece32162"
       ],
       "settings": {
         "title": "FAQs"
