@@ -233,7 +233,7 @@
         "164028597018ab3685-1": {
           "type": "liquid",
           "settings": {
-            "code": "<br class=\"break-margin\">",
+            "code": "<p class=\"break-margin\"><\/p>",
             "width": "100%",
             "alignment": "center"
           }
