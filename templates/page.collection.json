@@ -2,11 +2,20 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
+      }
+    },
+    "164029444029673141": {
+      "type": "smart-header-section",
+      "settings": {
+        "page_title": "",
+        "page_description": "Browse our core collections to find the right solution for you"
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "164029444029673141"
   ]
 }
