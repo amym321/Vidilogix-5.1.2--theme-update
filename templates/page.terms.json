@@ -206,12 +206,33 @@
       "settings": {
         "title": ""
       }
+    },
+    "1640285970753e7d92": {
+      "type": "advanced-content",
+      "blocks": {
+        "164028597018ab3685-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<br class=\"break-margin\">\n<style>\n.break-margin {\nmargin-top:500px;\nmargin-bottom:50px;\n}\n<\/style>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "164028597018ab3685-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": false
+      }
     }
   },
   "order": [
     "main",
     "16402828343bc58a6d",
     "1640282839ea256936",
-    "1640282841137383d4"
+    "1640282841137383d4",
+    "1640285970753e7d92"
   ]
 }
