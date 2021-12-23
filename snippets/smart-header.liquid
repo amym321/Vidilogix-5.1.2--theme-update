@@ -3,6 +3,7 @@
     <div class="page-width">
       <header class="grid flex-grid flex-grid--start">
         <div class="smart-header__text grid__item small--one-half medium-up--two-thirds">
+          {% comment %} page collection has specific text {% endcomment %}
           {%- if section.settings.page_title != blank -%}
             <h1 class="section-header__title collection">
               {{ section.settings.page_title }}
