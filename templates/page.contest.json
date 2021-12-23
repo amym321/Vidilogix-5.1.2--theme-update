@@ -4,9 +4,36 @@
       "type": "main-page",
       "settings": {
       }
+    },
+    "1640288786ec6cdb12": {
+      "type": "faq",
+      "blocks": {
+        "1640288786088ae6b7-0": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "1640288786088ae6b7-1": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1640288786088ae6b7-0",
+        "1640288786088ae6b7-1"
+      ],
+      "settings": {
+        "title": "FAQs"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "1640288786ec6cdb12"
   ]
 }
