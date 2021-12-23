@@ -18,6 +18,11 @@
   if section.settings.header_style == 'sticky'
     assign sticky_header = true
   endif
+  {% comment %} code change per 4.1.1 customization. add scroll hide {% endcomment %}
+  assign sticky_header_scroll = false
+  if section.settings.header_style == 'scroll_hide'
+    assign sticky_header_scroll = true
+  endif
   assign overlay_header = false
   if template_name == 'index' and section.settings.sticky_index
     assign overlay_header = true
@@ -49,25 +54,30 @@
       font-size: 1.1em;
     }
   {% endif %}
+
   {% if mainmenu.length > 6 %}
     .site-nav__link {
       padding-left: 10px;
       padding-right: 10px;
     }
   {% endif %}
+
   {% unless section.settings.mega_menu_images %}
     .megamenu__colection-image {
       display: none;
     }
   {% endunless %}
+
   {%- if settings.color_header == settings.color_body_bg or settings.color_body_bg contains settings.color_header -%}
     .site-header {
       box-shadow: 0 0 1px rgba(0,0,0,0.2);
     }
+
     .toolbar + .header-sticky-wrapper .site-header {
       border-top: 0;
     }
   {%- endif -%}
+
   {%- if settings.color_announcement == settings.color_body_bg -%}
     .announcement-bar {
       border-bottom: 1px solid;
@@ -106,6 +116,8 @@
         id="SiteHeader"
         class="site-header{% if settings.type_navigation_style == 'heading' %} site-header--heading-style{% endif %}"
         data-sticky="{{ sticky_header }}"
+        {% comment %} code change per 4.1.1 customization. add data-sticky-scroll {% endcomment %}
+        data-sticky-scroll="{{ sticky_header_scroll }}"
         data-overlay="{{ overlay_header }}">
         <div class="page-width">
           <div
@@ -169,7 +181,8 @@
           </div>
 
           {%- if section.settings.main_menu_alignment == 'center' -%}
-            <div class="text-center">
+        {% comment %} code change per 4.1.1 customization. add class {% endcomment %}
+            <div class="text-center header-item--links">
               {%- render 'header-desktop-nav', main_menu: main_menu, dropdown_alignment: dropdown_alignment -%}
             </div>
           {%- endif -%}
@@ -218,6 +231,13 @@
   {%- endunless -%}
 </div>
 
+{%- if template.name == 'product' -%}
+  <div class="accordion-quicknav">
+    <ul></ul>
+  </div>
+{%- endif -%}
+
+{% comment %} code change per 4.1.1 customization. add scroll hide & announcement_speed {% endcomment %}
 {% schema %}
   {
     "name": "Header",
@@ -284,6 +304,10 @@
           {
             "value": "sticky",
             "label": "Sticky"
+          },
+          {
+            "value": "scroll_hide",
+            "label": "Hides on scroll down"
           }
         ]
       },
@@ -313,6 +337,16 @@
         "type": "checkbox",
         "id": "announcement_above_header",
         "label": "Always show above header"
+      },
+      {
+        "type": "range",
+        "id": "announcement_speed",
+        "label": "Change slides every",
+        "default": 5,
+        "min": 0,
+        "max": 10,
+        "step": 1,
+        "unit": "s"
       },
       {
         "type": "header",
