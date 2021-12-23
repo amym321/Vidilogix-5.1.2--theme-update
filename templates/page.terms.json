@@ -2,11 +2,216 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
+      }
+    },
+    "16402828343bc58a6d": {
+      "type": "smart-header-section",
+      "settings": {
+      }
+    },
+    "1640282839ea256936": {
+      "type": "faq",
+      "blocks": {
+        "1640282839412f03e9-0": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "1640282839412f03e9-1": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "f27c6fe5-6ebc-443c-9037-aa9a13236e5b": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "a728c822-f765-46b6-8162-c1b2e5a900e6": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "1ff7c0f9-c2f1-44c6-b8c2-42c101171a8d": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "dabf3f48-5fb5-46c5-9fec-7297afbac0a3": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "936e722c-2744-4c13-a530-ae74df7676fd": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "ec4a2b90-f12f-40a2-bd5f-9fcf2bb8db9c": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "48b34178-fc18-42a5-ad54-3938aa11610d": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "64f44a42-a32c-47f1-a9b3-01db8e4c2b1b": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "3b4a153d-a2d6-42c8-97af-0f50f844eedd": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "580db1a4-33d9-41f4-bb67-420833ebdcfe": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "56c6c95c-2092-4c23-bc6b-d927882432f7": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "3d0dd4c5-9c7c-4778-a7b8-60c57bd3a494": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "ee8a5cb2-93fd-49e6-9a09-1a7ea2678d97": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "c2bf822f-2886-4434-83d6-db1709383bab": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1640282839412f03e9-0",
+        "1640282839412f03e9-1",
+        "f27c6fe5-6ebc-443c-9037-aa9a13236e5b",
+        "a728c822-f765-46b6-8162-c1b2e5a900e6",
+        "1ff7c0f9-c2f1-44c6-b8c2-42c101171a8d",
+        "dabf3f48-5fb5-46c5-9fec-7297afbac0a3",
+        "936e722c-2744-4c13-a530-ae74df7676fd",
+        "ec4a2b90-f12f-40a2-bd5f-9fcf2bb8db9c",
+        "48b34178-fc18-42a5-ad54-3938aa11610d",
+        "64f44a42-a32c-47f1-a9b3-01db8e4c2b1b",
+        "3b4a153d-a2d6-42c8-97af-0f50f844eedd",
+        "580db1a4-33d9-41f4-bb67-420833ebdcfe",
+        "56c6c95c-2092-4c23-bc6b-d927882432f7",
+        "3d0dd4c5-9c7c-4778-a7b8-60c57bd3a494",
+        "ee8a5cb2-93fd-49e6-9a09-1a7ea2678d97",
+        "c2bf822f-2886-4434-83d6-db1709383bab"
+      ],
+      "settings": {
+        "title": ""
+      }
+    },
+    "1640282841137383d4": {
+      "type": "faq",
+      "blocks": {
+        "164028284157c7a016-0": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "164028284157c7a016-1": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "46ddd8a1-a06e-4170-a4d5-7e49327aceec": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "d9b9f638-cd1d-48a9-a973-d58b3351c85d": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "8a5ceda8-2d69-44cc-a298-2bb380e320bf": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "1f9a48dd-c28a-4723-a024-293eab862dbb": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "164028284157c7a016-0",
+        "164028284157c7a016-1",
+        "46ddd8a1-a06e-4170-a4d5-7e49327aceec",
+        "d9b9f638-cd1d-48a9-a973-d58b3351c85d",
+        "8a5ceda8-2d69-44cc-a298-2bb380e320bf",
+        "1f9a48dd-c28a-4723-a024-293eab862dbb"
+      ],
+      "settings": {
+        "title": ""
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "16402828343bc58a6d",
+    "1640282839ea256936",
+    "1640282841137383d4"
   ]
 }
