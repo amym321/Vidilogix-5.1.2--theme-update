@@ -3,19 +3,19 @@
     <div class="page-width">
       <header class="grid flex-grid flex-grid--start">
         <div class="smart-header__text grid__item small--one-half medium-up--two-thirds">
-          {%- if template == 'collection' -%}
+          {%- if section.settings.page_title != blank -%}
             <h1 class="section-header__title collection">
-              {{ collection.title }}
+              {{ section.settings.page_title }}
             </h1>
-            {%- if collection.description != blank -%}
-              <div class="smart-header__description">
-                {{ collection.description }}
-              </div>
-            {%- endif -%}
           {% else %}
             <h1 class="section-header__title">
               {{ page.title }}
             </h1>
+          {%- endif -%}
+          {%- if section.settings.page_description != blank -%}
+            <div class="smart-header__description">
+              {{ section.settings.page_description }}
+            </div>
           {%- endif -%}
         </div>
         <div class="smart-header__contact grid__item small--one-half medium-up--one-third">
