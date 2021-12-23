@@ -17,7 +17,7 @@
         "1640286665bc900bea-1": {
           "type": "liquid",
           "settings": {
-            "code": "<br class=\"break-margin\">",
+            "code": "<br class=\"break-margin\"><\/br>",
             "width": "100%",
             "alignment": "center"
           }
