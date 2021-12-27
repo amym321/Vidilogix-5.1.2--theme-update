@@ -8480,6 +8480,7 @@ html[dir=rtl] .grid-product__content{
     background-color:var(--colorBody);
     color:{{ settings.color_body_text | default: "#1c1d1d" }};
     color:var(--colorTextBody);
+    border-radius: var(--buttonRadius); 
   }
 
 @media only screen and (min-width:769px){
@@ -8495,6 +8496,7 @@ html[dir=rtl] .grid-product__content{
   background-color:var(--colorSaleTag);
   color:{{ settings.color_sale_tag_text | default: "#ffffff" }};
   color:var(--colorSaleTagText);
+  border-radius: var(--buttonRadius); 
 }
 
 .quick-product__btn{
