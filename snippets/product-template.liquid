@@ -599,7 +599,7 @@
             <div class="container protection-plan">
 
               {% assign pp_image = shop.metafields.accentuate.protection_plan_image | first %}
-              <img class="protection-plan__image" src="{{ pp_image.cloudinary_src | append: 'w_1240,h_600,c_fill' }}" alt="{{ pp_image.alt }}"/>
+              <img class="protection-plan__image" src="{{ pp_image.cloudinary_src | append: 'w_1240,h_600,c_fill' }}" alt="protection plan for smart technology"/>
               <div class="content rte">
                 {%- assign prod = all_products[protection_product] -%}
                 {%- assign prod_id = all_products[protection_product].id -%}
