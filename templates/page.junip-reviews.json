@@ -13,7 +13,7 @@
         "16406457639efe575c-1": {
           "type": "liquid",
           "settings": {
-            "code": "<div class=\"break-margin\"><\/>",
+            "code": "<div class=\"break-margin\"><\/div>",
             "width": "50%",
             "alignment": "center"
           }
