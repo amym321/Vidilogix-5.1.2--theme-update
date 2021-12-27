@@ -1,0 +1,11 @@
+{
+  "sections":{
+    "junip-reviews":{
+      "type":"junip-reviews",
+      "settings":{}
+    }
+  },
+  "order":[
+    "junip-reviews"
+  ]
+}
