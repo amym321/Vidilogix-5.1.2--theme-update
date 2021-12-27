@@ -6,6 +6,7 @@
   endif
 -%}
 
+<div id="shopify-section-article-template">
 {%- if section.settings.image_hero and article.image -%}
   <div class="collection-hero">
     {%- assign img_url = article.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
@@ -156,8 +157,6 @@
       {%- endpaginate -%}
     {%- endif -%}
 
-    <hr class="hr--large">
-
   </article>
 
 </div>
@@ -228,6 +227,7 @@
     <a href="{{ blog.url }}" class="btn return-link"><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-arrow-left" viewBox="0 0 50 15"><path d="M50 5.38v4.25H15V15L0 7.5 15 0v5.38z"/></svg> {{ 'blogs.article.back_to_blog' | t: title: blog.title }}</a>
   </div>
 
+</div>
 
 <script type="application/ld+json">
 {
