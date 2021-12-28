@@ -1,3 +1,4 @@
+  {% comment %} code change per 4.1.1 customization. add scroll hide {% endcomment %}
 {%- liquid
   assign main_menu = linklists[section.settings.main_menu_link_list]
   assign toolbar_menu = linklists[section.settings.toolbar_menu]
@@ -18,7 +19,7 @@
   if section.settings.header_style == 'sticky'
     assign sticky_header = true
   endif
-  {% comment %} code change per 4.1.1 customization. add scroll hide {% endcomment %}
+
   assign sticky_header_scroll = false
   if section.settings.header_style == 'scroll_hide'
     assign sticky_header_scroll = true
