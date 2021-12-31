@@ -208,7 +208,7 @@
       "settings": {
         "title": "Happy Customers",
         "align_text": "center",
-        "more_link": "",
+        "more_link": "\/pages\/reviews",
         "link_text": "Read All Reviews",
         "round_images": true,
         "color_background": "#f9f9f9",
