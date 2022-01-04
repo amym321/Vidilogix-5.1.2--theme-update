@@ -8102,6 +8102,7 @@ lazySizesConfig.expFactor = 4;
     theme.sections.register('recently-viewed', theme.RecentlyViewed);
     theme.sections.register('newsletter-popup', theme.NewsletterPopup);
     theme.sections.register('collection-header', theme.CollectionHeader);
+    theme.sections.register('collection-template', theme.Collection);
     // begin code change per 4.1.1 customization
     theme.sections.register('protection-plan', theme.ProtectionPlan);
     // end code change per 4.1.1 customization
