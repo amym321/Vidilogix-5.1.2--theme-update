@@ -43,7 +43,7 @@
             "image": "shopify:\/\/shop_images\/Paypal-Logo.png",
             "image_width": 150,
             "title": "Return shipping is on PayPal when you checkout with PayPal.",
-            "text": "<p>If you aren’t happy with your order, we’ll provide a free return shipping label or refund the cost of sending it back on eligible purchases.<\/p>",
+            "text": "<p>If you aren’t happy with your order, PayPal will provide a free return shipping label or refund the cost of sending it back on eligible purchases.<\/p>",
             "button_label": "Learn More",
             "button_link": "https:\/\/www.paypal.com\/us\/webapps\/mpp\/returns"
           }
