@@ -83,6 +83,13 @@
             "text": "<p><strong>DAMAGED & MISSING MERCHANDISE MUST BE REPORTED WITHIN 7 DAYS OF RECEIVING YOUR ORDER <\/strong><\/p><p>Prior to signing receipt of your shipment, carefully inspect the box or boxes for any damage. If you see damage you must mark the delivery receipt accordingly. It is recommended to take pictures of the outside of the box and the inside of the box. Then unpack the contents to ensure there is no concealed damage or missing items.<\/p><p>Gather the following documentation:<br\/>E-mail <a href=\"mailto:hello@vidlogix.com\" target=\"_blank\" title=\"hello@vidlogix.com\">hello@vidlogix.com<\/a> with the above documentation and we will be happy to work with the freight company to process a damage claim. <\/p><p>• vidlogix Order Number<br\/>• Freight Tracking Number<br\/>• Photographs and description of damage<\/p>"
           }
         },
+        "0d01f7dc-88d5-4010-8808-c09eecaf52aa": {
+          "type": "question",
+          "settings": {
+            "title": "Insurance Notice",
+            "text": "<p><strong>By selecting UPS Shipping,<\/strong> you release vidlogix from responsibility for delayed shipments and loss in excess of $100.00. Insurance in excess of $100 should be requested at the time of purchase. The receiver is responsible for additional insurance costs. The receiver is responsible to file an insurance claim with UPS. All shipments are DAP, unless otherwise noted. Weather, natural disasters and other uncontrollable events can interrupt UPS transportation flow. Shipments delayed due to an uncontrollable event are not eligible for a refund or credit under the UPS money-back guarantee policy.<\/p><p><strong>By selecting USPS Shipping,<\/strong> you release vidlogix from responsibility for delayed shipments and loss in excess of $50.00. Insurance claims to damaged or lost items in excess of $50.00 will not be recovered. vidlogix is not responsible for lost or damaged items. Insurance in excess of $50.00 should be requested at the time of purchase. All shipments are DAP, unless otherwise noted.<\/p>"
+          }
+        },
         "d4cc094f-fb0e-4d22-89f2-c1420f381b15": {
           "type": "question",
           "settings": {
@@ -97,6 +104,7 @@
         "6055492a-dfb9-4b9f-b67a-7a3686be4d9d",
         "6aca3140-25db-4040-9578-771ed119a3ba",
         "e114e0a0-e8fc-47f7-8dcf-07f2f2cee281",
+        "0d01f7dc-88d5-4010-8808-c09eecaf52aa",
         "d4cc094f-fb0e-4d22-89f2-c1420f381b15"
       ],
       "settings": {
