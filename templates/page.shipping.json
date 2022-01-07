@@ -73,7 +73,7 @@
           "type": "question",
           "settings": {
             "title": "Incorrect item",
-            "text": "<p><strong>RECEIVE INCORRECT MERCHANDISE? WE'LL MAKE IT RIGHT!<\/strong><\/p><p>Contact our Customer Support team at <a target=\"_blank\" title=\"mailto:hello@vidlogix.com\">hello@vidlogix.com<\/a> and we will coordinate a reorder to ship the correct merchandise at no additional cost to you. We may also provide you with a prepaid return shipping label and request an immediate return of the incorrectly received merchandise. To avoid additional charges the incorrectly received merchandise must be shipped within 7 days of receiving the prepaid return shipping label. All regular return policies still apply. All merchandise must be returned unused and in original packaging in order to avoid being charged.<\/p>"
+            "text": "<p><strong>RECEIVE INCORRECT MERCHANDISE? WE'LL MAKE IT RIGHT!<\/strong><\/p><p>Contact our Customer Support team at <a href=\"mailto:hello@vidlogix.com\" target=\"_blank\" title=\"mailto:hello@vidlogix.com\">hello@vidlogix.com<\/a> and we will coordinate a reorder to ship the correct merchandise at no additional cost to you. We may also provide you with a prepaid return shipping label and request an immediate return of the incorrectly received merchandise. To avoid additional charges the incorrectly received merchandise must be shipped within 7 days of receiving the prepaid return shipping label. All regular return policies still apply. All merchandise must be returned unused and in original packaging in order to avoid being charged.<\/p>"
           }
         },
         "e114e0a0-e8fc-47f7-8dcf-07f2f2cee281": {
