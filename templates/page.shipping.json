@@ -69,6 +69,13 @@
             "text": "<p>We do not ship to freight forwarders. Some items that ship from the manufacturer can only be delivered to addresses within the 48 contiguous U.S. <a href=\"https:\/\/vidlogix.com\/pages\/contact\">Contact us<\/a> for delivery information on specific models. Merchandise amount thresholds for shipping prices apply to the cost of items after any special discounts have been applied and exclusive of any tax. These offers may end at any time. <\/p>"
           }
         },
+        "6aca3140-25db-4040-9578-771ed119a3ba": {
+          "type": "question",
+          "settings": {
+            "title": "Incorrect item",
+            "text": "<p><strong>RECEIVE INCORRECT MERCHANDISE? WE'LL MAKE IT RIGHT!<\/strong><\/p><p>Contact our Customer Support team at <a target=\"_blank\" title=\"mailto:hello@vidlogix.com\">hello@vidlogix.com<\/a>and we will coordinate a reorder to ship the correct merchandise at no additional cost to you. We may also provide you with a prepaid return shipping label and request an immediate return of the incorrectly received merchandise. To avoid additional charges the incorrectly received merchandise must be shipped within 7 days of receiving the prepaid return shipping label. All regular return policies still apply. All merchandise must be returned unused and in original packaging in order to avoid being charged.<\/p>"
+          }
+        },
         "e114e0a0-e8fc-47f7-8dcf-07f2f2cee281": {
           "type": "question",
           "settings": {
@@ -88,6 +95,7 @@
         "1640041293a5780292-0",
         "1640041293a5780292-1",
         "6055492a-dfb9-4b9f-b67a-7a3686be4d9d",
+        "6aca3140-25db-4040-9578-771ed119a3ba",
         "e114e0a0-e8fc-47f7-8dcf-07f2f2cee281",
         "d4cc094f-fb0e-4d22-89f2-c1420f381b15"
       ],
