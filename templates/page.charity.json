@@ -59,8 +59,8 @@
         "11870153-374e-4942-8504-a8f41b4b0db7": {
           "type": "question",
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>",
+            "title": "Is my donation tax-deductible?",
+            "text": "<p>Your gift is tax deductible as per your local regulations, as we are a tax exempt organization. We will email you a donation receipt. Please keep this, as it is your official record to claim this donation as a tax deduction.<\/p>",
             "button_link2": "",
             "button_text2": "Button text",
             "button_chat2": false,
