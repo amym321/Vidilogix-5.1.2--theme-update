@@ -17,6 +17,7 @@
       {%- for block in section.blocks -%}
         <div {{ block.shopify_attributes }}>
           {% case block.type %}
+
             {% when 'rich-text'%}
               <div class=" {% unless template == 'page.terms' %} index-section {% endunless %} index-section--faq">
                 <div class="text-{{ block.settings.align_text }}">
@@ -56,7 +57,21 @@
                 <div id="FAQ-content-{{ block.id }}" class="collapsible-content collapsible-content--all" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                   <div class="collapsible-content__inner collapsible-content__inner--faq rte" itemprop="text">
                     {{ block.settings.text }}
+                    
+                    {% comment %} code added - am. added more text & button to question block{% endcomment %}
+                    {% if block.settings.button_chat2  %}
+                      <a id="rp-home" class="btn">
+                        {{ block.settings.button_text2 }}
+                      </a>
+                    {% elsif block.settings.button_link2 != blank %}
+                      <a class="btn" href="{{ block.settings.button_link2 }}" class="button">
+                        {{ block.settings.button_text2 }}
+                      </a>
+                    {% endif %}
+                    {% if block.settings.text2 %}{{ block.settings.text2 }}{% endif %}
+
                   </div>
+
                 </div>
               </div>
           {% endcase %}
@@ -157,6 +172,29 @@
           {
             "type": "richtext",
             "id": "text",
+            "label": "Text",
+            "default": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>"
+          },
+          {
+            "type": "url",
+            "id": "button_link2",
+            "label": "Button link"
+          },
+          {
+            "type": "text",
+            "id": "button_text2",
+            "label": "Button text",
+            "default": "Button text"
+          },
+          {
+            "type": "checkbox",
+            "id": "button_chat2",
+            "label": "Button launches chat widget",
+            "default": false
+          },
+          {
+            "type": "richtext",
+            "id": "text2",
             "label": "Text",
             "default": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>"
           }
