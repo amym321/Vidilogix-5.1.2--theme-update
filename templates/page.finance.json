@@ -210,6 +210,21 @@
       "settings": {
         "title": "FAQs"
       }
+    },
+    "164175857628b36d96": {
+      "type": "background-image-text",
+      "settings": {
+        "subtitle": "Impressive",
+        "title": "Large image with text box",
+        "text": "<p>Pair large text with a full-width image to draw attention to an important detail of your brand or product line.<\/p>",
+        "button_label": "rehrtu",
+        "button_link": "shopify:\/\/blogs\/news",
+        "focal_point": "center",
+        "layout": "left",
+        "height": 550,
+        "framed": false,
+        "parallax": false
+      }
     }
   },
   "order": [
@@ -217,6 +232,7 @@
     "164004502781c7bb2f",
     "1640045049ef117e94",
     "164004510682ac0e2f",
-    "164004510986b74b22"
+    "164004510986b74b22",
+    "164175857628b36d96"
   ]
 }
