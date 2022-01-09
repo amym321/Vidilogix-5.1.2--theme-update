@@ -49,11 +49,11 @@
           "type": "question",
           "settings": {
             "title": "Can I cancel my donation?",
-            "text": "<p>Of course. You can cancel it any time by replying to your order confirmation e-mail.<\/p>",
+            "text": "<p>Yes, of course! You can cancel it any time by replying to your order confirmation e-mail.<\/p>",
             "button_link2": "",
             "button_text2": "Button text",
             "button_chat2": false,
-            "text2": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+            "text2": ""
           }
         },
         "11870153-374e-4942-8504-a8f41b4b0db7": {
