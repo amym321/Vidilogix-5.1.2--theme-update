@@ -196,17 +196,6 @@
             "button_chat2": false,
             "text2": ""
           }
-        },
-        "adc3a797-f7c8-4a21-a663-26d96ae90f34": {
-          "type": "question",
-          "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>",
-            "button_link2": "",
-            "button_text2": "Button text",
-            "button_chat2": false,
-            "text2": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
-          }
         }
       },
       "block_order": [
@@ -216,8 +205,7 @@
         "3813e24a-ff27-410b-8060-21bf2c790a56",
         "f58715c7-53c9-4fbf-a605-eeb8bcc58dd9",
         "a84e1a1f-679c-47f6-81f5-e1b140e391fe",
-        "03db0e99-4dc4-43d0-a267-e61f4e31715f",
-        "adc3a797-f7c8-4a21-a663-26d96ae90f34"
+        "03db0e99-4dc4-43d0-a267-e61f4e31715f"
       ],
       "settings": {
         "title": "FAQs"
