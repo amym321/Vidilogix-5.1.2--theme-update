@@ -38,21 +38,33 @@
           "type": "question",
           "settings": {
             "title": "Is my donation secure?",
-            "text": "<p>Yes, we use industry-standard SSL technology to keep your information secure. We partner with Stripe, the industry's established payment provider trusted by some of the world's largest companies. Your sensitive financial information never touches our servers. We send all data directly to Stripe's PCI-compliant servers through SSL.<\/p>"
+            "text": "<p>Yes, of course! We use industry-standard SSL technology to keep your information secure. We partner with Stripe, the industry's established payment provider trusted by some of the world's largest companies. Your sensitive financial information never touches our servers. We send all data directly to Stripe's PCI-compliant servers through SSL.<\/p>",
+            "button_link2": "",
+            "button_text2": "Button text",
+            "button_chat2": false,
+            "text2": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
           }
         },
         "16402120925f0bab41-1": {
           "type": "question",
           "settings": {
             "title": "Can I cancel my donation?",
-            "text": "<p>Of course. You can cancel it any time by replying to your order confirmation e-mail.<\/p>"
+            "text": "<p>Of course. You can cancel it any time by replying to your order confirmation e-mail.<\/p>",
+            "button_link2": "",
+            "button_text2": "Button text",
+            "button_chat2": false,
+            "text2": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
           }
         },
         "11870153-374e-4942-8504-a8f41b4b0db7": {
           "type": "question",
           "settings": {
             "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>",
+            "button_link2": "",
+            "button_text2": "Button text",
+            "button_chat2": false,
+            "text2": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
           }
         }
       },
