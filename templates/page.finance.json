@@ -157,7 +157,7 @@
           "type": "question",
           "settings": {
             "title": "What amounts qualify for Pay in 4?",
-            "text": "<p>You can use Pay in 4 for eligible shopping cart values between $30 to $600.<\/p>",
+            "text": "<p>You can use Pay in 4 for eligible shopping cart values between $30 to $1500.<\/p>",
             "button_link2": "",
             "button_text2": "Button text",
             "button_chat2": false,
