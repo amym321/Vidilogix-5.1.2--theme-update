@@ -351,5 +351,28 @@
   },
   "date_formats":{
     "month_day_year": "%b %d, %Y"
+  },
+  "shopify": {
+    "checkout": {
+      "tips": {
+        "title": "St. Jude",
+        "description": "Harness the power of giving. Give thanks for the healthy kids in your life, and give to those who are not. Each year Vidlogix and its partners donate to St. Jude. Donations help provide the best care for patients and research that leads to cures. Vidlogix will match your donation up to the Subtotal. Please consider making a tax-deductible donation to this worthy cause.",
+        "custom_label": "Custom amount",
+        "update_tip": "Update",
+        "add_tip": "Add"
+      },
+      "order_summary": {
+        "tip_label": "Donation"
+      },
+      "alternative_payment_method_banner": {
+        "express_checkout": "Express checkout",
+        "or": "ALL ORDERS SHIP TO THE BILLING ADDRESS. PLEASE USE PAYPAL IF SHIPPING TO AN ADDRESS OTHER THAN THE BILLING ADDRESS."
+      },
+      "thank_you": {
+        "page_title": "Thank you, {{ display_name }}!",
+        "cancelled_title": "Your order may not qualify for the following reasons:",
+        "cancelled_description": "Brand\/reseller. Order change\/cancellation. Change of address. Failed order verification. Items are unavailable. Payment declined. Address mismatch. Freight forwarder."
+      }
+    }
   }
 }
