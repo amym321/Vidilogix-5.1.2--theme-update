@@ -1,20 +1,31 @@
 <div class="container-top">
-    <a id="button-top" class="show">
-      <svg class="icon-top icon--arrow-up" width="27" height="25" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path class="fill_color" fill-rule="evenodd" clip-rule="evenodd" d="M12.4393 0.43934C13.0251 -0.146447 13.9749 -0.146447 14.5607 0.43934L26.0607 11.9393C26.6464 12.5251 26.6464 13.4749 26.0607 14.0607C25.4749 14.6464 24.5251 14.6464 23.9393 14.0607L13.5 3.62132L3.06066 14.0607C2.47487 14.6464 1.52513 14.6464 0.93934 14.0607C0.353553 13.4749 0.353553 12.5251 0.93934 11.9393L12.4393 0.43934Z" fill="#424242"></path>
-        <path class="fill_color" fill-rule="evenodd" clip-rule="evenodd" d="M12.4393 10.9393C13.0251 10.3536 13.9749 10.3536 14.5607 10.9393L26.0607 22.4393C26.6464 23.0251 26.6464 23.9749 26.0607 24.5607C25.4749 25.1464 24.5251 25.1464 23.9393 24.5607L13.5 14.1213L3.06066 24.5607C2.47487 25.1464 1.52513 25.1464 0.93934 24.5607C0.353553 23.9749 0.353553 23.0251 0.93934 22.4393L12.4393 10.9393Z" fill="#424242"></path>
-      </svg>
-    </a>
-  </div>
+  <a id="button-top" class="hide">
+    <!-- <svg class="icon-top icon--arrow-up" width="27" height="25" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path aria-hidden="true" class="fill_color" fill-rule="evenodd" clip-rule="evenodd" d="M12.4393 0.43934C13.0251 -0.146447 13.9749 -0.146447 14.5607 0.43934L26.0607 11.9393C26.6464 12.5251 26.6464 13.4749 26.0607 14.0607C25.4749 14.6464 24.5251 14.6464 23.9393 14.0607L13.5 3.62132L3.06066 14.0607C2.47487 14.6464 1.52513 14.6464 0.93934 14.0607C0.353553 13.4749 0.353553 12.5251 0.93934 11.9393L12.4393 0.43934Z" fill="#424242"></path>
+      <path aria-hidden="true" class="fill_color"  fill-rule="evenodd" clip-rule="evenodd" d="M12.4393 10.9393C13.0251 10.3536 13.9749 10.3536 14.5607 10.9393L26.0607 22.4393C26.6464 23.0251 26.6464 23.9749 26.0607 24.5607C25.4749 25.1464 24.5251 25.1464 23.9393 24.5607L13.5 14.1213L3.06066 24.5607C2.47487 25.1464 1.52513 25.1464 0.93934 24.5607C0.353553 23.9749 0.353553 23.0251 0.93934 22.4393L12.4393 10.9393Z" fill="#424242"></path>
+    </svg> -->
+    <svg class="icon-top icon--arrow-up"  width="40px" height="40px" viewBox="0.000 0.000 40.000 40.000">
+      <path aria-hidden="true" class="fill_color"  d="M20 5l15 15H28v14H12v-14H5L20 5z"/>
+    </svg>
+  </a>
+</div>
+<div class="container-top">
+  <a id="button-top2" class="hide">
+    <svg class="icon-top icon--arrow-up" width="27" height="25" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path aria-hidden="true" class="fill_color" fill-rule="evenodd" clip-rule="evenodd" d="M12.4393 0.43934C13.0251 -0.146447 13.9749 -0.146447 14.5607 0.43934L26.0607 11.9393C26.6464 12.5251 26.6464 13.4749 26.0607 14.0607C25.4749 14.6464 24.5251 14.6464 23.9393 14.0607L13.5 3.62132L3.06066 14.0607C2.47487 14.6464 1.52513 14.6464 0.93934 14.0607C0.353553 13.4749 0.353553 12.5251 0.93934 11.9393L12.4393 0.43934Z" fill="#424242"></path>
+      <path aria-hidden="true" class="fill_color"  fill-rule="evenodd" clip-rule="evenodd" d="M12.4393 10.9393C13.0251 10.3536 13.9749 10.3536 14.5607 10.9393L26.0607 22.4393C26.6464 23.0251 26.6464 23.9749 26.0607 24.5607C25.4749 25.1464 24.5251 25.1464 23.9393 24.5607L13.5 14.1213L3.06066 24.5607C2.47487 25.1464 1.52513 25.1464 0.93934 24.5607C0.353553 23.9749 0.353553 23.0251 0.93934 22.4393L12.4393 10.9393Z" fill="#424242"></path>
+    </svg>
+  </a>
+</div>
   
   <Style>
   .container-top{
     /* display:  !important; */
     /* padding: 20px; */
   }
-  #button-top {
+  #button-top, #button-top2 {
     display: inline-block;
-    background-color: #F6C03F;
+    background-color: #C0C0C0;
     width: 60px;
     height: 60px;
     text-align: center;
@@ -22,14 +33,19 @@
     position: fixed;
     bottom: 20px;
     right: 20px;
-    transition: background-color .3s, 
-      opacity .5s, visibility .5s;
+    transition: background-color .2s, 
+      opacity .3s, visibility .3s;
     opacity: 0;
     visibility: hidden;
     z-index: 1000;
     display: flex !important;
     justify-content: center;
   }
+  #button-top2 {
+    bottom: 100px !important;
+  }
+
+  #button-top2::after,
   #button-top::after {
     /* content: "\f077";
     font-family: FontAwesome;
@@ -39,14 +55,17 @@
     line-height: 50px; */
     color: #fff;
   }
+  #button-top2:hover,
   #button-top:hover {
     cursor: pointer;
-    background-color:#F6C03F;
+    background-color:#949393;
   }
+  #button-top2:active,
   #button-top:active {
     background-color: #555;
   }
-  #button-top.show {
+  #button-top.show,
+  #button-top2.show {
     opacity: 1;
     visibility: visible;
   }
@@ -72,16 +91,27 @@
   </Style>
   
   <script>
+  //hide/show button on scroll up/down
+  let scrollPos = 0;
   var btn = $('#button-top');
-  
-  $(window).scroll(function() {
-    if ($(window).scrollTop() > 300) {
+  var btn2 = $('#button-top2');
+
+  window.addEventListener("scroll", function () {
+    console.log("before if");
+    // detects new state and compares it with the new one
+    if (document.body.getBoundingClientRect().top > scrollPos  &&  $(window).scrollTop() > 800) {
+      console.log("scrolling down");
       btn.addClass('show');
-    } else {
+      btn2.addClass('show');
+    } else  {
       btn.removeClass('show');
+      btn2.removeClass('show');
+      console.log("scrolling up");
     }
+    // saves the new position for iteration.
+    scrollPos = document.body.getBoundingClientRect().top;
   });
-  
+ 
   btn.on('click', function(e) {
     e.preventDefault();
     $('html, body').animate({scrollTop:0}, '300');
