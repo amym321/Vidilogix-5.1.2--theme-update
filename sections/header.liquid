@@ -235,6 +235,17 @@
 {%- if template.name == 'product' -%}
   <div class="accordion-quicknav">
     <ul></ul>
+    <form method="post" action="/cart/add" class="site-nav__link site-nav__link--icon buy-form">
+      <button
+        {% unless product.empty %}type="button"{% else %}type="submit"{% endunless %}
+        name="add"
+        data-add-to-cart
+        class="add-to-cart {% if enable_dynamic_buttons and product.selling_plan_groups == empty %} btn--secondary{% endif %}"
+        {% unless current_variant.available %} disabled="disabled"{% endunless %}>
+        <input type="hidden" name="id" value="{{ product.variants.first.id }}" class="buy-button"/>
+        <input type="submit" value="BUY"  class="btn buy-button"/>
+      </button>
+    </form>
   </div>
 {%- endif -%}
 

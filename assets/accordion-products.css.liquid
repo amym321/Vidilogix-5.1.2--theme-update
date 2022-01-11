@@ -10,6 +10,7 @@
     right: 0;
     transition: top 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
     border-bottom: 1px solid rgb(229, 227, 228);
+    display: flex;
   }
   
   .accordion-quicknav ul {
@@ -476,3 +477,26 @@
     box-shadow: none !important;
   }
   
+
+/****************************/
+/***** code added - am ******/
+/****************************/
+
+/* header buy button */
+.buy-button, .buy-button:after, .buy-button:active {
+  /* background-color: #ffffff00 !important;
+  color: #ffffff00 !important; */
+  border-color: #ffffff00 !important;
+  height: 30px;
+  padding: 0 !important;
+  min-width: 70px !important;  
+}
+
+.buy-form {
+  margin-left:auto;
+}
+@media only screen and (max-width: 768px){
+  .buy-form {
+    display:none !important;
+  }
+}
