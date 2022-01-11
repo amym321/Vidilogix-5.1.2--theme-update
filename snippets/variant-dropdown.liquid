@@ -1,8 +1,20 @@
 <div class="variant-wrapper variant-wrapper--dropdown js" data-type="dropdown">
-  <label class="variant__label{% if option.name == 'Default' or option.name == 'Title' %} hidden-label{% endif %}{% unless variant_labels %} hidden-label{% endunless %}"
-    for="SingleOptionSelector-{{ section_id }}-{{ product.id }}-option-{{ forloop.index0 }}">
-    {{ option.name }}
-  </label>
+  {% comment %}added code - am.  option label specific titles {% endcomment %}
+  <!-- {% unless option.name == 'Color' or option.name == 'color' or option.name == 'COLOR' or option.name == 'Finish' or option.name == 'finish' or option.name == 'FINISH'
+    or option.name == 'Size' or option.name == 'size' or option.name == 'SIZE' or option.name == 'Carrier' or option.name == 'carrier' or option.name == 'CARRIER'
+    or option.name == 'Molekule' or option.name == 'molekule' or option.name == 'MOLEKULE' or option.name == 'Power' or option.name == 'power' or option.name == 'POWER' 
+    or option.name == 'Model' or option.name == 'model' or option.name == 'MODEL' or option.name == 'Resolution' or option.name == 'resolution' or option.name == 'RESOLUTION'
+    or option.name == 'Dial' or option.name == 'dial' or option.name == 'DIAL' or option.name == 'Case' or option.name == 'case' or option.name == 'CASE' 
+    or option.name == 'Bundle' or option.name == 'bundle' or option.name == 'BUNDLE' or option.name == 'Appliance' or option.name == 'appliance' or option.name == 'APPLIANCE'
+    or option.name == 'Kit' or option.name == 'kit' or option.name == 'KIT' or option.name == 'Coverage' or option.name == 'coverage' or option.name == 'COVERAGE' 
+    or option.name == 'Entry' or option.name == 'entry' or option.name == 'ENTRY' or option.name == 'Term' or option.name == 'term' or option.name == 'TERM'
+    or option.name == 'Up To' or option.name == 'Up to' or option.name == 'up to' or option.name == 'UP TO' or option.name == 'Camera' or option.name == 'camera' or option.name == 'CAMERA' 
+    or option.name == 'Zones' or option.name == 'zones' or option.name == 'ZONES' or option.name == 'Style' or option.name == 'style' or option.name == 'STYLE' %} -->
+    <label class="variant__label{% if option.name == 'Default' or option.name == 'Title' %} hidden-label{% endif %}{% unless variant_labels %} hidden-label{% endunless %}"
+      for="SingleOptionSelector-{{ section_id }}-{{ product.id }}-option-{{ forloop.index0 }}">
+      {{ option.name }}
+    </label>
+  <!-- {% endunless %} -->
   <div class="variant-input-wrap" data-index="option{{ forloop.index }}" data-handle="{{ option.name | handleize }}">
     <select
       form="{{ form_id }}"
@@ -25,9 +37,28 @@
           name="{{ option.name }}"
           class="variant-input"
           data-index="option{{ forloop.index }}">
-          {% if option.name == 'Color' or option.name == 'color' or option.name == 'COLOR'%}Color:  {% endif %}
-          {% if option.name == 'Finish' or option.name == 'finish' or option.name == 'FINISH'%}Finish:  {% endif %}
-          {{ value }}
+          {% comment %}added code - am. hard-coded option labels{% endcomment %}
+          <!-- {% if option.name == 'Color' or option.name == 'color' or option.name == 'COLOR'%}COLOR:  {% endif %}
+          {% if option.name == 'Finish' or option.name == 'finish' or option.name == 'FINISH'%}FINISH:  {% endif %}
+          {% if option.name == 'Size' or option.name == 'size' or option.name == 'SIZE'%}SIZE:  {% endif %}
+          {% if option.name == 'Carrier' or option.name == 'carrier' or option.name == 'CARRIER'%}CARRIER:  {% endif %}
+          {% if option.name == 'Molekule' or option.name == 'molekule' or option.name == 'MOLEKULE'%}MOLEKULE:  {% endif %}
+          {% if option.name == 'Power' or option.name == 'power' or option.name == 'POWER'%}POWER:  {% endif %}
+          {% if option.name == 'Model' or option.name == 'model' or option.name == 'MODEL' %}MODEL:  {% endif %}
+          {% if option.name == 'Resolution' or option.name == 'resolution' or option.name == 'RESOLUTION' %}RESOLUTION:  {% endif %}
+          {% if option.name == 'Dial' or option.name == 'dial' or option.name == 'DIAL' %}DIAL:  {% endif %}
+          {% if option.name == 'Case' or option.name == 'case' or option.name == 'CASE' %}CASE:  {% endif %}
+          {% if option.name == 'Bundle' or option.name == 'bundle' or option.name == 'BUNDLE' %}BUNDLE:  {% endif %}
+          {% if option.name == 'Appliance' or option.name == 'appliance' or option.name == 'APPLIANCE' %}APPLIANCE:  {% endif %}
+          {% if option.name == 'Kit' or option.name == 'kit' or option.name == 'KIT' %}KIT:  {% endif %}
+          {% if option.name == 'Coverage' or option.name == 'coverage' or option.name == 'COVERAGE' %}COVERAGE:  {% endif %}
+          {% if option.name == 'Entry' or option.name == 'entry' or option.name == 'ENTRY' %}ENTRY:  {% endif %}
+          {% if option.name == 'Term' or option.name == 'term' or option.name == 'TERM' %}ENTRY:  {% endif %}
+          {% if option.name == 'Up To' or option.name == 'Up to' or option.name == 'up to' or option.name == 'UP TO' %}UP TO:  {% endif %}
+          {% if option.name == 'Camera' or option.name == 'camera' or option.name == 'CAMERA' %}CAMERA:  {% endif %}
+          {% if option.name == 'Zones' or option.name == 'zones' or option.name == 'ZONES' %}ZONES:  {% endif %}
+          {% if option.name == 'Style' or option.name == 'style' or option.name == 'STYLE' %}STYLE:  {% endif %} -->
+          {{ option.name }}: {{ value }}
         </option>        
       {%- endfor -%}
     </select>
