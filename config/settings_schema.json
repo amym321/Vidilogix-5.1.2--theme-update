@@ -604,6 +604,19 @@
     "name": "Products",
     "settings": [
       {
+        "type": "header",
+        "content": "Protection product"
+      },
+      {
+        "type": "product",
+        "id": "protection_product",
+        "label": "Protection plan product"
+      },
+      {
+        "type": "header",
+        "content": "Product grid"
+      },
+      {
         "type": "checkbox",
         "id": "product_save_amount",
         "label": "Show saved amount",
@@ -629,12 +642,7 @@
         "type": "checkbox",
         "id": "vendor_grid_enable",
         "label": "Show vendor"
-      }
-    ]
-  },
-  {
-    "name": "Product tiles",
-    "settings": [
+      },
       {
         "type": "checkbox",
         "id": "quick_shop_enable",
@@ -649,7 +657,7 @@
       {
         "type": "select",
         "id": "product_grid_image_size",
-        "label": "Force image size",
+        "label": "Grid image size",
         "default": "natural",
         "options": [
           {
@@ -684,12 +692,95 @@
       },
       {
         "type": "header",
-        "content": "Color swatches"
+        "content": "Product pages"
       },
       {
         "type": "checkbox",
-        "id": "enable_swatches",
-        "label": "Enable color swatches"
+        "id": "sku_enable",
+        "label": "Show SKU"
+      },
+      {
+        "type": "checkbox",
+        "id": "quantity_enable",
+        "label": "Show quantity field"
+      },
+      {
+        "type": "checkbox",
+        "id": "variant_labels_enable",
+        "label": "Show variant labels",
+        "default": true
+      },
+      {
+        "type": "select",
+        "id": "variant_type",
+        "label": "Variant picker style",
+        "default": "button",
+        "options": [
+          {
+            "value": "button",
+            "label": "Buttons"
+          },
+          {
+            "value": "dropdown",
+            "label": "Dropdown"
+          }
+        ]
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_payment_button",
+        "label": "Show dynamic checkout button",
+        "info": "Lets customers check out directly using a familiar payment method. [Learn more](https:\/\/help.shopify.com\/manual\/using-themes\/change-the-layout\/dynamic-checkout)",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "inventory_enable",
+        "label": "Show inventory notice"
+      },
+      {
+        "type": "range",
+        "id": "inventory_threshold",
+        "label": "Inventory threshold",
+        "default": 10,
+        "min": 0,
+        "max": 20,
+        "step": 2
+      },
+      {
+        "type": "checkbox",
+        "id": "inventory_transfers_enable",
+        "label": "Show inventory transfer notice",
+        "info": "Learn how to create inventory transfers [here](https:\/\/help.shopify.com\/en\/manual\/products\/inventory\/transfers\/create-transfer)"
+      },
+      {
+        "type": "checkbox",
+        "id": "surface_pickup_enable",
+        "label": "Enable pickup availability feature",
+        "info": "Learn how to setup this feature [here](https:\/\/help.shopify.com\/en\/manual\/shipping\/setting-up-and-managing-your-shipping\/local-methods\/local-pickup)"
+      },
+      {
+        "type": "checkbox",
+        "id": "product_zoom_enable",
+        "label": "Enable image zoom"
+      },
+      {
+        "type": "header",
+        "content": "Color swatches"
+      },
+      {
+        "type": "paragraph",
+        "content": "Requires variant picker style above to be set to 'Buttons'. [Learn how to set up swatches](https:\/\/archetypethemes.co\/blogs\/impulse\/how-do-i-set-up-color-swatches)"
+      },
+      {
+        "type": "checkbox",
+        "id": "product_color_swatches",
+        "label": "Enable color swatches on product page"
+      },
+      {
+        "type": "checkbox",
+        "id": "collection_color_swatches",
+        "label": "Enable color swatches on collection page"
       },
       {
         "type": "select",
@@ -709,11 +800,109 @@
       },
       {
         "type": "header",
+        "content": "Backstock & Variant messaging"
+      },
+      {
+        "type": "text",
+        "id": "backstock_intro",
+        "label": "Backstock intro",
+        "default": "Temporarily out of stock. Ships from"
+      },
+      {
+        "type": "textarea",
+        "id": "backstock_tooltip",
+        "label": "Backstock tooltip",
+        "default": "This is the date we reasonably expect to have this product in stock based on anticipated demand, communications from the manufacturer, and other factors. This is a good faith estimate, not a guarantee. You may cancel an order at any time prior to shipment at no cost to you. Orders fulfilled on a first-come first-serve basis."
+      },
+      {
+        "type": "image_picker",
+        "id": "backstock_icon",
+        "label": "Backstock icon",
+        "info": "File size 40 x 40px. File type transaprent background png."
+      },
+      {
+        "type": "header",
+        "content": "Trust badge"
+      },
+      {
+        "type": "paragraph",
+        "content": "Show an image of your choice below the add to cart form"
+      },
+      {
+        "type": "image_picker",
+        "id": "trust_image",
+        "label": "Image"
+      },
+      {
+        "type": "header",
+        "content": "Additional product content"
+      },
+      {
+        "type": "paragraph",
+        "content": "Show expandable content boxes on your product pages. [Learn more](https:\/\/archetypethemes.co\/blogs\/impulse\/how-do-i-add-custom-product-page-tabs)."
+      },
+      {
+        "type": "page",
+        "label": "Additional content 1",
+        "id": "product_content_1"
+      },
+      {
+        "type": "checkbox",
+        "id": "product_content_collapse_1",
+        "label": "Collapse",
+        "default": true
+      },
+      {
+        "type": "page",
+        "label": "Additional content 2",
+        "id": "product_content_2"
+      },
+      {
+        "type": "checkbox",
+        "id": "product_content_collapse_2",
+        "label": "Collapse",
+        "default": true
+      },
+      {
+        "type": "page",
+        "label": "Additional content 3",
+        "id": "product_content_3"
+      },
+      {
+        "type": "checkbox",
+        "id": "product_content_collapse_3",
+        "label": "Collapse",
+        "default": true
+      },
+      {
+        "type": "header",
+        "content": "Contact form"
+      },
+      {
+        "type": "checkbox",
+        "id": "product_contact",
+        "label": "Show contact form",
+        "default": false,
+        "info": "All submissions are sent to the customer email address of your store. [Learn more](https:\/\/help.shopify.com\/en\/manual\/using-themes\/change-the-layout\/add-contact-form#view-contact-form-submissions)."
+      },
+      {
+        "type": "text",
+        "id": "product_contact_title",
+        "label": "Contact form title",
+        "default": "Ask a question"
+      },
+      {
+        "type": "checkbox",
+        "id": "product_contact_show_phone",
+        "label": "Show phone number"
+      },
+      {
+        "type": "header",
         "content": "Product reviews"
       },
       {
         "type": "paragraph",
-        "content": "Add reviews by enabling the setting below and installing the [Shopify Product Reviews app](https:\/\/apps.shopify.com\/product-reviews) and following our [setup guide](https:\/\/archetypethemes.co\/blogs\/support\/installing-shopifys-product-reviews-app)"
+        "content": "This theme has been updated specifically for Vidlogix to show reviews using Junip Reviews."
       },
       {
         "type": "checkbox",
