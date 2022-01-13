@@ -61,13 +61,9 @@
     "quick_shop_text": "Quick view",
     "product_grid_image_size": "square",
     "product_hover_image": false,
-    "sku_enable": false,
     "quantity_enable": false,
-    "variant_labels_enable": false,
-    "variant_type": "dropdown",
     "enable_payment_button": false,
     "inventory_enable": false,
-    "product_zoom_enable": true,
     "backstock_intro": "Out of stock. Expected",
     "backstock_icon": "shopify:\/\/shop_images\/tooltip-icon.png",
     "enable_product_reviews": true,
@@ -101,6 +97,10 @@
     "checkout_accent_color": "#1a1a1a",
     "checkout_button_color": "#1a1a1a",
     "checkout_error_color": "#ff6d6d",
+    "sku_enable": false,
+    "variant_labels_enable": false,
+    "variant_type": "dropdown",
+    "product_zoom_enable": true,
     "vendor_enable": true,
     "cart_bar_compact": false,
     "breadcrumb": false,
@@ -127,7 +127,7 @@
           "1524770296206": {
             "type": "announcement",
             "settings": {
-              "text": "Free shipping on all U.S. orders $49+",
+              "text": "Fast, free, no-contact delivery",
               "link_text": "",
               "link": "shopify:\/\/pages\/shipping"
             }
