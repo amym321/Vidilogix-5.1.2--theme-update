@@ -209,7 +209,10 @@
 
               {%- if link_slide -%}
                 {%- unless block.settings.chat_widget == true -%}
-                  <a href="{{ block.settings.link }}" class="hero__slide-link" aria-hidden="true"></a>
+                  {% comment %} shows under the hero image {% endcomment %}
+                  {% unless template == 'page.protection-plan' or template == 'page.finance' %}
+                    <a href="{{ block.settings.link }}" class="hero__slide-link" aria-hidden="true"></a>
+                  {% endunless %}
                 {% endunless %}
               {%- endif -%}
 
@@ -249,17 +252,15 @@
                                 {{ block.settings.link_text }}
                               </a>
                             {%- elsif block.settings.link_text != blank -%}
-
-
                                 <a href="{{ block.settings.link }}" class="btn{% if block.settings.color_accent contains 'rgba(0,0,0,0)' %} btn--inverse{% endif %}">
                                   {{ block.settings.link_text }}
                                 </a>
-                              {%- endif -%}
-                              {%- if block.settings.link_text_2 != blank -%}
+                            {%- endif -%}
+                            {%- if block.settings.link_text_2 != blank -%}
                                 <a href="{{ block.settings.link_2 }}" class="btn{% if block.settings.color_accent contains 'rgba(0,0,0,0)' %} btn--inverse{% endif %}">
                                   {{ block.settings.link_text_2 }}
                                 </a>
-                              {%- endif -%}
+                            {%- endif -%}
                             </div>
                           {%- endif -%}
                         {%- endif -%}
