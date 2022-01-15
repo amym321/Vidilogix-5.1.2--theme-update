@@ -593,6 +593,17 @@
             </div>
           {% endif %}
 
+          <!-- VIDLOGIX LIFETIME SUPPORT ACCORDION -->
+          {% unless product.metafields.protection.hide_protection_plan_section %}
+            <div class="accordion closed " id="protection-plan"><span class="accordion-title">{{ shop.metafields.accentuate.lifetime_support_title }}</span> <span class="icon"></span></div>
+            <div class="container">
+              <div class="content rte">
+                {{ shop.metafields.accentuate.lifetime_support_message }}
+                <a target="_blank" href="/pages/tech-support" class="more-link">GET HELP</a>
+              </div>
+            </div>
+          {% endunless %}
+
           <!-- VIDLOGIX PROTECTION PLAN ACCORDION -->
           {% unless product.metafields.protection.hide_protection_plan_section %}
             <div class="accordion closed protection-plan" id="protection-plan"><span class="accordion-title">{{ shop.metafields.accentuate.protection_plan_title }}</span> <span class="additional-text">{{ shop.metafields.accentuate.protection_plan_subtitle }}</span><span class="icon"></span></div>
