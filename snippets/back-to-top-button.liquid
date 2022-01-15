@@ -5,6 +5,33 @@
     </div>
   </a>
 </div>
+
+<script>
+  //hide/show button on scroll up/down
+  let scrollPos = 0;
+  // var btn = $('#button-top');
+  var btn = document.getElementById("#button-top");
+
+  window.addEventListener("scroll", function () {
+    console.log("before if");
+    // detects new state and compares it with the new one
+    if (document.body.getBoundingClientRect().top > scrollPos  &&  $(window).scrollTop() > 800) {
+      console.log("scrolling down");
+      btn.addClass('show');
+    } else  {
+      btn.removeClass('show');
+      console.log("scrolling up");
+    }
+    // saves the new position for iteration.
+    scrollPos = document.body.getBoundingClientRect().top;
+  });
+ 
+  
+  btn.on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({scrollTop:0}, '300');
+  });
+</script>
   
 <Style>
   #button-top {
@@ -17,8 +44,7 @@
     position: fixed;
     bottom: 20px;
     right: 20px;
-    transition: background-color .2s, 
-      opacity .3s, visibility .3s;
+    transition: background-color .2s, opacity .3s, visibility .3s;
     opacity: 0;
     visibility: hidden;
     z-index: 1000;
@@ -51,29 +77,3 @@
   }
   
 </Style>
-  
-<script>
-  //hide/show button on scroll up/down
-  let scrollPos = 0;
-  var btn = $('#button-top');
-
-  window.addEventListener("scroll", function () {
-    console.log("before if");
-    // detects new state and compares it with the new one
-    if (document.body.getBoundingClientRect().top > scrollPos  &&  $(window).scrollTop() > 800) {
-      console.log("scrolling down");
-      btn.addClass('show');
-    } else  {
-      btn.removeClass('show');
-      console.log("scrolling up");
-    }
-    // saves the new position for iteration.
-    scrollPos = document.body.getBoundingClientRect().top;
-  });
- 
-  btn.on('click', function(e) {
-    e.preventDefault();
-    $('html, body').animate({scrollTop:0}, '300');
-  });
-
-</script>
