@@ -372,6 +372,9 @@
         "page_title": "Thank you, {{ display_name }}!",
         "cancelled_title": "Your order may not qualify for the following reasons:",
         "cancelled_description": "Brand\/reseller. Order change\/cancellation. Change of address. Failed order verification. Items are unavailable. Payment declined. Address mismatch. Freight forwarder."
+      },
+      "contact": {
+        "address1_label": "Address (no P.O. Boxes, please)"
       }
     }
   }
