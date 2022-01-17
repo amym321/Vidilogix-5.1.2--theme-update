@@ -755,6 +755,18 @@
         "id": "trust_image",
         "label": "Image"
       },
+
+      {
+        "type": "header",
+        "content": "Stock Availability messaging"
+      },
+      {
+        "type": "text",
+        "id": "availability_intro",
+        "label": "Availability intro",
+        "default": "In stock, ready to ship"
+      },
+
       {
         "type": "header",
         "content": "Additional product content"
