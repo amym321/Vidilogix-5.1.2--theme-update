@@ -55,11 +55,3 @@
       {% endif %}
     {% endfor %}
   </div> 
-
-  <div class="availability-message">
-    {% for variant in product.variants %}
-      {% if variant.metafields.message.availability_message %}
-        <div class="availability-mes" id=am-{{ variant.id }} {% if variant != current_variant %}style="display: none;"{% endif %}>{{ variant.metafields.message.availability_message }}</div>
-      {% endif %}
-    {% endfor %}
-  </div> 

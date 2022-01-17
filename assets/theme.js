@@ -1024,20 +1024,6 @@ lazySizesConfig.expFactor = 4;
       },
       // end code change per 4.1.1 customization
 
-      //code added - AM
-      _updateAvailabilityMessage: function(variant) {
-
-        var availabilityMessage = $('#am-' + variant.id);
-
-        if (availabilityMessage != null) {
-          $('.availability-message .availability-mes').hide();
-          $('#am-' + variant.id).show();
-        } else {
-          $('.availability-message .availability-mes').fadeOut();
-        }
-
-      },
-      //end AM customization
 
       _updateHistoryState: function(variant) {
         if (!history.replaceState || !variant) {
