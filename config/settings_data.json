@@ -63,7 +63,7 @@
     "product_hover_image": false,
     "quantity_enable": false,
     "enable_payment_button": false,
-    "inventory_enable": true,
+    "inventory_enable": false,
     "backstock_intro": "Out of stock. Expected",
     "backstock_icon": "shopify:\/\/shop_images\/tooltip-icon.png",
     "enable_product_reviews": true,
