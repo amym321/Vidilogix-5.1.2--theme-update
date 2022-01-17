@@ -4270,9 +4270,9 @@ form+.footer__social{
     display:inline-block;
   }
 
-/*  code change per 4.1.1 customization */
-/* .rte-setting a:not(.btn):not(.spr-summary-actions-newreview):after,.rte a:not(.btn):not(.spr-summary-actions-newreview):after{ */
-.rte-setting a:not(.btn):not(.spr-summary-actions-newreview):not(.smb-btn):after,.rte a:not(.btn):not(.spr-summary-actions-newreview):not(.smb-btn):after{ 
+/*  code change per 4.1.1 customization. code added - am. removed :not(.smb-btn) for button transition */
+.rte-setting a:not(.btn):not(.spr-summary-actions-newreview):after,.rte a:not(.btn):not(.spr-summary-actions-newreview):after{
+/* .rte-setting a:not(.btn):not(.spr-summary-actions-newreview):not(.smb-btn):after,.rte a:not(.btn):not(.spr-summary-actions-newreview):not(.smb-btn):after{  */
     content:"";
     position:absolute;
     bottom:-2px;
@@ -12649,11 +12649,6 @@ html[dir=rtl] .product-single__meta .rte{
   }
 }
 
-/* make gray color box white on hover of add-to-cart buttons */
-/* [data-button_style=square] .btn:not(.btn--secondary):not(.btn--tertiary):not(.btn--inverse):not(.btn--body):not(.btn--static):after,[data-button_style=square] .product-reviews .spr-button:not(.btn--secondary):not(.btn--tertiary):not(.btn--inverse):not(.btn--body):not(.btn--static):after,[data-button_style=square] .product-reviews .spr-summary-actions a:not(.btn--secondary):not(.btn--tertiary):not(.btn--inverse):not(.btn--body):not(.btn--static):after,[data-button_style=square] .rte .btn:not(.btn--secondary):not(.btn--tertiary):not(.btn--inverse):not(.btn--body):not(.btn--static):after,[data-button_style=square] .shopify-payment-button .shopify-payment-button__button--unbranded:not(.btn--secondary):not(.btn--tertiary):not(.btn--inverse):not(.btn--body):not(.btn--static):after,[data-button_style^=round] .btn:not(.btn--secondary):not(.btn--tertiary):not(.btn--inverse):not(.btn--body):not(.btn--static):after,[data-button_style^=round] .product-reviews .spr-button:not(.btn--secondary):not(.btn--tertiary):not(.btn--inverse):not(.btn--body):not(.btn--static):after,[data-button_style^=round] .product-reviews .spr-summary-actions a:not(.btn--secondary):not(.btn--tertiary):not(.btn--inverse):not(.btn--body):not(.btn--static):after,[data-button_style^=round] .rte .btn:not(.btn--secondary):not(.btn--tertiary):not(.btn--inverse):not(.btn--body):not(.btn--static):after,[data-button_style^=round] .shopify-payment-button .shopify-payment-button__button--unbranded:not(.btn--secondary):not(.btn--tertiary):not(.btn--inverse):not(.btn--body):not(.btn--static):after{
-  background-image:linear-gradient(90deg,transparent, hsla(0, 100%, 100%, 0.25),transparent) !important;
-} */
-
 /* variant dropdown */
 .variant-input-wrap select {
   font-weight: 600;
@@ -12703,3 +12698,8 @@ html[dir=rtl] .product-single__meta .rte{
   color: #ffffff00 !important;
   /* margin-top: 40px !important; */
 }
+
+/* make gray color box white on hover of add-to-cart buttons */
+/* [data-button_style=square] .btn:not(.btn--secondary):not(.btn--tertiary):not(.btn--inverse):not(.btn--body):not(.btn--static):after,[data-button_style=square] .product-reviews .spr-button:not(.btn--secondary):not(.btn--tertiary):not(.btn--inverse):not(.btn--body):not(.btn--static):after,[data-button_style=square] .product-reviews .spr-summary-actions a:not(.btn--secondary):not(.btn--tertiary):not(.btn--inverse):not(.btn--body):not(.btn--static):after,[data-button_style=square] .rte .btn:not(.btn--secondary):not(.btn--tertiary):not(.btn--inverse):not(.btn--body):not(.btn--static):after,[data-button_style=square] .shopify-payment-button .shopify-payment-button__button--unbranded:not(.btn--secondary):not(.btn--tertiary):not(.btn--inverse):not(.btn--body):not(.btn--static):after,[data-button_style^=round] .btn:not(.btn--secondary):not(.btn--tertiary):not(.btn--inverse):not(.btn--body):not(.btn--static):after,[data-button_style^=round] .product-reviews .spr-button:not(.btn--secondary):not(.btn--tertiary):not(.btn--inverse):not(.btn--body):not(.btn--static):after,[data-button_style^=round] .product-reviews .spr-summary-actions a:not(.btn--secondary):not(.btn--tertiary):not(.btn--inverse):not(.btn--body):not(.btn--static):after,[data-button_style^=round] .rte .btn:not(.btn--secondary):not(.btn--tertiary):not(.btn--inverse):not(.btn--body):not(.btn--static):after,[data-button_style^=round] .shopify-payment-button .shopify-payment-button__button--unbranded:not(.btn--secondary):not(.btn--tertiary):not(.btn--inverse):not(.btn--body):not(.btn--static):after{
+  background-image:linear-gradient(90deg,transparent, hsla(0, 100%, 100%, 0.25),transparent) !important;
+} */
