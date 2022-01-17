@@ -4270,9 +4270,9 @@ form+.footer__social{
     display:inline-block;
   }
 
-/*  code change per 4.1.1 customization. code added - am. removed :not(.smb-btn) for button transition */
-.rte-setting a:not(.btn):not(.spr-summary-actions-newreview):after,.rte a:not(.btn):not(.spr-summary-actions-newreview):after{
+/*  code change per 4.1.1 customization. code added - am. removed :not(.smb-btn) for button transition to work */
 /* .rte-setting a:not(.btn):not(.spr-summary-actions-newreview):not(.smb-btn):after,.rte a:not(.btn):not(.spr-summary-actions-newreview):not(.smb-btn):after{  */
+.rte-setting a:not(.btn):not(.spr-summary-actions-newreview):after,.rte a:not(.btn):not(.spr-summary-actions-newreview):after{
     content:"";
     position:absolute;
     bottom:-2px;
@@ -4281,6 +4281,11 @@ form+.footer__social{
     border-bottom:2px solid currentColor;
     transition:width 0.5s ease;
   }
+.smb-btn:after {
+  border-bottom: #ffffff00 !important;
+}
+
+
 
 .rte-setting a:not(.btn):focus:after,.rte-setting a:not(.btn):hover:after,.rte a:not(.btn):focus:after,.rte a:not(.btn):hover:after{
       width:100%;
