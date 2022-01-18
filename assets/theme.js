@@ -6968,34 +6968,25 @@ lazySizesConfig.expFactor = 4;
         var variant = evt.detail.variant;
         var cartBtn = this.container.querySelector(this.selectors.addToCart);
         var cartBtnText = this.container.querySelector(this.selectors.addToCartText);
-        var variantInventoryObjectV = window.inventoriesV[variant.id];
-        var quantityX = variantInventoryObjectV.quantityV;
-        var policyX = variantInventoryObjectV.policyV;
   
         if (variant) {
           if (variant.available) {
-            if (quantityX > 0) {
-                // Available, enable the submit button and change text
-                cartBtn.classList.remove(classes.disabled);
-                cartBtn.disabled = false;
-                cartBtnText.textContent = theme.strings.addToCartString;
-            } else if (policyX === 'continue' && quantityX <= 0) {
-                // Pr-order, enable the submit button and change text
-                cartBtn.classList.remove(classes.disabled);
-                cartBtn.disabled = false;
-                cartBtnText.textContent = theme.strings.preOrderString;
-            } 
+            // Available, enable the submit button and change text
+            cartBtn.classList.remove(classes.disabled);
+            cartBtn.disabled = false;
+            var defaultText = cartBtnText.dataset.defaultText;
+            cartBtnText.textContent = defaultText;
           } else {
-              // Sold out, disable the submit button and change text
-              cartBtn.classList.add(classes.disabled);
-              cartBtn.disabled = true;
-              cartBtnText.textContent = theme.strings.soldOut;
-          }
-        } else {
-            // The variant doesn't exist, disable submit button
+            // Sold out, disable the submit button and change text
             cartBtn.classList.add(classes.disabled);
             cartBtn.disabled = true;
-            cartBtnText.textContent = theme.strings.unavailable;
+            cartBtnText.textContent = theme.strings.soldOut;
+          }
+        } else {
+          // The variant doesn't exist, disable submit button
+          cartBtn.classList.add(classes.disabled);
+          cartBtn.disabled = true;
+          cartBtnText.textContent = theme.strings.unavailable;
         }
       },
   
