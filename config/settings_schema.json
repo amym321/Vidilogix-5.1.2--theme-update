@@ -692,36 +692,6 @@
       },
       {
         "type": "header",
-        "content": "Product pages"
-      },
-      {
-        "type": "checkbox",
-        "id": "quantity_enable",
-        "label": "Show quantity field"
-      },
-      {
-        "type": "checkbox",
-        "id": "enable_payment_button",
-        "label": "Show dynamic checkout button",
-        "info": "Lets customers check out directly using a familiar payment method. [Learn more](https:\/\/help.shopify.com\/manual\/using-themes\/change-the-layout\/dynamic-checkout)",
-        "default": true
-      },
-      {
-        "type": "checkbox",
-        "id": "inventory_enable",
-        "label": "Show inventory notice"
-      },
-      {
-        "type": "range",
-        "id": "inventory_threshold",
-        "label": "Inventory threshold",
-        "default": 10,
-        "min": 0,
-        "max": 20,
-        "step": 2
-      },
-      {
-        "type": "header",
         "content": "Backstock & Variant messaging"
       },
       {
