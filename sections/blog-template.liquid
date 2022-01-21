@@ -157,8 +157,23 @@
           background: #f6c12f;
           border: none;
           border-radius: 50px;
-          color: #fff;
-          
+          color: #fff;          
+        }
+
+        .container {
+          margin: 0 auto !important;
+        }
+
+        @media only screen and (max-width: 768px){
+          .google-button, .google-form {
+            margin: 0 auto !important;
+            float:none;
+          }
+          .google-form, .form-group {
+            width: 100%;
+            /* margin-right: 0; 
+            margin-left: 0; */
+          }
         }
     
     </style>
@@ -167,12 +182,12 @@
         <div class="container" style="margin: 15px 20px 15px 30px">
             <form id="addContact" class="form-horizontal" style="min-width: 100%" method="POST" action="#" autocomplete="false" data-parsley-validate>
                 <div class="form-group">
-                    <div class="col-xs-8 col-xs-offset-1">
+                    <div class="col-xs-8 col-xs-offset-1 google-form">
                         <input autocomplete="off" tabindex="4" type="tel" class="form-control" id="phone" name="mobile"
                                 placeholder="Mobile # (w/ country code)" data-parsley-trigger="focusout"
                                 data-parsley-minlength="9" data-parsley-required>
                     </div>
-                    <div class="col-xs-3">
+                    <div class="col-xs-3 google-button">
                         <button type="submit" id="submitButton" class="btn btn-default"> Send</button>
                     </div>
                 </div>
