@@ -8,6 +8,7 @@
     },
     "16402064701740d3d4": {
       "type": "company-tabs",
+      "disabled": true,
       "settings": {
         "sub_menu_link_list": "company-sub-menu"
       }
