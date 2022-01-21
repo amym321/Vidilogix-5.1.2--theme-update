@@ -57,7 +57,7 @@
     "protection_product": "vidlogix-product-protection-plans",
     "product_save_amount": false,
     "vendor_grid_enable": false,
-    "quick_shop_enable": false,
+    "quick_shop_enable": true,
     "quick_shop_text": "Quick view",
     "product_grid_image_size": "square",
     "product_hover_image": false,
@@ -299,6 +299,18 @@
         "disabled": false,
         "settings": {
         }
+      },
+      "8232603958289840080": {
+        "type": "shopify:\/\/apps\/seo-manager\/blocks\/seomanager-404\/c54c366f-d4bb-4d52-8d2f-dd61ce8e7e12",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "17992116214976573926": {
+        "type": "shopify:\/\/apps\/seo-manager\/blocks\/seomanager\/c54c366f-d4bb-4d52-8d2f-dd61ce8e7e12",
+        "disabled": false,
+        "settings": {
+        }
       }
     }
   },
@@ -453,7 +465,6 @@
           "type": "collection-header",
           "settings": {
             "enable": true,
-            "collection_image_enable": true,
             "parallax": true
           }
         }
@@ -642,7 +653,6 @@
           "type": "collection-header",
           "settings": {
             "enable": true,
-            "collection_image_enable": true,
             "parallax": true
           }
         },
@@ -848,7 +858,6 @@
           "type": "collection-header",
           "settings": {
             "enable": true,
-            "collection_image_enable": false,
             "parallax": false
           }
         }
