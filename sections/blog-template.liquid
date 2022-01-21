@@ -166,13 +166,17 @@
 
         @media only screen and (max-width: 768px){
           .google-button, .google-form {
-            margin: 0 auto !important;
+            margin: 0 auto;
             float:none;
           }
           .google-form, .form-group {
             width: 100%;
-            /* margin-right: 0; 
-            margin-left: 0; */
+            }
+          .google-form {
+            position: absolute;
+          }
+          .google-button {
+            margin-top: 50px !important;
           }
         }
     
