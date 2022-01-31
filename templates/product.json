@@ -220,8 +220,8 @@
       "settings": {
         "color_background": "#f9f9f9",
         "color_text": "#1c1d1d",
-        "unsubscribe_text": "Unsubscribe",
-        "unsubscribe_url": "",
+        "unsubscribe_text": "Contest Rules",
+        "unsubscribe_url": "shopify:\/\/pages\/contest",
         "show_divider": false
       }
     }
