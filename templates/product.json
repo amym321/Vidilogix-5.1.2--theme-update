@@ -190,6 +190,40 @@
         "layout": "right",
         "divider": false
       }
+    },
+    "1643590083d72e73b9": {
+      "type": "newsletter",
+      "blocks": {
+        "164359008339d9d726-0": {
+          "type": "title",
+          "settings": {
+            "title": "Never miss an offer"
+          }
+        },
+        "164359008339d9d726-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Join the list to receive exclusive offers and updates.<br\/>Plus, enter to win a coveted Sonos Arc Soundbar.<\/p>"
+          }
+        },
+        "164359008339d9d726-2": {
+          "type": "form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "164359008339d9d726-0",
+        "164359008339d9d726-1",
+        "164359008339d9d726-2"
+      ],
+      "settings": {
+        "color_background": "#f9f9f9",
+        "color_text": "#1c1d1d",
+        "unsubscribe_text": "Unsubscribe",
+        "unsubscribe_url": "",
+        "show_divider": false
+      }
     }
   },
   "order": [
@@ -200,6 +234,7 @@
     "recently-viewed",
     "collection-return",
     "1637459177d4db9b86",
-    "text-and-image"
+    "text-and-image",
+    "1643590083d72e73b9"
   ]
 }
