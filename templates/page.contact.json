@@ -22,6 +22,7 @@
             "link_2": "",
             "link_text_2": "",
             "color_accent": "#f6c12f",
+            "text_color": "#000000",
             "text_align": "vertical-center horizontal-left",
             "image": "shopify:\/\/shop_images\/Contact_Banner_cd2d5dec-b78a-408a-a2fc-3a69f60693b3.jpg",
             "overlay_opacity": 0,
@@ -41,35 +42,6 @@
         "autoplay_speed": 5
       }
     },
-    "rich-text": {
-      "type": "rich-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "title": "Get in touch"
-          }
-        },
-        "text": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "enlarge_text": true,
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text"
-      ],
-      "settings": {
-        "align_text": "center",
-        "narrow_column": true,
-        "divider": false
-      }
-    },
     "form": {
       "type": "contact-form",
       "settings": {
@@ -83,7 +55,6 @@
   "order": [
     "main",
     "16397010723e8be630",
-    "rich-text",
     "form"
   ]
 }
