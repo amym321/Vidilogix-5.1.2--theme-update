@@ -248,6 +248,40 @@
         "unsubscribe_url": "shopify:\/\/pages\/contest",
         "show_divider": false
       }
+    },
+    "1643681849e31c7c00": {
+      "type": "super-phone",
+      "blocks": {
+        "16436818490e76c67c-0": {
+          "type": "title",
+          "settings": {
+            "title": "Never miss an offer"
+          }
+        },
+        "16436818490e76c67c-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Join the list to receive exclusive offers and updates.<\/p>"
+          }
+        },
+        "16436818490e76c67c-2": {
+          "type": "form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "16436818490e76c67c-0",
+        "16436818490e76c67c-1",
+        "16436818490e76c67c-2"
+      ],
+      "settings": {
+        "color_background": "#ffffff",
+        "color_text": "#1c1d1d",
+        "superphone_text": "Preference Center",
+        "superphone_url": "https:\/\/vidlogix.superphone.io\/",
+        "show_divider": false
+      }
     }
   },
   "order": [
@@ -257,6 +291,7 @@
     "blog-posts",
     "16374606876c4b0894",
     "163746679950095452",
-    "16374675471ddb7cfa"
+    "16374675471ddb7cfa",
+    "1643681849e31c7c00"
   ]
 }
