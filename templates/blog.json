@@ -30,6 +30,7 @@
     },
     "16436821072d1b3fad": {
       "type": "super-phone",
+      "disabled": true,
       "blocks": {
         "164368210790c9449c-0": {
           "type": "title",
