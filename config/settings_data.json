@@ -179,7 +179,7 @@
               "show_email": true,
               "email_text": "hello@vidlogix.com",
               "show_phone": true,
-              "phone_text": "212.431.5086 • 626.539.4937 (text)",
+              "phone_text": "(212) 431-5086",
               "container_width": 40
             }
           },
