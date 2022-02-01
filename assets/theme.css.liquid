@@ -6773,11 +6773,17 @@ input[type=image]{
   margin-bottom:40px;
 }
 
-.newsletter-section{
+.newsletter-section {
   padding:40px 0;
 }
 
-.newsletter-section--with-divider{
+{% comment %} code added - am. {% endcomment %}
+.superphone-section {
+  padding:40px 0 60px 0;
+}
+
+{% comment %} code added - am. add class {% endcomment %}
+.newsletter-section--with-divider, .superphone-section--with-divider {
   border-top:1px solid;
   border-top-color:{{ settings.color_borders | default: "#1c1d1d" }};
   border-top-color:var(--colorBorder);
@@ -9987,17 +9993,16 @@ html[dir=rtl] .background-media-text__text{
   text-decoration:underline;
 }
 
-/*  code change per 4.1.1 customization */
-.newsletter__input-group{
+/*  code change per 4.1.1 customization. code change - am, class added */
+.newsletter__input-group, .superphone__input-group {
   position: relative;
-
   margin:0 auto 20px;
-  /* max-width:400px */
   max-width:500px
 }
 
-/*  code change per 4.1.1 customization */
-.newsletter__input-group .input-group-btn {
+/*  code change per 4.1.1 customization. code change - am, class added  */
+.newsletter__input-group .input-group-btn,
+.superphone__input-group .input-group-btn  {
   position: absolute;
   right: 10px;
   top: 50%;
@@ -10005,14 +10010,15 @@ html[dir=rtl] .background-media-text__text{
 }
 
 /*  code change per 4.1.1 customization */
-.input-group.newsletter__input-group .input-group-btn button.btn {
+.input-group.newsletter__input-group .input-group-btn button.btn,
+.input-group.superphone__input-group .input-group-btn button.btn {
   padding: 10px;
   border-radius: 100%;
   min-width: 40px;
   height: 40px;
 }
 
-.newsletter__input-group:last-child{
+.newsletter__input-group:last-child {
     margin-bottom:0;
   }
 
@@ -12551,7 +12557,8 @@ html[dir=rtl] .product-single__meta .rte{
   }
 }
 
-.unsubscribe-link {
+{% comment %} code added - am. add class {% endcomment %}
+.unsubscribe-link, .superphone-link {
   font-size: 12px;
   margin-top: 20px;
 }
@@ -12829,6 +12836,83 @@ font-weight:700;
   92% { opacity:0; }
   100% { opacity:1; }
 }
+
+/* additional Superphone style */
+.intl-tel-input{
+  width: 100%;
+  display: flex;
+}
+
+/* .superphone-section ul { */
+.superphone-section .parsley-errors-list {
+  margin: 0;
+  /* transform: translate(-250px,140px); */
+  transform: translate(-400px,110px);
+  width:0 !important;
+}
+
+/* .superphone-section li { */
+.superphone-section .parsley-minlength,
+.superphone-section .parsley-required {
+  width: 300px;
+  list-style-type: none;
+  background-color: #fff6f6;
+}
+
+@media only screen and (max-width:560px) {
+  .superphone__input-group {
+    max-width:300px
+  }
+  .superphone-section .parsley-errors-list {
+    transform: translate(-300px,110px);
+  }
+  .superphone-section .parsley-minlength,
+  .superphone-section .parsley-required {
+    max-width: 300px;
+  }
+}
+@media only screen and (max-width:300px) {
+  .superphone__input-group {
+    max-width:250px
+  }
+  .superphone-section .parsley-errors-list {
+    transform: translate(-250px,110px);
+  }
+  .superphone-section .parsley-minlength,
+  .superphone-section .parsley-required {
+    max-width: 250px;
+  }
+}
+
+.iti-flag {
+  background-image: url("https://superphone.io/f/assets/images/flags.png");
+}
+
+.superphone-section .parsley-required {
+    padding-top: 5px;
+    color: #D85959;
+}
+
+.superphone-section .parsley-minlength {
+    padding-top: 5px;
+    color: #D85959;
+}
+
+.superphone-section .form-error {
+  padding-left: 12px;
+  display: none;
+  color: #D85959;
+  max-width: 300px;
+  margin: auto;
+}
+
+.superphone-section .form-success {
+  border-radius: 5px;
+  padding: 5px;
+  display: none;
+}
+/* end Superphone */
+
 
 /* make gray color box white on hover of add-to-cart buttons */
 /* [data-button_style=square] .btn:not(.btn--secondary):not(.btn--tertiary):not(.btn--inverse):not(.btn--body):not(.btn--static):after,[data-button_style=square] .product-reviews .spr-button:not(.btn--secondary):not(.btn--tertiary):not(.btn--inverse):not(.btn--body):not(.btn--static):after,[data-button_style=square] .product-reviews .spr-summary-actions a:not(.btn--secondary):not(.btn--tertiary):not(.btn--inverse):not(.btn--body):not(.btn--static):after,[data-button_style=square] .rte .btn:not(.btn--secondary):not(.btn--tertiary):not(.btn--inverse):not(.btn--body):not(.btn--static):after,[data-button_style=square] .shopify-payment-button .shopify-payment-button__button--unbranded:not(.btn--secondary):not(.btn--tertiary):not(.btn--inverse):not(.btn--body):not(.btn--static):after,[data-button_style^=round] .btn:not(.btn--secondary):not(.btn--tertiary):not(.btn--inverse):not(.btn--body):not(.btn--static):after,[data-button_style^=round] .product-reviews .spr-button:not(.btn--secondary):not(.btn--tertiary):not(.btn--inverse):not(.btn--body):not(.btn--static):after,[data-button_style^=round] .product-reviews .spr-summary-actions a:not(.btn--secondary):not(.btn--tertiary):not(.btn--inverse):not(.btn--body):not(.btn--static):after,[data-button_style^=round] .rte .btn:not(.btn--secondary):not(.btn--tertiary):not(.btn--inverse):not(.btn--body):not(.btn--static):after,[data-button_style^=round] .shopify-payment-button .shopify-payment-button__button--unbranded:not(.btn--secondary):not(.btn--tertiary):not(.btn--inverse):not(.btn--body):not(.btn--static):after{
