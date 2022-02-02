@@ -124,7 +124,7 @@
           "1524770296206": {
             "type": "announcement",
             "settings": {
-              "text": "Fast, free, no-contact delivery",
+              "text": "Free shipping $49+ and tax-free",
               "link_text": "",
               "link": "shopify:\/\/pages\/shipping"
             }
@@ -132,7 +132,7 @@
           "f1e24d76-2f27-4282-a406-a30a0e3d8935": {
             "type": "announcement",
             "settings": {
-              "text": "Hassle-free 30-day return policy",
+              "text": "Easy 30-day return policy",
               "link_text": "",
               "link": "shopify:\/\/pages\/returns"
             }
@@ -170,7 +170,7 @@
               "show_footer_title": false,
               "title": "Vidlogix",
               "image": "shopify:\/\/shop_images\/Vidlogix_Dark_9f6d039f-4109-421f-84c4-b5d3d0f38e74.png",
-              "text": "<p>Welcome to Vidlogix. Your one-stop shop for smart home security.<\/p>",
+              "text": "<p>Your one-stop shop for smart home security.<\/p>",
               "show_copyright": false,
               "show_instagram": false,
               "instagram_text": "#securitymadesimple",
@@ -179,7 +179,7 @@
               "show_email": true,
               "email_text": "hello@vidlogix.com",
               "show_phone": true,
-              "phone_text": "(212) 431-5086",
+              "phone_text": "1-212-431-5086",
               "container_width": 40
             }
           },
