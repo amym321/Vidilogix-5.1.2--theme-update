@@ -385,7 +385,7 @@
         "accept_marketing_checkbox_label": "Email me with news and offers"
       },
       "shop_policies": {
-        "privacy_policy": "I consent to receive recurring automated marketing by text message through an automatic telephone dialing system. Consent is not a condition to purchase. STOP to cancel, HELP for help. Message and Data rates apply. View Privacy Policy & ToS."
+        "privacy_policy": "Privacy policy"
       }
     }
   }
