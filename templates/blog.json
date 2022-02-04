@@ -27,44 +27,9 @@
         "section_height": "550px",
         "mobile_height": "400px"
       }
-    },
-    "16436821072d1b3fad": {
-      "type": "super-phone",
-      "blocks": {
-        "164368210790c9449c-0": {
-          "type": "title",
-          "settings": {
-            "title": "Never miss an offer"
-          }
-        },
-        "164368210790c9449c-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Join the list to receive exclusive offers and updates.<\/p>"
-          }
-        },
-        "164368210790c9449c-2": {
-          "type": "form",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "164368210790c9449c-0",
-        "164368210790c9449c-1",
-        "164368210790c9449c-2"
-      ],
-      "settings": {
-        "color_background": "#ffffff",
-        "color_text": "#1c1d1d",
-        "superphone_text": "Preference Center",
-        "superphone_url": "https:\/\/vidlogix.superphone.io\/",
-        "show_divider": false
-      }
     }
   },
   "order": [
-    "main",
-    "16436821072d1b3fad"
+    "main"
   ]
 }
