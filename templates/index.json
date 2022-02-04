@@ -217,7 +217,6 @@
     },
     "16374675471ddb7cfa": {
       "type": "newsletter",
-      "disabled": true,
       "blocks": {
         "163746754725d46185-0": {
           "type": "title",
@@ -252,6 +251,7 @@
     },
     "1643681849e31c7c00": {
       "type": "super-phone",
+      "disabled": true,
       "blocks": {
         "16436818490e76c67c-0": {
           "type": "title",
