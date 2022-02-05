@@ -283,7 +283,7 @@
         "1b87ee88-2b2d-4d4b-97da-a78d8afee44e": {
           "type": "button",
           "settings": {
-            "link": "",
+            "link": "shopify:\/\/pages\/contact",
             "link_text": "Contact Us"
           }
         }
