@@ -68,9 +68,9 @@
           "settings": {
             "title": "Make a return",
             "text": "<p>A Return Merchandise Authorization (RMA) number is required for all returns. RMA numbers are valid for 10 days. Unauthorized returns will be returned to the sender or recycled.<\/p>",
-            "button_link2": "",
+            "button_link2": "shopify:\/\/pages\/contact",
             "button_text2": "Request a RMA online",
-            "button_chat2": true,
+            "button_chat2": false,
             "text2": "<p><br\/>Pack your items carefully since they are still your items until we have verified their functionality and physical condition. <strong>Please DO NOT treat the item box as the shipping box.<\/strong><\/p><p>Ensure that there are no other tracking labels attached to your package. If you are shipping a non-hazardous item, completely remove or cover any hazardous materials markings.<\/p><p>Affix the mailing label squarely onto the address side of the parcel, covering up any previous delivery address and barcode without overlapping any adjacent side.<\/p><p>Take this package to a USPS location (mailbox, post office, etc.). Store hours are subject to change due to COVID-19 precautions, please confirm opening hours before proceeding. To find your closest USPS location, visit the <a href=\"https:\/\/tools.usps.com\/find-location.htm\">USPS Locator<\/a> or go to www.usps.com.<\/p>"
           }
         },
