@@ -74,22 +74,10 @@
             "text2": "<p><br\/>Pack your items carefully since they are still your items until we have verified their functionality and physical condition. <strong>Please DO NOT treat the item box as the shipping box.<\/strong><\/p><p>Ensure that there are no other tracking labels attached to your package. If you are shipping a non-hazardous item, completely remove or cover any hazardous materials markings.<\/p><p>Affix the mailing label squarely onto the address side of the parcel, covering up any previous delivery address and barcode without overlapping any adjacent side.<\/p><p>Take this package to a USPS location (mailbox, post office, etc.). Store hours are subject to change due to COVID-19 precautions, please confirm opening hours before proceeding. To find your closest USPS location, visit the <a href=\"https:\/\/tools.usps.com\/find-location.htm\">USPS Locator<\/a> or go to www.usps.com.<\/p>"
           }
         },
-        "73e85beb-3191-4263-96c4-21a31fe22953": {
-          "type": "question",
-          "disabled": true,
-          "settings": {
-            "title": "Free PayPal returns",
-            "text": "<p>You must activate <strong>Return shipping on us*<\/strong> in your PayPal account <strong>BEFORE<\/strong> purchasing from vidlogix.com using your PayPal account.<\/p><p>To claim a refund for your return, please follow the below steps:<\/p><p>Follow the returns procedure, making sure to retain proof of postage from your local postal service. Log into your PayPal account once you have received your vidlogix refund. In your PayPal account, select the transaction, and click the ‘Request return shipping refund’ link. Fill out a refund request providing evidence of your posting receipts to the PayPal return shipping on us service. Make sure you complete the claim form within 30 days of making your purchase. Remember to attach \/ upload your proof of postage. Submit your claim to PayPal.<\/p><p>If your claim is approved by PayPal, they will send a refund of up to $30 to your PayPal account within 10 business days.<br\/><br\/>*For PayPal purchases only. PayPal <a href=\"https:\/\/www.paypal.com\/webapps\/mpp\/returns\/terms\" target=\"_blank\" title=\"Terms and Conditions – Return Shipping on Us\">terms & conditions<\/a> apply.<\/p>",
-            "button_link2": "",
-            "button_text2": "Button text",
-            "button_chat2": false,
-            "text2": ""
-          }
-        },
         "7bd60e6a-a7a7-4add-afd9-0c54eff2c6ca": {
           "type": "question",
           "settings": {
-            "title": "Where is my refund?",
+            "title": "Refund status",
             "text": "<p>Know that returns and credits can take up to ten (10) business days from the time the merchant accepts them to the time they post to your account—and show up in your balance.<\/p><p>In most cases, once a refund has been submitted, the issuing bank will post it to your account within <strong>3-5 business days<\/strong> when issued to a credit card. Refunds issued to a bank account or pin-less debit typically take 10 business days to reflect on the account balance. Refunds to a PayPal account will show up later the same day. This time frame may vary from one financial institution to another.<\/p><p>If you don't see the refund posted to your account, please contact your issuing bank for further assistance. Your bank can clarify how long it'll take them to post the refund. If your bank has trouble locating the completed refund, please contact our billing specialists so they can investigate why this may be happening.<\/p>",
             "button_link2": "",
             "button_text2": "Button text",
@@ -122,7 +110,6 @@
       },
       "block_order": [
         "16400379824b518b3b-0",
-        "73e85beb-3191-4263-96c4-21a31fe22953",
         "7bd60e6a-a7a7-4add-afd9-0c54eff2c6ca",
         "0291a141-1043-45b3-9095-ce4b55be1a64",
         "16400379824b518b3b-1"
