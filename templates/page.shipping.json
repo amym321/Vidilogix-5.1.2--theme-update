@@ -40,7 +40,7 @@
           "type": "text",
           "settings": {
             "enlarge_text": false,
-            "text": "<p>We offer free shipping on all orders over $49. For all orders under $49, there will be an $8 shipping fee. <\/p><p>The carrier will be selected based on the shipping address. We do not ship internationally or to freight forwarders.<\/p><p>All orders are processed Monday through Friday, from 9:00 A.M. to 5:00 P.M. ET. Due to volume, inclement weather and COVID-19 impacts, some of our carrier partners are experiencing ground service delays in various parts of the U.S. There may be extended delivery time frames. <\/p><p>In-stock shipments are usually shipped the same day of order. See Delivery Times for details. Totals are calculated after all discounts and freight charges have been applied. Shipping fees are nonrefundable.<\/p>"
+            "text": "<p>We offer free shipping on all orders over $49. For all orders under $49, there will be an $8 shipping fee. <\/p><p>The carrier will be selected based on the shipping address. We do not ship to freight forwarders or post offices. All orders are processed Monday through Friday, from 9:00 A.M. to 5:00 P.M. ET. In-stock shipments are usually shipped the same day of order. See Delivery Times for details. Totals are calculated after all discounts and freight charges have been applied. Shipping fees are nonrefundable.<\/p>"
           }
         }
       },
