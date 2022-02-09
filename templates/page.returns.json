@@ -101,7 +101,7 @@
           "type": "question",
           "settings": {
             "title": "Warranty Info",
-            "text": "<p><strong>Standard Warranty <\/strong>All items sold by Vidlogix are warranted solely by the manufacturer (\"vendor\"). All items needing repair should be sent to the vendor directly for service. Vidlogix is not liable if the vendor fails to perform warranty service.<\/p><p>Vidlogix provides a <a href=\"https:\/\/vidlogix.com\/pages\/extended-warranty\" title=\"Vidlogix 1-Year Extended Warranty\">free extended warranty<\/a> identical to the provisions and limitations of the vendor's warranty for such items, with the exception of the term, which is equal to one (1) year.<\/p>",
+            "text": "<p>All items sold by Vidlogix are warranted solely by the manufacturer (\"vendor\"). All items needing repair should be sent to the vendor directly for service. Vidlogix is not liable if the vendor fails to perform warranty service.<\/p><p>Vidlogix provides a <a href=\"https:\/\/vidlogix.com\/pages\/extended-warranty\" title=\"Vidlogix 1-Year Extended Warranty\">free extended warranty<\/a> identical to the provisions and limitations of the vendor's warranty for such items, with the exception of the term, which is equal to one (1) year.<\/p>",
             "button_link2": "",
             "button_text2": "Button text",
             "button_chat2": false,
