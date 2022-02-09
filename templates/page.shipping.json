@@ -82,7 +82,7 @@
           "type": "question",
           "settings": {
             "title": "Shipping offer terms",
-            "text": "<p>We do not ship to freight forwarders. Some items that ship from the manufacturer can only be delivered to addresses within the 48 contiguous U.S. <a href=\"https:\/\/vidlogix.com\/pages\/contact\" target=\"_blank\" title=\"Contact vidlogix customer service\">Contact us<\/a> for delivery information on specific models. Merchandise amount thresholds for shipping prices apply to the cost of items after any special discounts have been applied and exclusive of any tax. These offers may end at any time. <\/p>",
+            "text": "<p>We do not ship to freight forwarders or post offices. Some items that ship from the manufacturer can only be delivered to addresses within the 48 contiguous U.S. <a href=\"https:\/\/vidlogix.com\/pages\/contact\" target=\"_blank\" title=\"Contact vidlogix customer service\">Contact us<\/a> for delivery information on specific models. Merchandise amount thresholds for shipping prices apply to the cost of items after any special discounts have been applied and exclusive of any tax. These offers may end at any time. <\/p>",
             "button_link2": "",
             "button_text2": "Button text",
             "button_chat2": false,
