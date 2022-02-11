@@ -40,7 +40,7 @@
                 {%- endif -%}
 
                 {% if section.settings.button_chat == true %}
-                  <a id="rp-home" class="btn">
+                <a href="/pages\/contact"  class="btn">
                     {{ section.settings.button_label }}
                   </a>
                 {% else %}
@@ -102,7 +102,7 @@
       {
         "type": "checkbox",
         "id": "button_chat",
-        "label": "Button opens chat widget",
+        "label": "Open chat widget. Defaults to Contact page for now",
         "default": false
       },
       {
