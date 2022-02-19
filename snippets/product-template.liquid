@@ -288,7 +288,15 @@
 
                         </div>
                       {%- endif -%}
-                    </div>
+
+                      {% comment %} new field added - am {% endcomment %}                       
+                      {%- if section.settings.condition_new != '' -%}
+                        <div class="product-single__vendor-sku">
+                            <span>{{ section.settings.condition_new }}</span>
+                        </div>
+                      {%- endif -%}
+
+                  </div>
 
                   {%- when 'quantity_selector' -%}
                     <div class="product__quantity-cart">
