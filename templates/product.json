@@ -92,6 +92,7 @@
         "related_count": 3,
         "value_one": "Free shipping $49+ and tax-free",
         "value_two": "Free (1) Year Extended Warranty",
+        "condition_new": "Condition: New",
         "image_position": "left",
         "image_size": "medium",
         "product_zoom_enable": true,
@@ -120,7 +121,6 @@
     },
     "recently-viewed": {
       "type": "recently-viewed",
-      "disabled": true,
       "settings": {
         "recent_count": 5
       }
