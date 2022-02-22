@@ -62,7 +62,7 @@
     "quick_shop_text": "Quick view",
     "product_grid_image_size": "square",
     "product_hover_image": false,
-    "backstock_intro": "Out of stock. Expected",
+    "backstock_intro": "Backorder — Estimated to ship",
     "backstock_icon": "shopify:\/\/shop_images\/tooltip-icon.png",
     "enable_product_reviews": true,
     "collection_grid_style": "overlaid-box",
