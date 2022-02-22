@@ -238,7 +238,7 @@
                       {% comment %} begin code change per 4.1.1 customization {% endcomment %}
                     {%- if settings.vendor_enable or sku_enable or settings.enable_product_reviews -%}
 
-                    {%- if settings.vendor_enable or sku_enable -%}
+                    {%- if settings.vendor_enable or section.settings.sku_enable -%}
                       <div class="product-single__vendor-sku-reviews">
                         <div class="product-single__vendor-sku">
 
@@ -255,10 +255,10 @@
                             </div>
                           {%- endif -%}
 
-                          {%- if settings.vendor_enable and sku_enable -%}<span class="divider">|</span>{%- endif -%}
+                          {%- if settings.vendor_enable and section.settings.sku_enable -%}<span class="divider">|</span>{%- endif -%}
 
-                          {%- if sku_enable -%}
-                            <p id="Sku-{{ section_id }}" class="product-single__sku">
+                          {%- if section.settings.sku_enable -%}
+                            <p data-sku class="product-single__sku">
                               {%- if current_variant.sku -%}
                                 {{ current_variant.sku }}
                               {%- endif -%}
@@ -284,10 +284,8 @@
         
                         {%- endif -%}
 
-                          {% comment %} end code change per 4.1.1 customization {% endcomment %}                       
-
-                        </div>
-                      {%- endif -%}
+                      </div>
+                    {%- endif -%}
 
                       {% comment %} new field added - am {% endcomment %}                       
                       {%- if section.settings.condition_new != '' -%}
