@@ -62,7 +62,7 @@
     "quick_shop_text": "Quick view",
     "product_grid_image_size": "square",
     "product_hover_image": false,
-    "backstock_intro": "Out of stock. Expected",
+    "backstock_intro": "Backorder — Estimated to ship",
     "backstock_icon": "shopify:\/\/shop_images\/tooltip-icon.png",
     "enable_product_reviews": true,
     "collection_grid_style": "overlaid-box",
@@ -133,7 +133,7 @@
           "f1e24d76-2f27-4282-a406-a30a0e3d8935": {
             "type": "announcement",
             "settings": {
-              "text": "Easy 30-day return policy",
+              "text": "Free 60-day return policy",
               "link_text": "",
               "link": "shopify:\/\/pages\/returns"
             }
@@ -251,7 +251,7 @@
       "newsletter-popup": {
         "type": "newsletter-popup",
         "settings": {
-          "mode": "enabled",
+          "mode": "disabled",
           "popup_seconds": 5,
           "popup_days": 30,
           "popup_title": "Sonos Arc Giveaway",
@@ -313,6 +313,12 @@
       },
       "17992116214976573926": {
         "type": "shopify:\/\/apps\/seo-manager\/blocks\/seomanager\/c54c366f-d4bb-4d52-8d2f-dd61ce8e7e12",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "13182238052301688732": {
+        "type": "shopify:\/\/apps\/personalized-recommendations\/blocks\/app-embed\/6e79d991-1504-45bb-88e3-1fb55a4f26cd",
         "disabled": false,
         "settings": {
         }
