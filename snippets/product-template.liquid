@@ -100,7 +100,7 @@
                  {% comment %} end code change per 4.1.1 customization {% endcomment %}
                 <h1 class="h2 product-single__title">
                   {%- unless product.empty? -%}
-                    {{ product.title }}
+                    {{ product.title }}, <span data-variant-title>{{ current_variant.title }}</span>
                   {%- else -%}
                     {{ 'home_page.onboarding.product_title' | t }}
                   {%- endunless -%}
