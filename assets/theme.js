@@ -3731,7 +3731,7 @@ lazySizesConfig.expFactor = 4;
     // end code change per 4.1.1 customization
 
     var videoHolderId = 'VideoHolder';
-    
+
     // code change per 4.1.1 customization. added vimeo in var
     var selectors = {
       youtube: 'a[href*="youtube.com/watch"], a[href*="youtu.be/"]',
@@ -6710,7 +6710,11 @@ lazySizesConfig.expFactor = 4;
         modalInit: false,
         hasImages: true,
         imageSetName: null,
+        imageSetName1: null,
+        imageSetName2: null,
         imageSetIndex: null,
+        imageSetIndex1: null,
+        imageSetIndex2: null,
         currentImageSet: null,
         imageSize: '620x',
         currentSlideIndex: 0,
@@ -6773,7 +6777,14 @@ lazySizesConfig.expFactor = 4;
   
       var dataSetEl = this.cache.mainSlider.querySelector('[data-set-name]');
       if (dataSetEl) {
-        this.settings.imageSetName = dataSetEl.dataset.setName;
+        var imageSetNameCheck = dataSetEl.dataset.setName;
+        if (imageSetNameCheck) {
+          var imageSetNameSplit = dataSetEl.dataset.setName.split("*");
+          this.settings.imageSetName1 = imageSetNameSplit[0];
+          this.settings.imageSetName2 = imageSetNameSplit[1];
+        } else {
+          this.settings.imageSetName = dataSetEl.dataset.setName;
+        }
       }
   
       this.init();
@@ -6822,7 +6833,7 @@ lazySizesConfig.expFactor = 4;
         this.initVariants();
   
         // We know the current variant now so setup image sets
-        if (this.settings.imageSetName) {
+        if (this.settings.imageSetName ||this.settings.imageSetName1 || this.settings.imageSetName2) {
           this.updateImageSet();
         }
       },
@@ -6882,7 +6893,7 @@ lazySizesConfig.expFactor = 4;
   
       initVariants: function() {
         var variantJson = this.container.querySelector(this.selectors.variantsJson);
-  
+
         if (!variantJson) {
           return;
         }
@@ -6959,13 +6970,29 @@ lazySizesConfig.expFactor = 4;
             }
           }
         }
-  
+        
         // image set names variant change listeners
         if (this.settings.imageSetName) {
           var variantWrapper = this.container.querySelector('.variant-input-wrap[data-handle="'+this.settings.imageSetName+'"]');
+      
           if (variantWrapper) {
             this.settings.imageSetIndex = variantWrapper.dataset.index;
             this.container.on('variantChange' + this.settings.namespace, this.updateImageSet.bind(this))
+          } else {
+            this.settings.imageSetName = null;
+          }
+        } 
+        if (this.settings.imageSetName1 || this.settings.imageSetName2) {
+          var variantWrapper1 = this.container.querySelector('.variant-input-wrap[data-handle="'+this.settings.imageSetName1+'"]');
+
+          if (variantWrapper1) {
+            this.settings.imageSetIndex1 = variantWrapper1.dataset.index;
+            this.container.on('variantChange' + this.settings.namespace, this.updateImageSet.bind(this)) 
+          } 
+          var variantWrapper2 = this.container.querySelector('.variant-input-wrap[data-handle="'+this.settings.imageSetName2+'"]');
+          if (variantWrapper2) {
+            this.settings.imageSetIndex2 = variantWrapper2.dataset.index; 
+            this.container.on('variantChange' + this.settings.namespace, this.updateImageSet.bind(this)) 
           } else {
             this.settings.imageSetName = null;
           }
@@ -7097,19 +7124,39 @@ lazySizesConfig.expFactor = 4;
   
       imageSetArguments: function(variant) {
         var variant = variant ? variant : (this.variants ? this.variants.currentVariant : null);
-        if (!variant) return;
-  
-        var setValue = this.settings.currentImageSet = this.getImageSetName(variant[this.settings.imageSetIndex]);
-        var set = this.settings.imageSetName + '_' + setValue;
-  
+        if (!variant) return;  
+
+        if (this.settings.imageSetIndex !== null) {
+          var setValue = this.settings.currentImageSet = this.getImageSetName(variant[this.settings.imageSetIndex]);
+          var set = this.settings.imageSetName + '_' + setValue; 
+        } else if (this.settings.imageSetIndex1 != null || this.settings.imageSetIndex2 != null ) {
+          if (this.settings.imageSetIndex1 != null) {
+            var setValue1 = this.settings.currentImageSet1 = this.getImageSetName(variant[this.settings.imageSetIndex1]);   
+            var set1 = this.settings.imageSetName1 + '_' + setValue1;  
+          } 
+          if (this.settings.imageSetIndex2 != null) {
+            var setValue2 = this.settings.currentImageSet2 = this.getImageSetName(variant[this.settings.imageSetIndex2]);
+            var set2 = this.settings.imageSetName2 + '_' + setValue2; 
+          }
+        }
+
         // Always start on index 0
         this.settings.currentSlideIndex = 0;
-  
+
         // Return object that adds cellSelector to mainSliderArgs
-        return {
-          cellSelector: '[data-group="'+set+'"]',
-          imageSet: set,
-          initialIndex: this.settings.currentSlideIndex
+        if (set) {
+          return {
+            cellSelector: '[data-group="'+set+'"]',
+            imageSet: set,
+            initialIndex: this.settings.currentSlideIndex
+          }
+        }
+        if (set1 && set2) {
+          return {
+            cellSelector: '[data-group="'+set1+'*'+set2+'"]',
+            imageSet: set1+'*'+set2,
+            initialIndex: this.settings.currentSlideIndex
+          } 
         }
       },
   
@@ -7119,14 +7166,22 @@ lazySizesConfig.expFactor = 4;
         if (!variant) {
           return;
         }
-  
-        var setValue = this.getImageSetName(variant[this.settings.imageSetIndex]);
-  
+
+        if (this.settings.imageSetIndex !== null) {
+          var setValue = this.getImageSetName(variant[this.settings.imageSetIndex]);
+        } 
+        if (this.settings.imageSetIndex1 !== null) {
+          var setValue1 = this.getImageSetName(variant[this.settings.imageSetIndex1]);
+        } 
+        if (this.settings.imageSetIndex2 !== null) {
+          var setValue2 = this.getImageSetName(variant[this.settings.imageSetIndex2]);
+        }
+
         // Already on the current image group
         if (this.settings.currentImageSet === setValue) {
           return;
         }
-  
+
         this.initProductSlider(variant);
       },
   
@@ -7499,7 +7554,7 @@ lazySizesConfig.expFactor = 4;
         };
   
         // Override default settings if image set feature enabled
-        if (this.settings.imageSetName) {
+        if (this.settings.imageSetName || this.settings.imageSetName1 || this.settings.imageSetName2) {
           var imageSetArgs = this.imageSetArguments(variant);
           mainSliderArgs = Object.assign({}, mainSliderArgs, imageSetArgs);
           this.updateImageSetThumbs(mainSliderArgs.imageSet);
@@ -7512,6 +7567,8 @@ lazySizesConfig.expFactor = 4;
         // If slider is initialized with image set feature active,
         // initialize any videos/media when they are first slide
         if (this.settings.imageSetName) {
+          this.prepMediaOnSlide(slide);
+        } else if (this.settings.imageSetName1 && this.settings.imageSetName1) {
           this.prepMediaOnSlide(slide);
         }
       },
