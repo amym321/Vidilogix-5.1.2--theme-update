@@ -61,7 +61,7 @@
       </div>
     {%- endcapture -%}
 
-    <div class="{% if section.settings.layout == 'top' or section.settings.layout == 'bottom' %}feature-column{% else %}feature-row{% endif %}" data-aos>
+    <div class="{% if section.settings.layout == 'top' or section.settings.layout == 'bottom' %}feature-column{% else %}feature-row{% endif %} text-{{ section.settings.align_text }}" data-aos>
       {%- if section.settings.layout == 'left' or section.settings.layout == 'top' -%}
         {{ image_layout }}
       {%- endif -%}
@@ -88,7 +88,7 @@
             {{ section.settings.button_label }}
           </a>
         {%- elsif section.settings.button_label != blank -%}
-          <div class="appear-delay{% cycle '','-1','-2','-3','-4' %}">
+          <div class="appear-delay{% cycle '','-1','-2','-3','-4' %} text-{{ section.settings.align_button }}">
             <a href="{{ section.settings.button_link }}" class="btn{% if section.settings.button_style == 'secondary' %} btn--tertiary{% endif %}">
               {{ section.settings.button_label }}
             </a>
@@ -288,6 +288,26 @@
         "type": "select",
         "id": "align_text",
         "label": "Text alignment",
+        "default": "left",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "center",
+            "label": "Centered"
+          },
+          {
+            "value": "right",
+            "label": "Right"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "align_button",
+        "label": "Button_alignment",
         "default": "left",
         "options": [
           {
