@@ -172,7 +172,7 @@
     "text-and-image": {
       "type": "text-and-image",
       "settings": {
-        "image": "shopify:\/\/shop_images\/support_tile.jpg",
+        "image": "shopify:\/\/shop_images\/coffee-shop-working-watercolour.jpg",
         "image_width": 500,
         "full_width": true,
         "subtitle": "Support",
