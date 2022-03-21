@@ -58,6 +58,7 @@
           </button>
         {%- endif -%}
 
+        {% comment %}added logic for variant image set based on 2 alt text tags - am {% endcomment %}
         <div class="product__thumbs--scroller">
           {%- if product.media.size > 1 -%}
             {%- for media in product.media -%}

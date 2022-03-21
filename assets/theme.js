@@ -6775,6 +6775,7 @@ lazySizesConfig.expFactor = 4;
         this.settings.hasImages = false;
       }
   
+      // added logic for variant image set based on 2 alt text tags - am
       var dataSetEl = this.cache.mainSlider.querySelector('[data-set-name]');
       if (dataSetEl) {
         var imageSetNameCheck = dataSetEl.dataset.setName;
@@ -6833,6 +6834,7 @@ lazySizesConfig.expFactor = 4;
         this.initVariants();
   
         // We know the current variant now so setup image sets
+        // added logic for variant image set based on 2 alt text tags - am
         if (this.settings.imageSetName ||this.settings.imageSetName1 || this.settings.imageSetName2) {
           this.updateImageSet();
         }
@@ -6972,11 +6974,12 @@ lazySizesConfig.expFactor = 4;
         }
         
         // image set names variant change listeners
+        // added logic for variant image set based on 2 alt text tags - am
         if (this.settings.imageSetName) {
           var variantWrapper = this.container.querySelector('.variant-input-wrap[data-handle="'+this.settings.imageSetName+'"]');
       
           if (variantWrapper) {
-            this.settings.imageSetIndex = variantWrapper.dataset.index;
+            this.settings.imageSetIndex = variantWrapper.dataset.index;  
             this.container.on('variantChange' + this.settings.namespace, this.updateImageSet.bind(this))
           } else {
             this.settings.imageSetName = null;
@@ -6987,12 +6990,12 @@ lazySizesConfig.expFactor = 4;
 
           if (variantWrapper1) {
             this.settings.imageSetIndex1 = variantWrapper1.dataset.index;
-            this.container.on('variantChange' + this.settings.namespace, this.updateImageSet.bind(this)) 
+            this.container.on('variantChange' + this.settings.namespace, this.updateImageSet.bind(this))
           } 
           var variantWrapper2 = this.container.querySelector('.variant-input-wrap[data-handle="'+this.settings.imageSetName2+'"]');
           if (variantWrapper2) {
-            this.settings.imageSetIndex2 = variantWrapper2.dataset.index; 
-            this.container.on('variantChange' + this.settings.namespace, this.updateImageSet.bind(this)) 
+            this.settings.imageSetIndex2 = variantWrapper2.dataset.index;
+            this.container.on('variantChange' + this.settings.namespace, this.updateImageSet.bind(this))
           } else {
             this.settings.imageSetName = null;
           }
@@ -7122,6 +7125,7 @@ lazySizesConfig.expFactor = 4;
       },
       // end code change per 4.1.1 customization
   
+      // added logic for variant image set based on 2 alt text tags - am
       imageSetArguments: function(variant) {
         var variant = variant ? variant : (this.variants ? this.variants.currentVariant : null);
         if (!variant) return;  
@@ -7131,7 +7135,7 @@ lazySizesConfig.expFactor = 4;
           var set = this.settings.imageSetName + '_' + setValue; 
         } else if (this.settings.imageSetIndex1 != null || this.settings.imageSetIndex2 != null ) {
           if (this.settings.imageSetIndex1 != null) {
-            var setValue1 = this.settings.currentImageSet1 = this.getImageSetName(variant[this.settings.imageSetIndex1]);   
+            var setValue1 = this.settings.currentImageSet1 = this.getImageSetName(variant[this.settings.imageSetIndex1]); 
             var set1 = this.settings.imageSetName1 + '_' + setValue1;  
           } 
           if (this.settings.imageSetIndex2 != null) {
@@ -7151,6 +7155,7 @@ lazySizesConfig.expFactor = 4;
             initialIndex: this.settings.currentSlideIndex
           }
         }
+        // added logic for variant image set based on 2 alt text tags - am
         if (set1 && set2) {
           return {
             cellSelector: '[data-group="'+set1+'*'+set2+'"]',
