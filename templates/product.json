@@ -184,7 +184,7 @@
         "button_link": "shopify:\/\/pages\/contact",
         "button_style": "primary",
         "align_text": "left",
-        "align_button": "center",
+        "align_button": "left",
         "button_chat": false,
         "disclaimer": "",
         "background_color": "#57545d",
