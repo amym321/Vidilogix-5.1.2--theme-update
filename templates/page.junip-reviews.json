@@ -32,7 +32,7 @@
       "settings": {
         "layout": "list",
         "reviewsType": "all",
-        "showSummary": false,
+        "showSummary": true,
         "reviewsCount": 10
       }
     }
