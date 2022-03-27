@@ -12838,3 +12838,180 @@ font-weight:700;
 .product__thumb-icon {
   background-color: var(--colorBtnPrimary);
 }
+
+
+/* why-buy-popup */
+.why-buy-popup .newsletter{
+  max-width:none;
+}
+
+.why-buy-popup .modal {
+  z-index: 3000000000 !important;
+}
+
+@media only screen and (min-width: 769px) {
+  .why-buy-popup .modal {
+    background-color: rgba(0, 0, 0, 0.507);
+  }
+}
+
+.why-buy-popup .modal__centered {
+  min-width:100%;
+  min-height:100%;
+}
+
+.why-buy-popup .modal__inner, 
+.why-buy-popup .modal__outer {
+  min-width: 80%;
+  min-height: 80%;
+}
+
+@media only screen and (min-width: 769px) {
+  .why-buy-popup .modal__inner {
+    margin: 50px 80px;
+  }
+}
+
+.why-buy-popup .why-buy-page {
+  width: 100%;
+  min-width:100%;
+  border:none; 
+}
+
+.why-buy-popup .modal--square .modal__centered-content {
+  max-width: none !important;
+}
+
+.why-buy-popup .modal--square .modal__centered-content {
+  padding: 0;
+  max-height: 85vh;
+}
+@media only screen and (max-width: 768px) {
+  .why-buy-popup .modal--square .modal__centered-content {
+    max-height: 75vh;
+  }
+}
+
+.why-buy-popup .modal--square .modal__close {
+   position: fixed;
+}
+
+/* .why-buy-popup  */
+.text-center .why-shadow {
+  position: relative;
+}
+
+.why-link {
+  font-weight: 600;
+  width: 100%;
+  font-size: 18px;
+}
+.why-link:hover {
+  color:#F6C12F !important;
+}
+
+@media only screen and (min-width: 600px) {
+  .text-center .why-btn {
+    position: absolute !important;
+    bottom: 30px;
+    transform: translate(-50%);
+  }
+  .text-center .why-text { 
+    margin-bottom: 70px;
+  }
+}
+
+.grid__item .why-shadow {
+  padding: 30px 15px;
+}
+
+.why-buy-popup .medium-up--one-quarter-popup {
+  width: 100% ;
+}
+@media only screen and (min-width: 600px) {
+  .why-buy-popup .medium-up--one-quarter-popup {
+    width: 50% ;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .why-buy-popup .medium-up--one-quarter-popup {
+    width: 25% ;
+  }
+}
+
+.why-buy-popup .grid.flex-grid {
+  padding: 30px;
+  margin-top: -30px;
+}
+.why-buy-popup .shadow {
+  padding: 50px 20px;
+  box-shadow: 0 0 30px 0 rgb(0 0 0 / 10%);
+  height: 100%;
+}
+
+.why-buy-popup h2.section-header__title {
+  font-size: 18px;
+}
+
+.why-rich-text {
+  padding: 0 30px 50px 30px;
+}
+
+@media only screen and (max-width: 769px) {
+  .why-buy-popup .grid.flex-grid {
+    padding: 15px;
+    margin-top: -15px;
+  }
+}
+
+.hide-why-popup { 
+  display:none; 
+}
+
+.why-buy-popup .modal {
+  display:flex;
+}
+
+/* Why Buy Modal (background) */
+.why-modal {
+  display: none; 
+}
+
+.why-modal h3  {
+  font-size: calc(var(--typeHeaderSize)*0.5);
+}
+@media only screen and (min-width: 769px) {
+  .why-modal h3 {
+    font-size: calc(var(--typeHeaderSize)*0.6);
+  }
+  /* .why-modal .height_A,{
+    min-height: 60px;
+  }
+  .why-modal .height_C {
+    min-height: 100px;
+  } */
+}
+
+/* The Close Button */
+.close-why-popup {
+  color: #000;
+  z-index:3500000000 !important;
+  background-color: #ffffff00;
+  /* height: 30px; */
+  /* top: 50px; */
+  text-align: right !important;
+  padding-right: 20px;
+  font-size: 40px;
+  display:block !important;
+  cursor: pointer;
+}
+
+.close-why-popup:hover,
+.close-why-popup:focus {
+  color: #000;
+}
+
+#shopify-chat-dummy, 
+button#dummy-chat-button.chat-toggle {
+  z-index: 20000 !important;
+}
