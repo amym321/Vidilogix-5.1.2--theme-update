@@ -116,6 +116,7 @@
           },
           "1524770292306": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "Free lifetime technical support",
               "link_text": "",
@@ -125,6 +126,7 @@
           },
           "1524770296206": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "Free shipping $49+ and tax-free",
               "link_text": "",
@@ -134,7 +136,6 @@
           },
           "f1e24d76-2f27-4282-a406-a30a0e3d8935": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
               "text": "9 Reasons to Shop Vidlogix",
               "link_text": "",
