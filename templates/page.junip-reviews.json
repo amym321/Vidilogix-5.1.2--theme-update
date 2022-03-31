@@ -31,7 +31,7 @@
       "type": "junip-reviews",
       "settings": {
         "layout": "list",
-        "reviewsType": "all",
+        "reviewsType": "store_reviews",
         "showSummary": true,
         "reviewsCount": 10
       }
