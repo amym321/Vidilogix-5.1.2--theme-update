@@ -12886,7 +12886,7 @@ font-weight:700;
   padding: 0;
   max-height: 85vh;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 769px) {
   .why-buy-popup .modal--square .modal__centered-content {
     max-height: 75vh;
   }
@@ -12945,7 +12945,7 @@ font-weight:700;
 }
 .why-buy-popup .shadow {
   padding: 50px 20px;
-  box-shadow: 0 0 30px 0 rgb(0 0 0 / 10%);
+  box-shadow: 10px 10px 10px rgb(0 0 0 / 12%);
   height: 100%;
 }
 
@@ -12997,8 +12997,7 @@ font-weight:700;
   color: #000;
   z-index:3500000000 !important;
   background-color: #ffffff00;
-  /* height: 30px; */
-  /* top: 50px; */
+  /* height: 30px; */  /* reduced height of close element, but didn't line up with svg, thus close didn't work */
   text-align: right !important;
   padding-right: 20px;
   font-size: 40px;
@@ -13016,6 +13015,46 @@ button#dummy-chat-button.chat-toggle {
   z-index: 20000 !important;
 }
 
+.why-image-container {
+  border-radius: 50%;
+  background-color: #56545c;
+  width: 120px;
+  height: 120px;
+  margin-bottom: 50%;
+  margin-top: -110px;
+  transform: translateX(-30px);
+}
+
+.why-image-container img{
+  transform: translate(50%, 50%);
+}
+
+.why-item {
+  background-color: #f8f6f7;
+}
+.why-item-middle {
+  background-color:#56545c;
+  color: #fff;
+}
+@media only screen and (min-width: 769px) {
+  .why-item-middle {
+    padding: 50px 20% !important;
+  }
+}
+
+#why-buy-popup .grid__item {
+  margin-top: 50px;
+}
+
+.disclaimer-text {
+  padding-top:30px;
+}
+@media only screen and (max-width: 600px) {
+  .disclaimer-text {
+    padding-top:15px;
+  }
+}
+/* end why-buy-popup */
 
 /* Smart Header */
 @media only screen and (max-width: 768px) {
