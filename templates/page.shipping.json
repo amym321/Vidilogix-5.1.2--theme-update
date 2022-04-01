@@ -13,33 +13,13 @@
         "page_description": ""
       }
     },
-    "1640041344e995db21": {
-      "type": "rich-text",
-      "disabled": true,
-      "blocks": {
-        "16400413440adaf63b-0": {
-          "type": "heading",
-          "settings": {
-            "title": "Shipping"
-          }
-        }
-      },
-      "block_order": [
-        "16400413440adaf63b-0"
-      ],
-      "settings": {
-        "align_text": "center",
-        "narrow_column": true,
-        "divider": false
-      }
-    },
     "164004230690a0c083": {
       "type": "rich-text",
       "blocks": {
         "16400423069a560b32-1": {
           "type": "text",
           "settings": {
-            "enlarge_text": false,
+            "enlarge_text": true,
             "text": "<p>We offer free shipping on all orders over $49. For all orders under $49, there will be an $10 shipping fee. <\/p><p>The carrier will be selected based on the shipping address. We do not ship to freight forwarders or post offices. All orders are processed Monday through Friday, from 9:00 A.M. to 5:00 P.M. ET. In-stock shipments are usually shipped the same day of order. See <a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0056\/9632\/3651\/files\/Shipping_Map_1_2x_835305d1-a77f-4eaa-b4eb-6eb9066ff75c.jpg?v=1647141684\" target=\"_blank\" title=\"UPS Time in Transit Map\">Delivery Times<\/a> for details. Totals are calculated after all discounts and freight charges have been applied. Shipping fees are nonrefundable.<\/p>"
           }
         }
@@ -151,7 +131,6 @@
   "order": [
     "main",
     "1641757491effe7074",
-    "1640041344e995db21",
     "164004230690a0c083",
     "1640041293a13b372e"
   ]
