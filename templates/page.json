@@ -2,20 +2,20 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
+      }
+    },
+    "16488300402a7b3c40": {
+      "type": "smart-header-section",
+      "settings": {
+        "page_title": "",
+        "page_description": ""
       }
     },
     "16488288131fbd1b53": {
       "type": "rich-text",
-      "disabled": true,
       "blocks": {
-        "1648828813fb30241c-0": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "title": ""
-          }
-        },
         "1648828813fb30241c-1": {
           "type": "text",
           "settings": {
@@ -25,7 +25,6 @@
         }
       },
       "block_order": [
-        "1648828813fb30241c-0",
         "1648828813fb30241c-1"
       ],
       "settings": {
@@ -143,6 +142,7 @@
   },
   "order": [
     "main",
+    "16488300402a7b3c40",
     "16488288131fbd1b53",
     "16488245883efc4f91"
   ]
