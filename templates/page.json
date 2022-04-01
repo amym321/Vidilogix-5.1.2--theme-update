@@ -22,12 +22,12 @@
         "16488245882fb981c9-1": {
           "type": "question",
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>",
+            "title": "When will I be charged?",
+            "text": "<p>When you place an order, vidlogix.com contacts the issuing bank to confirm the payment method's validity. Your bank reserves the funds until the entire transaction processes or the authorization expires, but this isn't an actual charge. We will post payment upon shipment or within 6 calendar days. To remove an authorization, contact your bank to clarify how long they hold authorizations for online orders. You can cancel an order at any time prior to shipment, at no cost to you, by <a href=\"https:\/\/www.vidlogix.com\/pages\/contact\" target=\"_blank\" title=\"Contact Vidlogix Support\">contacting support<\/a>.<\/p>",
             "button_link2": "",
             "button_text2": "Button text",
             "button_chat2": false,
-            "text2": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+            "text2": ""
           }
         }
       },
