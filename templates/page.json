@@ -62,6 +62,17 @@
             "button_chat2": false,
             "text2": ""
           }
+        },
+        "f6d1690b-db2d-4b47-b72b-8f420e755a16": {
+          "type": "question",
+          "settings": {
+            "title": "Order Verification",
+            "text": "<p>Some orders are subject to Vidlogix's verification procedure which means that, for your protection from credit card fraud or identity theft, we may ask you to verify that you're the cardholder or that order and the ship-to information are legitimate. This process rarely delays an order and generally requires either a simple call-back (which can be done after business hours) or by fax. <\/p><p>If your order requires verification, we will advise you by phone or e-mail. This is why it's important that you leave both day and home phone numbers when ordering and that you keep your information current. <\/p><p>It is also important that you understand what we mean by bill-to information on the checkout process. The bill-to address is the address to which your bank mails your monthly credit card statement. The bill-to address you give us must agree with the address that the card-issuing bank has on file. Please be sure you provide the correct information, even if the items are shipped to a different location. <\/p><p>We regret that this is necessary, but it is designed to protect the cardholder and the retailer.<\/p>",
+            "button_link2": "",
+            "button_text2": "Button text",
+            "button_chat2": false,
+            "text2": ""
+          }
         }
       },
       "block_order": [
@@ -69,7 +80,8 @@
         "16488245882fb981c9-1",
         "374192d8-edb1-4637-ab3c-ee2a1bbee107",
         "5c990f3a-0954-45b1-afd7-46bb96a1c2f6",
-        "e0145d7b-91c4-454c-9048-ab34062080b4"
+        "e0145d7b-91c4-454c-9048-ab34062080b4",
+        "f6d1690b-db2d-4b47-b72b-8f420e755a16"
       ],
       "settings": {
         "title": "FAQs"
