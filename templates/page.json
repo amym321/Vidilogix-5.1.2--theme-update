@@ -36,6 +36,7 @@
     },
     "16488245883efc4f91": {
       "type": "faq",
+      "disabled": true,
       "blocks": {
         "16488245882fb981c9-0": {
           "type": "question",
