@@ -52,6 +52,17 @@
             "text2": ""
           }
         },
+        "75275c32-d995-4785-8ccb-0e49c7018566": {
+          "type": "question",
+          "settings": {
+            "title": "Contact information",
+            "text": "<p><strong>Update Address<br\/><\/strong>We are unable to update the shipping address once an order is placed. The receiver may not change delivery information via UPS My Choice®. We do this to protect the cardholder and the retailer.<\/p><p><strong>Update Email<br\/><\/strong>Please provide us with both email addresses: the one you used and the correct one. We will update the email address in our system and then send you a confirmation.<\/p>",
+            "button_link2": "",
+            "button_text2": "Button text",
+            "button_chat2": false,
+            "text2": ""
+          }
+        },
         "e0145d7b-91c4-454c-9048-ab34062080b4": {
           "type": "question",
           "settings": {
@@ -84,17 +95,6 @@
             "button_chat2": false,
             "text2": ""
           }
-        },
-        "75275c32-d995-4785-8ccb-0e49c7018566": {
-          "type": "question",
-          "settings": {
-            "title": "Contact information",
-            "text": "<p><strong>Update Address<br\/><\/strong>We are unable to update the shipping address once an order is placed. The receiver may not change delivery information via UPS My Choice®. We do this to protect the cardholder and the retailer.<\/p><p><strong>Update Email<br\/><\/strong>Please provide us with both email addresses: the one you used and the correct one. We will update the email address in our system and then send you a confirmation.<\/p>",
-            "button_link2": "",
-            "button_text2": "Button text",
-            "button_chat2": false,
-            "text2": ""
-          }
         }
       },
       "block_order": [
@@ -102,10 +102,10 @@
         "16488245882fb981c9-1",
         "374192d8-edb1-4637-ab3c-ee2a1bbee107",
         "5c990f3a-0954-45b1-afd7-46bb96a1c2f6",
+        "75275c32-d995-4785-8ccb-0e49c7018566",
         "e0145d7b-91c4-454c-9048-ab34062080b4",
         "f6d1690b-db2d-4b47-b72b-8f420e755a16",
-        "b5eb1501-45c9-4128-a27a-d0d8f5e5a9e3",
-        "75275c32-d995-4785-8ccb-0e49c7018566"
+        "b5eb1501-45c9-4128-a27a-d0d8f5e5a9e3"
       ],
       "settings": {
         "title": "FAQs"
