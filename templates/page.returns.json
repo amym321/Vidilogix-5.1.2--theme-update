@@ -6,15 +6,16 @@
       "settings": {
       }
     },
+    "164882976748ec8d45": {
+      "type": "smart-header-section",
+      "settings": {
+        "page_title": "",
+        "page_description": ""
+      }
+    },
     "16400379680befddc2": {
       "type": "rich-text",
       "blocks": {
-        "1640037968f4dadfc5-0": {
-          "type": "heading",
-          "settings": {
-            "title": "Returns"
-          }
-        },
         "1640037968f4dadfc5-1": {
           "type": "text",
           "settings": {
@@ -24,7 +25,6 @@
         }
       },
       "block_order": [
-        "1640037968f4dadfc5-0",
         "1640037968f4dadfc5-1"
       ],
       "settings": {
@@ -122,6 +122,7 @@
   },
   "order": [
     "main",
+    "164882976748ec8d45",
     "16400379680befddc2",
     "16400379788bcd19c4",
     "1640037982ebbadc89"
