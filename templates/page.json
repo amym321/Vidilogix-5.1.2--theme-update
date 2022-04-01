@@ -15,6 +15,7 @@
     },
     "16488288131fbd1b53": {
       "type": "rich-text",
+      "disabled": true,
       "blocks": {
         "1648828813fb30241c-1": {
           "type": "text",
@@ -35,6 +36,7 @@
     },
     "16488245883efc4f91": {
       "type": "faq",
+      "disabled": true,
       "blocks": {
         "16488245882fb981c9-0": {
           "type": "question",
