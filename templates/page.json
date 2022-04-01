@@ -11,7 +11,7 @@
         "16488245882fb981c9-0": {
           "type": "question",
           "settings": {
-            "title": "Payment Methods",
+            "title": "Payment methods",
             "text": "<p>We accept Visa, Mastercard, American Express, Discover, Shop Pay, and Apple Pay.<\/p><p><strong>We may contact your bank to verify if the billing address and phone number entered on Vidlogix.com match the address where your credit card company sends your statements to protect you from unauthorized purchases.<\/strong><\/p>",
             "button_link2": "",
             "button_text2": "Button text",
@@ -33,7 +33,7 @@
         "374192d8-edb1-4637-ab3c-ee2a1bbee107": {
           "type": "question",
           "settings": {
-            "title": "Sales Tax",
+            "title": "Sales tax",
             "text": "<p>Vidlogix collects state and local sales tax on items shipping to New York. <\/p><p><strong>Tax Exemption<\/strong><br\/>Vidlogix works with many government, education, non-profit, charitable, and religious organizations who qualify for tax-exempt status. Once approved, customers may make tax-exempt purchases on behalf of their organizations online. Please <a href=\"https:\/\/www.vidlogix.com\/pages\/contact\" target=\"_blank\" title=\"Contact Vidlogix Customer Service\">contact us<\/a> if you wish to enroll in the Vidlogix Tax Exemption Program (VTEP).<\/p><p><strong>Sales Tax Policy<\/strong><br\/>Your order contains one or more items from Vidlogix Labs Inc. and may be subject to local sales tax, depending on the state to which the item is being shipped. Unless otherwise noted, Vidlogix Labs Inc.'s items are subject to sales tax in select states following the state's applicable laws. If your order contains one or more items from a seller other than Vidlogix Labs Inc., it may be subject to state and local sales tax, depending on the seller's business policies and the location of their operations. We do not collect sales or use taxes in all states. For states imposing sales or use taxes, your purchase is subject to use tax unless it is specifically exempt from taxation. Your purchase is not exempt merely because it is made over the Internet or by other remote means. Many states require purchasers to file a sales\/use tax return at the end of the year reporting all of the taxable purchases that were not taxed and to pay tax on those purchases. You may find details of how to file these returns at the websites of your respective taxing authorities. The sales tax indicated on the checkout form is an estimate. The sales tax ultimately charged to your credit card will be calculated when your credit card charge is authorized and will reflect applicable state and local taxes.<\/p>",
             "button_link2": "",
             "button_text2": "Button text",
