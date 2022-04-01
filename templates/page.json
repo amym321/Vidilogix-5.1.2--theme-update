@@ -73,6 +73,17 @@
             "button_chat2": false,
             "text2": ""
           }
+        },
+        "b5eb1501-45c9-4128-a27a-d0d8f5e5a9e3": {
+          "type": "question",
+          "settings": {
+            "title": "Price Matching",
+            "text": "<p>We don't mark prices up only to mark them down and call it a \"sale.\" We work directly with our manufacturing partners to bring you the best quality at the lowest possible price, always. That being said, we'll match the price shown on any US-based retailer's website for the identical in-stock product (same size, color, year) within 60-days of purchase. <a href=\"https:\/\/www.vidlogix.com\/pages\/price-match\" target=\"_blank\" title=\"Vidlogix Price Match Policy\">Learn more<\/a><\/p>",
+            "button_link2": "",
+            "button_text2": "Button text",
+            "button_chat2": false,
+            "text2": ""
+          }
         }
       },
       "block_order": [
@@ -81,7 +92,8 @@
         "374192d8-edb1-4637-ab3c-ee2a1bbee107",
         "5c990f3a-0954-45b1-afd7-46bb96a1c2f6",
         "e0145d7b-91c4-454c-9048-ab34062080b4",
-        "f6d1690b-db2d-4b47-b72b-8f420e755a16"
+        "f6d1690b-db2d-4b47-b72b-8f420e755a16",
+        "b5eb1501-45c9-4128-a27a-d0d8f5e5a9e3"
       ],
       "settings": {
         "title": "FAQs"
