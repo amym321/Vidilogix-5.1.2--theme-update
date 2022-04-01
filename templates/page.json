@@ -11,6 +11,7 @@
       "blocks": {
         "1648828813fb30241c-0": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "title": ""
           }
