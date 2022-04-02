@@ -12,32 +12,10 @@
         "page_title": "",
         "page_description": ""
       }
-    },
-    "16488288131fbd1b53": {
-      "type": "rich-text",
-      "disabled": true,
-      "blocks": {
-        "1648828813fb30241c-1": {
-          "type": "text",
-          "settings": {
-            "enlarge_text": true,
-            "text": "<p>Vidlogix accepts Visa, MasterCard, American Express, Discover, Shop Pay, and Apple Pay. You will be charged for your order upon shipment or within 6 calendar days. Vidlogix may collect NYS and local sales tax. You may cancel an order at any time before shipment. All orders ship to the billing address. We are unable to update the shipping address once an order is placed. Orders over $500 require an adult signature.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "1648828813fb30241c-1"
-      ],
-      "settings": {
-        "align_text": "center",
-        "narrow_column": true,
-        "divider": false
-      }
     }
   },
   "order": [
     "main",
-    "16488300402a7b3c40",
-    "16488288131fbd1b53"
+    "16488300402a7b3c40"
   ]
 }
