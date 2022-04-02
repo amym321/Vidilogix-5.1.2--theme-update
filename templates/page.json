@@ -19,7 +19,6 @@
       "blocks": {
         "1648828813fb30241c-1": {
           "type": "text",
-          "disabled": true,
           "settings": {
             "enlarge_text": true,
             "text": "<p>Vidlogix accepts Visa, MasterCard, American Express, Discover, Shop Pay, and Apple Pay. You will be charged for your order upon shipment or within 6 calendar days. Vidlogix may collect NYS and local sales tax. You may cancel an order at any time before shipment. All orders ship to the billing address. We are unable to update the shipping address once an order is placed. Orders over $500 require an adult signature.<\/p>"
@@ -34,119 +33,11 @@
         "narrow_column": true,
         "divider": false
       }
-    },
-    "16488245883efc4f91": {
-      "type": "faq",
-      "disabled": true,
-      "blocks": {
-        "16488245882fb981c9-0": {
-          "type": "question",
-          "settings": {
-            "title": "Payment methods",
-            "text": "<p>We accept Visa, Mastercard, American Express, Discover, Shop Pay, and Apple Pay.<\/p><p><strong>We may contact your bank to verify if the billing address and phone number entered on Vidlogix.com match the address where your credit card company sends your statements to protect you from unauthorized purchases.<\/strong><\/p>",
-            "button_link2": "",
-            "button_text2": "Button text",
-            "button_chat2": false,
-            "text2": ""
-          }
-        },
-        "16488245882fb981c9-1": {
-          "type": "question",
-          "settings": {
-            "title": "When will I be charged?",
-            "text": "<p>When you place an order, vidlogix.com contacts the issuing bank to confirm the payment method's validity. Your bank reserves the funds until the entire transaction processes or the authorization expires, but this isn't an actual charge. We will post payment upon shipment or within 6 calendar days. To remove an authorization, contact your bank to clarify how long they hold authorizations for online orders. You can cancel an order at any time prior to shipment, at no cost to you, by <a href=\"https:\/\/www.vidlogix.com\/pages\/contact\" target=\"_blank\" title=\"Contact Vidlogix Support\">contacting support<\/a>.<\/p>",
-            "button_link2": "",
-            "button_text2": "Button text",
-            "button_chat2": false,
-            "text2": ""
-          }
-        },
-        "374192d8-edb1-4637-ab3c-ee2a1bbee107": {
-          "type": "question",
-          "settings": {
-            "title": "Sales tax",
-            "text": "<p>Vidlogix collects state and local sales tax on items shipping to New York. <\/p><p><strong>Tax Exemption<\/strong><br\/>Vidlogix works with many government, education, non-profit, charitable, and religious organizations who qualify for tax-exempt status. Once approved, customers may make tax-exempt purchases on behalf of their organizations online. Please <a href=\"https:\/\/www.vidlogix.com\/pages\/contact\" target=\"_blank\" title=\"Contact Vidlogix Customer Service\">contact us<\/a> if you wish to enroll in the Vidlogix Tax Exemption Program (VTEP).<\/p><p><strong>Sales Tax Policy<\/strong><br\/>Your order contains one or more items from Vidlogix Labs Inc. and may be subject to local sales tax, depending on the state to which the item is being shipped. Unless otherwise noted, Vidlogix Labs Inc.'s items are subject to sales tax in select states following the state's applicable laws. If your order contains one or more items from a seller other than Vidlogix Labs Inc., it may be subject to state and local sales tax, depending on the seller's business policies and the location of their operations. We do not collect sales or use taxes in all states. For states imposing sales or use taxes, your purchase is subject to use tax unless it is specifically exempt from taxation. Your purchase is not exempt merely because it is made over the Internet or by other remote means. Many states require purchasers to file a sales\/use tax return at the end of the year reporting all of the taxable purchases that were not taxed and to pay tax on those purchases. You may find details of how to file these returns at the websites of your respective taxing authorities. The sales tax indicated on the checkout form is an estimate. The sales tax ultimately charged to your credit card will be calculated when your credit card charge is authorized and will reflect applicable state and local taxes.<\/p>",
-            "button_link2": "",
-            "button_text2": "Button text",
-            "button_chat2": false,
-            "text2": ""
-          }
-        },
-        "5c990f3a-0954-45b1-afd7-46bb96a1c2f6": {
-          "type": "question",
-          "settings": {
-            "title": "Cancellations",
-            "text": "<p><strong>Can I cancel my order?<\/strong><br\/>Replying to your email order confirmation is the easiest and fastest way to cancel a pending order. Once an order has been placed, we cannot make any additional changes as we work hard to ship all orders as quickly as possible. If your order has shipped, and you no longer want these items, you may return them after arriving.<\/p><p><strong>Order Acceptance\/Confirmation<\/strong><br\/>Vidlogix may, in its sole discretion, refuse or cancel any order and limit order quantity. Vidlogix may also require additional qualifying information prior to accepting or processing any order. Once we receive your Online order, we’ll provide you with an email order confirmation. Your receipt of an order confirmation, however, does not signify Vidlogix’s acceptance of your order, nor does it constitute confirmation of our offer to sell; we are simply confirming that we received your order. The Vidlogix Store reserves the right at any time after receiving your order to accept or decline your order for any reason. If Vidlogix cancels an order after you have already been billed, Vidlogix will refund the billed amount.<\/p><p><strong>Your order may not qualify for the following reasons:<\/strong> Price discrepancy; Order change\/cancellation; Change of address; Failed order verification; Items are unavailable; Payment declined; Address mismatch; Freight forwarder\/ P.O. box; Manufacturer\/reseller<\/p>",
-            "button_link2": "",
-            "button_text2": "Button text",
-            "button_chat2": false,
-            "text2": ""
-          }
-        },
-        "75275c32-d995-4785-8ccb-0e49c7018566": {
-          "type": "question",
-          "settings": {
-            "title": "Contact information",
-            "text": "<p><strong>Update Address<br\/><\/strong>We are unable to update the shipping address once an order is placed. The receiver may not change delivery information via UPS My Choice®. We do this to protect the cardholder and the retailer.<\/p><p><strong>Update Email<br\/><\/strong>Please provide us with both email addresses: the one you used and the correct one. We will update the email address in our system and then send you a confirmation.<\/p>",
-            "button_link2": "",
-            "button_text2": "Button text",
-            "button_chat2": false,
-            "text2": ""
-          }
-        },
-        "e0145d7b-91c4-454c-9048-ab34062080b4": {
-          "type": "question",
-          "settings": {
-            "title": "Discounts",
-            "text": "<p><strong>Product exclusions may apply.<\/strong><br\/><strong>Excludes promotional price reductions.<\/strong><\/p><p>Discount is only available to verified Vidlogix members. Offer cannot be combined with other offers, discounts, or promo codes. Offer is not valid on prior purchases. Valid on approved domestic U.S. orders only. Vidlogix reserves the right to change terms and conditions, substitute offer of equal or greater value or end offer at any time without notice. No cash alternative. Void where prohibited by law. Vidlogix's standard terms and conditions presented at point of sale govern any purchase.<\/p>",
-            "button_link2": "",
-            "button_text2": "Button text",
-            "button_chat2": false,
-            "text2": ""
-          }
-        },
-        "f6d1690b-db2d-4b47-b72b-8f420e755a16": {
-          "type": "question",
-          "settings": {
-            "title": "Order verification",
-            "text": "<p>Some orders are subject to Vidlogix's verification procedure which means that, for your protection from credit card fraud or identity theft, we may ask you to verify that you're the cardholder or that order and the ship-to information are legitimate. This process rarely delays an order and generally requires either a simple call-back (which can be done after business hours) or by fax. <\/p><p>If your order requires verification, we will advise you by phone or e-mail. This is why it's important that you leave both day and home phone numbers when ordering and that you keep your information current. <\/p><p>It is also important that you understand what we mean by bill-to information on the checkout process. The bill-to address is the address to which your bank mails your monthly credit card statement. The bill-to address you give us must agree with the address that the card-issuing bank has on file. Please be sure you provide the correct information, even if the items are shipped to a different location. <\/p><p>We regret that this is necessary, but it is designed to protect the cardholder and the retailer.<\/p>",
-            "button_link2": "",
-            "button_text2": "Button text",
-            "button_chat2": false,
-            "text2": ""
-          }
-        },
-        "b5eb1501-45c9-4128-a27a-d0d8f5e5a9e3": {
-          "type": "question",
-          "settings": {
-            "title": "Price matching",
-            "text": "<p>We don't mark prices up only to mark them down and call it a \"sale.\" We work directly with our manufacturing partners to bring you the best quality at the lowest possible price, always. That being said, we'll match the price shown on any US-based retailer's website for the identical in-stock product (same size, color, year) within 60-days of purchase. <a href=\"https:\/\/www.vidlogix.com\/pages\/price-match\" target=\"_blank\" title=\"Vidlogix Price Match Policy\">Learn more<\/a><\/p>",
-            "button_link2": "",
-            "button_text2": "Button text",
-            "button_chat2": false,
-            "text2": ""
-          }
-        }
-      },
-      "block_order": [
-        "16488245882fb981c9-0",
-        "16488245882fb981c9-1",
-        "374192d8-edb1-4637-ab3c-ee2a1bbee107",
-        "5c990f3a-0954-45b1-afd7-46bb96a1c2f6",
-        "75275c32-d995-4785-8ccb-0e49c7018566",
-        "e0145d7b-91c4-454c-9048-ab34062080b4",
-        "f6d1690b-db2d-4b47-b72b-8f420e755a16",
-        "b5eb1501-45c9-4128-a27a-d0d8f5e5a9e3"
-      ],
-      "settings": {
-        "title": "FAQs"
-      }
     }
   },
   "order": [
     "main",
     "16488300402a7b3c40",
-    "16488288131fbd1b53",
-    "16488245883efc4f91"
+    "16488288131fbd1b53"
   ]
 }
