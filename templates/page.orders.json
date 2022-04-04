@@ -90,6 +90,17 @@
             "button_chat2": false,
             "text2": ""
           }
+        },
+        "962f86a9-d06f-4dd5-aa4f-b8d17195dfca": {
+          "type": "question",
+          "settings": {
+            "title": "Discounts",
+            "text": "<p><strong>Product exclusions may apply.<\/strong><\/p><p><strong>Excludes promotional price reductions.<\/strong><\/p><p><br\/><\/p><p>Discount is only available to verified Vidlogix members. Offers cannot be combined with other offers, discounts, or promo codes. The offer is not valid on prior purchases. Valid on approved domestic U.S. orders only. Vidlogix reserves the right to change terms and conditions, substitute an offer of equal or greater value, or end offers at any time without notice. No cash alternative. Void where prohibited by law. Vidlogix's standard terms and conditions presented at the point of sale govern any purchase.<\/p>",
+            "button_link2": "",
+            "button_text2": "Button text",
+            "button_chat2": false,
+            "text2": ""
+          }
         }
       },
       "block_order": [
@@ -97,7 +108,8 @@
         "1649113135d5e52336-1",
         "1ec0b703-091d-4378-96ba-e78f42de45b9",
         "6f7e45da-3444-4641-ac73-85aab402de7c",
-        "4a56129f-4a69-4cbd-8bab-54b83433a81d"
+        "4a56129f-4a69-4cbd-8bab-54b83433a81d",
+        "962f86a9-d06f-4dd5-aa4f-b8d17195dfca"
       ],
       "settings": {
         "title": "FAQs"
