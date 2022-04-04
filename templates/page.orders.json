@@ -83,7 +83,7 @@
         "4a56129f-4a69-4cbd-8bab-54b83433a81d": {
           "type": "question",
           "settings": {
-            "title": "Contact Information",
+            "title": "Contact information",
             "text": "<p><strong>Update Address<\/strong><\/p><p>We are unable to update the shipping address once an order is placed. The receiver may not change delivery information via UPS My Choice®. We do this to protect the cardholder and the retailer.<\/p><p><strong>Update Email<\/strong><\/p><p>Please provide us with both email addresses: the one you used and the correct one. We will update the email address in our system and then send you a confirmation.<\/p>",
             "button_link2": "",
             "button_text2": "Button text",
