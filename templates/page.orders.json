@@ -68,12 +68,24 @@
             "button_chat2": false,
             "text2": ""
           }
+        },
+        "6f7e45da-3444-4641-ac73-85aab402de7c": {
+          "type": "question",
+          "settings": {
+            "title": "Cancellations",
+            "text": "<p><strong>Can I cancel my order?<br\/><\/strong>Replying to your email order confirmation is the easiest and fastest way to cancel a pending order. Once an order has been placed, we cannot make any additional changes as we work hard to ship all orders as quickly as possible. If your order has shipped and you no longer want these items, you may return them after arriving.<\/p><p><strong>Order Acceptance\/Confirmation<br\/><\/strong>Vidlogix may, in its sole discretion, refuse or cancel any order and limit order quantity. Vidlogix may also require additional qualifying information before accepting or processing any order. Once we receive your Online order, we'll provide you with an email order confirmation. However, your receipt of order confirmation does not signify Vidlogix's acceptance of your order, nor does it constitute confirmation of our offer to sell; we are simply confirming that we received your order. The Vidlogix Store reserves the right after receiving your order to accept or decline your order for any reason. If Vidlogix cancels an order after you have already been billed, Vidlogix will refund the billed amount.<\/p><p><strong>Your order may not qualify for the following reasons:<\/strong> Price discrepancy; Order change\/cancellation; Change of address; Failed order verification; Items are unavailable; Payment declined; Address mismatch; Freight forwarder\/ P.O. box; Manufacturer\/reseller.<\/p>",
+            "button_link2": "",
+            "button_text2": "Button text",
+            "button_chat2": false,
+            "text2": ""
+          }
         }
       },
       "block_order": [
         "1649113135d5e52336-0",
         "1649113135d5e52336-1",
-        "1ec0b703-091d-4378-96ba-e78f42de45b9"
+        "1ec0b703-091d-4378-96ba-e78f42de45b9",
+        "6f7e45da-3444-4641-ac73-85aab402de7c"
       ],
       "settings": {
         "title": "FAQs"
