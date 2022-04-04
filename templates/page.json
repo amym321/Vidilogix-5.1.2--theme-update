@@ -12,10 +12,45 @@
         "page_title": "",
         "page_description": ""
       }
+    },
+    "1649104273523f2a8e": {
+      "type": "faq",
+      "blocks": {
+        "16491042737e63efea-0": {
+          "type": "question",
+          "settings": {
+            "title": "Payment methods",
+            "text": "<p>We accept Visa, Mastercard, American Express, Discover, Shop Pay, and Apple Pay.<\/p><p><strong>We may contact your bank to verify if the billing address and phone number entered on Vidlogix.com match the address where your credit card company sends your statements to protect you from unauthorized purchases.<\/strong><\/p>",
+            "button_link2": "",
+            "button_text2": "Button text",
+            "button_chat2": false,
+            "text2": ""
+          }
+        },
+        "16491042737e63efea-1": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>",
+            "button_link2": "",
+            "button_text2": "Button text",
+            "button_chat2": false,
+            "text2": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16491042737e63efea-0",
+        "16491042737e63efea-1"
+      ],
+      "settings": {
+        "title": "FAQs"
+      }
     }
   },
   "order": [
     "main",
-    "16488300402a7b3c40"
+    "16488300402a7b3c40",
+    "1649104273523f2a8e"
   ]
 }
