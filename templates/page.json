@@ -6,14 +6,6 @@
       "settings": {
       }
     },
-    "16488300402a7b3c40": {
-      "type": "smart-header-section",
-      "disabled": true,
-      "settings": {
-        "page_title": "",
-        "page_description": ""
-      }
-    },
     "1649184493855bb767": {
       "type": "why-buy-section",
       "settings": {
@@ -22,7 +14,6 @@
   },
   "order": [
     "main",
-    "16488300402a7b3c40",
     "1649184493855bb767"
   ]
 }
