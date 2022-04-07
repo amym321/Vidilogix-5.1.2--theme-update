@@ -136,6 +136,8 @@
         "button_link": "shopify:\/\/pages\/contact",
         "button_style": "primary",
         "align_text": "left",
+        "align_button": "left",
+        "button_popup": false,
         "button_chat": false,
         "disclaimer": "",
         "background_color": "#46454d",
@@ -151,6 +153,7 @@
           "type": "question",
           "settings": {
             "title": "What is Product Protection?",
+            "map_text": "",
             "text": "<p>Product Protection allows you to purchase product coverage directly from our site. Vidlogix handles all processing, claims, and follow up incase something happens to your product.<\/p>",
             "button_link2": "",
             "button_text2": "Button text",
@@ -162,6 +165,7 @@
           "type": "question",
           "settings": {
             "title": "What happens next?",
+            "map_text": "",
             "text": "<p>When you purchase a protection plan with us you’ll checkout exactly how you normally would. You’ll receive a confirmation email from us on your purchase with information about your protection plan.<\/p>",
             "button_link2": "",
             "button_text2": "Button text",
@@ -173,6 +177,7 @@
           "type": "question",
           "settings": {
             "title": "How do I file a claim?",
+            "map_text": "",
             "text": "<p>You can file a claim directly through Vidlogix at <a href=\"\/pages\/contact\" title=\"Contact Us\">vidlogix.com<\/a>. This link can be found in the email sent to you after you purchase coverage. If you ever lose this email, you can reach out to us and we’ll resend it.<\/p>",
             "button_link2": "",
             "button_text2": "Button text",
@@ -184,6 +189,7 @@
           "type": "question",
           "settings": {
             "title": "Is this backed by an insurance company?",
+            "map_text": "",
             "text": "<p>Every Vidlogix contract is backed by a regulated insurer. Those insurers are backed by reinsurers. Vidlogix and their partners are 100% compliant and contracts will be honored for the entirety of their term.<\/p>",
             "button_link2": "",
             "button_text2": "Button text",
@@ -195,6 +201,7 @@
           "type": "question",
           "settings": {
             "title": "What if I return my product?",
+            "map_text": "",
             "text": "<p>Your contract will also be returned and refunded, but at a prorated amount depending on how long the contract has been in effect. You’ll get a full refund within 30 days.<\/p>",
             "button_link2": "",
             "button_text2": "Button text",
