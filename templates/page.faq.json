@@ -13,7 +13,7 @@
           "type": "question",
           "settings": {
             "title": "Frequently asked question",
-            "map_text": "<p>UPS Time in Transit Map<\/p>",
+            "map_text": "",
             "text": "<p>Use the text to answer questions<\/p>",
             "button_link2": "",
             "button_text2": "Button text",
@@ -25,7 +25,7 @@
           "type": "question",
           "settings": {
             "title": "Frequently asked question",
-            "map_text": "<p>UPS Time in Transit Map<\/p>",
+            "map_text": "",
             "text": "<p>Use the text to answer questions<\/p>",
             "button_link2": "",
             "button_text2": "Button text",
