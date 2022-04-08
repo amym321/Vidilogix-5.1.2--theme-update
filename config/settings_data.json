@@ -341,7 +341,7 @@
           "upsell_color_discount_price": "#fb4145",
           "upsell_save_type": "dollar",
           "upsell_continue_shopping": "https:\/\/www.vidlogix.com\/collections\/best-sellers?offset=0&sortBy=bestselling",
-          "upsell_notes_enable": true,
+          "upsell_notes_enable": false,
           "upsell_terms_enable": false,
           "upsell_terms_page": "terms",
           "upsell_custom_css": ""
