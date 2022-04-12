@@ -15,7 +15,7 @@
             "top_subheading": "",
             "title": "Buy now, pay later",
             "title_size": 42,
-            "subheading": "Pay in 4 from PayPal: Easy as 1-2-3. Simple, short-term installments. Just choose Pay in 4 at checkout and split your payments in 4 - one every two weeks. It's interest-free and is backed by PayPal.",
+            "subheading": "Pay in full at checkout or split your purchase into 4 equal installments.",
             "chat_widget": false,
             "link": "shopify:\/\/collections\/sale",
             "link_text": "Shop Now",
@@ -125,10 +125,10 @@
         "d7d27f34-7d05-415b-bc68-ef082889f92e": {
           "type": "question",
           "settings": {
-            "title": "Installments",
+            "title": "Are there late fees?",
             "map_text": "<p>UPS Time In Transit Map<\/p>",
             "map_popup": false,
-            "text": "<p>Shop Pay offers you the option to pay in full at checkout, or to split your purchase into 4 equal installment payments. You can't adjust the number of installment payments or the price range available for Shop Pay Installments.<\/p><p>You have the option to pay for orders between $50 and $3,000 USD, including discounts, shipping and taxes, in 4 installments. To use Shop Pay Installments, your shipping address needs to be in the United States. <\/p>",
+            "text": "<p>No, there are no late fees if you miss a scheduled payment.<\/p>",
             "button_link2": "",
             "button_text2": "Button text",
             "button_chat2": false,
