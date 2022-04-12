@@ -164,10 +164,10 @@
         "0ec8eb81-42da-4bea-803c-1c4fb17da7eb": {
           "type": "question",
           "settings": {
-            "title": "Terms of service",
+            "title": "Which payment methods are accepted?",
             "map_text": "<p>UPS Time In Transit Map<\/p>",
             "map_popup": false,
-            "text": "<p>Learn more about <a href=\"https:\/\/www.affirm.com\/terms\" target=\"_blank\">Affirm’s terms of service<\/a> or <a href=\"https:\/\/shop.app\/terms-of-service\" target=\"_blank\">Shop’s terms of service<\/a>. <br\/><br\/>Affirm is the originator and servicer of Shop Pay installments, but payments are managed in your Shop Pay account.<\/p>",
+            "text": "<p>The installments option on Shop Pay is available on debit and credit cards.<\/p>",
             "button_link2": "",
             "button_text2": "Button text",
             "button_chat2": false,
