@@ -148,6 +148,19 @@
             "text2": ""
           }
         },
+        "9205ab87-efa4-41c7-a404-cd0f4e6bbd88": {
+          "type": "question",
+          "settings": {
+            "title": "Credit scores & eligibility",
+            "map_text": "<p>UPS Time In Transit Map<\/p>",
+            "map_popup": false,
+            "text": "<p>Your credit scores aren't affected if you use Shop Pay Installments. However, if you don’t pay an installment, or you make a late payment, then your eligibility for making purchases using Shop Pay Installments in the future might be affected.<\/p>",
+            "button_link2": "",
+            "button_text2": "Button text",
+            "button_chat2": false,
+            "text2": ""
+          }
+        },
         "164004510925ecbd80-0": {
           "type": "question",
           "disabled": true,
@@ -250,6 +263,7 @@
       "block_order": [
         "d7d27f34-7d05-415b-bc68-ef082889f92e",
         "f19fedd5-1294-4ae4-9603-78a902c47e0c",
+        "9205ab87-efa4-41c7-a404-cd0f4e6bbd88",
         "164004510925ecbd80-0",
         "164004510925ecbd80-1",
         "f01bd8c0-677b-4a86-bc02-7301be4b26db",
