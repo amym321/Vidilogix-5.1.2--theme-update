@@ -52,7 +52,7 @@
             "image": "shopify:\/\/shop_images\/shopping-cart.png",
             "image_width": 80,
             "title": "Complete Purchase",
-            "text": "<p>Add items to your cart or shopping bag.<\/p>",
+            "text": "<p>Add items to your shopping cart.<\/p>",
             "button_label": "",
             "button_link": ""
           }
