@@ -42,7 +42,7 @@
             "title": "Payment methods",
             "map_text": "",
             "map_popup": false,
-            "text": "<p>We accept Visa, Mastercard, American Express, Discover, Shop Pay, and Apple Pay.<\/p><p><strong>We may contact your bank to verify if the billing address and phone number entered on Vidlogix.com match the address where your credit card company sends your statements to protect you from unauthorized purchases.<\/strong><\/p>",
+            "text": "<p>We accept Visa, Mastercard, American Express, Discover, Shop Pay, Shop Pay Installments, and Apple Pay.<\/p><p><strong>We may contact your bank to verify if the billing address and phone number entered on Vidlogix.com match the address where your credit card company sends your statements to protect you from unauthorized purchases.<\/strong><\/p>",
             "button_link2": "",
             "button_text2": "Button text",
             "button_chat2": false,
