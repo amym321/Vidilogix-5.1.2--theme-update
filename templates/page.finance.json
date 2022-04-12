@@ -151,10 +151,10 @@
         "9205ab87-efa4-41c7-a404-cd0f4e6bbd88": {
           "type": "question",
           "settings": {
-            "title": "Credit scores & eligibility",
+            "title": "What if I make a return?",
             "map_text": "<p>UPS Time In Transit Map<\/p>",
             "map_popup": false,
-            "text": "<p>Your credit scores aren't affected if you use Shop Pay Installments. However, if you don’t pay an installment, or you make a late payment, then your eligibility for making purchases using Shop Pay Installments in the future might be affected.<\/p>",
+            "text": "<p>If your refund amount is less than the amount remaining on your Shop Pay Installments balance, then you can expect one or both of the following:<\/p><p>• A smaller payment balance on the final payment.<br\/>• Less future payments on the remaining loan balance.<\/p><p>If your refund amount is more than the amount remaining on your Shop Pay Installments balance, then you can expect to receive the difference as a refund to your original debit card or credit card payment method within 3 to 10 business days.<\/p>",
             "button_link2": "",
             "button_text2": "Button text",
             "button_chat2": false,
