@@ -173,13 +173,27 @@
             "button_chat2": false,
             "text2": ""
           }
+        },
+        "5dffa0d5-8886-4281-b0ff-800f7ffdb27d": {
+          "type": "question",
+          "settings": {
+            "title": "Have more questions?",
+            "map_text": "<p>UPS Time In Transit Map<\/p>",
+            "map_popup": false,
+            "text": "<p>• For questions about installment payments on Shop Pay, visit shop.affirm.com\/help.<\/p><p>• For questions about Shop Pay or the Shop App, visit shop.app\/help\/shop-pay.<\/p>",
+            "button_link2": "",
+            "button_text2": "Button text",
+            "button_chat2": false,
+            "text2": "<p>Use the text to answer questions<\/p>"
+          }
         }
       },
       "block_order": [
         "f19fedd5-1294-4ae4-9603-78a902c47e0c",
         "d7d27f34-7d05-415b-bc68-ef082889f92e",
         "9205ab87-efa4-41c7-a404-cd0f4e6bbd88",
-        "0ec8eb81-42da-4bea-803c-1c4fb17da7eb"
+        "0ec8eb81-42da-4bea-803c-1c4fb17da7eb",
+        "5dffa0d5-8886-4281-b0ff-800f7ffdb27d"
       ],
       "settings": {
         "title": "FAQ"
