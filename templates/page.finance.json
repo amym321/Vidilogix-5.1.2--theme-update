@@ -124,9 +124,11 @@
       "blocks": {
         "164004510925ecbd80-0": {
           "type": "question",
+          "disabled": true,
           "settings": {
             "title": "What is Pay in 4?",
             "map_text": "",
+            "map_popup": false,
             "text": "<p>Pay in 4 is a feature that lets you split your purchase into 4 payments, with the down payment due at the time of transaction and 3 subsequent payments made every 2 weeks thereafter.<\/p>",
             "button_link2": "",
             "button_text2": "Button text",
@@ -136,9 +138,11 @@
         },
         "164004510925ecbd80-1": {
           "type": "question",
+          "disabled": true,
           "settings": {
             "title": "Will I be able to use Pay in 4?",
             "map_text": "",
+            "map_popup": false,
             "text": "<p>We are offering Pay in 4 to a growing number of our US customers. Availability depends on your state of residence and you must be at least 18 years of age (or the age of majority in your state) to apply. You must also have a PayPal account in good standing or open a PayPal account in order to apply. Pay in 4 is not available for certain merchants and goods. If you choose Pay in 4 as your payment method when you check out with PayPal, you will be taken through the application process. You will get a decision instantly but not everyone will be approved based on our internal checks.<\/p>",
             "button_link2": "",
             "button_text2": "Button text",
@@ -148,9 +152,11 @@
         },
         "f01bd8c0-677b-4a86-bc02-7301be4b26db": {
           "type": "question",
+          "disabled": true,
           "settings": {
             "title": "How can I pay with Pay in 4?",
             "map_text": "",
+            "map_popup": false,
             "text": "<p>Just choose to pay with PayPal when you shop online and if it is an eligible transaction, you will see Pay in 4 as one of the available payment methods. Simply apply for a Pay in 4 plan in just a few steps, get an instant decision, and finish checking out.<\/p>",
             "button_link2": "",
             "button_text2": "Button text",
@@ -160,9 +166,11 @@
         },
         "3813e24a-ff27-410b-8060-21bf2c790a56": {
           "type": "question",
+          "disabled": true,
           "settings": {
             "title": "What amounts qualify for Pay in 4?",
             "map_text": "",
+            "map_popup": false,
             "text": "<p>You can use Pay in 4 for eligible shopping cart values between $30 to $1500.<\/p>",
             "button_link2": "",
             "button_text2": "Button text",
@@ -172,9 +180,11 @@
         },
         "f58715c7-53c9-4fbf-a605-eeb8bcc58dd9": {
           "type": "question",
+          "disabled": true,
           "settings": {
             "title": "What are the terms and conditions?",
             "map_text": "",
+            "map_popup": false,
             "text": "<p>You must read the loan agreement of your Pay in 4 plan before you submit your application. You will see the link to the loan agreement when you choose to apply for Pay in 4 at checkout. You will also have the option to download the loan agreement. Once your plan starts, we will send you an email containing important information about your Pay in 4 plan, including how to locate your loan agreement.<\/p>",
             "button_link2": "",
             "button_text2": "Button text",
@@ -184,9 +194,11 @@
         },
         "a84e1a1f-679c-47f6-81f5-e1b140e391fe": {
           "type": "question",
+          "disabled": true,
           "settings": {
             "title": "Are there any fees with Pay in 4?",
             "map_text": "",
+            "map_popup": false,
             "text": "<p>There are no fees for choosing to pay with Pay in 4, however if you are late with a payment you may be charged a late fee.<\/p>",
             "button_link2": "",
             "button_text2": "Button text",
@@ -196,14 +208,29 @@
         },
         "03db0e99-4dc4-43d0-a267-e61f4e31715f": {
           "type": "question",
+          "disabled": true,
           "settings": {
             "title": "Where can I pay with Pay in 4?",
             "map_text": "",
+            "map_popup": false,
             "text": "<p>Pay in 4 is available to use at selected merchants where PayPal is accepted. Transactions can be made in all currencies that PayPal supports, not just USD. For transactions not in USD, PayPal will automatically convert the transaction amount to USD at checkout before providing you with your Pay in 4 plan. Currency conversion charges will apply as set out in your PayPal User Agreement.<\/p>",
             "button_link2": "",
             "button_text2": "Button text",
             "button_chat2": false,
             "text2": ""
+          }
+        },
+        "d7d27f34-7d05-415b-bc68-ef082889f92e": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "map_text": "<p>UPS Time In Transit Map<\/p>",
+            "map_popup": false,
+            "text": "<p>Use the text to answer questions<\/p>",
+            "button_link2": "",
+            "button_text2": "Button text",
+            "button_chat2": false,
+            "text2": "<p>Use the text to answer questions<\/p>"
           }
         }
       },
@@ -214,7 +241,8 @@
         "3813e24a-ff27-410b-8060-21bf2c790a56",
         "f58715c7-53c9-4fbf-a605-eeb8bcc58dd9",
         "a84e1a1f-679c-47f6-81f5-e1b140e391fe",
-        "03db0e99-4dc4-43d0-a267-e61f4e31715f"
+        "03db0e99-4dc4-43d0-a267-e61f4e31715f",
+        "d7d27f34-7d05-415b-bc68-ef082889f92e"
       ],
       "settings": {
         "title": "FAQs"
