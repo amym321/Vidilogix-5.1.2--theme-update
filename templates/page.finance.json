@@ -226,7 +226,7 @@
             "title": "Installments",
             "map_text": "<p>UPS Time In Transit Map<\/p>",
             "map_popup": false,
-            "text": "<p>Shop Pay offers you the option to pay in full at checkout, or to split your purchase into 4 equal installment payments. You can't adjust the number of installment payments or the price range available for Shop Pay Installments.<\/p>",
+            "text": "<p>Shop Pay offers you the option to pay in full at checkout, or to split your purchase into 4 equal installment payments. You can't adjust the number of installment payments or the price range available for Shop Pay Installments.<\/p><p>You have the option to pay for orders between $50 and $3,000 USD, including discounts, shipping and taxes, in 4 installments. To use Shop Pay Installments, your shipping address needs to be in the United States. <\/p>",
             "button_link2": "",
             "button_text2": "Button text",
             "button_chat2": false,
