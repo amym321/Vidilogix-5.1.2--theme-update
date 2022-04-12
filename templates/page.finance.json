@@ -180,7 +180,7 @@
             "title": "Have more questions?",
             "map_text": "<p>UPS Time In Transit Map<\/p>",
             "map_popup": false,
-            "text": "<p>• For questions about installment payments on Shop Pay, visit shop.affirm.com\/help.<\/p><p>• For questions about Shop Pay or the Shop App, visit shop.app\/help\/shop-pay.<\/p>",
+            "text": "<p>• For questions about installment payments on Shop Pay, visit <a href=\"https:\/\/shop.affirm.com\/help\" target=\"_blank\" title=\"https:\/\/shop.affirm.com\/help\">shop.affirm.com\/help<\/a>.<\/p><p>• For questions about Shop Pay or the Shop App, visit <a href=\"https:\/\/shop.app\/help\/shop-pay\" target=\"_blank\" title=\"https:\/\/shop.app\/help\/shop-pay\">shop.app\/help\/shop-pay<\/a>.<\/p>",
             "button_link2": "",
             "button_text2": "Button text",
             "button_chat2": false,
