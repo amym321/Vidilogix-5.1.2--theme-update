@@ -112,7 +112,7 @@
         "align_button": "left",
         "button_popup": false,
         "button_chat": false,
-        "disclaimer": "<p>The estimated payment amount excludes taxes and shipping. Payment options are offered by Affirm and are subject to eligibility check and might not be available in all states. California residents: Affirm Loan Services, LLC is licensed by the Department of Business Oversight. Loans are made or arranged pursuant to California Financing Law license.<\/p>",
+        "disclaimer": "<p>*The estimated payment amount excludes taxes and shipping. Payment options are offered by Affirm and are subject to eligibility check and might not be available in all states. California residents: Affirm Loan Services, LLC is licensed by the Department of Business Oversight. Loans are made or arranged pursuant to California Financing Law license.<\/p>",
         "background_color": "#46454d",
         "text_color": "#ffffff",
         "layout": "left",
