@@ -45,18 +45,6 @@
     "1640045049ef117e94": {
       "type": "text-columns",
       "blocks": {
-        "164004504949d5fbb7-0": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "image": "shopify:\/\/shop_images\/exwar-Icon-3_small_10763450-ba69-4a7d-87c1-3d914fa7799f.png",
-            "image_width": 80,
-            "title": "Choose Paypal",
-            "text": "<p>Choose PayPal at checkout and select 'Pay Later' – you’ll see 'Pay in 4' as a way to pay.<\/p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
         "164004504949d5fbb7-1": {
           "type": "text_block",
           "settings": {
@@ -64,7 +52,19 @@
             "image": "shopify:\/\/shop_images\/shopping-cart.png",
             "image_width": 80,
             "title": "Complete Purchase",
-            "text": "<p>Complete your purchase and make the down payment today. It’s interest free.<\/p>",
+            "text": "<p>Add items to your cart or shopping bag.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "164004504949d5fbb7-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/exwar-Icon-3_small_10763450-ba69-4a7d-87c1-3d914fa7799f.png",
+            "image_width": 80,
+            "title": "Choose Shop Pay",
+            "text": "<p>Check out with Shop Pay.<\/p>",
             "button_label": "",
             "button_link": ""
           }
@@ -83,8 +83,8 @@
         }
       },
       "block_order": [
-        "164004504949d5fbb7-0",
         "164004504949d5fbb7-1",
+        "164004504949d5fbb7-0",
         "164004504949d5fbb7-2"
       ],
       "settings": {
