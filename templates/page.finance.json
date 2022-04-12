@@ -223,14 +223,14 @@
         "d7d27f34-7d05-415b-bc68-ef082889f92e": {
           "type": "question",
           "settings": {
-            "title": "Frequently asked question",
+            "title": "Installments",
             "map_text": "<p>UPS Time In Transit Map<\/p>",
             "map_popup": false,
-            "text": "<p>Use the text to answer questions<\/p>",
+            "text": "<p>Shop Pay offers you the option to pay in full at checkout, or to split your purchase into 4 equal installment payments. You can't adjust the number of installment payments or the price range available for Shop Pay Installments.<\/p>",
             "button_link2": "",
             "button_text2": "Button text",
             "button_chat2": false,
-            "text2": "<p>Use the text to answer questions<\/p>"
+            "text2": ""
           }
         }
       },
