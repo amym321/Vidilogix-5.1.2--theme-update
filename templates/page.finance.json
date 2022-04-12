@@ -112,7 +112,7 @@
         "align_button": "left",
         "button_popup": false,
         "button_chat": false,
-        "disclaimer": "<p>Pay in 4 is available to consumers upon approval for purchases of $30 - $1500. Pay in 4 is not currently available to residents of New Mexico, North Dakota, Missouri, South Dakota, Wisconsin, Nevada, Rhode Island, or any U.S. Territories. Loans to California residents are made or arranged pursuant to a California Finance Lenders Law License. PayPal, Inc. is a Georgia Installment Lender Licensee, NMLS #910457. For purchases made with Pay in 4 on or before September 30, 2021, late fees may apply for missed payments depending on your state of residency. When applying, a soft credit check may be needed, but will not affect your credit score. You must be of legal age in your U.S. state of residence to use Pay in 4. Offer availability depends on the merchant and also may not be available for certain recurring, subscription services. Offers are not pre-approved offers or firm offers of credit.<\/p>",
+        "disclaimer": "<p>The estimated payment amount excludes taxes and shipping. Payment options are offered by Affirm and are subject to eligibility check and might not be available in all states. California residents: Affirm Loan Services, LLC is licensed by the Department of Business Oversight. Loans are made or arranged pursuant to California Financing Law license.<\/p>",
         "background_color": "#46454d",
         "text_color": "#ffffff",
         "layout": "left",
