@@ -122,6 +122,32 @@
     "164004510986b74b22": {
       "type": "faq",
       "blocks": {
+        "d7d27f34-7d05-415b-bc68-ef082889f92e": {
+          "type": "question",
+          "settings": {
+            "title": "Installments",
+            "map_text": "<p>UPS Time In Transit Map<\/p>",
+            "map_popup": false,
+            "text": "<p>Shop Pay offers you the option to pay in full at checkout, or to split your purchase into 4 equal installment payments. You can't adjust the number of installment payments or the price range available for Shop Pay Installments.<\/p><p>You have the option to pay for orders between $50 and $3,000 USD, including discounts, shipping and taxes, in 4 installments. To use Shop Pay Installments, your shipping address needs to be in the United States. <\/p>",
+            "button_link2": "",
+            "button_text2": "Button text",
+            "button_chat2": false,
+            "text2": ""
+          }
+        },
+        "f19fedd5-1294-4ae4-9603-78a902c47e0c": {
+          "type": "question",
+          "settings": {
+            "title": "Fees & penalties",
+            "map_text": "<p>UPS Time In Transit Map<\/p>",
+            "map_popup": false,
+            "text": "<p>There are no additional charges, interest rates, or late fees. You can pay your balance off early without penalty. However, if you make a partial payment or late payment, then future applications to use Shop Pay Installments might be affected.<\/p>",
+            "button_link2": "",
+            "button_text2": "Button text",
+            "button_chat2": false,
+            "text2": ""
+          }
+        },
         "164004510925ecbd80-0": {
           "type": "question",
           "disabled": true,
@@ -219,30 +245,18 @@
             "button_chat2": false,
             "text2": ""
           }
-        },
-        "d7d27f34-7d05-415b-bc68-ef082889f92e": {
-          "type": "question",
-          "settings": {
-            "title": "Installments",
-            "map_text": "<p>UPS Time In Transit Map<\/p>",
-            "map_popup": false,
-            "text": "<p>Shop Pay offers you the option to pay in full at checkout, or to split your purchase into 4 equal installment payments. You can't adjust the number of installment payments or the price range available for Shop Pay Installments.<\/p><p>You have the option to pay for orders between $50 and $3,000 USD, including discounts, shipping and taxes, in 4 installments. To use Shop Pay Installments, your shipping address needs to be in the United States. <\/p>",
-            "button_link2": "",
-            "button_text2": "Button text",
-            "button_chat2": false,
-            "text2": ""
-          }
         }
       },
       "block_order": [
+        "d7d27f34-7d05-415b-bc68-ef082889f92e",
+        "f19fedd5-1294-4ae4-9603-78a902c47e0c",
         "164004510925ecbd80-0",
         "164004510925ecbd80-1",
         "f01bd8c0-677b-4a86-bc02-7301be4b26db",
         "3813e24a-ff27-410b-8060-21bf2c790a56",
         "f58715c7-53c9-4fbf-a605-eeb8bcc58dd9",
         "a84e1a1f-679c-47f6-81f5-e1b140e391fe",
-        "03db0e99-4dc4-43d0-a267-e61f4e31715f",
-        "d7d27f34-7d05-415b-bc68-ef082889f92e"
+        "03db0e99-4dc4-43d0-a267-e61f4e31715f"
       ],
       "settings": {
         "title": "FAQs"
