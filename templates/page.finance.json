@@ -15,7 +15,7 @@
             "top_subheading": "",
             "title": "Buy now, pay later",
             "title_size": 42,
-            "subheading": "Pay in 4 from PayPal: Easy as 1-2-3. Simple, short-term installments. Just choose Pay in 4 at checkout and split your payments in 4 - one every two weeks. It's interest-free and is backed by PayPal.",
+            "subheading": "Split your purchase into 4 equal, interest-free payments. No late fees, no hidden fees, and no surprises.*",
             "chat_widget": false,
             "link": "shopify:\/\/collections\/sale",
             "link_text": "Shop Now",
@@ -45,18 +45,6 @@
     "1640045049ef117e94": {
       "type": "text-columns",
       "blocks": {
-        "164004504949d5fbb7-0": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "image": "shopify:\/\/shop_images\/exwar-Icon-3_small_10763450-ba69-4a7d-87c1-3d914fa7799f.png",
-            "image_width": 80,
-            "title": "Choose Paypal",
-            "text": "<p>Choose PayPal at checkout and select 'Pay Later' – you’ll see 'Pay in 4' as a way to pay.<\/p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
         "164004504949d5fbb7-1": {
           "type": "text_block",
           "settings": {
@@ -64,7 +52,19 @@
             "image": "shopify:\/\/shop_images\/shopping-cart.png",
             "image_width": 80,
             "title": "Complete Purchase",
-            "text": "<p>Complete your purchase and make the down payment today. It’s interest free.<\/p>",
+            "text": "<p>Add items to your shopping cart.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "164004504949d5fbb7-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/exwar-Icon-3_small_10763450-ba69-4a7d-87c1-3d914fa7799f.png",
+            "image_width": 80,
+            "title": "Choose Shop Pay",
+            "text": "<p>Check out with Shop Pay.<\/p>",
             "button_label": "",
             "button_link": ""
           }
@@ -76,19 +76,19 @@
             "image": "shopify:\/\/shop_images\/make-payments.png",
             "image_width": 80,
             "title": "Make Payments",
-            "text": "<p>Pay 3 interest-free payments - one every two weeks. It’s backed by PayPal.<\/p>",
+            "text": "<p>Choose to pay in 4 installments.<\/p>",
             "button_label": "",
             "button_link": ""
           }
         }
       },
       "block_order": [
-        "164004504949d5fbb7-0",
         "164004504949d5fbb7-1",
+        "164004504949d5fbb7-0",
         "164004504949d5fbb7-2"
       ],
       "settings": {
-        "title": "Pay in 4",
+        "title": "How it Works",
         "align_text": "center",
         "divider": false,
         "box_shadow": true
@@ -112,7 +112,7 @@
         "align_button": "left",
         "button_popup": false,
         "button_chat": false,
-        "disclaimer": "<p>Pay in 4 is available to consumers upon approval for purchases of $30 - $1500. Pay in 4 is not currently available to residents of New Mexico, North Dakota, Missouri, South Dakota, Wisconsin, Nevada, Rhode Island, or any U.S. Territories. Loans to California residents are made or arranged pursuant to a California Finance Lenders Law License. PayPal, Inc. is a Georgia Installment Lender Licensee, NMLS #910457. For purchases made with Pay in 4 on or before September 30, 2021, late fees may apply for missed payments depending on your state of residency. When applying, a soft credit check may be needed, but will not affect your credit score. You must be of legal age in your U.S. state of residence to use Pay in 4. Offer availability depends on the merchant and also may not be available for certain recurring, subscription services. Offers are not pre-approved offers or firm offers of credit.<\/p>",
+        "disclaimer": "<p>*The estimated payment amount excludes taxes and shipping. Payment options are offered by Affirm and are subject to eligibility check and might not be available in all states. California residents: Affirm Loan Services, LLC is licensed by the Department of Business Oversight. Loans are made or arranged pursuant to California Financing Law license.<\/p>",
         "background_color": "#46454d",
         "text_color": "#ffffff",
         "layout": "left",
@@ -122,84 +122,65 @@
     "164004510986b74b22": {
       "type": "faq",
       "blocks": {
-        "164004510925ecbd80-0": {
+        "f19fedd5-1294-4ae4-9603-78a902c47e0c": {
           "type": "question",
           "settings": {
-            "title": "What is Pay in 4?",
-            "map_text": "",
-            "text": "<p>Pay in 4 is a feature that lets you split your purchase into 4 payments, with the down payment due at the time of transaction and 3 subsequent payments made every 2 weeks thereafter.<\/p>",
+            "title": "What is Shop Pay Installments?",
+            "map_text": "<p>UPS Time In Transit Map<\/p>",
+            "map_popup": false,
+            "text": "<p>When checking out with Shop Pay, you now have the option to pay now or later. Paying in installments on Shop Pay allows you to split your purchase amount into 4 equal, biweekly installment payments—with 0% interest, no hidden or late fees, and no impact on your credit score.* In some instances, your first payment is due when you make your purchase; otherwise, your first payment is due 2 weeks after your purchase.<\/p>",
             "button_link2": "",
             "button_text2": "Button text",
             "button_chat2": false,
             "text2": ""
           }
         },
-        "164004510925ecbd80-1": {
+        "d7d27f34-7d05-415b-bc68-ef082889f92e": {
           "type": "question",
           "settings": {
-            "title": "Will I be able to use Pay in 4?",
-            "map_text": "",
-            "text": "<p>We are offering Pay in 4 to a growing number of our US customers. Availability depends on your state of residence and you must be at least 18 years of age (or the age of majority in your state) to apply. You must also have a PayPal account in good standing or open a PayPal account in order to apply. Pay in 4 is not available for certain merchants and goods. If you choose Pay in 4 as your payment method when you check out with PayPal, you will be taken through the application process. You will get a decision instantly but not everyone will be approved based on our internal checks.<\/p>",
+            "title": "Are there late fees?",
+            "map_text": "<p>UPS Time In Transit Map<\/p>",
+            "map_popup": false,
+            "text": "<p>No, there are no late fees if you miss a scheduled payment.<\/p>",
             "button_link2": "",
             "button_text2": "Button text",
             "button_chat2": false,
             "text2": ""
           }
         },
-        "f01bd8c0-677b-4a86-bc02-7301be4b26db": {
+        "9205ab87-efa4-41c7-a404-cd0f4e6bbd88": {
           "type": "question",
           "settings": {
-            "title": "How can I pay with Pay in 4?",
-            "map_text": "",
-            "text": "<p>Just choose to pay with PayPal when you shop online and if it is an eligible transaction, you will see Pay in 4 as one of the available payment methods. Simply apply for a Pay in 4 plan in just a few steps, get an instant decision, and finish checking out.<\/p>",
+            "title": "What if I make a return?",
+            "map_text": "<p>UPS Time In Transit Map<\/p>",
+            "map_popup": false,
+            "text": "<p>If your refund amount is less than the amount remaining on your Shop Pay Installments balance, then you can expect one or both of the following:<\/p><p>• A smaller payment balance on the final payment.<br\/>• Less future payments on the remaining loan balance.<\/p><p>If your refund amount is more than the amount remaining on your Shop Pay Installments balance, then you can expect to receive the difference as a refund to your original debit card or credit card payment method within 3 to 10 business days.<\/p>",
             "button_link2": "",
             "button_text2": "Button text",
             "button_chat2": false,
             "text2": ""
           }
         },
-        "3813e24a-ff27-410b-8060-21bf2c790a56": {
+        "0ec8eb81-42da-4bea-803c-1c4fb17da7eb": {
           "type": "question",
           "settings": {
-            "title": "What amounts qualify for Pay in 4?",
-            "map_text": "",
-            "text": "<p>You can use Pay in 4 for eligible shopping cart values between $30 to $1500.<\/p>",
+            "title": "Which payment methods are accepted?",
+            "map_text": "<p>UPS Time In Transit Map<\/p>",
+            "map_popup": false,
+            "text": "<p>The installments option on Shop Pay is available on debit and credit cards.<\/p>",
             "button_link2": "",
             "button_text2": "Button text",
             "button_chat2": false,
             "text2": ""
           }
         },
-        "f58715c7-53c9-4fbf-a605-eeb8bcc58dd9": {
+        "5dffa0d5-8886-4281-b0ff-800f7ffdb27d": {
           "type": "question",
           "settings": {
-            "title": "What are the terms and conditions?",
-            "map_text": "",
-            "text": "<p>You must read the loan agreement of your Pay in 4 plan before you submit your application. You will see the link to the loan agreement when you choose to apply for Pay in 4 at checkout. You will also have the option to download the loan agreement. Once your plan starts, we will send you an email containing important information about your Pay in 4 plan, including how to locate your loan agreement.<\/p>",
-            "button_link2": "",
-            "button_text2": "Button text",
-            "button_chat2": false,
-            "text2": ""
-          }
-        },
-        "a84e1a1f-679c-47f6-81f5-e1b140e391fe": {
-          "type": "question",
-          "settings": {
-            "title": "Are there any fees with Pay in 4?",
-            "map_text": "",
-            "text": "<p>There are no fees for choosing to pay with Pay in 4, however if you are late with a payment you may be charged a late fee.<\/p>",
-            "button_link2": "",
-            "button_text2": "Button text",
-            "button_chat2": false,
-            "text2": ""
-          }
-        },
-        "03db0e99-4dc4-43d0-a267-e61f4e31715f": {
-          "type": "question",
-          "settings": {
-            "title": "Where can I pay with Pay in 4?",
-            "map_text": "",
-            "text": "<p>Pay in 4 is available to use at selected merchants where PayPal is accepted. Transactions can be made in all currencies that PayPal supports, not just USD. For transactions not in USD, PayPal will automatically convert the transaction amount to USD at checkout before providing you with your Pay in 4 plan. Currency conversion charges will apply as set out in your PayPal User Agreement.<\/p>",
+            "title": "Have more questions?",
+            "map_text": "<p>UPS Time In Transit Map<\/p>",
+            "map_popup": false,
+            "text": "<p>• For questions about installment payments on Shop Pay, visit <a href=\"https:\/\/shop.affirm.com\/help\" target=\"_blank\" title=\"https:\/\/shop.affirm.com\/help\">shop.affirm.com\/help<\/a>.<\/p><p>• For questions about Shop Pay or the Shop App, visit <a href=\"https:\/\/shop.app\/help\/shop-pay\" target=\"_blank\" title=\"https:\/\/shop.app\/help\/shop-pay\">shop.app\/help\/shop-pay<\/a>.<\/p>",
             "button_link2": "",
             "button_text2": "Button text",
             "button_chat2": false,
@@ -208,16 +189,14 @@
         }
       },
       "block_order": [
-        "164004510925ecbd80-0",
-        "164004510925ecbd80-1",
-        "f01bd8c0-677b-4a86-bc02-7301be4b26db",
-        "3813e24a-ff27-410b-8060-21bf2c790a56",
-        "f58715c7-53c9-4fbf-a605-eeb8bcc58dd9",
-        "a84e1a1f-679c-47f6-81f5-e1b140e391fe",
-        "03db0e99-4dc4-43d0-a267-e61f4e31715f"
+        "f19fedd5-1294-4ae4-9603-78a902c47e0c",
+        "d7d27f34-7d05-415b-bc68-ef082889f92e",
+        "9205ab87-efa4-41c7-a404-cd0f4e6bbd88",
+        "0ec8eb81-42da-4bea-803c-1c4fb17da7eb",
+        "5dffa0d5-8886-4281-b0ff-800f7ffdb27d"
       ],
       "settings": {
-        "title": "FAQs"
+        "title": "FAQ"
       }
     }
   },
