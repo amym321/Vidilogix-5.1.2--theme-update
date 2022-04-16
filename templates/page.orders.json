@@ -91,10 +91,10 @@
         "4a56129f-4a69-4cbd-8bab-54b83433a81d": {
           "type": "question",
           "settings": {
-            "title": "Contact information",
+            "title": "Customer information",
             "map_text": "",
             "map_popup": false,
-            "text": "<p><strong>Update Address<\/strong><\/p><p>We are unable to update the shipping address once an order is placed. The receiver may not change delivery information via UPS My Choice®. We do this to protect the cardholder and the retailer.<\/p><p><strong>Update Email<\/strong><\/p><p>Please provide us with both email addresses: the one you used and the correct one. We will update the email address in our system and then send you a confirmation.<\/p>",
+            "text": "<p><strong>Update Address<\/strong><\/p><p>Please double check your shipping address and reach out to our team immediately if it is incorrect. We are unable to update the shipping address once an order is placed. If your address is missing information or needs verification, our team will attempt to reach you via email once. If we are unable to reach you, your order will be canceled and refunded.<\/p><p>The receiver may not change delivery information via UPS My Choice®. We do this to protect the cardholder and the retailer.<\/p><p><strong>Update Email<\/strong><\/p><p>Please provide us with both email addresses: the one you used and the correct one. We will update the email address in our system and then send you a confirmation.<\/p>",
             "button_link2": "",
             "button_text2": "Button text",
             "button_chat2": false,
