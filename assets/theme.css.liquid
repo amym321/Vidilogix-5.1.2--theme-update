@@ -12656,149 +12656,6 @@ html[dir=rtl] .product-single__meta .rte{
   font-weight: 600;
 }
 
-#empty-cart-container, #empty-cart-box, #empty-cart-container h2, #empty-cart-title, 
-#empty-cart-subtitle h2, #empty-cart-images { 
-  margin-left: auto; 
-  margin-right: auto;
-}
-
-.empty-cart{
-  margin-top:-38px; 
-  font-family: Sofia Pro Reg; 
-  font-weight: 400;  
-  color:#000;
-}
-
-#empty-cart-container, #empty-cart-box { 
-  width:350px; 
-}
-@media only screen and (max-width: 350px){
-  #empty-cart-container, #empty-cart-box {
-    max-width: 320px !important;  
-    width: 320px !important;  
-  }
-}
-@media only screen and (max-width: 300px){
-  #empty-cart-container, #empty-cart-box {
-    max-width: 260px !important;  
-    width: 260px !important;  
-  }
-}
-
-#empty-cart-container h2 {
-  font-size:16px; 
-  font-family:Sofia Pro !important; 
-  font-weight:600 !important; 
-  margin-top:8px;
-}
-
-#empty-cart-break {
-  background-color:#fff !important; height:20px; margin-top: -25px
-}
-
-#empty-cart-box {
-  text-align: center;   
-  margin:auto;  
-  vertical-align: middle;  
-  margin-right:10px;  
-  background-clip:content-box;  
-  padding:1px;  
-  box-sizing:border-box;  
-  -moz-box-sizing:border-box; 
-  font-family:Sofia pro, sans-serif !important;    
-  margin-left: auto;   
-  margin-right: auto;  
-  overflow: hidden;
-}
-
-#empty-cart-title {
-  padding:20px 0 30px 0; 
-  font-size:22px;  
-  font-family: Sofia Pro;  
-  font-weight:700;
-}
-
-#empty-cart-images {
-  width:170px;  
-  margin-bottom:20px;
-}
-
-#empty-cart-subtitle  {
-  background-color: #F6C12F; 
-  margin-top:0px; 
-  color: #fff; 
-}
-
-#empty-cart-subtitle h2 {
-  padding: 2px; 
-  font-size:16px;
-  margin-top:0px; 
-  font-family: Sofia Pro;  
-  font-weight:400;
-}
-
-#empty-cart-box a {
-  cursor: pointer; 
-  margin-bottom:0px;
-}
-
-
-#empty-cart-bottom {
-padding-bottom: 20px; 
-font-size:16px;  
-font-family:Sofia Pro;  
-font-weight:700; 
-}
-
-#swap {
-  position:relative;
-  top: 0;
-  left: 0;
-}
-
-#img1 {
-  position: relative;
-  top: 0;
-  left: 0;
-}
-
-#img2, #img3, #img4 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width:170px; 
-  height:170px; 
-  margin-bottom:0px;
-}
-
-#swap img {
-  animation-name: swap-images;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-duration: 8s;
-}
-
-#swap img:nth-of-type(1) {
-  animation-delay: 6s;
-}
-#swap img:nth-of-type(2) {
-  animation-delay: 4s;
-}
-#swap img:nth-of-type(3) {
-  animation-delay: 2s;
-}
-#swap img:nth-of-type(4) {
-  animation-delay: 0;
-}
-
-@keyframes swap-images {
-  0% { opacity:1; }
-  17% { opacity:1; }
-  25% { opacity:0; }
-  92% { opacity:0; }
-  100% { opacity:1; }
-}
-/* end Slide Cart app style for empty cart  */
 
 /* page min-height reduced from 700 to 400 */
 @media only screen and (min-width: 769px) {
@@ -12842,13 +12699,6 @@ font-weight:700;
   background-color: #ffffff;
 }
 
-/* @media only screen and (max-width: 768px) {
-  .why-buy-popup .modal__centered {
-    transform: translateY(40px);
-    border-top: solid 2px black;
-  }
-} */
-
 @media only screen and (min-width: 769px) {
   .why-buy-popup .modal__inner,
   .why-buy-section .modal__inner {
@@ -12880,8 +12730,6 @@ font-weight:700;
     max-height: 75vh;
   }
 }
-
-    transform: translateY(40px);
 
 .why-buy-popup .modal--square .modal__close {
    position: fixed;
@@ -12982,12 +12830,6 @@ font-weight:700;
   .why-modal h3 {
     font-size: calc(var(--typeHeaderSize)*0.6);
   }
-  /* .why-modal .height_A,{
-    min-height: 60px;
-  }
-  .why-modal .height_C {
-    min-height: 100px;
-  } */
 }
 
 /* The Close Button */
@@ -12995,10 +12837,8 @@ font-weight:700;
   color: #000;
   z-index:3500000000 !important;
   background-color: #ffffff00;
-  /* height: 30px; */  /* reduced height of close element, but didn't line up with svg, thus close didn't work */
   text-align: right !important;
   padding-right: 20px;
-  /* margin-top: 60px; */
   font-size: 40px;
   display:block !important;
   cursor: pointer;
