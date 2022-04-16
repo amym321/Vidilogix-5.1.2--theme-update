@@ -90,6 +90,7 @@
         },
         "4a56129f-4a69-4cbd-8bab-54b83433a81d": {
           "type": "question",
+          "disabled": true,
           "settings": {
             "title": "Customer information",
             "map_text": "",
