@@ -108,7 +108,7 @@
             </div>
   
           {%- elsif section.settings.button_label != blank and section.settings.button_popup != true -%}
-            <div class="appear-delay{% cycle '','-1','-2','-3','-4' %} text-{{ section.settings.align_button }}">
+            <div class="appear-delay{% cycle '','-1','-2','-3','-4' %}">
               <a href="{{ section.settings.button_link }}" class="btn{% if section.settings.button_style == 'secondary' %} btn--tertiary{% endif %}">
                 {{ section.settings.button_label }}
               </a>
@@ -308,26 +308,6 @@
           "type": "select",
           "id": "align_text",
           "label": "Text alignment for headings & text block",
-          "default": "left",
-          "options": [
-            {
-              "value": "left",
-              "label": "Left"
-            },
-            {
-              "value": "center",
-              "label": "Centered"
-            },
-            {
-              "value": "right",
-              "label": "Right"
-            }
-          ]
-        },
-        {
-          "type": "select",
-          "id": "align_button",
-          "label": "Button_alignment",
           "default": "left",
           "options": [
             {
