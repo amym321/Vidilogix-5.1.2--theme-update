@@ -319,6 +319,8 @@
       "quantity": "Cantidad",
       "add_to_cart": "Agregar al carrito",
       "preorder": "Hacer un pedido",
+      "notified": "Ser Notificado",
+      "notified_subscribed": "Suscrito",
       "include_taxes": "Impuesto incluido.",
       "shipping_policy_html": "Los <a href='{{ link }}'>gastos de envío<\/a> se calculan en la pantalla de pagos.",
       "will_not_ship_until": "Será enviado después {{ date }}",

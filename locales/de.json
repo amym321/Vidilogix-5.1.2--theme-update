@@ -319,6 +319,8 @@
       "quantity": "Menge",
       "add_to_cart": "In den Einkaufswagen legen",
       "preorder": "Vorbestellung",
+      "notified": "Benachrichtigt Warden",
+      "notified_subscribed": "Gezeichnet",
       "include_taxes": "inkl. MwSt.",
       "shipping_policy_html": "zzgl. <a href='{{ link }}'>Versandkosten<\/a>",
       "will_not_ship_until": "Wird nach dem {{ date }} versendet",

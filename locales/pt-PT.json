@@ -314,6 +314,8 @@
       "quantity": "Quantidade",
       "add_to_cart": "Adicionar ao Carrinho de Compras",
       "preorder": "Pedido antecipado",
+      "notified_subscribed": "Subscrito",
+      "notified": "Seja Notificado",
       "include_taxes": "Imposto incluído.",
       "shipping_policy_html": "<a href='{{ link }}'>Envio<\/a> calculado na finalização da compra.",
       "will_not_ship_until": "Envio a partir de {{ date }}",

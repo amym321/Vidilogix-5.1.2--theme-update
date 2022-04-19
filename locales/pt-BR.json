@@ -314,6 +314,8 @@
       "quantity": "Quantidade",
       "add_to_cart": "Adicionar ao carrinho",
       "preorder": "Pedido antecipado",
+      "notified": "Seja Notificado",
+      "notified_subscribed": "Subscrito",
       "include_taxes": "Taxas incluídas.",
       "shipping_policy_html": "<a href='{{ link }}'>Frete<\/a> calculado no checkout.",
       "will_not_ship_until": "Envio a partir de {{ date }}",
