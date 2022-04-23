@@ -8,6 +8,19 @@
     "1640041293a13b372e": {
       "type": "faq",
       "blocks": {
+        "e114e0a0-e8fc-47f7-8dcf-07f2f2cee281": {
+          "type": "question",
+          "settings": {
+            "title": "Damaged\/Missing",
+            "map_text": "",
+            "map_popup": false,
+            "text": "<p>DAMAGED & MISSING MERCHANDISE MUST BE REPORTED WITHIN 7 DAYS OF RECEIVING YOUR ORDER.<\/p><p>Prior to signing receipt of your shipment, carefully inspect the box or boxes for any damage. If you see damage you must mark the delivery receipt accordingly. It is recommended to take pictures of the outside of the box and the inside of the box. Then unpack the contents to ensure there is no concealed damage or missing items.<\/p><p>E-mail the following documentation to <a href=\"mailto:hello@vidlogix.com\" target=\"_blank\" title=\"hello@vidlogix.com\">hello@vidlogix.com<\/a> and we will be happy to work with the freight company to process a damage claim. <\/p><p>• Vidlogix order number<br\/>• Freight tracking number<br\/>• Photographs and description of damage<\/p>",
+            "button_link2": "",
+            "button_text2": "Button text",
+            "button_chat2": false,
+            "text2": ""
+          }
+        },
         "1640041293a5780292-0": {
           "type": "question",
           "settings": {
@@ -21,26 +34,13 @@
             "text2": ""
           }
         },
-        "1640041293a5780292-1": {
+        "b47b4e45-3a62-4d2a-9016-29028090552a": {
           "type": "question",
           "settings": {
-            "title": "Signature request",
-            "map_text": "",
+            "title": "Freight Shipping",
+            "map_text": "<p>UPS Time In Transit Map<\/p>",
             "map_popup": false,
-            "text": "<p>All orders over $500 require a signature. The carrier may also require a signature at their discretion. The carrier may make subsequent delivery attempts before returning the shipment to Vidlogix. We are unable to change the shipping address once your order has been placed.<\/p>",
-            "button_link2": "",
-            "button_text2": "Button text",
-            "button_chat2": false,
-            "text2": ""
-          }
-        },
-        "6055492a-dfb9-4b9f-b67a-7a3686be4d9d": {
-          "type": "question",
-          "settings": {
-            "title": "Shipping offer terms",
-            "map_text": "",
-            "map_popup": false,
-            "text": "<p>We do not ship to freight forwarders or post offices. Some items that ship from the manufacturer can only be delivered to addresses within the 48 contiguous U.S. <a href=\"https:\/\/vidlogix.com\/pages\/contact\" target=\"_blank\" title=\"Contact vidlogix customer service\">Contact us<\/a> for delivery information on specific models. Merchandise amount thresholds for shipping prices apply to the cost of items after any special discounts have been applied and exclusive of any tax. These offers may end at any time. <\/p>",
+            "text": "<p>Large or heavy items, including select TVs, require freight shipping. Available to most physical addresses in the 48 contiguous United States. Additional restrictions may apply, Call 1-212-431-5086 for more details.<\/p><p>Delivery time is <strong>2-5 business days<\/strong> for most orders. Allow extra time for delivery to remote addresses.<\/p><p><strong>Someone must receive the delivery.<\/strong> The freight carrier will contact you to schedule delivery to your door or the lobby area of your apartment or condo. Someone will need to be available to meet the driver and sign for the package. Freight deliveries are scheduled for Monday through Friday between 9 AM and 5 PM.<\/p><p><strong>What to expect from the delivery driver.<\/strong> This is a large, heavy item, so arrange to have someone else there to help you unpack and install your equipment. The delivery driver will not help you unpack or set up your new equipment, nor will he or she remove your old equipment or packaging.<\/p><p><strong>Keep the product packaging.<\/strong> You'll need it if you have to return or move your item.<\/p>",
             "button_link2": "",
             "button_text2": "Button text",
             "button_chat2": false,
@@ -60,19 +60,6 @@
             "text2": ""
           }
         },
-        "e114e0a0-e8fc-47f7-8dcf-07f2f2cee281": {
-          "type": "question",
-          "settings": {
-            "title": "Damaged\/Missing",
-            "map_text": "",
-            "map_popup": false,
-            "text": "<p>DAMAGED & MISSING MERCHANDISE MUST BE REPORTED WITHIN 7 DAYS OF RECEIVING YOUR ORDER.<\/p><p>Prior to signing receipt of your shipment, carefully inspect the box or boxes for any damage. If you see damage you must mark the delivery receipt accordingly. It is recommended to take pictures of the outside of the box and the inside of the box. Then unpack the contents to ensure there is no concealed damage or missing items.<\/p><p>E-mail the following documentation to <a href=\"mailto:hello@vidlogix.com\" target=\"_blank\" title=\"hello@vidlogix.com\">hello@vidlogix.com<\/a> and we will be happy to work with the freight company to process a damage claim. <\/p><p>• Vidlogix order number<br\/>• Freight tracking number<br\/>• Photographs and description of damage<\/p>",
-            "button_link2": "",
-            "button_text2": "Button text",
-            "button_chat2": false,
-            "text2": ""
-          }
-        },
         "0d01f7dc-88d5-4010-8808-c09eecaf52aa": {
           "type": "question",
           "settings": {
@@ -80,6 +67,32 @@
             "map_text": "",
             "map_popup": false,
             "text": "<p><strong>UPS Insurance<\/strong> – you release vidlogix from responsibility for delayed shipments and loss in excess of $100.00. Insurance in excess of $100 should be requested at the time of purchase. The receiver is responsible for additional insurance costs. The receiver is responsible to file an insurance claim with UPS. All shipments are DAP, unless otherwise noted. Weather, natural disasters and other uncontrollable events can interrupt UPS transportation flow. Shipments delayed due to an uncontrollable event are not eligible for a refund or credit under the UPS money-back guarantee policy.<\/p><p><strong>USPS Insurance<\/strong> – you release vidlogix from responsibility for delayed shipments and loss in excess of $50.00. Insurance claims to damaged or lost items in excess of $50.00 will not be recovered. vidlogix is not responsible for damaged or lost items. Insurance in excess of $50.00 should be requested at the time of purchase. All shipments are DAP, unless otherwise noted.<\/p>",
+            "button_link2": "",
+            "button_text2": "Button text",
+            "button_chat2": false,
+            "text2": ""
+          }
+        },
+        "6055492a-dfb9-4b9f-b67a-7a3686be4d9d": {
+          "type": "question",
+          "settings": {
+            "title": "Shipping offer terms",
+            "map_text": "",
+            "map_popup": false,
+            "text": "<p>We do not ship to freight forwarders or post offices. Some items that ship from the manufacturer can only be delivered to addresses within the 48 contiguous U.S. <a href=\"https:\/\/vidlogix.com\/pages\/contact\" target=\"_blank\" title=\"Contact vidlogix customer service\">Contact us<\/a> for delivery information on specific models. Merchandise amount thresholds for shipping prices apply to the cost of items after any special discounts have been applied and exclusive of any tax. These offers may end at any time. <\/p>",
+            "button_link2": "",
+            "button_text2": "Button text",
+            "button_chat2": false,
+            "text2": ""
+          }
+        },
+        "1640041293a5780292-1": {
+          "type": "question",
+          "settings": {
+            "title": "Signature request",
+            "map_text": "",
+            "map_popup": false,
+            "text": "<p>All orders over $500 require a signature. The carrier may also require a signature at their discretion. The carrier may make subsequent delivery attempts before returning the shipment to Vidlogix. We are unable to change the shipping address once your order has been placed.<\/p>",
             "button_link2": "",
             "button_text2": "Button text",
             "button_chat2": false,
@@ -98,30 +111,17 @@
             "button_chat2": false,
             "text2": ""
           }
-        },
-        "b47b4e45-3a62-4d2a-9016-29028090552a": {
-          "type": "question",
-          "settings": {
-            "title": "Freight Shipping",
-            "map_text": "<p>UPS Time In Transit Map<\/p>",
-            "map_popup": false,
-            "text": "<p>Large or heavy items, including select TVs, require freight shipping. Available to most physical addresses in the 48 contiguous United States. Additional restrictions may apply, Call 1-212-431-5086 for more details.<\/p><p>Delivery time is <strong>2-5 business days<\/strong> for most orders. Allow extra time for delivery to remote addresses.<\/p><p><strong>Someone must receive the delivery.<\/strong> The freight carrier will contact you to schedule delivery to your door or the lobby area of your apartment or condo. Someone will need to be available to meet the driver and sign for the package. Freight deliveries are scheduled for Monday through Friday between 9 AM and 5 PM.<\/p><p><strong>What to expect from the delivery driver.<\/strong> This is a large, heavy item, so arrange to have someone else there to help you unpack and install your equipment. The delivery driver will not help you unpack or set up your new equipment, nor will he or she remove your old equipment or packaging.<\/p><p><strong>Keep the product packaging.<\/strong> You'll need it if you have to return or move your item.<\/p>",
-            "button_link2": "",
-            "button_text2": "Button text",
-            "button_chat2": false,
-            "text2": ""
-          }
         }
       },
       "block_order": [
-        "1640041293a5780292-0",
-        "1640041293a5780292-1",
-        "6055492a-dfb9-4b9f-b67a-7a3686be4d9d",
-        "6aca3140-25db-4040-9578-771ed119a3ba",
         "e114e0a0-e8fc-47f7-8dcf-07f2f2cee281",
+        "1640041293a5780292-0",
+        "b47b4e45-3a62-4d2a-9016-29028090552a",
+        "6aca3140-25db-4040-9578-771ed119a3ba",
         "0d01f7dc-88d5-4010-8808-c09eecaf52aa",
-        "d4cc094f-fb0e-4d22-89f2-c1420f381b15",
-        "b47b4e45-3a62-4d2a-9016-29028090552a"
+        "6055492a-dfb9-4b9f-b67a-7a3686be4d9d",
+        "1640041293a5780292-1",
+        "d4cc094f-fb0e-4d22-89f2-c1420f381b15"
       ],
       "settings": {
         "title": "FAQs"
