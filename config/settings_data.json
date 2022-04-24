@@ -343,7 +343,7 @@
           "upsell_save_type": "dollar",
           "upsell_continue_shopping": "https:\/\/www.vidlogix.com\/collections\/best-sellers?offset=0&sortBy=bestselling",
           "upsell_notes_enable": false,
-          "upsell_terms_enable": true,
+          "upsell_terms_enable": false,
           "upsell_terms_page": "returns",
           "upsell_custom_css": ""
         }
