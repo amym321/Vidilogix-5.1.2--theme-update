@@ -126,6 +126,19 @@
             "button_chat2": false,
             "text2": ""
           }
+        },
+        "705e67b6-2eb8-44f8-9677-a79e67901a1e": {
+          "type": "question",
+          "settings": {
+            "title": "Pending charges",
+            "map_text": "<p>When you place an order, vidlogix.com contacts the issuing bank to confirm the payment method's validity. Your bank reserves the funds until the entire transaction processes or the authorization expires, but this isn't an actual charge. <\/p><p>Contact your bank to clarify how long they hold authorizations for online orders to remove an authorization. You can cancel an order at any time before shipment, at no cost to you, by <a href=\"https:\/\/www.vidlogix.com\/pages\/contact\" target=\"_blank\">contacting support<\/a>.<\/p>",
+            "map_popup": false,
+            "text": "",
+            "button_link2": "",
+            "button_text2": "Button text",
+            "button_chat2": false,
+            "text2": "<p>Use the text to answer questions<\/p>"
+          }
         }
       },
       "block_order": [
@@ -135,7 +148,8 @@
         "6f7e45da-3444-4641-ac73-85aab402de7c",
         "962f86a9-d06f-4dd5-aa4f-b8d17195dfca",
         "55d786e9-0268-406d-a7cd-57aba1658506",
-        "0b82cfe1-0e07-43a0-9b8f-30d2d128ee07"
+        "0b82cfe1-0e07-43a0-9b8f-30d2d128ee07",
+        "705e67b6-2eb8-44f8-9677-a79e67901a1e"
       ],
       "settings": {
         "title": "FAQs"
