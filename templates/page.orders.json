@@ -68,7 +68,7 @@
             "title": "When will I be charged?",
             "map_text": "",
             "map_popup": false,
-            "text": "<p>We will post payment upon shipment or within six calendar days. Orders shipped to an address other than the billing address will be charged within 24 hours. <\/p>",
+            "text": "<p>We will post payment upon shipment or within six calendar days. Orders shipped to an address other than the billing address will be charged within 24 hours. We do this to protect the cardholder against fraudulent activity.<\/p>",
             "button_link2": "",
             "button_text2": "Button text",
             "button_chat2": false,
